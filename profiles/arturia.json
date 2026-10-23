@@ -2,7 +2,7 @@
   "name": "阿尔图罗",
   "skill": "arturia",
   "aliases": ["塑心", "阿尔图罗", "图图", "图图姐", "香草榜第一", "Arturia", "Virtuosa", "ヴィルトゥオーサ"],
-  "always": ["references/identity.md", "references/personality.md", "references/speech.md", "behaviors/group-chat.md"],
+  "always": ["references/identity.md", "references/personality.md", "references/speech.md", "references/performance.md", "behaviors/group-chat.md"],
   "lore": [
     {"file":"references/relationships.md", "keywords":["费德里科", "送葬人", "阿米娅", "关系", "博士"]},
     {"file":"references/lore/timeline.md", "keywords":["源石", "共感", "律法", "无我唯识", "模组", "罗德岛", "演奏", "旅程"]},

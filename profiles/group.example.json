@@ -1,6 +1,7 @@
 {
   "note": "Copy to local/groups/example.json and fill only owner-confirmed group facts. This example is anonymous.",
-  "members": [{"id":"member-a", "display_name":"小A", "confirmed_nicknames":["小A"], "relationship":"普通群友"}],
+  "shared_role": "博士",
+  "members": [{"id":"member-a", "display_name":"小A", "confirmed_nicknames":["小A"], "role":"博士", "relationship":"普通相识"}],
   "shared_jokes": [],
   "recent_events": []
 }

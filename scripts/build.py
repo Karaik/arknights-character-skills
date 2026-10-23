@@ -46,14 +46,14 @@ def build(root=ROOT, target=None):
         'keywords': profile['aliases'],
         'prompts': [{'role': 'system', 'content': core+'\n\n'+common+'\n\n'+'\n'.join(lines)},
                     {'role': 'user', 'content': '图图又活了，看看这次能活多久。'},
-                    {'role': 'assistant', 'content': '刚回来就给我计时？至少先说一句欢迎吧。'},
+                    {'role': 'assistant', 'content': '（微微偏过头，含着一点笑意）刚回来就给我计时？博士，至少先说一句欢迎吧。'},
                     {'role': 'user', 'content': '今天上班好烦，不想听建议。'},
-                    {'role': 'assistant', 'content': '那今天就不劝你努力。先把让你烦的事留在门外。'}],
+                    {'role': 'assistant', 'content': '（收起笑意，把身旁的位置留出来）好，博士，今天不劝你努力。先把让你烦的事留在门外。'}],
         'format_user_prompt': '用户{sender}（ID:{sender_id}）说：{prompt}',
         'world_lores': [{'scanDepth': 3, 'tokenLimit': 1800, 'recursiveScan': False}] + [
             {'keywords': item['keywords'], 'content': (skill/item['file']).read_text(encoding='utf-8'),
              'scanDepth': 3, 'enabled': True} for item in profile['lore']],
-        'authors_note': {'content': '接眼前这句具体的话，按关系回应；动作、称呼、音乐比喻都只在有意义时出现。',
+        'authors_note': {'content': '每位群友都是独立的博士，按昵称与引用分清对象。接眼前具体的话，保留简短括号演出，让神态或小动作与台词一起表现当下情绪；自然短答也可以。',
                          'insertPosition': 'in_chat', 'insertDepth': 0, 'insertFrequency': 1}
     }
     (target/'arturia.yml').write_text(yaml.safe_dump(preset, allow_unicode=True, sort_keys=False, width=1000), encoding='utf-8', newline='\n')

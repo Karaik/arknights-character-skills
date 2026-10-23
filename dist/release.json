@@ -1,6 +1,6 @@
 {
   "archive": "arturia-skill-0.1.0.zip",
-  "sha256": "fe16c63792fce3eff8902f9abac632b6cf4566e0f97b21119b6553b2005f750a",
+  "sha256": "cc021364bc1d7ee5649f3b1cf2e5f558d93e60338c6d3b7857d20e5704b1b6f5",
   "image_policy": "Only explicitly owner-approved images enter runtime",
   "review_counts": {
     "pending": 32,

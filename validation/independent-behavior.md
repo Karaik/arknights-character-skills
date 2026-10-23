@@ -1,3 +1,9 @@
+# 后续设定说明（2026-10-23）
+
+以下是原始测试样本，未按新设定重写。用户随后确认所有群友均为独立的博士，并要求保留角色演出。“没有叫博士／没有括号动作”不再作为当前风格优化的成功条件；本报告不构成修订后风格的实际模型验证。
+
+---
+
 Arturia independent behavioral validation
 Date: 2026-10-23 (Asia/Tokyo)
 Skill: D:\Code\arknights-character-skills\skills\arturia\SKILL.md
