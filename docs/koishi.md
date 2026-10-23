@@ -4,16 +4,15 @@
 
 ## 先审表情
 
-打开 `review/index.html`，看原图、情绪、来源、理由、适用和回避场景。目前 33 张中，`arturia-sway-01` 已由管理者明确批准，其余 32 张 pending；只含无角色通用图和图图本人。管理者确认其他 ID 后，可以在仓库本地执行：
+打开 `review/index.html`，看原图、情绪、来源、理由、适用和回避场景。当前为管理者明确指定的六张透明静图和一张 70 帧 GIF，共七张，均只含图图本人。重新生成本套素材的目录和预设时执行：
 
 ```powershell
-python scripts/review_stickers.py approve arturia-11 prts-06 --note "管理者明确保留这两个ID"
 python scripts/review_catalog.py
 python scripts/build.py
 python scripts/validate.py
 ```
 
-这只是仓库本地审批与生成，没有服务端动作。切勿把文件存在、官方来源或模型请求当作审批。重新拉取图片时，只有哈希不变的旧审批才保留。
+这些命令只生成本地产物。以后增加素材仍需管理者明确选用；不要重新采集旧候选来覆盖本套七张清单。
 
 ## 普通 ChatLuna 接法（优先）
 
@@ -38,7 +37,7 @@ npm pack ./adapters/koishi --pack-destination ./build
 
 `adapters/chatluna/config.example.yml` 是合并参考，真实插件组和实例名沿用现有部署。图片标记需要完整交给发送钩子，所以推荐关闭角色流式输出，关闭分句发送，保留 `pure-text`。不要全局改其他业务的渲染方式。
 
-已验证：真实 ChatLuna pure-text 渲染保留标记；真实 Koishi 消息元素可由钩子替换；未审核、未知、越界路径或哈希变化的图片不能发送。服务器已用独立 Koishi Context 验证像素图的钩子、撤销和空引用拦截；本次又把实际模型产生的 `[[sticker:arturia-sway-01]]` 经渲染及已安装钩子转成 `image/gif` 内联数据，字节哈希与已批准原文件一致。没有连接测试 QQ 适配器，也没有群发测试。运行清单已有 1 张批准 GIF；经管理者确认，生产 allowedGuilds 现为 5 个既有群，群 ID 仅保存在服务器配置中。
+已验证：真实 ChatLuna pure-text 渲染保留标记；真实 Koishi 消息元素可由钩子替换；未审核、未知、越界路径或哈希变化的图片不能发送。2026-10-24 在服务器用已安装插件、真实 Koishi Context 和真实 ChatLuna parser，逐张验证本套六张 PNG 与一张 GIF 的内联数据及完整哈希。运行清单已原子替换，正式预设仅更新表情选择段；ChatLuna 的 PresetService 文件监听负责热更新，Koishi 与 NapCat 无需重启。既有五群白名单和其余角色设定保持原值，未操作聊天数据库。验证未连接 QQ 测试适配器或发送群消息。记录见 `validation/sticker-replacement-20261024.json`。
 
 `exports/chatluna/runtime-manifest.json` 的相对图片路径在同级 `images/` 中完整提供。只有 approved 素材进入该目录；重新打包会移除已撤销的旧运行图片。
 
@@ -46,7 +45,7 @@ npm pack ./adapters/koishi --pack-destination ./build
 
 ## MemesLuna 可选接法
 
-`build/memesluna-approved/` 是经批准图片的上传目录；`build/memesluna-labels.json` 是标签对照，**不是 MemesLuna 原生可直接导入的配置文件**。在 MemesLuna 管理页建合集，再上传目录中的图片、按对照填写标签即可。默认目录为空。
+`build/memesluna-approved/` 是经批准七张图片的上传目录；`build/memesluna-labels.json` 是标签对照，**不是 MemesLuna 原生可直接导入的配置文件**。本次使用现有发送插件，无需另装 MemesLuna。
 
 如果选择它提供图片路由，可用同 Docker 网络可达的 Koishi 服务名，避免写死容器 IP。本仓库优先使用上面的本地发送适配器，减少 URL、图床过期和渲染差异；不同时要求两条发图链路。
 

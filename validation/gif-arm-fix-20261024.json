@@ -1,0 +1,63 @@
+{
+  "success": true,
+  "imageCount": 7,
+  "changedAssets": [
+    "arturia-sway-01"
+  ],
+  "otherSixStaticImagesBitIdentical": true,
+  "manifest_sha256": "bad5426d92083a075c6fa11f2ba88f6e60fcbe472bf29274bc197a89af0339a5",
+  "preset_sha256": "75e7a7745e2130c6ff068e68f10b9c716fcbabbe569b7b626faca7e6597376e9",
+  "gif_sha256": "3bd5d7d23aa4cbf495b193f44cf2a83bedd4d0a0d2670369f0a2d5e7a2bc58c1",
+  "gifFrames": 70,
+  "gifDurationMs": 7000,
+  "retimedFrames": 0,
+  "generatedIntermediateFrames": 0,
+  "servicesRestarted": false,
+  "presetChanged": false,
+  "configChanged": false,
+  "databaseOpenedOrModified": false,
+  "probe": {
+    "actualInstalledParser": true,
+    "actualKoishiContextHook": true,
+    "verified": [
+      {
+        "id": "arturia-react-01",
+        "mime": "image/png",
+        "hashMatched": true
+      },
+      {
+        "id": "arturia-react-02",
+        "mime": "image/png",
+        "hashMatched": true
+      },
+      {
+        "id": "arturia-react-03",
+        "mime": "image/png",
+        "hashMatched": true
+      },
+      {
+        "id": "arturia-react-04",
+        "mime": "image/png",
+        "hashMatched": true
+      },
+      {
+        "id": "arturia-react-05",
+        "mime": "image/png",
+        "hashMatched": true
+      },
+      {
+        "id": "arturia-react-06",
+        "mime": "image/png",
+        "hashMatched": true
+      },
+      {
+        "id": "arturia-sway-01",
+        "mime": "image/gif",
+        "hashMatched": true
+      }
+    ],
+    "qqMessagesSent": 0,
+    "networkAdapters": 0
+  },
+  "consoleHTTP": 200
+}

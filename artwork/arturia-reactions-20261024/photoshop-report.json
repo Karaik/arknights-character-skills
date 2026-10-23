@@ -1,0 +1,116 @@
+{
+  "application": "Adobe Photoshop",
+  "native_document_query": "27.1.0|3276x2184|arturia-react-06 - teasing|arturia-react-05 - smug|arturia-react-04 - unimpressed|arturia-react-03 - shy|arturia-react-02 - hesitant|arturia-react-01 - puzzled|Original owner supplied sheet - reference",
+  "status": "complete",
+  "exports": [
+    {
+      "id": "arturia-react-01",
+      "size": [
+        512,
+        512
+      ],
+      "bbox": [
+        60,
+        16,
+        452,
+        496
+      ],
+      "transparent_pixels": 152169,
+      "partial_alpha_pixels": 3536,
+      "opaque_white_pixels": 1216,
+      "sha256": "fa3317996d5ab39cf311f4e61fdc2e35a3561b7b94313db0797c105e13b66799"
+    },
+    {
+      "id": "arturia-react-02",
+      "size": [
+        512,
+        512
+      ],
+      "bbox": [
+        60,
+        16,
+        452,
+        496
+      ],
+      "transparent_pixels": 151939,
+      "partial_alpha_pixels": 3575,
+      "opaque_white_pixels": 1548,
+      "sha256": "3311b31544b99959ac279660e1ef846d34cd0a21ff159644af6ec8464b7a17fd"
+    },
+    {
+      "id": "arturia-react-03",
+      "size": [
+        512,
+        512
+      ],
+      "bbox": [
+        60,
+        16,
+        452,
+        496
+      ],
+      "transparent_pixels": 151856,
+      "partial_alpha_pixels": 3587,
+      "opaque_white_pixels": 813,
+      "sha256": "cd831b08b4cedd2517238b9538a421a2bffd066d7cf5c24ab150f272fb92fcb2"
+    },
+    {
+      "id": "arturia-react-04",
+      "size": [
+        512,
+        512
+      ],
+      "bbox": [
+        61,
+        16,
+        451,
+        496
+      ],
+      "transparent_pixels": 152977,
+      "partial_alpha_pixels": 3572,
+      "opaque_white_pixels": 738,
+      "sha256": "d00281e9fdf05bc939755524877156f1be603c8cb64a2300c69355ac8d83f08a"
+    },
+    {
+      "id": "arturia-react-05",
+      "size": [
+        512,
+        512
+      ],
+      "bbox": [
+        61,
+        16,
+        451,
+        496
+      ],
+      "transparent_pixels": 152899,
+      "partial_alpha_pixels": 3541,
+      "opaque_white_pixels": 1057,
+      "sha256": "94b2340584411063c28862df1f7efd4f1b9584af7d39a1e1074589a7ffb047b1"
+    },
+    {
+      "id": "arturia-react-06",
+      "size": [
+        512,
+        512
+      ],
+      "bbox": [
+        60,
+        16,
+        451,
+        496
+      ],
+      "transparent_pixels": 152849,
+      "partial_alpha_pixels": 3543,
+      "opaque_white_pixels": 1055,
+      "sha256": "3a1e16e3df516ae75e80b0332db0d40162acf45a0e3a1a662d9b7a2ecfba3d56"
+    }
+  ],
+  "source_crop_size": [
+    1092,
+    1092
+  ],
+  "method": "Photoshop crop, contiguous exterior white selection tolerance24, clear background, Remove White Matte, resize within480px, transparent512px canvas",
+  "signature": "preserved",
+  "psd": "arturia-six-reactions.psd"
+}

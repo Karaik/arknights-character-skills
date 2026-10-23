@@ -1,0 +1,99 @@
+{
+  "status": "passed_scoped_independent_visual_review",
+  "reviewer": "independent original70 visual auditor",
+  "review_date": "2026-10-24",
+  "file": "arturia-sway-70frames.gif",
+  "sha256": "3bd5d7d23aa4cbf495b193f44cf2a83bedd4d0a0d2670369f0a2d5e7a2bc58c1",
+  "sha256_independently_verified": true,
+  "scope": {
+    "poses": [
+      14,
+      29,
+      30,
+      31,
+      32
+    ],
+    "changed_actual_frames": [
+      23,
+      31,
+      54,
+      55,
+      56,
+      57,
+      62,
+      63,
+      64,
+      65
+    ],
+    "sequence_contacts_visually_inspected": [
+      [
+        50,
+        58
+      ],
+      [
+        60,
+        66
+      ]
+    ],
+    "new_design_or_broader_audit": false
+  },
+  "visual_method": "Direct visual inspection of the four listed dark-background contacts made from the final decoded GIF, comparing before/after and adjacent actual frames. Pixel counts were not used to decide visual acceptance.",
+  "reviewed_contacts": [
+    {
+      "file": "dark-four-poses-before-after.jpg",
+      "sha256": "ed468e2d0636a29f4b39d9291ae7d6acae9ab6b16591cd7582ce125db8101f7a",
+      "observation": "Poses 29-32 no longer show the broad pasted white sleeve root. Long hair now overlaps the sleeve root continuously, while the forearm, cuff and mitten retain the existing action. No remaining gold hem strokes visibly cross the repaired hair tips."
+    },
+    {
+      "file": "dark-small-edge-before-after.jpg",
+      "sha256": "bcf6833e1810680c91c7faf25241113077d920a67b623af9cc125f3cea89c425",
+      "observation": "Pose 14's unsupported horizontal scalp spike is gone. The curved head side and transparent space beside the raised mitten agree with the source-following contour. Mitten, face and halo remain visually intact."
+    },
+    {
+      "file": "dark-actual-neighbours.jpg",
+      "sha256": "bd943270fd415386f0090db76bf729ed6af85335bf3337b6b4ebfe45de07a44b",
+      "observation": "Actual frames 50-58 show the repaired 54-57 raise and return in the existing pose order. The repaired sleeve/hair boundaries introduce no visible isolated plate, hole or reversed overlap at the adjoining poses."
+    },
+    {
+      "file": "dark-actual-repeat-neighbours.jpg",
+      "sha256": "4d748e7eb10a6bccc6e55c90d1731d46ad64ba5ee8916be00548e93db169839b",
+      "observation": "Actual frames 60-66 show the same accepted repair during the repeat at 62-65. No repeated occurrence retains the old white plate or gold strokes across the hair. The entry and return show no new boundary defect."
+    }
+  ],
+  "independent_decoded_repeat_check": [
+    {
+      "first": 23,
+      "repeat": 31,
+      "decoded_rgba_identical": true
+    },
+    {
+      "first": 54,
+      "repeat": 62,
+      "decoded_rgba_identical": true
+    },
+    {
+      "first": 55,
+      "repeat": 63,
+      "decoded_rgba_identical": true
+    },
+    {
+      "first": 56,
+      "repeat": 64,
+      "decoded_rgba_identical": true
+    },
+    {
+      "first": 57,
+      "repeat": 65,
+      "decoded_rgba_identical": true
+    }
+  ],
+  "technical_scope_reference": {
+    "file": "verification.json",
+    "sha256_matches_reviewed_gif": true,
+    "note": "The separate technical record establishes 70 frames at 100 ms, 10 changed actual frames and 60 unaffected frames equal to the old decoded RGBA. This independent review did not repeat the full old/new comparison."
+  },
+  "unresolved_findings_within_scope": [],
+  "playback_observed": false,
+  "limit": "Adjacent decoded contact frames were visually reviewed; real-time animated playback was not observed. No artwork or server was modified by this final review.",
+  "current_asset": "../../skills/arturia/assets/stickers/arturia-sway-01.gif"
+}

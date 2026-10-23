@@ -67,6 +67,29 @@ def main():
     if plugin.exists():
         shutil.copyfile(plugin,target/plugin_name)
         report['koishi_plugin_archive']={'file':plugin_name,'sha256':hashlib.sha256(plugin.read_bytes()).hexdigest()}
+    sticker_update=ROOT/'validation/sticker-replacement-20261024.json'
+    if sticker_update.exists():
+        update=json.loads(sticker_update.read_text(encoding='utf-8'))
+        current=bool(update.get('success') and update.get('preset_sha256')==hashlib.sha256((exports/'arturia.yml').read_bytes()).hexdigest()
+                     and update.get('manifest_sha256')==hashlib.sha256((exports/'runtime-manifest.json').read_bytes()).hexdigest())
+        report['sticker_replacement']={'matches_current_export':current,'image_count':update['imageCount'],
+                                     'evidence':sticker_update.relative_to(ROOT).as_posix()}
+        if current:
+            report['production_role_switched']=True
+            report['production_snapshot']['matches_current_export']=True
+            report['production_snapshot']['evidence'].append(sticker_update.relative_to(ROOT).as_posix())
+    gif_update=ROOT/'validation/gif-arm-fix-20261024.json'
+    if gif_update.exists():
+        update=json.loads(gif_update.read_text(encoding='utf-8'))
+        current=bool(update.get('success') and update.get('preset_sha256')==hashlib.sha256((exports/'arturia.yml').read_bytes()).hexdigest()
+                     and update.get('manifest_sha256')==hashlib.sha256((exports/'runtime-manifest.json').read_bytes()).hexdigest())
+        report['gif_arm_repair']={'matches_current_export':current,'changed_assets':update['changedAssets'],
+                                 'frames':update['gifFrames'],'duration_ms':update['gifDurationMs'],
+                                 'evidence':gif_update.relative_to(ROOT).as_posix()}
+        if current:
+            report['production_role_switched']=True
+            report['production_snapshot']['matches_current_export']=True
+            report['production_snapshot']['evidence'].append(gif_update.relative_to(ROOT).as_posix())
     (target/'release.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n',encoding='utf-8', newline='\n')
     print(json.dumps(report,ensure_ascii=False))
 

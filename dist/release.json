@@ -1,13 +1,13 @@
 {
   "archive": "arturia-skill-0.1.0.zip",
-  "sha256": "695c3683cbc1537d487d2708846c061f786dcc8f2bc66ab20e38c6d43f2f8157",
+  "sha256": "e1dd84899bc00beca02d8776ace57e8268c915ba6e0e7d6235d88b1d4b8b59c9",
   "image_policy": "Only explicitly owner-approved images enter runtime",
   "review_counts": {
-    "pending": 32,
-    "approved": 1,
+    "pending": 0,
+    "approved": 7,
     "rejected": 0
   },
-  "runtime_image_count": 1,
+  "runtime_image_count": 7,
   "chatluna_parser": "1.4.2 actual package parser validated",
   "koishi_plugin_installed_and_enabled": true,
   "isolated_preset_loaded": true,
@@ -40,11 +40,26 @@
     "history_preserved": true,
     "evidence": [
       "validation/production-cutover-result.json",
-      "validation/production-health.json"
+      "validation/production-health.json",
+      "validation/gif-arm-fix-20261024.json"
     ]
   },
   "koishi_plugin_archive": {
     "file": "koishi-plugin-arturia-reviewed-stickers-0.1.1.tgz",
     "sha256": "fdc45d8de4fac312d7d5a985146fe76bb0bb99e897c2876afeebd10ef2363c5d"
+  },
+  "sticker_replacement": {
+    "matches_current_export": false,
+    "image_count": 7,
+    "evidence": "validation/sticker-replacement-20261024.json"
+  },
+  "gif_arm_repair": {
+    "matches_current_export": true,
+    "changed_assets": [
+      "arturia-sway-01"
+    ],
+    "frames": 70,
+    "duration_ms": 7000,
+    "evidence": "validation/gif-arm-fix-20261024.json"
   }
 }

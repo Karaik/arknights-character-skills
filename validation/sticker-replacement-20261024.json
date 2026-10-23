@@ -1,0 +1,66 @@
+{
+  "success": true,
+  "imageCount": 7,
+  "runtime_ids": [
+    "arturia-react-01",
+    "arturia-react-02",
+    "arturia-react-03",
+    "arturia-react-04",
+    "arturia-react-05",
+    "arturia-react-06",
+    "arturia-sway-01"
+  ],
+  "preset_sha256": "75e7a7745e2130c6ff068e68f10b9c716fcbabbe569b7b626faca7e6597376e9",
+  "manifest_sha256": "fefa1a5ec43b4937d3a3b5d912248e6c34fe364fb19f99969605fb1c6723c0a1",
+  "probe": {
+    "actualInstalledParser": true,
+    "actualKoishiContextHook": true,
+    "verified": [
+      {
+        "id": "arturia-react-01",
+        "mime": "image/png",
+        "hashMatched": true
+      },
+      {
+        "id": "arturia-react-02",
+        "mime": "image/png",
+        "hashMatched": true
+      },
+      {
+        "id": "arturia-react-03",
+        "mime": "image/png",
+        "hashMatched": true
+      },
+      {
+        "id": "arturia-react-04",
+        "mime": "image/png",
+        "hashMatched": true
+      },
+      {
+        "id": "arturia-react-05",
+        "mime": "image/png",
+        "hashMatched": true
+      },
+      {
+        "id": "arturia-react-06",
+        "mime": "image/png",
+        "hashMatched": true
+      },
+      {
+        "id": "arturia-sway-01",
+        "mime": "image/gif",
+        "hashMatched": true
+      }
+    ],
+    "qqMessagesSent": 0,
+    "networkAdapters": 0
+  },
+  "servicesRestarted": false,
+  "koishiConfigurationUnchanged": true,
+  "databaseOpenedOrModified": false,
+  "consoleReady": true,
+  "presetSemanticChange": "prompts[0].content sticker instructions; all other preset fields preserved",
+  "presetReload": "installed ChatLuna PresetService fs.watch",
+  "gifFrames": 70,
+  "gifDurationMs": 7000
+}

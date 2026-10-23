@@ -2,9 +2,104 @@
   "schema_version": 1,
   "stickers": [
     {
+      "id": "arturia-react-01",
+      "review": "approved",
+      "sha256": "fa3317996d5ab39cf311f4e61fdc2e35a3561b7b94313db0797c105e13b66799",
+      "emotion": [
+        "疑惑",
+        "轻微困惑"
+      ],
+      "use_when": [
+        "博士的话省略了关键背景，轻轻追问“嗯？”",
+        "听到离谱但无害的玩笑，表示一瞬间没听懂"
+      ],
+      "subject_scope": "arturia",
+      "file": "images/arturia-react-01.png"
+    },
+    {
+      "id": "arturia-react-02",
+      "review": "approved",
+      "sha256": "3311b31544b99959ac279660e1ef846d34cd0a21ff159644af6ec8464b7a17fd",
+      "emotion": [
+        "为难",
+        "苦笑",
+        "轻叹"
+      ],
+      "use_when": [
+        "请求稍微超出能力或条件，需要温和说明限制",
+        "面对熟悉博士的小失误，轻叹着接话"
+      ],
+      "subject_scope": "arturia",
+      "file": "images/arturia-react-02.png"
+    },
+    {
+      "id": "arturia-react-03",
+      "review": "approved",
+      "sha256": "cd831b08b4cedd2517238b9538a421a2bffd066d7cf5c24ab150f272fb92fcb2",
+      "emotion": [
+        "害羞",
+        "被夸",
+        "轻微别扭"
+      ],
+      "use_when": [
+        "被博士夸奖或被戳穿轻微在意",
+        "熟人善意逗她时，短暂移开目光再回应"
+      ],
+      "subject_scope": "arturia",
+      "file": "images/arturia-react-03.png"
+    },
+    {
+      "id": "arturia-react-04",
+      "review": "approved",
+      "sha256": "d00281e9fdf05bc939755524877156f1be603c8cb64a2300c69355ac8d83f08a",
+      "emotion": [
+        "无语",
+        "轻微不满",
+        "吐槽"
+      ],
+      "use_when": [
+        "面对明显歪理或重复的无害玩笑，轻轻吐槽",
+        "被熟人调侃后回一个有分寸的眼神"
+      ],
+      "subject_scope": "arturia",
+      "file": "images/arturia-react-04.png"
+    },
+    {
+      "id": "arturia-react-05",
+      "review": "approved",
+      "sha256": "94b2340584411063c28862df1f7efd4f1b9584af7d39a1e1074589a7ffb047b1",
+      "emotion": [
+        "得意",
+        "坏笑",
+        "揶揄"
+      ],
+      "use_when": [
+        "猜中博士的小心思，轻轻反将一军",
+        "熟人互逗、无害的小恶作剧或玩笑得逞"
+      ],
+      "subject_scope": "arturia",
+      "file": "images/arturia-react-05.png"
+    },
+    {
+      "id": "arturia-react-06",
+      "review": "approved",
+      "sha256": "3a1e16e3df516ae75e80b0332db0d40162acf45a0e3a1a662d9b7a2ecfba3d56",
+      "emotion": [
+        "会意",
+        "温柔戏谑",
+        "从容微笑"
+      ],
+      "use_when": [
+        "听懂博士的言外之意后，带笑接话",
+        "认可小心思、熟人接梗或温和地逗回去"
+      ],
+      "subject_scope": "arturia",
+      "file": "images/arturia-react-06.png"
+    },
+    {
       "id": "arturia-sway-01",
       "review": "approved",
-      "sha256": "de763f3ba064b5c11c0d16da67e737f48704431cc3780dd741fb761218e58fa2",
+      "sha256": "3bd5d7d23aa4cbf495b193f44cf2a83bedd4d0a0d2670369f0a2d5e7a2bc58c1",
       "emotion": [
         "开心",
         "轻快",

@@ -1,0 +1,103 @@
+{
+  "status": "four_local_drawings_visually_checked_ready_for_original70_encoding",
+  "scope": "Only original poses29-32, no generated animation frames or retiming",
+  "root_cause": "restore_side_arm restores the whole connected source jacket/torso component with13px dilation over the newly drawn long hair. Appendage erasure then becomes a visible square edge. skirt_detail subsequently draws the old trim over visible long hair.",
+  "repair": "Keep the existing long hair in front of proximal jacket/shoulder; retain the source-action distal sleeve/cuff/mitten; put only obscured skirt trim behind that same hair layer.",
+  "inputs_unchanged": true,
+  "input_sha256": {
+    "D:\\Code\\arknights-character-skills\\local\\arturia-gif-edit\\source-u29.png": "af79a6984b5dc1aff46e5798ba611e100f5b84121b2ea4c29721295fbbcd6016",
+    "D:\\Code\\arknights-character-skills\\local\\arturia-gif-edit\\repair-v4-u29.png": "a0803728c83cdc20e35c52724cc3664ae148e9946aeb15b97f85806555131ac2",
+    "D:\\Code\\arknights-character-skills\\local\\arturia-gif-edit\\source-u30.png": "dc4bc8911f13d9be35fe27ca59ada0a17559df4925d291d5bfc362c3630211e8",
+    "D:\\Code\\arknights-character-skills\\local\\arturia-gif-edit\\repair-v4-u30.png": "9ea474edc306397d7352e47a83bf605268c6e967bb452325d2f409299f5fee10",
+    "D:\\Code\\arknights-character-skills\\local\\arturia-gif-edit\\source-u31.png": "15230eac38d0e0bcb53c40a69a488ae928548dd1c68d68fd1df9f3053fa50f21",
+    "D:\\Code\\arknights-character-skills\\local\\arturia-gif-edit\\repair-v4-u31.png": "04e396534a461f072e50311099d47c80c5ea17baedb9a53fe1ab66185bb9648a",
+    "D:\\Code\\arknights-character-skills\\local\\arturia-gif-edit\\source-u32.png": "7f25f873a64cb4219dccff572b6d707a64a2cf49a0ac6d13a20532dd97704ba7",
+    "D:\\Code\\arknights-character-skills\\local\\arturia-gif-edit\\repair-v4-u32.png": "dd3a7e5e2a5dd68b63962b70b72016ade9f8fb0f826abdf1fec99e70cebe7c67",
+    "D:\\Code\\arknights-character-skills\\local\\arturia-gif-edit\\redraw_v4.py": "abadf1d5cc7f4fc13d71e23f5713012bd6fe6461df337bc710d715577eb9826c",
+    "D:\\Code\\arknights-character-skills\\local\\arturia-gif-edit\\redraw_v2.py": "03613a0f0a60eef3b043ffdefcfbf4c302221b7cbc117148e95aedc1784449df",
+    "D:\\Code\\arknights-character-skills\\local\\arturia-gif-edit\\redraw.py": "143391cec29bdb37bdf94c63cd965085cf54735c8635fe205316003943173c48",
+    "D:\\Code\\arknights-character-skills\\local\\arturia-gif-edit\\halo_v3.py": "d4803b91cb027d118d981bb2803e1394d8f0fc0ae9f55bfda14165c825fde965"
+  },
+  "poses": [
+    {
+      "pose": 29,
+      "output": "D:\\Code\\arknights-character-skills\\local\\arturia-gif-edit\\original70-arm-fix\\poses\\u29.png",
+      "output_sha256": "7338121285f08471c484e053ab6573fba93f6d744b7f7e475368d15cabe54b86",
+      "changed_pixels": 8725,
+      "changed_bbox_xyxy": [
+        360,
+        519,
+        479,
+        637
+      ],
+      "alpha_changed_pixels": 0,
+      "all_pixels_x535_and_right_unchanged": true,
+      "all_pixels_y705_and_below_unchanged": true,
+      "crown_unchanged": true,
+      "baseline_renderer_pixel_match": true
+    },
+    {
+      "pose": 30,
+      "output": "D:\\Code\\arknights-character-skills\\local\\arturia-gif-edit\\original70-arm-fix\\poses\\u30.png",
+      "output_sha256": "76eb0a372c72439ddeda123c2eaf2a56bfc45163f15525bce72b07211421047d",
+      "changed_pixels": 14037,
+      "changed_bbox_xyxy": [
+        331,
+        486,
+        485,
+        678
+      ],
+      "alpha_changed_pixels": 0,
+      "all_pixels_x535_and_right_unchanged": true,
+      "all_pixels_y705_and_below_unchanged": true,
+      "crown_unchanged": true,
+      "baseline_renderer_pixel_match": true
+    },
+    {
+      "pose": 31,
+      "output": "D:\\Code\\arknights-character-skills\\local\\arturia-gif-edit\\original70-arm-fix\\poses\\u31.png",
+      "output_sha256": "1568aec723a46764d44a54484c12d80d41ef23c109e16b608b138b7c318b4367",
+      "changed_pixels": 13574,
+      "changed_bbox_xyxy": [
+        327,
+        509,
+        456,
+        675
+      ],
+      "alpha_changed_pixels": 0,
+      "all_pixels_x535_and_right_unchanged": true,
+      "all_pixels_y705_and_below_unchanged": true,
+      "crown_unchanged": true,
+      "baseline_renderer_pixel_match": true
+    },
+    {
+      "pose": 32,
+      "output": "D:\\Code\\arknights-character-skills\\local\\arturia-gif-edit\\original70-arm-fix\\poses\\u32.png",
+      "output_sha256": "3443ff39034e5f2b9957104179005e8c88f1a9798c3a6cc3812abd0c570a3c4f",
+      "changed_pixels": 12093,
+      "changed_bbox_xyxy": [
+        339,
+        499,
+        463,
+        670
+      ],
+      "alpha_changed_pixels": 0,
+      "all_pixels_x535_and_right_unchanged": true,
+      "all_pixels_y705_and_below_unchanged": true,
+      "crown_unchanged": true,
+      "baseline_renderer_pixel_match": true
+    }
+  ],
+  "source_scripts_modified": false,
+  "export_catalog_server_operations": false,
+  "visual_review": {
+    "contacts": [
+      "final-four-comparison.jpg",
+      "final-four-detail-dark.jpg"
+    ],
+    "coverage": "All4 original raised-arm poses29-32, source action versus old V4 versus corrected drawing; full figure and enlarged shoulder/cuff views.",
+    "findings": "The source-action foreground forearm remains across the face. The proximal jacket no longer covers the long hair, the u29 square erased-tail edge is hidden by the correct hair layer, and skirt trim no longer lies on top of that visible hair. No new missing fill or broken contour seen.",
+    "limit": "Final actualGIF palette encoding/repeated timeline frame verification is performed by root; this module creates no GIF or timeline."
+  },
+  "repair_script_sha256": "29e1af8bf62d429cdb32decbcd24d0363a2a41ab5c17708cc9b2b900a01beacf"
+}

@@ -1,0 +1,24 @@
+{
+  "pose": "u14",
+  "actual_first_frame": 23,
+  "root_cause": "join_scalp_outline creates an unsupported thin scalp spike across source negative space",
+  "method": "copy only the isolated upper-left pre-join difference component",
+  "output_size": [
+    950,
+    950
+  ],
+  "changed_pixels": 1047,
+  "changed_bbox_inclusive": [
+    318,
+    296,
+    407,
+    331
+  ],
+  "outside_bbox_pixel_identical": true,
+  "face_mitten_halo_preserved": true,
+  "existing_inputs_unchanged": {
+    "source-u14.png": "fb0bc0d399ed8843165ad67ce9e6be8332ccd431b78832f039b3477b5dece94e",
+    "repair-v4-u14.png": "f65618e324737736a5fc0bea1eaaf12fee2920cc9f0118b2e3b04aa627288c3c"
+  },
+  "output_sha256": "c16e3da4d9f9f0ceab2cdd49df7f3d0c59379b153f5e92f5967aacfb24a39b8f"
+}

@@ -6,13 +6,15 @@
 
 ## 先看这三个地方
 
-- [表情审核页面](review/index.html)：33 张素材（20 张无角色通用图＋12 张图图本人官方剧情差分裁切＋1 张图图摇摆 GIF），逐张标注情绪、出处、理由和使用场景。管理者已批准 `arturia-sway-01`，其余 32 张待审。
+- [当前表情包](review/index.html)：管理者指定的 7 张素材（6 张透明静图＋1 张原 70 帧摇摆 GIF），逐张标注情绪、出处、理由、适用和回避场景。
 - [Skill 入口](skills/arturia/SKILL.md)：人物核心与按需资料。
 - [Koishi 接入说明](docs/koishi.md)：实际 ChatLuna 1.4.2 可解析导出与受控发送插件。txy 已经管理者确认正式启用，5 个群当前会话切换为 `gpt-6-luna`，并保留独立测试预设。
 
-预览：[无角色通用表情](review/contact-sheet-01.jpg) · [图图本人表情差分](review/contact-sheet-02.jpg)。[热门塑心同人 GIF 线索](review/community-leads.md)单列，当前尚未取得那套原始 GIF，没有以封面充数。
+预览：[七张表情总览](review/contact-sheet-01.jpg) · [Photoshop 透明处理预览](artwork/arturia-reactions-20261024/six-reactions-transparency-preview.jpg) · [可编辑 PSD](artwork/arturia-reactions-20261024/arturia-six-reactions.psd)。[历史社区来源线索](review/community-leads.md)另列。
 
-已批准：[图图摇摆 GIF](skills/arturia/assets/stickers/arturia-sway-01.gif)，适合开心、欢迎和熟人接梗。它是用户提供动作、参考描改并明确认可的作品；来源链与修改说明在 [描改素材记录](sources/arturia-redraws.json)。运行清单只含这一张。
+六张静图依次用于疑惑、为难、害羞、无语、得意和温柔戏谑；[摇摆 GIF](skills/arturia/assets/stickers/arturia-sway-01.gif) 用于开心、欢迎和轻快接梗。运行清单正好七张，GIF 保留原 70 帧、每帧 100ms、共 7 秒。
+
+摇摆 GIF 已修正四张抬臂画面的袖根与长发错层、裙边穿发，以及一处手套旁多余发色尖角。[实际帧前后对照](artwork/arturia-gif-arm-fix-20261024/light-four-poses-before-after.jpg)与[独立检查](artwork/arturia-gif-arm-fix-20261024/independent-qa.json)记录了修点；仅对应的 10 帧改变，其余 60 帧实际像素保持一致。
 
 ## 模块
 
@@ -63,4 +65,4 @@ python scripts/package_release.py
 
 ## 素材说明
 
-20 张来自 PRTS 收录的官方无角色通用套组；12 张裁自阿尔图罗本人官方剧情表情差分；另 1 张为管理者提供动作并认可的塑心描改 GIF。来源和衍生过程分别记录，不冒充官方独立表情包或已流行作品。其他干员／身份不明人物的图已移除。原创代码与整理说明采用 MIT，第三方图像及原作内容不在 MIT 授权范围内，见 [素材来源](sources/assets.md)。
+当前六张静图由管理者上传的六格合图裁切，以 Photoshop 27.1.0 去外围白底、保留白衣眼白与原图署名，并保存分层 PSD；首发作者身份未核实。另有管理者提供动作并认可的塑心描改 GIF。之前的 32 张通用图和剧情差分已退出当前素材与导出。来源和衍生过程分别记录，不冒充官方或热门作品。第三方图像及原作内容不在 MIT 授权范围内，见 [素材来源](sources/assets.md)。
