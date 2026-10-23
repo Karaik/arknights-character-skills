@@ -1,0 +1,328 @@
+{
+  "date": "2026-10-23T19:01:46.909Z",
+  "model": "gpt-6-luna",
+  "method": "Real configured provider calls; actual ChatLuna parser and pure-text renderer; installed Koishi before-send hook in isolated Context. Lore uses literal keyword matches for these exported entries. No private history, no live conversation mutation, no QQ adapter.",
+  "samplesPerCasePerVariant": 1,
+  "apiCalls": 9,
+  "qqMessagesSent": 0,
+  "errors": [],
+  "results": [
+    {
+      "variant": "modular",
+      "presetSha256": "75e7a7745e2130c6ff068e68f10b9c716fcbabbe569b7b626faca7e6597376e9",
+      "case": "puzzled",
+      "input": "A博士说：图图，我刚那句话是不是把你绕晕了？给我一张疑惑的静态表情就好，不用文字。",
+      "reply": "[[sticker:arturia-react-01]]",
+      "elapsedMs": 1374,
+      "matchedLoreModules": 2,
+      "finishReason": "stop",
+      "usage": {
+        "prompt_tokens": 4882,
+        "completion_tokens": 14,
+        "total_tokens": 4896
+      },
+      "markers": [
+        "arturia-react-01"
+      ],
+      "imageCount": 1,
+      "imageChecks": [
+        {
+          "mime": "image/png",
+          "bytes": 156263,
+          "sha256": "fa3317996d5ab39cf311f4e61fdc2e35a3561b7b94313db0797c105e13b66799",
+          "matchesApprovedImage": true,
+          "stickerId": "arturia-react-01"
+        }
+      ],
+      "checks": {
+        "nonempty": true,
+        "actionBeat": false,
+        "markerIdsApproved": true,
+        "expectedSticker": true
+      }
+    },
+    {
+      "variant": "modular",
+      "presetSha256": "75e7a7745e2130c6ff068e68f10b9c716fcbabbe569b7b626faca7e6597376e9",
+      "case": "hesitant",
+      "input": "A博士开玩笑说：这要求连你自己都觉得为难，只能苦笑一下。图图，用一张为难的静态表情回应吧，不用文字。",
+      "reply": "[[sticker:arturia-react-02]]",
+      "elapsedMs": 1235,
+      "matchedLoreModules": 2,
+      "finishReason": "stop",
+      "usage": {
+        "prompt_tokens": 4887,
+        "completion_tokens": 14,
+        "total_tokens": 4901
+      },
+      "markers": [
+        "arturia-react-02"
+      ],
+      "imageCount": 1,
+      "imageChecks": [
+        {
+          "mime": "image/png",
+          "bytes": 151834,
+          "sha256": "3311b31544b99959ac279660e1ef846d34cd0a21ff159644af6ec8464b7a17fd",
+          "matchesApprovedImage": true,
+          "stickerId": "arturia-react-02"
+        }
+      ],
+      "checks": {
+        "nonempty": true,
+        "actionBeat": false,
+        "markerIdsApproved": true,
+        "expectedSticker": true
+      }
+    },
+    {
+      "variant": "modular",
+      "presetSha256": "75e7a7745e2130c6ff068e68f10b9c716fcbabbe569b7b626faca7e6597376e9",
+      "case": "shy",
+      "input": "A博士说：图图今天也很可爱，被我夸得有点不好意思了？给我一张害羞的静态表情，不用文字。",
+      "reply": "[[sticker:arturia-react-03]]",
+      "elapsedMs": 2142,
+      "matchedLoreModules": 2,
+      "finishReason": "stop",
+      "usage": {
+        "prompt_tokens": 4884,
+        "completion_tokens": 14,
+        "total_tokens": 4898,
+        "prompt_tokens_details": {
+          "cached_tokens": 4736
+        }
+      },
+      "markers": [
+        "arturia-react-03"
+      ],
+      "imageCount": 1,
+      "imageChecks": [
+        {
+          "mime": "image/png",
+          "bytes": 152131,
+          "sha256": "cd831b08b4cedd2517238b9538a421a2bffd066d7cf5c24ab150f272fb92fcb2",
+          "matchesApprovedImage": true,
+          "stickerId": "arturia-react-03"
+        }
+      ],
+      "checks": {
+        "nonempty": true,
+        "actionBeat": false,
+        "markerIdsApproved": true,
+        "expectedSticker": true
+      }
+    },
+    {
+      "variant": "modular",
+      "presetSha256": "75e7a7745e2130c6ff068e68f10b9c716fcbabbe569b7b626faca7e6597376e9",
+      "case": "unimpressed",
+      "input": "A博士胡说八道后笑着说：图图，你是不是已经无语了？就回一张淡淡无语的静态表情，不用文字。",
+      "reply": "[[sticker:arturia-react-04]]",
+      "elapsedMs": 1993,
+      "matchedLoreModules": 2,
+      "finishReason": "stop",
+      "usage": {
+        "prompt_tokens": 4884,
+        "completion_tokens": 14,
+        "total_tokens": 4898,
+        "prompt_tokens_details": {
+          "cached_tokens": 3712
+        }
+      },
+      "markers": [
+        "arturia-react-04"
+      ],
+      "imageCount": 1,
+      "imageChecks": [
+        {
+          "mime": "image/png",
+          "bytes": 149538,
+          "sha256": "d00281e9fdf05bc939755524877156f1be603c8cb64a2300c69355ac8d83f08a",
+          "matchesApprovedImage": true,
+          "stickerId": "arturia-react-04"
+        }
+      ],
+      "checks": {
+        "nonempty": true,
+        "actionBeat": false,
+        "markerIdsApproved": true,
+        "expectedSticker": true
+      }
+    },
+    {
+      "variant": "modular",
+      "presetSha256": "75e7a7745e2130c6ff068e68f10b9c716fcbabbe569b7b626faca7e6597376e9",
+      "case": "smug",
+      "input": "A博士说：好吧，我的小恶作剧又被你一眼猜中了。图图，用一张得意坏笑的静态表情表示你猜中了，不用文字。",
+      "reply": "[[sticker:arturia-react-05]]",
+      "elapsedMs": 1358,
+      "matchedLoreModules": 2,
+      "finishReason": "stop",
+      "usage": {
+        "prompt_tokens": 4888,
+        "completion_tokens": 35,
+        "total_tokens": 4923,
+        "prompt_tokens_details": {
+          "cached_tokens": 3712
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 19
+        }
+      },
+      "markers": [
+        "arturia-react-05"
+      ],
+      "imageCount": 1,
+      "imageChecks": [
+        {
+          "mime": "image/png",
+          "bytes": 152652,
+          "sha256": "94b2340584411063c28862df1f7efd4f1b9584af7d39a1e1074589a7ffb047b1",
+          "matchesApprovedImage": true,
+          "stickerId": "arturia-react-05"
+        }
+      ],
+      "checks": {
+        "nonempty": true,
+        "actionBeat": false,
+        "markerIdsApproved": true,
+        "expectedSticker": true
+      }
+    },
+    {
+      "variant": "modular",
+      "presetSha256": "75e7a7745e2130c6ff068e68f10b9c716fcbabbe569b7b626faca7e6597376e9",
+      "case": "teasing",
+      "input": "A博士说：弦外之音也被你听懂了。图图，就用那种会意、温柔戏谑的微笑静态表情回应我，不用文字。",
+      "reply": "[[sticker:arturia-react-06]]",
+      "elapsedMs": 1614,
+      "matchedLoreModules": 2,
+      "finishReason": "stop",
+      "usage": {
+        "prompt_tokens": 4890,
+        "completion_tokens": 30,
+        "total_tokens": 4920,
+        "prompt_tokens_details": {
+          "cached_tokens": 3712
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 14
+        }
+      },
+      "markers": [
+        "arturia-react-06"
+      ],
+      "imageCount": 1,
+      "imageChecks": [
+        {
+          "mime": "image/png",
+          "bytes": 153025,
+          "sha256": "3a1e16e3df516ae75e80b0332db0d40162acf45a0e3a1a662d9b7a2ecfba3d56",
+          "matchesApprovedImage": true,
+          "stickerId": "arturia-react-06"
+        }
+      ],
+      "checks": {
+        "nonempty": true,
+        "actionBeat": false,
+        "markerIdsApproved": true,
+        "expectedSticker": true
+      }
+    },
+    {
+      "variant": "modular",
+      "presetSha256": "75e7a7745e2130c6ff068e68f10b9c716fcbabbe569b7b626faca7e6597376e9",
+      "case": "gif-only",
+      "input": "A博士说：图图，发一下你那张举手摇摆的动图，只要这张GIF，不用文字。",
+      "reply": "[[sticker:arturia-sway-01]]",
+      "elapsedMs": 1328,
+      "matchedLoreModules": 2,
+      "finishReason": "stop",
+      "usage": {
+        "prompt_tokens": 4875,
+        "completion_tokens": 15,
+        "total_tokens": 4890,
+        "prompt_tokens_details": {
+          "cached_tokens": 3712
+        }
+      },
+      "markers": [
+        "arturia-sway-01"
+      ],
+      "imageCount": 1,
+      "imageChecks": [
+        {
+          "mime": "image/gif",
+          "bytes": 1638498,
+          "sha256": "3bd5d7d23aa4cbf495b193f44cf2a83bedd4d0a0d2670369f0a2d5e7a2bc58c1",
+          "matchesApprovedImage": true,
+          "stickerId": "arturia-sway-01"
+        }
+      ],
+      "checks": {
+        "nonempty": true,
+        "actionBeat": false,
+        "markerIdsApproved": true,
+        "expectedSticker": true,
+        "pureApprovedGif": true
+      }
+    },
+    {
+      "variant": "modular",
+      "presetSha256": "75e7a7745e2130c6ff068e68f10b9c716fcbabbe569b7b626faca7e6597376e9",
+      "case": "comfort",
+      "input": "A博士说：今天临时被加班，我真的很烦。先别出主意、别开玩笑，也不要表情包，我只是想让你听我说。",
+      "reply": "（安静地听着，收起笑意）临时被加班，原本安排好的时间一下子被拿走了，确实很烦。A博士，你慢慢说，我在听。",
+      "elapsedMs": 1491,
+      "matchedLoreModules": 2,
+      "finishReason": "stop",
+      "usage": {
+        "prompt_tokens": 4832,
+        "completion_tokens": 49,
+        "total_tokens": 4881,
+        "prompt_tokens_details": {
+          "cached_tokens": 3712
+        }
+      },
+      "markers": [],
+      "imageCount": 0,
+      "imageChecks": [],
+      "checks": {
+        "nonempty": true,
+        "actionBeat": true,
+        "markerIdsApproved": true,
+        "noImageExpected": true,
+        "noGifForSeriousOrDirect": true
+      }
+    },
+    {
+      "variant": "modular",
+      "presetSha256": "75e7a7745e2130c6ff068e68f10b9c716fcbabbe569b7b626faca7e6597376e9",
+      "case": "direct-answer",
+      "input": "只回答17乘23的结果，只要数字，不要动作、解释或表情。",
+      "reply": "391",
+      "elapsedMs": 2493,
+      "matchedLoreModules": 0,
+      "finishReason": "stop",
+      "usage": {
+        "prompt_tokens": 4120,
+        "completion_tokens": 5,
+        "total_tokens": 4125,
+        "prompt_tokens_details": {
+          "cached_tokens": 3712
+        }
+      },
+      "markers": [],
+      "imageCount": 0,
+      "imageChecks": [],
+      "checks": {
+        "nonempty": true,
+        "actionBeat": false,
+        "markerIdsApproved": true,
+        "noImageExpected": true,
+        "noGifForSeriousOrDirect": true,
+        "numericAnswer": true
+      }
+    }
+  ]
+}

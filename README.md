@@ -59,7 +59,9 @@ python scripts/package_release.py
 
 ## 验证边界
 
-已做完整图片解码、哈希与元数据核对，真实 ChatLuna 预设解析和 pure-text 渲染验证，以及独立角色场景演练。当前渠道 `gpt-6-luna` 的 6 个匿名场景各跑旧版／新版一次，共 12 次实际调用，最终示例版本再做 4 次复核；新版纯动图回复经已安装的 Koishi 钩子转为获批 GIF 的完整内联数据。随后管理者明确批准正式启用，现已替换生产角色、迁移 5 个群当前会话的模型并开放这 5 个群的发图白名单。958 条原有历史记录校验一致。未发送合成 QQ 测试消息。样本见 [实际调用结果](validation/model-probe-results.json)及[正式切换记录](validation/production-cutover-result.json)；这不是长期或跨模型统计评测。
+初次接入已做完整图片解码、哈希与元数据核对，真实 ChatLuna 解析和 pure-text 渲染验证，以及独立角色场景演练。当时 `gpt-6-luna` 的 6 个匿名场景各跑旧版／新版一次，共 12 次实际调用，最终示例版本再做 4 次复核。随后管理者明确批准正式启用，迁移 5 个群当前会话的模型并开放这 5 个群的发图白名单，958 条原有历史记录校验一致。历史样本见 [实际调用结果](validation/model-probe-results.json)及[正式切换记录](validation/production-cutover-result.json)。
+
+2026-10-24 对当前七张素材新增 [9 个模型用例](validation/seven-sticker-model-results.json)：六种静态情绪和纯 GIF 请求均选中预期素材，诉苦及数字问答不夹图。随后使用实际 ChatLuna renderer、发送钩子、Koishi OneBot encoder 和已认证的 NapCat 调试 WebSocket，向机器人自身发送 PNG 与修正 GIF 各一条，并回读确认图片消息，见 [QQ 自发验证](validation/qq-self-probe-results.json)。测试使用匿名合成输入与独立 Context，不读取私有群聊正文，不等同生产群聊完整会话回归，也不证明长期自动发图频率。
 
 本次核对发现，5 个群当前会话原先为 4 个 DeepSeek、1 个 Sonnet，而当前启用渠道不提供这些 ID；实际 DeepSeek 请求返回 404。按管理者确认，这 5 个群已统一改为原有全局默认 `gpt-6-luna`。其它非目标会话的模型选择未迁移。
 

@@ -41,6 +41,8 @@ npm pack ./adapters/koishi --pack-destination ./build
 
 `exports/chatluna/runtime-manifest.json` 的相对图片路径在同级 `images/` 中完整提供。只有 approved 素材进入该目录；重新打包会移除已撤销的旧运行图片。
 
+后续验收已用当前配置渠道跑完六张静图、纯 GIF、诉苦和数字问答共九个合成用例，均符合选图预期。真实 Koishi OneBot encoder 再通过 NapCat 已认证调试 WebSocket 向机器人自身发送 PNG/GIF 各一条，`get_msg` 回读确认均含图片；未向群发送测试消息。`validation/qq-self-probe.cjs` 从 stdin 接收临时认证，执行前获取当前登录账号，发送目的地仅允许这个账号本身；认证值、账号及消息 ID 均不写入公开结果。此验证使用独立 Context，正式五群配置保持原值。
+
 审批清单在每次处理图片标记时重新读取，撤销批准后不会继续使用进程内旧审批。更新或撤回图片时，重新生成并整体替换运行目录，不把旧文件混入新包。插件代码本身升级仍需按 Koishi 常规方式重载插件。
 
 ## MemesLuna 可选接法

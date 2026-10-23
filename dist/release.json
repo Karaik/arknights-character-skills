@@ -12,7 +12,7 @@
   "koishi_plugin_installed_and_enabled": true,
   "isolated_preset_loaded": true,
   "production_role_switched": true,
-  "live_qq_image_upload_tested": false,
+  "live_qq_image_upload_tested": true,
   "behavior_validation": "configured provider samples plus installed Koishi renderer/hook; one sample per case, not a statistical model comparison",
   "model_probe": {
     "date": "2026-10-23T08:29:55.200Z",
@@ -61,5 +61,16 @@
     "frames": 70,
     "duration_ms": 7000,
     "evidence": "validation/gif-arm-fix-20261024.json"
+  },
+  "qq_delivery_probe": {
+    "matches_current_export": true,
+    "recipients": "bot-self-only",
+    "messages_sent": 2,
+    "group_messages_sent": 0,
+    "verified_stickers": [
+      "arturia-react-01",
+      "arturia-sway-01"
+    ],
+    "evidence": "validation/qq-self-probe-results.json"
   }
 }

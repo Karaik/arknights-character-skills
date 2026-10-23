@@ -1,0 +1,30 @@
+{
+  "verifiedAtUtc": "2026-10-23T19:20:44.829008+00:00",
+  "featureCommit": "498e6807e3b3262da5de6d5471f84af8bdc8541e",
+  "host": "txy",
+  "koishiHTTP": 200,
+  "oneBotReverseConnections": 1,
+  "activeArturiaGroupBindings": 5,
+  "activeGroupModels": {
+    "openai-like/gpt-6-luna": 5
+  },
+  "presetSha256": "75e7a7745e2130c6ff068e68f10b9c716fcbabbe569b7b626faca7e6597376e9",
+  "manifestSha256": "bad5426d92083a075c6fa11f2ba88f6e60fcbe472bf29274bc197a89af0339a5",
+  "runtimeStickerCount": 7,
+  "runtimeImageHashesVerified": true,
+  "gifFrames": 70,
+  "gifDurationMs": 7000,
+  "modelCasesPassed": 9,
+  "realQqSelfMessages": 2,
+  "groupTestMessages": 0,
+  "selfImageReadbacksVerified": true,
+  "koishiStartedAt": "2026-10-23T09:00:14.687776277Z",
+  "napcatStartedAt": "2026-10-23T01:57:12.08521103Z",
+  "runtimeRestartedForTests": false,
+  "testScope": "isolated model/parser/renderer/hook/encoder plus authenticated NapCat self-message upload and image-element readback; no full live group conversation exercise",
+  "evidence": [
+    "seven-sticker-model-results.json",
+    "qq-self-probe-results.json",
+    "gif-arm-fix-20261024.json"
+  ]
+}

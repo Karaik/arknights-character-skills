@@ -90,6 +90,16 @@ def main():
             report['production_role_switched']=True
             report['production_snapshot']['matches_current_export']=True
             report['production_snapshot']['evidence'].append(gif_update.relative_to(ROOT).as_posix())
+    delivery_file=ROOT/'validation/qq-self-probe-results.json'
+    if delivery_file.exists():
+        delivery=json.loads(delivery_file.read_text(encoding='utf-8'))
+        current=bool(delivery.get('success') and delivery.get('presetSha256')==hashlib.sha256((exports/'arturia.yml').read_bytes()).hexdigest()
+                     and delivery.get('manifestSha256')==hashlib.sha256((exports/'runtime-manifest.json').read_bytes()).hexdigest())
+        report['live_qq_image_upload_tested']=current
+        report['qq_delivery_probe']={'matches_current_export':current,'recipients':delivery['recipients'],
+            'messages_sent':delivery['qqMessagesSent'],'group_messages_sent':delivery['groupMessagesSent'],
+            'verified_stickers':[x['stickerId'] for x in delivery['results']],
+            'evidence':delivery_file.relative_to(ROOT).as_posix()}
     (target/'release.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n',encoding='utf-8', newline='\n')
     print(json.dumps(report,ensure_ascii=False))
 

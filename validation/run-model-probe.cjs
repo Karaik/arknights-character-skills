@@ -104,15 +104,18 @@ function messagesFor(preset, input) {
           const match = /^data:([^;]+);base64,(.*)$/.exec(image.attrs.src || '');
           if (!match) return { inline: false };
           const bytes = Buffer.from(match[2], 'base64');
+          const approved = manifest.stickers.find(x => x.sha256 === sha(bytes));
           return { mime: match[1], bytes: bytes.length, sha256: sha(bytes),
-            matchesApprovedGif: manifest.stickers.some(x => x.sha256 === sha(bytes)) };
+            matchesApprovedImage: !!approved, stickerId: approved?.id };
         });
         const result = { variant: variant.variant, presetSha256: variant.hash,
           case: item.id, input: item.input, reply: publicText(content), elapsedMs: Date.now() - started,
           matchedLoreModules: loreCount, finishReason: payload.choices?.[0]?.finish_reason,
-          usage: payload.usage, imageCount: images.length, imageChecks,
+          usage: payload.usage, markers, imageCount: images.length, imageChecks,
           checks: { nonempty: !!content.trim(), actionBeat: /[（【][^）】]+[）】]/.test(content),
             markerIdsApproved: markers.every(id => validIds.has(id)),
+            expectedSticker: item.expectedSticker ? markers.length === 1 && markers[0] === item.expectedSticker && images.length === 1 : undefined,
+            noImageExpected: item.expectNoImage ? markers.length === 0 && images.length === 0 : undefined,
             pureApprovedGif: item.id === 'gif-only' ? content.trim() === '[[sticker:arturia-sway-01]]' && images.length === 1 : undefined,
             noGifForSeriousOrDirect: ['comfort', 'direct-answer'].includes(item.id) ? images.length === 0 : undefined,
             numericAnswer: item.id === 'direct-answer' ? content.trim() === '391' : undefined } };

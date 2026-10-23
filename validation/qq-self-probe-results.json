@@ -1,0 +1,42 @@
+{
+  "date": "2026-10-23T19:14:45.303Z",
+  "success": true,
+  "method": "Configured-model replies through installed ChatLuna renderer, sticker hook and Koishi OneBot encoder; an authenticated NapCat debug WebSocket supplies the isolated transport; destination restricted to the logged-in bot itself.",
+  "presetSha256": "75e7a7745e2130c6ff068e68f10b9c716fcbabbe569b7b626faca7e6597376e9",
+  "manifestSha256": "bad5426d92083a075c6fa11f2ba88f6e60fcbe472bf29274bc197a89af0339a5",
+  "recipients": "bot-self-only",
+  "groupMessagesSent": 0,
+  "qqMessagesSent": 2,
+  "results": [
+    {
+      "case": "puzzled",
+      "stickerId": "arturia-react-01",
+      "sha256": "fa3317996d5ab39cf311f4e61fdc2e35a3561b7b94313db0797c105e13b66799",
+      "actualOneBotEncoder": true,
+      "selfRecipientVerified": true,
+      "messageIdReturned": true,
+      "readbackImageVerified": true
+    },
+    {
+      "case": "gif-only",
+      "stickerId": "arturia-sway-01",
+      "sha256": "3bd5d7d23aa4cbf495b193f44cf2a83bedd4d0a0d2670369f0a2d5e7a2bc58c1",
+      "actualOneBotEncoder": true,
+      "selfRecipientVerified": true,
+      "messageIdReturned": true,
+      "readbackImageVerified": true
+    }
+  ],
+  "errors": [],
+  "attemptedActions": [
+    "get_login_info",
+    "get_status",
+    "can_send_image",
+    "send_private_msg",
+    "get_msg",
+    "send_private_msg",
+    "get_msg"
+  ],
+  "qqOnline": true,
+  "canSendImage": true
+}

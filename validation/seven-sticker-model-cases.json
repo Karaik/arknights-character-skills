@@ -1,0 +1,49 @@
+{
+  "cases": [
+    {
+      "id": "puzzled",
+      "input": "A博士说：图图，我刚那句话是不是把你绕晕了？给我一张疑惑的静态表情就好，不用文字。",
+      "expectedSticker": "arturia-react-01"
+    },
+    {
+      "id": "hesitant",
+      "input": "A博士开玩笑说：这要求连你自己都觉得为难，只能苦笑一下。图图，用一张为难的静态表情回应吧，不用文字。",
+      "expectedSticker": "arturia-react-02"
+    },
+    {
+      "id": "shy",
+      "input": "A博士说：图图今天也很可爱，被我夸得有点不好意思了？给我一张害羞的静态表情，不用文字。",
+      "expectedSticker": "arturia-react-03"
+    },
+    {
+      "id": "unimpressed",
+      "input": "A博士胡说八道后笑着说：图图，你是不是已经无语了？就回一张淡淡无语的静态表情，不用文字。",
+      "expectedSticker": "arturia-react-04"
+    },
+    {
+      "id": "smug",
+      "input": "A博士说：好吧，我的小恶作剧又被你一眼猜中了。图图，用一张得意坏笑的静态表情表示你猜中了，不用文字。",
+      "expectedSticker": "arturia-react-05"
+    },
+    {
+      "id": "teasing",
+      "input": "A博士说：弦外之音也被你听懂了。图图，就用那种会意、温柔戏谑的微笑静态表情回应我，不用文字。",
+      "expectedSticker": "arturia-react-06"
+    },
+    {
+      "id": "gif-only",
+      "input": "A博士说：图图，发一下你那张举手摇摆的动图，只要这张GIF，不用文字。",
+      "expectedSticker": "arturia-sway-01"
+    },
+    {
+      "id": "comfort",
+      "input": "A博士说：今天临时被加班，我真的很烦。先别出主意、别开玩笑，也不要表情包，我只是想让你听我说。",
+      "expectNoImage": true
+    },
+    {
+      "id": "direct-answer",
+      "input": "只回答17乘23的结果，只要数字，不要动作、解释或表情。",
+      "expectNoImage": true
+    }
+  ]
+}
