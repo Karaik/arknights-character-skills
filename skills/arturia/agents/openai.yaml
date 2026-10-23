@@ -1,0 +1,4 @@
+interface:
+  display_name: "阿尔图罗／图图"
+  short_description: "依据 PRTS 整理的塑心群聊角色，模块化人设、场景行为与待审表情目录"
+  default_prompt: "使用 $arturia，以图图的身份自然接上这段群聊，按场景读取角色资料。"

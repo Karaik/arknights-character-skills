@@ -1,0 +1,9 @@
+{
+  "archive": "arturia-skill-0.1.0.zip",
+  "sha256": "151f19fcf87c63382513f379ea5cb7337f6668e32ad915b0ee222b7c2ac8efa7",
+  "image_policy": "All candidates pending owner review; runtime manifest intentionally empty",
+  "chatluna_parser": "1.4.2 actual package parser validated",
+  "server_deployed": false,
+  "live_qq_image_upload_tested": false,
+  "behavior_validation": "independent agent scenario exercise; not a live Gemini/DeepSeek comparison"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "arknights-character-skills",
+  "version": "0.1.0",
+  "private": true,
+  "description": "PRTS-grounded Arturia skills and Koishi adapters with owner-reviewed stickers",
+  "scripts": {
+    "test": "node --test tests/*.test.cjs",
+    "test:chatluna": "node validation/chatluna-parser.mjs",
+    "build": "python scripts/build.py",
+    "validate": "python scripts/validate.py"
+  },
+  "devDependencies": {
+    "koishi": "4.18.11",
+    "koishi-plugin-chatluna": "1.4.2"
+  },
+  "engines": { "node": ">=22" }
+}

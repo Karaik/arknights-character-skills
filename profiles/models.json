@@ -1,0 +1,9 @@
+{
+  "policy": "Do not silently replace a room's model or apply one vendor's sampler to all models.",
+  "models": {
+    "generic": {"status":"prompt_contract_only", "notes":["Preserve first-person Chinese group conversation and explicit identity aliases.","Keep safety handling short and contextual; roleplay is not a policy override."]},
+    "gemini": {"status":"not_live_tested", "notes":["Verify the adapter API and multimodal support separately from personality."]},
+    "deepseek": {"status":"not_live_tested", "notes":["Inspect selected room model; a global default does not necessarily override an existing conversation."]},
+    "openai-compatible": {"status":"not_live_tested", "notes":["Inspect actual resolved route and accumulated history; do not infer the backend from a model alias alone."]}
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "retrieved_at": "2026-10-23",
+  "items": [{
+    "id": "community-arturia-gif-lead",
+    "url": "https://www.bilibili.com/video/BV1Pu4y1p7TB/",
+    "api": "https://api.bilibili.com/x/web-interface/view?bvid=BV1Pu4y1p7TB",
+    "title": "超可爱！塑心的动态表情包",
+    "publisher": "假日威龙陈阿颐",
+    "credited_artist": "仓鼠饭团c",
+    "credited_material_owner": "呵纹Hevon",
+    "public_metrics": {"views":87096,"likes":7846,"favorites":2230,"shares":114},
+    "metrics_scope": "video engagement, not actual sticker usage",
+    "state": "source_verified_original_gifs_not_acquired",
+    "emotion": "unclassified_until_original_frames_available",
+    "reason": "Direct Arturia subject and measurable community reach",
+    "access_limit": "Creator dynamic list endpoint returned HTTP 412; did not substitute cover or search thumbnails"
+  }]
+}

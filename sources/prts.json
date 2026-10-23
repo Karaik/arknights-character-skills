@@ -1,0 +1,40 @@
+{
+  "sources": [
+    {
+      "id": "prts-operator",
+      "title": "塑心",
+      "url": "https://prts.wiki/w/%E5%A1%91%E5%BF%83",
+      "revision": 442654,
+      "retrieved_at": "2026-10-23T05:32:49.201654+00:00",
+      "sha256": "74868d03bea0c4abc8a871692b31a9d2d3d58c5179ddb41e00fd3d4e0dca14bd",
+      "local_raw": "research/raw/塑心.wiki",
+      "source_kind": "wiki_transcription_of_game_material",
+      "scope": "operator archives and module stories",
+      "sha256_kind": "utf8_lf_bytes"
+    },
+    {
+      "id": "prts-voice",
+      "title": "塑心/语音记录",
+      "url": "https://prts.wiki/w/%E5%A1%91%E5%BF%83/%E8%AF%AD%E9%9F%B3%E8%AE%B0%E5%BD%95",
+      "revision": 424629,
+      "retrieved_at": "2026-10-23T05:32:49.162561+00:00",
+      "sha256": "61e9ce7d96b969b4fc4f63da42aa0185b773c961a18b6a8a7e5bf1ba1fab5700",
+      "local_raw": "research/raw/塑心--语音记录.wiki",
+      "source_kind": "wiki_transcription_of_game_material",
+      "scope": "voice lines, including alternate outfit",
+      "sha256_kind": "utf8_lf_bytes"
+    },
+    {
+      "id": "prts-record",
+      "title": "塑心/干员密录/1",
+      "url": "https://prts.wiki/w/%E5%A1%91%E5%BF%83/%E5%B9%B2%E5%91%98%E5%AF%86%E5%BD%95/1",
+      "revision": 427233,
+      "retrieved_at": "2026-10-23T05:32:49.543538+00:00",
+      "sha256": "222ef1efae5a306b26069c3e3046446d8aadc0cb79ae0d61dcbf25486c928c46",
+      "local_raw": "research/raw/塑心--干员密录--1.wiki",
+      "source_kind": "wiki_transcription_of_game_material",
+      "scope": "operator record: 天空与流云",
+      "sha256_kind": "utf8_lf_bytes"
+    }
+  ]
+}
