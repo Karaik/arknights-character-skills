@@ -27,6 +27,7 @@ def main():
         for key in ['emotion','source_url','download_url','origin_evidence','selection_reason','arturia_fit','use_when','avoid_when','visual_description','creator']:
             if not item.get(key):errors.append(f'{id}: missing {key}')
         if item.get('review') not in ['pending','approved','rejected']:errors.append(id+': invalid review state')
+        if item.get('subject_scope') not in ['generic','arturia']:errors.append(id+': other or unidentified character is excluded')
         if item.get('intensity') not in [1,2,3]:errors.append(id+': invalid intensity')
         if item.get('popularity',{}).get('level')!='not_measured' and not item.get('popularity',{}).get('evidence'):errors.append(id+': unsubstantiated popularity')
         path=(skill/'assets/stickers'/item['file']).resolve()

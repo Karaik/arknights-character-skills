@@ -1,13 +1,13 @@
 # Koishi / ChatLuna 接入说明
 
-本仓库已做离线接口验证，不会自动安装到当前服务器。验证版本：Koishi 4.18.11、ChatLuna 1.4.2、Node 22.19.0。现有 OneBot 6.9.5 / NapCat 不需要替换。
+本仓库已做离线接口验证，并按管理者后续授权在 txy 安装和启用了发送插件，另导入独立测试预设。验证版本：Koishi 4.18.11、ChatLuna 1.4.2；本地 Node 22.19.0。现有 OneBot 6.9.5 / NapCat 无需替换。
 
 ## 先审表情
 
-打开 `review/index.html`，看原图、情绪、来源、理由、适用和回避场景。28 张当前都是 pending。管理者确认 ID 后，可以在仓库本地执行：
+打开 `review/index.html`，看原图、情绪、来源、理由、适用和回避场景。32 张初始都是 pending，只含无角色通用图和图图本人。管理者确认 ID 后，可以在仓库本地执行：
 
 ```powershell
-python scripts/review_stickers.py approve yostar-03 prts-06 --note "管理者明确保留这两个ID"
+python scripts/review_stickers.py approve arturia-11 prts-06 --note "管理者明确保留这两个ID"
 python scripts/review_catalog.py
 python scripts/build.py
 python scripts/validate.py
@@ -26,7 +26,7 @@ python scripts/validate.py
 
 ## Koishi 发送适配器
 
-仓库提供一个很小的本地插件 `adapters/koishi`，不是新机器人框架。它监听真实 Koishi `before-send` 事件，限于指定 OneBot 群；将已批准的 `[[sticker:ID]]` 转成 Koishi `h.image(Buffer, 'image/png')`。图片经校验后以内联数据交给 OneBot，避免依赖两个容器相同的本地文件路径。
+仓库提供一个很小的本地插件 `adapters/koishi`，不是新机器人框架。它监听真实 Koishi `before-send` 事件，限于指定 OneBot 群；将已批准的 `[[sticker:ID]]` 转成 Koishi `h.image(Buffer, mime)`。PNG/GIF 等使用相应 MIME。图片经校验后以内联数据交给 OneBot，避免依赖两个容器相同的本地文件路径。
 
 本地打包：
 
@@ -38,7 +38,9 @@ npm pack ./adapters/koishi --pack-destination ./build
 
 `adapters/chatluna/config.example.yml` 是合并参考，真实插件组和实例名沿用现有部署。图片标记需要完整交给发送钩子，所以推荐关闭角色流式输出，关闭分句发送，保留 `pure-text`。不要全局改其他业务的渲染方式。
 
-已验证：真实 ChatLuna pure-text 渲染保留标记；真实 Koishi 消息元素可由钩子替换；未审核、未知、越界路径或哈希变化的图片不能发送。当前没有做真实 QQ 图片上传，也没有给群里发送测试消息。
+已验证：真实 ChatLuna pure-text 渲染保留标记；真实 Koishi 消息元素可由钩子替换；未审核、未知、越界路径或哈希变化的图片不能发送。在服务器实际安装的插件上，用独立 Koishi Context 和生成像素图验证了钩子、内联图片、撤销和只剩引用时的拦截；没有连接 QQ 适配器、没有做真实 QQ 图片上传或给群里发测试消息。当前生产配置 allowedGuilds 为空、已批准图片数为 0，等管理者选择。
+
+审批清单在每次处理图片标记时重新读取，撤销批准后不会继续使用进程内旧审批。更新或撤回图片时，重新生成并整体替换运行目录，不把旧文件混入新包。插件代码本身升级仍需按 Koishi 常规方式重载插件。
 
 ## MemesLuna 可选接法
 

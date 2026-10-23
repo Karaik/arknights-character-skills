@@ -11,7 +11,7 @@ test('actual Koishi elements become inline images only in selected OneBot groups
   const root=fs.mkdtempSync(path.join(os.tmpdir(),'arturia-hook-'));
   t.after(()=>fs.rmSync(root,{recursive:true,force:true}));
   const bytes=Buffer.from('png-fixture');fs.writeFileSync(path.join(root,'smile.png'),bytes);
-  const sticker={id:'official-smile',file:'smile.png',review:'approved',sha256:crypto.createHash('sha256').update(bytes).digest('hex')};
+  const sticker={id:'official-smile',file:'smile.png',review:'approved',subject_scope:'generic',sha256:crypto.createHash('sha256').update(bytes).digest('hex')};
   fs.writeFileSync(path.join(root,'manifest.json'),JSON.stringify({schema_version:1,stickers:[sticker]}));
   let hook;
   plugin.apply({baseDir:root,on(event,callback){assert.equal(event,'before-send');hook=callback;}},{manifestPath:'manifest.json',allowedGuilds:['test-group']});
@@ -32,4 +32,19 @@ test('before-send cancels an image-only reply when its marker is unapproved', t 
   const session={platform:'onebot',guildId:'test-group',elements:[h.text('[[sticker:pending-image]]')]};
   assert.equal(hook(session),true);
   assert.deepEqual(session.elements,[]);
+  const quoted={platform:'onebot',guildId:'test-group',elements:[h('quote',{id:'quoted'}),h.text('[[sticker:pending-image]]')]};
+  assert.equal(hook(quoted),true);
+});
+
+test('replacing the manifest immediately revokes images without a process restart',t=>{
+  const root=fs.mkdtempSync(path.join(os.tmpdir(),'arturia-hook-'));
+  t.after(()=>fs.rmSync(root,{recursive:true,force:true}));
+  const bytes=Buffer.from('fixture');fs.writeFileSync(path.join(root,'smile.png'),bytes);
+  const file=path.join(root,'manifest.json');
+  fs.writeFileSync(file,JSON.stringify({schema_version:1,stickers:[{id:'official-smile',file:'smile.png',review:'approved',subject_scope:'generic',sha256:crypto.createHash('sha256').update(bytes).digest('hex')}]}));
+  let hook;plugin.apply({baseDir:root,on(_e,cb){hook=cb;}},{manifestPath:'manifest.json',allowedGuilds:['test-group']});
+  const session=()=>({platform:'onebot',guildId:'test-group',elements:[h.text('[[sticker:official-smile]]')]});
+  const first=session();hook(first);assert(first.elements.some(x=>x.type==='img'));
+  fs.writeFileSync(file,JSON.stringify({schema_version:1,stickers:[]}));
+  const second=session();assert.equal(hook(second),true);assert(!second.elements.some(x=>x.type==='img'));
 });

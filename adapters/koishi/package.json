@@ -1,6 +1,6 @@
 {
   "name": "koishi-plugin-arturia-reviewed-stickers",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Render approved Arturia sticker IDs in selected OneBot groups",
   "main": "stickers.cjs",
   "files": ["stickers.cjs"],

@@ -4,11 +4,11 @@ import json
 import shutil
 import zipfile
 from pathlib import Path
-from build import build
+from build import build, load_catalog
 ROOT=Path(__file__).resolve().parents[1]
 
 def main():
-    build()
+    _,manifest=build()
     exports=ROOT/'exports/chatluna'
     exports.mkdir(parents=True,exist_ok=True)
     shutil.copyfile(ROOT/'build/arturia.yml',exports/'arturia.yml')
@@ -22,11 +22,21 @@ def main():
                 info.compress_type=zipfile.ZIP_DEFLATED
                 info.external_attr=0o644 << 16
                 z.writestr(info,path.read_bytes())
+    items=load_catalog()
     report={'archive':archive.name,'sha256':hashlib.sha256(archive.read_bytes()).hexdigest(),
-            'image_policy':'All candidates pending owner review; runtime manifest intentionally empty',
+            'image_policy':'Only explicitly owner-approved images enter runtime',
+            'review_counts':{s:sum(x['review']==s for x in items) for s in ['pending','approved','rejected']},
+            'runtime_image_count':len(manifest['stickers']),
             'chatluna_parser':'1.4.2 actual package parser validated',
-            'server_deployed':False,'live_qq_image_upload_tested':False,
+            'koishi_plugin_installed_and_enabled':True,'isolated_preset_loaded':True,
+            'production_role_switched':False,'live_qq_image_upload_tested':False,
             'behavior_validation':'independent agent scenario exercise; not a live Gemini/DeepSeek comparison'}
+    plugin_version=json.loads((ROOT/'adapters/koishi/package.json').read_text(encoding='utf-8'))['version']
+    plugin_name=f'koishi-plugin-arturia-reviewed-stickers-{plugin_version}.tgz'
+    plugin=ROOT/'build'/plugin_name
+    if plugin.exists():
+        shutil.copyfile(plugin,target/plugin_name)
+        report['koishi_plugin_archive']={'file':plugin_name,'sha256':hashlib.sha256(plugin.read_bytes()).hexdigest()}
     (target/'release.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n',encoding='utf-8', newline='\n')
     print(json.dumps(report,ensure_ascii=False))
 

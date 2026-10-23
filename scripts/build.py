@@ -13,7 +13,7 @@ def load_catalog(root=ROOT):
     return json.loads((root/'stickers/catalog.json').read_text(encoding='utf-8'))['stickers']
 
 def approved_stickers(items):
-    return [item for item in items if item.get('review') == 'approved']
+    return [item for item in items if item.get('review') == 'approved' and item.get('subject_scope') in ['generic','arturia']]
 
 def md_body(text):
     return text.split('---', 2)[-1].strip() if text.startswith('---\n') else text.strip()
@@ -22,16 +22,24 @@ def build(root=ROOT, target=None):
     target = target or root/'build'
     profile = json.loads((root/'profiles/arturia.json').read_text(encoding='utf-8'))
     skill = root/'skills/arturia'
+    if target.resolve() == root.resolve() or target.resolve() in root.resolve().parents:
+        raise ValueError('Build output must not be the source root or its ancestor')
     target.mkdir(exist_ok=True, parents=True)
-    shutil.copytree(skill, target/'skill/arturia', dirs_exist_ok=True)
+    skill_target=target/'skill/arturia'
+    if skill_target.exists():
+        if not skill_target.resolve().is_relative_to(target.resolve()):
+            raise ValueError('Generated Skill path escapes output directory')
+        shutil.rmtree(skill_target)
+    shutil.copytree(skill, skill_target)
     core = md_body((skill/'SKILL.md').read_text(encoding='utf-8'))
     # File navigation is a maintenance concern; the ordinary ChatLuna model cannot open local files.
     core = core.split('## 按需要读取')[0].strip()
     common = '\n\n'.join((skill/file).read_text(encoding='utf-8').strip() for file in profile['always'])
     approved = approved_stickers(load_catalog(root))
-    lines = ['表情由 Koishi 发送层处理。只可使用本清单里的 ID，每次最多一张；标记形式 [[sticker:ID]]。']
+    lines = ['表情由 Koishi 发送层处理。只可使用本清单里的 ID，每次最多一张；标记形式 [[sticker:ID]]。',
+             '图片主体只允许无特定角色的通用表情或阿尔图罗本人；其他角色和身份不明人物一律不使用。']
     if approved:
-        lines.extend(f"- {x['id']}: {'、'.join(x['emotion'])}；适用：{'；'.join(x['use_when'])}" for x in approved)
+        lines.extend(f"- {x['id']}: {'、'.join(x['emotion'])}（强度{x['intensity']}）；适用：{'；'.join(x['use_when'])}；不用于：{'；'.join(x['avoid_when'])}" for x in approved)
     else:
         lines.append('当前没有获批表情；只回复文字，不输出任何 sticker 标记。')
     preset = {
@@ -61,7 +69,7 @@ def build(root=ROOT, target=None):
             raise ValueError('Image hash mismatch: '+item['id'])
         file = 'images/'+item['file']
         shutil.copyfile(source, runtime/file)
-        manifest['stickers'].append({key: item[key] for key in ['id','review','sha256','emotion','use_when']} | {'file': file})
+        manifest['stickers'].append({key: item[key] for key in ['id','review','sha256','emotion','use_when','subject_scope']} | {'file': file})
     (runtime/'manifest.json').write_text(json.dumps(manifest, ensure_ascii=False, indent=2)+'\n', encoding='utf-8', newline='\n')
     # MemesLuna accepts an uploadable image folder. It is not claimed to accept this metadata JSON natively.
     memes = target/'memesluna-approved'

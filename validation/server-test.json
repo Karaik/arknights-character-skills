@@ -1,0 +1,30 @@
+{
+  "verifiedAtUtc": "2026-10-23T06:09:27.306295+00:00",
+  "host": "txy",
+  "pluginLoadedInLiveKoishi": true,
+  "probe": {
+    "installedPlugin": "arturia-reviewed-stickers",
+    "pluginVersion": "0.1.1",
+    "koishi": "4.18.11",
+    "actualContextHook": true,
+    "inlineImage": true,
+    "revocation": true,
+    "quoteOnlySuppressed": true,
+    "qqMessagesSent": 0,
+    "networkAdapters": 0
+  },
+  "approvedImageCount": 0,
+  "allowedGroups": 0,
+  "preset": "阿尔图罗-skill测试",
+  "productionPresetReplaced": false,
+  "extraBackupCreated": false,
+  "installedSourceSha256": "ae2774948ff91ccd6726f37f53ac316f669e75189e451a1d49db8e23e4614005",
+  "koishi": {
+    "status": "running",
+    "startedAt": "2026-10-23T06:08:45.654238687Z"
+  },
+  "napcat": {
+    "status": "running",
+    "startedAt": "2026-10-23T01:57:12.08521103Z"
+  }
+}

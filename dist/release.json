@@ -1,9 +1,21 @@
 {
   "archive": "arturia-skill-0.1.0.zip",
-  "sha256": "151f19fcf87c63382513f379ea5cb7337f6668e32ad915b0ee222b7c2ac8efa7",
-  "image_policy": "All candidates pending owner review; runtime manifest intentionally empty",
+  "sha256": "fe16c63792fce3eff8902f9abac632b6cf4566e0f97b21119b6553b2005f750a",
+  "image_policy": "Only explicitly owner-approved images enter runtime",
+  "review_counts": {
+    "pending": 32,
+    "approved": 0,
+    "rejected": 0
+  },
+  "runtime_image_count": 0,
   "chatluna_parser": "1.4.2 actual package parser validated",
-  "server_deployed": false,
+  "koishi_plugin_installed_and_enabled": true,
+  "isolated_preset_loaded": true,
+  "production_role_switched": false,
   "live_qq_image_upload_tested": false,
-  "behavior_validation": "independent agent scenario exercise; not a live Gemini/DeepSeek comparison"
+  "behavior_validation": "independent agent scenario exercise; not a live Gemini/DeepSeek comparison",
+  "koishi_plugin_archive": {
+    "file": "koishi-plugin-arturia-reviewed-stickers-0.1.1.tgz",
+    "sha256": "fdc45d8de4fac312d7d5a985146fe76bb0bb99e897c2876afeebd10ef2363c5d"
+  }
 }

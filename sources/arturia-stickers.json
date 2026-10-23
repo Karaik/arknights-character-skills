@@ -1,0 +1,292 @@
+{
+  "stickers": [
+    {
+      "id": "arturia-01",
+      "title": "阿尔图罗官方剧情差分 01",
+      "subject_scope": "arturia",
+      "source_class": "official_story_crop",
+      "source_url": "https://prts.wiki/w/Widget:Data_Char",
+      "download_url": "https://media.prts.wiki/b/b8/Avg_avg_245_cello_1-1$1.png",
+      "creator": "鹰角网络（PRTS 剧情模拟器收录）",
+      "origin_evidence": "PRTS 剧情模拟器公开映射 avg_245_cello_1-1$1，干员 char_245_cello；本项目仅裁切头像区域，非官方独立发布表情包。",
+      "source_revision": 442087,
+      "transform": {
+        "kind": "crop",
+        "box": [
+          400,
+          0,
+          800,
+          400
+        ]
+      },
+      "popularity": {
+        "level": "not_measured",
+        "evidence": []
+      }
+    },
+    {
+      "id": "arturia-02",
+      "title": "阿尔图罗官方剧情差分 02",
+      "subject_scope": "arturia",
+      "source_class": "official_story_crop",
+      "source_url": "https://prts.wiki/w/Widget:Data_Char",
+      "download_url": "https://media.prts.wiki/7/73/Avg_avg_245_cello_1-2$1.png",
+      "creator": "鹰角网络（PRTS 剧情模拟器收录）",
+      "origin_evidence": "PRTS 剧情模拟器公开映射 avg_245_cello_1-2$1，干员 char_245_cello；本项目仅裁切头像区域，非官方独立发布表情包。",
+      "source_revision": 442087,
+      "transform": {
+        "kind": "crop",
+        "box": [
+          400,
+          0,
+          800,
+          400
+        ]
+      },
+      "popularity": {
+        "level": "not_measured",
+        "evidence": []
+      }
+    },
+    {
+      "id": "arturia-03",
+      "title": "阿尔图罗官方剧情差分 03",
+      "subject_scope": "arturia",
+      "source_class": "official_story_crop",
+      "source_url": "https://prts.wiki/w/Widget:Data_Char",
+      "download_url": "https://media.prts.wiki/d/da/Avg_avg_245_cello_1-3$1.png",
+      "creator": "鹰角网络（PRTS 剧情模拟器收录）",
+      "origin_evidence": "PRTS 剧情模拟器公开映射 avg_245_cello_1-3$1，干员 char_245_cello；本项目仅裁切头像区域，非官方独立发布表情包。",
+      "source_revision": 442087,
+      "transform": {
+        "kind": "crop",
+        "box": [
+          400,
+          0,
+          800,
+          400
+        ]
+      },
+      "popularity": {
+        "level": "not_measured",
+        "evidence": []
+      }
+    },
+    {
+      "id": "arturia-04",
+      "title": "阿尔图罗官方剧情差分 04",
+      "subject_scope": "arturia",
+      "source_class": "official_story_crop",
+      "source_url": "https://prts.wiki/w/Widget:Data_Char",
+      "download_url": "https://media.prts.wiki/0/0f/Avg_avg_245_cello_1-4$1.png",
+      "creator": "鹰角网络（PRTS 剧情模拟器收录）",
+      "origin_evidence": "PRTS 剧情模拟器公开映射 avg_245_cello_1-4$1，干员 char_245_cello；本项目仅裁切头像区域，非官方独立发布表情包。",
+      "source_revision": 442087,
+      "transform": {
+        "kind": "crop",
+        "box": [
+          400,
+          0,
+          800,
+          400
+        ]
+      },
+      "popularity": {
+        "level": "not_measured",
+        "evidence": []
+      }
+    },
+    {
+      "id": "arturia-05",
+      "title": "阿尔图罗官方剧情差分 05",
+      "subject_scope": "arturia",
+      "source_class": "official_story_crop",
+      "source_url": "https://prts.wiki/w/Widget:Data_Char",
+      "download_url": "https://media.prts.wiki/a/a1/Avg_avg_245_cello_1-5$1.png",
+      "creator": "鹰角网络（PRTS 剧情模拟器收录）",
+      "origin_evidence": "PRTS 剧情模拟器公开映射 avg_245_cello_1-5$1，干员 char_245_cello；本项目仅裁切头像区域，非官方独立发布表情包。",
+      "source_revision": 442087,
+      "transform": {
+        "kind": "crop",
+        "box": [
+          400,
+          0,
+          800,
+          400
+        ]
+      },
+      "popularity": {
+        "level": "not_measured",
+        "evidence": []
+      }
+    },
+    {
+      "id": "arturia-06",
+      "title": "阿尔图罗官方剧情差分 06",
+      "subject_scope": "arturia",
+      "source_class": "official_story_crop",
+      "source_url": "https://prts.wiki/w/Widget:Data_Char",
+      "download_url": "https://media.prts.wiki/6/68/Avg_avg_245_cello_1-6$1.png",
+      "creator": "鹰角网络（PRTS 剧情模拟器收录）",
+      "origin_evidence": "PRTS 剧情模拟器公开映射 avg_245_cello_1-6$1，干员 char_245_cello；本项目仅裁切头像区域，非官方独立发布表情包。",
+      "source_revision": 442087,
+      "transform": {
+        "kind": "crop",
+        "box": [
+          400,
+          0,
+          800,
+          400
+        ]
+      },
+      "popularity": {
+        "level": "not_measured",
+        "evidence": []
+      }
+    },
+    {
+      "id": "arturia-07",
+      "title": "阿尔图罗官方剧情差分 07",
+      "subject_scope": "arturia",
+      "source_class": "official_story_crop",
+      "source_url": "https://prts.wiki/w/Widget:Data_Char",
+      "download_url": "https://media.prts.wiki/4/4d/Avg_avg_245_cello_1-7$1.png",
+      "creator": "鹰角网络（PRTS 剧情模拟器收录）",
+      "origin_evidence": "PRTS 剧情模拟器公开映射 avg_245_cello_1-7$1，干员 char_245_cello；本项目仅裁切头像区域，非官方独立发布表情包。",
+      "source_revision": 442087,
+      "transform": {
+        "kind": "crop",
+        "box": [
+          400,
+          0,
+          800,
+          400
+        ]
+      },
+      "popularity": {
+        "level": "not_measured",
+        "evidence": []
+      }
+    },
+    {
+      "id": "arturia-08",
+      "title": "阿尔图罗官方剧情差分 08",
+      "subject_scope": "arturia",
+      "source_class": "official_story_crop",
+      "source_url": "https://prts.wiki/w/Widget:Data_Char",
+      "download_url": "https://media.prts.wiki/6/6f/Avg_avg_245_cello_1-8$1.png",
+      "creator": "鹰角网络（PRTS 剧情模拟器收录）",
+      "origin_evidence": "PRTS 剧情模拟器公开映射 avg_245_cello_1-8$1，干员 char_245_cello；本项目仅裁切头像区域，非官方独立发布表情包。",
+      "source_revision": 442087,
+      "transform": {
+        "kind": "crop",
+        "box": [
+          400,
+          0,
+          800,
+          400
+        ]
+      },
+      "popularity": {
+        "level": "not_measured",
+        "evidence": []
+      }
+    },
+    {
+      "id": "arturia-09",
+      "title": "阿尔图罗官方剧情差分 09",
+      "subject_scope": "arturia",
+      "source_class": "official_story_crop",
+      "source_url": "https://prts.wiki/w/Widget:Data_Char",
+      "download_url": "https://media.prts.wiki/f/fa/Avg_avg_245_cello_1-9$1.png",
+      "creator": "鹰角网络（PRTS 剧情模拟器收录）",
+      "origin_evidence": "PRTS 剧情模拟器公开映射 avg_245_cello_1-9$1，干员 char_245_cello；本项目仅裁切头像区域，非官方独立发布表情包。",
+      "source_revision": 442087,
+      "transform": {
+        "kind": "crop",
+        "box": [
+          400,
+          0,
+          800,
+          400
+        ]
+      },
+      "popularity": {
+        "level": "not_measured",
+        "evidence": []
+      }
+    },
+    {
+      "id": "arturia-10",
+      "title": "阿尔图罗官方剧情差分 10",
+      "subject_scope": "arturia",
+      "source_class": "official_story_crop",
+      "source_url": "https://prts.wiki/w/Widget:Data_Char",
+      "download_url": "https://media.prts.wiki/b/ba/Avg_avg_245_cello_1-10$1.png",
+      "creator": "鹰角网络（PRTS 剧情模拟器收录）",
+      "origin_evidence": "PRTS 剧情模拟器公开映射 avg_245_cello_1-10$1，干员 char_245_cello；本项目仅裁切头像区域，非官方独立发布表情包。",
+      "source_revision": 442087,
+      "transform": {
+        "kind": "crop",
+        "box": [
+          400,
+          0,
+          800,
+          400
+        ]
+      },
+      "popularity": {
+        "level": "not_measured",
+        "evidence": []
+      }
+    },
+    {
+      "id": "arturia-11",
+      "title": "阿尔图罗官方剧情差分 11",
+      "subject_scope": "arturia",
+      "source_class": "official_story_crop",
+      "source_url": "https://prts.wiki/w/Widget:Data_Char",
+      "download_url": "https://media.prts.wiki/0/03/Avg_avg_245_cello_1-11$1.png",
+      "creator": "鹰角网络（PRTS 剧情模拟器收录）",
+      "origin_evidence": "PRTS 剧情模拟器公开映射 avg_245_cello_1-11$1，干员 char_245_cello；本项目仅裁切头像区域，非官方独立发布表情包。",
+      "source_revision": 442087,
+      "transform": {
+        "kind": "crop",
+        "box": [
+          400,
+          0,
+          800,
+          400
+        ]
+      },
+      "popularity": {
+        "level": "not_measured",
+        "evidence": []
+      }
+    },
+    {
+      "id": "arturia-12",
+      "title": "阿尔图罗官方剧情差分 12",
+      "subject_scope": "arturia",
+      "source_class": "official_story_crop",
+      "source_url": "https://prts.wiki/w/Widget:Data_Char",
+      "download_url": "https://media.prts.wiki/5/5d/Avg_avg_245_cello_1-12$1.png",
+      "creator": "鹰角网络（PRTS 剧情模拟器收录）",
+      "origin_evidence": "PRTS 剧情模拟器公开映射 avg_245_cello_1-12$1，干员 char_245_cello；本项目仅裁切头像区域，非官方独立发布表情包。",
+      "source_revision": 442087,
+      "transform": {
+        "kind": "crop",
+        "box": [
+          400,
+          0,
+          800,
+          400
+        ]
+      },
+      "popularity": {
+        "level": "not_measured",
+        "evidence": []
+      }
+    }
+  ]
+}

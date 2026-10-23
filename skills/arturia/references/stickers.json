@@ -2,628 +2,10 @@
   "schema_version": 1,
   "stickers": [
     {
-      "id": "yostar-01",
-      "title": "Yostar 官方庆典表情 01",
-      "source_class": "official_cdn",
-      "source_url": "https://www.arknights.global/fankit",
-      "discovery_url": "https://raw.githubusercontent.com/umittadelen/arknightsStickers/main/stickers.csv",
-      "download_url": "https://webusstatic.yo-star.com/ark_us_web/assets/168553019089813970/970a5a1ef93a64f81e4dad122c943ad9.png",
-      "creator": "Arknights / Yostar",
-      "origin_evidence": "图片直接来自 Yostar 官方 webusstatic.yo-star.com 域名；整套链接由公开索引发现。活动套组名称取自索引，未据此断言传播热度。",
-      "popularity": {
-        "level": "not_measured",
-        "evidence": []
-      },
-      "width": 300,
-      "height": 300,
-      "format": "PNG",
-      "frames": 1,
-      "sha256": "d04a139b3165bbb26d1ef2b728d7b0316fe473a76d18c7a2671cfcc9d2ac2b89",
-      "bytes": 74110,
-      "file": "yostar-01.png",
-      "review": "pending",
-      "retrieved_at": "2026-10-23T05:22:05.433240+00:00",
-      "visual_description": "白发红眼人物拿纸张，旁有问号",
-      "emotion": [
-        "疑惑",
-        "核对"
-      ],
-      "intensity": 1,
-      "use_when": [
-        "群友说了没听明白的新梗或资料"
-      ],
-      "avoid_when": [
-        "对方正认真求救或已重复解释多次"
-      ],
-      "arturia_fit": "用轻微疑惑接话，不用音乐隐喻绕开问题",
-      "selection_reason": "白发红眼人物拿纸张，旁有问号能直观表达疑惑、核对；优先采用有来源的官方图，供你判断群聊与角色适配。",
-      "review_note": "已进行人工图像检查；候选不等于主人批准，默认待审。"
-    },
-    {
-      "id": "yostar-02",
-      "title": "Yostar 官方庆典表情 02",
-      "source_class": "official_cdn",
-      "source_url": "https://www.arknights.global/fankit",
-      "discovery_url": "https://raw.githubusercontent.com/umittadelen/arknightsStickers/main/stickers.csv",
-      "download_url": "https://webusstatic.yo-star.com/ark_us_web/assets/168553019089813970/6219030978f605e5998c1eef68544f4c.png",
-      "creator": "Arknights / Yostar",
-      "origin_evidence": "图片直接来自 Yostar 官方 webusstatic.yo-star.com 域名；整套链接由公开索引发现。活动套组名称取自索引，未据此断言传播热度。",
-      "popularity": {
-        "level": "not_measured",
-        "evidence": []
-      },
-      "width": 300,
-      "height": 300,
-      "format": "PNG",
-      "frames": 1,
-      "sha256": "a776a02c25e5ef43ad47b80adc94e5c6de2731d479b2393dbf81a3c4081eac5f",
-      "bytes": 69803,
-      "file": "yostar-02.png",
-      "review": "pending",
-      "retrieved_at": "2026-10-23T05:22:05.433147+00:00",
-      "visual_description": "黑发尖耳人物将手指竖在唇前",
-      "emotion": [
-        "噤声",
-        "会意"
-      ],
-      "intensity": 1,
-      "use_when": [
-        "熟人互相保密、不要剧透、轻松闭麦"
-      ],
-      "avoid_when": [
-        "要求隐瞒真实伤害或压制他人求助"
-      ],
-      "arturia_fit": "适合图图从容旁观和轻轻卖关子",
-      "selection_reason": "黑发尖耳人物将手指竖在唇前能直观表达噤声、会意；优先采用有来源的官方图，供你判断群聊与角色适配。",
-      "review_note": "已进行人工图像检查；候选不等于主人批准，默认待审。"
-    },
-    {
-      "id": "yostar-03",
-      "title": "Yostar 官方庆典表情 03",
-      "source_class": "official_cdn",
-      "source_url": "https://www.arknights.global/fankit",
-      "discovery_url": "https://raw.githubusercontent.com/umittadelen/arknightsStickers/main/stickers.csv",
-      "download_url": "https://webusstatic.yo-star.com/ark_us_web/assets/168553019089813970/34a7183cbcb424fd8f47c0aa89ebb533.png",
-      "creator": "Arknights / Yostar",
-      "origin_evidence": "图片直接来自 Yostar 官方 webusstatic.yo-star.com 域名；整套链接由公开索引发现。活动套组名称取自索引，未据此断言传播热度。",
-      "popularity": {
-        "level": "not_measured",
-        "evidence": []
-      },
-      "width": 300,
-      "height": 300,
-      "format": "PNG",
-      "frames": 1,
-      "sha256": "eb341488051452329dab35d3215f6b4c0f597869abc12a3fac0c9a8e43cdc1a2",
-      "bytes": 73135,
-      "file": "yostar-03.png",
-      "review": "pending",
-      "retrieved_at": "2026-10-23T05:22:05.606127+00:00",
-      "visual_description": "黑发尖耳人物捂嘴，目光含笑",
-      "emotion": [
-        "偷笑",
-        "戏谑"
-      ],
-      "intensity": 1,
-      "use_when": [
-        "熟人被当场拆穿或小小翻车"
-      ],
-      "avoid_when": [
-        "取笑真实痛苦、丧事、受害者"
-      ],
-      "arturia_fit": "以含蓄笑意表现戏谑，不用每次都写呵呵",
-      "selection_reason": "黑发尖耳人物捂嘴，目光含笑能直观表达偷笑、戏谑；优先采用有来源的官方图，供你判断群聊与角色适配。",
-      "review_note": "已进行人工图像检查；候选不等于主人批准，默认待审。"
-    },
-    {
-      "id": "yostar-04",
-      "title": "Yostar 官方庆典表情 04",
-      "source_class": "official_cdn",
-      "source_url": "https://www.arknights.global/fankit",
-      "discovery_url": "https://raw.githubusercontent.com/umittadelen/arknightsStickers/main/stickers.csv",
-      "download_url": "https://webusstatic.yo-star.com/ark_us_web/assets/168553019089813970/51a9a0c48598a221b88bca10af13e0e6.png",
-      "creator": "Arknights / Yostar",
-      "origin_evidence": "图片直接来自 Yostar 官方 webusstatic.yo-star.com 域名；整套链接由公开索引发现。活动套组名称取自索引，未据此断言传播热度。",
-      "popularity": {
-        "level": "not_measured",
-        "evidence": []
-      },
-      "width": 300,
-      "height": 300,
-      "format": "PNG",
-      "frames": 1,
-      "sha256": "9849ff0b07de8537b1fff1bfa6ba826c573ac185ee6680032e70e9d91a682b1f",
-      "bytes": 57432,
-      "file": "yostar-04.png",
-      "review": "pending",
-      "retrieved_at": "2026-10-23T05:22:05.685590+00:00",
-      "visual_description": "人物边听音乐边处理一长卷纸，旁有音符",
-      "emotion": [
-        "投入",
-        "忙碌",
-        "自得"
-      ],
-      "intensity": 2,
-      "use_when": [
-        "讨论音乐、工作清单长、沉浸自己的事"
-      ],
-      "avoid_when": [
-        "把对方的重大困境当成轻松工作梗"
-      ],
-      "arturia_fit": "音乐主题确实相关时可用，避免借图维持每轮拉琴",
-      "selection_reason": "人物边听音乐边处理一长卷纸，旁有音符能直观表达投入、忙碌、自得；优先采用有来源的官方图，供你判断群聊与角色适配。",
-      "review_note": "已进行人工图像检查；候选不等于主人批准，默认待审。"
-    },
-    {
-      "id": "yostar-05",
-      "title": "Yostar 官方庆典表情 05",
-      "source_class": "official_cdn",
-      "source_url": "https://www.arknights.global/fankit",
-      "discovery_url": "https://raw.githubusercontent.com/umittadelen/arknightsStickers/main/stickers.csv",
-      "download_url": "https://webusstatic.yo-star.com/ark_us_web/assets/168553019089813970/523544b43246b4753e3a673375603f23.png",
-      "creator": "Arknights / Yostar",
-      "origin_evidence": "图片直接来自 Yostar 官方 webusstatic.yo-star.com 域名；整套链接由公开索引发现。活动套组名称取自索引，未据此断言传播热度。",
-      "popularity": {
-        "level": "not_measured",
-        "evidence": []
-      },
-      "width": 300,
-      "height": 300,
-      "format": "PNG",
-      "frames": 1,
-      "sha256": "a06bf8f47367c17b62beebda8bd545f0e121e026572b3f8574470b3e80df0e17",
-      "bytes": 72338,
-      "file": "yostar-05.png",
-      "review": "pending",
-      "retrieved_at": "2026-10-23T05:22:06.755116+00:00",
-      "visual_description": "长发人物半垂眼举起冒热气的杯子",
-      "emotion": [
-        "疲惫",
-        "淡定",
-        "陪伴"
-      ],
-      "intensity": 1,
-      "use_when": [
-        "下班吐槽、一起喝点热的、平静围观"
-      ],
-      "avoid_when": [
-        "急迫医疗求助或需要直接回答事实"
-      ],
-      "arturia_fit": "可替代空泛安慰，显得有日常生活感",
-      "selection_reason": "长发人物半垂眼举起冒热气的杯子能直观表达疲惫、淡定、陪伴；优先采用有来源的官方图，供你判断群聊与角色适配。",
-      "review_note": "已进行人工图像检查；候选不等于主人批准，默认待审。"
-    },
-    {
-      "id": "yostar-06",
-      "title": "Yostar 官方庆典表情 06",
-      "source_class": "official_cdn",
-      "source_url": "https://www.arknights.global/fankit",
-      "discovery_url": "https://raw.githubusercontent.com/umittadelen/arknightsStickers/main/stickers.csv",
-      "download_url": "https://webusstatic.yo-star.com/ark_us_web/assets/168553019089813970/f3f095cc2ecb96192574076fee33a128.png",
-      "creator": "Arknights / Yostar",
-      "origin_evidence": "图片直接来自 Yostar 官方 webusstatic.yo-star.com 域名；整套链接由公开索引发现。活动套组名称取自索引，未据此断言传播热度。",
-      "popularity": {
-        "level": "not_measured",
-        "evidence": []
-      },
-      "width": 300,
-      "height": 300,
-      "format": "PNG",
-      "frames": 1,
-      "sha256": "cd91d136acbcde28350fc8975fc7980971a0a757e295e0a84b16dfc3ef48179e",
-      "bytes": 80254,
-      "file": "yostar-06.png",
-      "review": "pending",
-      "retrieved_at": "2026-10-23T05:22:06.748057+00:00",
-      "visual_description": "灰发尖耳人物神情困倦，旁有叹气云",
-      "emotion": [
-        "无奈",
-        "叹气"
-      ],
-      "intensity": 1,
-      "use_when": [
-        "同一个问题又出现、熟人重复犯小错"
-      ],
-      "avoid_when": [
-        "对方羞愧或自责时继续增加压力"
-      ],
-      "arturia_fit": "适合有主见但不刻薄的无奈反应",
-      "selection_reason": "灰发尖耳人物神情困倦，旁有叹气云能直观表达无奈、叹气；优先采用有来源的官方图，供你判断群聊与角色适配。",
-      "review_note": "已进行人工图像检查；候选不等于主人批准，默认待审。"
-    },
-    {
-      "id": "yostar-07",
-      "title": "Yostar 官方庆典表情 07",
-      "source_class": "official_cdn",
-      "source_url": "https://www.arknights.global/fankit",
-      "discovery_url": "https://raw.githubusercontent.com/umittadelen/arknightsStickers/main/stickers.csv",
-      "download_url": "https://webusstatic.yo-star.com/ark_us_web/assets/168553019089813970/28e622fc3a166e823b9efa3c388dd00b.png",
-      "creator": "Arknights / Yostar",
-      "origin_evidence": "图片直接来自 Yostar 官方 webusstatic.yo-star.com 域名；整套链接由公开索引发现。活动套组名称取自索引，未据此断言传播热度。",
-      "popularity": {
-        "level": "not_measured",
-        "evidence": []
-      },
-      "width": 300,
-      "height": 300,
-      "format": "PNG",
-      "frames": 1,
-      "sha256": "c03fba9e785a79c4dbf430ca181c85fd7bc303ec7a558dd9696e4c80e48a7751",
-      "bytes": 45618,
-      "file": "yostar-07.png",
-      "review": "pending",
-      "retrieved_at": "2026-10-23T05:22:06.755256+00:00",
-      "visual_description": "棕发人物从高墙边探身，伸手示意",
-      "emotion": [
-        "围观",
-        "招呼",
-        "好奇"
-      ],
-      "intensity": 2,
-      "use_when": [
-        "有人说出有趣新消息、轻松加入话题"
-      ],
-      "avoid_when": [
-        "围观事故、曝光他人隐私"
-      ],
-      "arturia_fit": "把她的好奇落到眼前的事",
-      "selection_reason": "棕发人物从高墙边探身，伸手示意能直观表达围观、招呼、好奇；优先采用有来源的官方图，供你判断群聊与角色适配。",
-      "review_note": "已进行人工图像检查；候选不等于主人批准，默认待审。"
-    },
-    {
-      "id": "yostar-08",
-      "title": "Yostar 官方庆典表情 08",
-      "source_class": "official_cdn",
-      "source_url": "https://www.arknights.global/fankit",
-      "discovery_url": "https://raw.githubusercontent.com/umittadelen/arknightsStickers/main/stickers.csv",
-      "download_url": "https://webusstatic.yo-star.com/ark_us_web/assets/168553019089813970/6ce0a7cde9218f26238a13b94c1361b5.png",
-      "creator": "Arknights / Yostar",
-      "origin_evidence": "图片直接来自 Yostar 官方 webusstatic.yo-star.com 域名；整套链接由公开索引发现。活动套组名称取自索引，未据此断言传播热度。",
-      "popularity": {
-        "level": "not_measured",
-        "evidence": []
-      },
-      "width": 300,
-      "height": 300,
-      "format": "PNG",
-      "frames": 1,
-      "sha256": "13a306638c4acccd53ad1a9857ea6917f232e6ce9c7b5abaa7c637acc53054f2",
-      "bytes": 70383,
-      "file": "yostar-08.png",
-      "review": "pending",
-      "retrieved_at": "2026-10-23T05:22:06.753241+00:00",
-      "visual_description": "棕发人物手扶脸，露出受惊神情",
-      "emotion": [
-        "震惊",
-        "意外"
-      ],
-      "intensity": 2,
-      "use_when": [
-        "夸张战绩、意料之外的游戏结果"
-      ],
-      "avoid_when": [
-        "真实暴力或悲惨消息需要严肃回应"
-      ],
-      "arturia_fit": "用于鲜明惊讶，但不把图图写成一直大惊小怪",
-      "selection_reason": "棕发人物手扶脸，露出受惊神情能直观表达震惊、意外；优先采用有来源的官方图，供你判断群聊与角色适配。",
-      "review_note": "已进行人工图像检查；候选不等于主人批准，默认待审。"
-    },
-    {
-      "id": "yostar-09",
-      "title": "Yostar 官方庆典表情 09",
-      "source_class": "official_cdn",
-      "source_url": "https://www.arknights.global/fankit",
-      "discovery_url": "https://raw.githubusercontent.com/umittadelen/arknightsStickers/main/stickers.csv",
-      "download_url": "https://webusstatic.yo-star.com/ark_us_web/assets/168553019089813970/843c34d3d7c71fb01c72a0a4bd149709.png",
-      "creator": "Arknights / Yostar",
-      "origin_evidence": "图片直接来自 Yostar 官方 webusstatic.yo-star.com 域名；整套链接由公开索引发现。活动套组名称取自索引，未据此断言传播热度。",
-      "popularity": {
-        "level": "not_measured",
-        "evidence": []
-      },
-      "width": 300,
-      "height": 300,
-      "format": "PNG",
-      "frames": 1,
-      "sha256": "4c1214279c6cdab085305a6077f3e08c6ec0b6f84f695d6f4bec42b33f775fd9",
-      "bytes": 85977,
-      "file": "yostar-09.png",
-      "review": "pending",
-      "retrieved_at": "2026-10-23T05:22:08.528252+00:00",
-      "visual_description": "紫发人物抱着饮料吸管，表情满足",
-      "emotion": [
-        "悠闲",
-        "满足",
-        "吃瓜"
-      ],
-      "intensity": 1,
-      "use_when": [
-        "休息、饮料甜点、熟人闲聊围观"
-      ],
-      "avoid_when": [
-        "对方要求认真作答或情绪明显低落"
-      ],
-      "arturia_fit": "提供角色日常侧面，使用时不宣称她变成图中人物",
-      "selection_reason": "紫发人物抱着饮料吸管，表情满足能直观表达悠闲、满足、吃瓜；优先采用有来源的官方图，供你判断群聊与角色适配。",
-      "review_note": "已进行人工图像检查；候选不等于主人批准，默认待审。"
-    },
-    {
-      "id": "yostar-10",
-      "title": "Yostar 官方庆典表情 10",
-      "source_class": "official_cdn",
-      "source_url": "https://www.arknights.global/fankit",
-      "discovery_url": "https://raw.githubusercontent.com/umittadelen/arknightsStickers/main/stickers.csv",
-      "download_url": "https://webusstatic.yo-star.com/ark_us_web/assets/168553019089813970/188b6f6251c5e991c854dc3543a6d09c.png",
-      "creator": "Arknights / Yostar",
-      "origin_evidence": "图片直接来自 Yostar 官方 webusstatic.yo-star.com 域名；整套链接由公开索引发现。活动套组名称取自索引，未据此断言传播热度。",
-      "popularity": {
-        "level": "not_measured",
-        "evidence": []
-      },
-      "width": 300,
-      "height": 300,
-      "format": "PNG",
-      "frames": 1,
-      "sha256": "6511a0a8e7fae3adda97882996bb455f8aca49dedb9dbb2cf331f6dfece67511",
-      "bytes": 63805,
-      "file": "yostar-10.png",
-      "review": "pending",
-      "retrieved_at": "2026-10-23T05:22:08.555432+00:00",
-      "visual_description": "黑色斗篷人物仰躺，露出笑脸",
-      "emotion": [
-        "摆烂",
-        "轻松",
-        "自嘲"
-      ],
-      "intensity": 2,
-      "use_when": [
-        "游戏翻车后的自嘲、今天不想上班"
-      ],
-      "avoid_when": [
-        "对急需帮助的人表达不在乎"
-      ],
-      "arturia_fit": "可以顺着轻松自嘲，不用于逃避实际求助",
-      "selection_reason": "黑色斗篷人物仰躺，露出笑脸能直观表达摆烂、轻松、自嘲；优先采用有来源的官方图，供你判断群聊与角色适配。",
-      "review_note": "已进行人工图像检查；候选不等于主人批准，默认待审。"
-    },
-    {
-      "id": "yostar-11",
-      "title": "Yostar 官方庆典表情 11",
-      "source_class": "official_cdn",
-      "source_url": "https://www.arknights.global/fankit",
-      "discovery_url": "https://raw.githubusercontent.com/umittadelen/arknightsStickers/main/stickers.csv",
-      "download_url": "https://webusstatic.yo-star.com/ark_us_web/assets/168553019089813970/1e05cfd864d3924b284e6a716598a0fe.png",
-      "creator": "Arknights / Yostar",
-      "origin_evidence": "图片直接来自 Yostar 官方 webusstatic.yo-star.com 域名；整套链接由公开索引发现。活动套组名称取自索引，未据此断言传播热度。",
-      "popularity": {
-        "level": "not_measured",
-        "evidence": []
-      },
-      "width": 300,
-      "height": 300,
-      "format": "PNG",
-      "frames": 1,
-      "sha256": "fd4a2aa361dac0f9f3b261ee35a51f533cad4f94a3957f6368c856fa3257232b",
-      "bytes": 52989,
-      "file": "yostar-11.png",
-      "review": "pending",
-      "retrieved_at": "2026-10-23T05:22:08.526250+00:00",
-      "visual_description": "聚光灯下人物正面举杯致意",
-      "emotion": [
-        "登场",
-        "致意",
-        "得意"
-      ],
-      "intensity": 2,
-      "use_when": [
-        "回来报到、祝贺、小型获奖梗"
-      ],
-      "avoid_when": [
-        "重大仪式需要尊重时用滑稽替代"
-      ],
-      "arturia_fit": "配合香草榜第一的群昵称玩笑，但不是官方排名",
-      "selection_reason": "聚光灯下人物正面举杯致意能直观表达登场、致意、得意；优先采用有来源的官方图，供你判断群聊与角色适配。",
-      "review_note": "已进行人工图像检查；候选不等于主人批准，默认待审。"
-    },
-    {
-      "id": "yostar-12",
-      "title": "Yostar 官方庆典表情 12",
-      "source_class": "official_cdn",
-      "source_url": "https://www.arknights.global/fankit",
-      "discovery_url": "https://raw.githubusercontent.com/umittadelen/arknightsStickers/main/stickers.csv",
-      "download_url": "https://webusstatic.yo-star.com/ark_us_web/assets/168553019089813970/d57016c370c62b92d520b9db6ca2dd54.png",
-      "creator": "Arknights / Yostar",
-      "origin_evidence": "图片直接来自 Yostar 官方 webusstatic.yo-star.com 域名；整套链接由公开索引发现。活动套组名称取自索引，未据此断言传播热度。",
-      "popularity": {
-        "level": "not_measured",
-        "evidence": []
-      },
-      "width": 300,
-      "height": 300,
-      "format": "PNG",
-      "frames": 1,
-      "sha256": "c601721a5b012c7aecdc8995a85c5e9251de52b0570408a4ae9d62779ae09783",
-      "bytes": 79967,
-      "file": "yostar-12.png",
-      "review": "pending",
-      "retrieved_at": "2026-10-23T05:22:08.559631+00:00",
-      "visual_description": "戴眼镜人物扶镜，嘴角轻扬",
-      "emotion": [
-        "审视",
-        "看穿",
-        "会意"
-      ],
-      "intensity": 1,
-      "use_when": [
-        "群友的小心思被识破、认真核对细节"
-      ],
-      "avoid_when": [
-        "指控他人撒谎却没有证据"
-      ],
-      "arturia_fit": "适合有观察力的图图，而不是训话",
-      "selection_reason": "戴眼镜人物扶镜，嘴角轻扬能直观表达审视、看穿、会意；优先采用有来源的官方图，供你判断群聊与角色适配。",
-      "review_note": "已进行人工图像检查；候选不等于主人批准，默认待审。"
-    },
-    {
-      "id": "yostar-13",
-      "title": "Yostar 官方庆典表情 13",
-      "source_class": "official_cdn",
-      "source_url": "https://www.arknights.global/fankit",
-      "discovery_url": "https://raw.githubusercontent.com/umittadelen/arknightsStickers/main/stickers.csv",
-      "download_url": "https://webusstatic.yo-star.com/ark_us_web/assets/168553019089813970/b6a802e950d64da8e3d124c7683c0085.png",
-      "creator": "Arknights / Yostar",
-      "origin_evidence": "图片直接来自 Yostar 官方 webusstatic.yo-star.com 域名；整套链接由公开索引发现。活动套组名称取自索引，未据此断言传播热度。",
-      "popularity": {
-        "level": "not_measured",
-        "evidence": []
-      },
-      "width": 300,
-      "height": 300,
-      "format": "PNG",
-      "frames": 1,
-      "sha256": "214c4b822a5fce046a0b722cc9c93fea54ccfb2fbba3ff48de6836e0f5245726",
-      "bytes": 103191,
-      "file": "yostar-13.png",
-      "review": "pending",
-      "retrieved_at": "2026-10-23T05:22:11.078515+00:00",
-      "visual_description": "深蓝发人物竖起拇指，但额边有生气符号",
-      "emotion": [
-        "假笑",
-        "不满",
-        "反讽"
-      ],
-      "intensity": 2,
-      "use_when": [
-        "熟人轻度调侃、明显反话的好好好"
-      ],
-      "avoid_when": [
-        "陌生人初次交流、冲突升级中"
-      ],
-      "arturia_fit": "有反讽张力，需特别让用户判断是否符合图图",
-      "selection_reason": "深蓝发人物竖起拇指，但额边有生气符号能直观表达假笑、不满、反讽；优先采用有来源的官方图，供你判断群聊与角色适配。",
-      "review_note": "已进行人工图像检查；候选不等于主人批准，默认待审。"
-    },
-    {
-      "id": "yostar-14",
-      "title": "Yostar 官方庆典表情 14",
-      "source_class": "official_cdn",
-      "source_url": "https://www.arknights.global/fankit",
-      "discovery_url": "https://raw.githubusercontent.com/umittadelen/arknightsStickers/main/stickers.csv",
-      "download_url": "https://webusstatic.yo-star.com/ark_us_web/assets/168553019089813970/9ce3e15037d3e831f55760cfb6003334.png",
-      "creator": "Arknights / Yostar",
-      "origin_evidence": "图片直接来自 Yostar 官方 webusstatic.yo-star.com 域名；整套链接由公开索引发现。活动套组名称取自索引，未据此断言传播热度。",
-      "popularity": {
-        "level": "not_measured",
-        "evidence": []
-      },
-      "width": 300,
-      "height": 300,
-      "format": "PNG",
-      "frames": 1,
-      "sha256": "d1bae8728052d1ea3cc9e32613c00e390677dad0f85399c5b499254e79fa4ac7",
-      "bytes": 82653,
-      "file": "yostar-14.png",
-      "review": "pending",
-      "retrieved_at": "2026-10-23T05:22:11.082762+00:00",
-      "visual_description": "深蓝发人物半垂眼，神情平静偏冷",
-      "emotion": [
-        "嫌弃",
-        "无语",
-        "冷淡"
-      ],
-      "intensity": 1,
-      "use_when": [
-        "无伤大雅的怪话、重复烂梗、轻轻拒绝"
-      ],
-      "avoid_when": [
-        "对方认真表达喜欢、求助或脆弱"
-      ],
-      "arturia_fit": "比责备长文更像一句从容的眼神回应",
-      "selection_reason": "深蓝发人物半垂眼，神情平静偏冷能直观表达嫌弃、无语、冷淡；优先采用有来源的官方图，供你判断群聊与角色适配。",
-      "review_note": "已进行人工图像检查；候选不等于主人批准，默认待审。"
-    },
-    {
-      "id": "yostar-15",
-      "title": "Yostar 官方庆典表情 15",
-      "source_class": "official_cdn",
-      "source_url": "https://www.arknights.global/fankit",
-      "discovery_url": "https://raw.githubusercontent.com/umittadelen/arknightsStickers/main/stickers.csv",
-      "download_url": "https://webusstatic.yo-star.com/ark_us_web/assets/168553019089813970/376b1d93b6fa26f0cb629efb0dc251e6.png",
-      "creator": "Arknights / Yostar",
-      "origin_evidence": "图片直接来自 Yostar 官方 webusstatic.yo-star.com 域名；整套链接由公开索引发现。活动套组名称取自索引，未据此断言传播热度。",
-      "popularity": {
-        "level": "not_measured",
-        "evidence": []
-      },
-      "width": 300,
-      "height": 300,
-      "format": "PNG",
-      "frames": 1,
-      "sha256": "fda640c0d6547330cc5026a32a701a0cdfa7d055d8a643e81d5bce32ccc600fb",
-      "bytes": 71859,
-      "file": "yostar-15.png",
-      "review": "pending",
-      "retrieved_at": "2026-10-23T05:22:11.082206+00:00",
-      "visual_description": "深蓝发人物用手指抵唇，侧目看人",
-      "emotion": [
-        "保密",
-        "挑眉",
-        "戏谑"
-      ],
-      "intensity": 1,
-      "use_when": [
-        "熟人之间的秘密、卖关子、会意"
-      ],
-      "avoid_when": [
-        "帮人掩盖违法伤害或泄露隐私"
-      ],
-      "arturia_fit": "可体现含蓄与一点危险感，不主动升级亲密",
-      "selection_reason": "深蓝发人物用手指抵唇，侧目看人能直观表达保密、挑眉、戏谑；优先采用有来源的官方图，供你判断群聊与角色适配。",
-      "review_note": "已进行人工图像检查；候选不等于主人批准，默认待审。"
-    },
-    {
-      "id": "yostar-16",
-      "title": "Yostar 官方庆典表情 16",
-      "source_class": "official_cdn",
-      "source_url": "https://www.arknights.global/fankit",
-      "discovery_url": "https://raw.githubusercontent.com/umittadelen/arknightsStickers/main/stickers.csv",
-      "download_url": "https://webusstatic.yo-star.com/ark_us_web/assets/168553019089813970/016ba7e992571abfa52e26b9bfabb73b.png",
-      "creator": "Arknights / Yostar",
-      "origin_evidence": "图片直接来自 Yostar 官方 webusstatic.yo-star.com 域名；整套链接由公开索引发现。活动套组名称取自索引，未据此断言传播热度。",
-      "popularity": {
-        "level": "not_measured",
-        "evidence": []
-      },
-      "width": 300,
-      "height": 300,
-      "format": "PNG",
-      "frames": 1,
-      "sha256": "8e3d7cb03a6c73bf94ee6d9004fc2b7d3d9259820996b6cfc9f3f5bc69337f5f",
-      "bytes": 160413,
-      "file": "yostar-16.png",
-      "review": "pending",
-      "retrieved_at": "2026-10-23T05:22:11.095058+00:00",
-      "visual_description": "人物坐在星空背景中，身边有椅子等物漂浮",
-      "emotion": [
-        "出神",
-        "荒诞",
-        "放空"
-      ],
-      "intensity": 2,
-      "use_when": [
-        "脑洞、离谱但无害的幻想、游戏抽象梗"
-      ],
-      "avoid_when": [
-        "对方需要清晰解释，或正在真实恐慌"
-      ],
-      "arturia_fit": "风格较夸张，作为低优先级候选供管理者挑选",
-      "selection_reason": "人物坐在星空背景中，身边有椅子等物漂浮能直观表达出神、荒诞、放空；优先采用有来源的官方图，供你判断群聊与角色适配。",
-      "review_note": "已进行人工图像检查；候选不等于主人批准，默认待审。"
-    },
-    {
       "id": "prts-01",
       "title": "争锋专用_busk",
       "source_class": "official_game_via_wiki",
+      "subject_scope": "generic",
       "source_url": "https://prts.wiki/w/%E6%96%87%E4%BB%B6:%E8%A1%A8%E6%83%85%E5%A5%97%E7%BB%84_%E4%BA%89%E9%94%8B%E4%B8%93%E7%94%A8_busk.png",
       "download_url": "https://media.prts.wiki/8/88/%E8%A1%A8%E6%83%85%E5%A5%97%E7%BB%84_%E4%BA%89%E9%94%8B%E4%B8%93%E7%94%A8_busk.png",
       "creator": "鹰角网络（PRTS 收录）",
@@ -642,13 +24,14 @@
       "bytes": 5238,
       "file": "prts-01.png",
       "review": "pending",
-      "retrieved_at": "2026-10-23T05:22:11.288337+00:00",
-      "visual_description": "礼物盒中央裂开，露出红色曲折线",
+      "retrieved_at": "2026-10-23T05:57:11.264822+00:00",
       "emotion": [
         "期待落空",
         "失望"
       ],
       "intensity": 2,
+      "visual_description": "礼物盒中央裂开，露出红色曲折线",
+      "selection_reason": "礼物盒中央裂开，露出红色曲折线能直观表达期待落空、失望；来源可追溯，供你判断群聊与角色适配。",
       "use_when": [
         "游戏奖励落空、开箱不如预期的玩笑"
       ],
@@ -656,13 +39,13 @@
         "真实重大损失或悲伤"
       ],
       "arturia_fit": "用来接失望话题；文件名 busk 不作为情绪判定依据",
-      "selection_reason": "礼物盒中央裂开，露出红色曲折线能直观表达期待落空、失望；优先采用有来源的官方图，供你判断群聊与角色适配。",
       "review_note": "已进行人工图像检查；候选不等于主人批准，默认待审。"
     },
     {
       "id": "prts-02",
       "title": "争锋专用_happy",
       "source_class": "official_game_via_wiki",
+      "subject_scope": "generic",
       "source_url": "https://prts.wiki/w/%E6%96%87%E4%BB%B6:%E8%A1%A8%E6%83%85%E5%A5%97%E7%BB%84_%E4%BA%89%E9%94%8B%E4%B8%93%E7%94%A8_happy.png",
       "download_url": "https://media.prts.wiki/e/e9/%E8%A1%A8%E6%83%85%E5%A5%97%E7%BB%84_%E4%BA%89%E9%94%8B%E4%B8%93%E7%94%A8_happy.png",
       "creator": "鹰角网络（PRTS 收录）",
@@ -681,14 +64,15 @@
       "bytes": 6249,
       "file": "prts-02.png",
       "review": "pending",
-      "retrieved_at": "2026-10-23T05:22:11.315088+00:00",
-      "visual_description": "金色猫脸闭眼飞吻，嘴边红心",
+      "retrieved_at": "2026-10-23T05:57:11.265076+00:00",
       "emotion": [
         "喜爱",
         "感谢",
         "亲近"
       ],
       "intensity": 2,
+      "visual_description": "金色猫脸闭眼飞吻，嘴边红心",
+      "selection_reason": "金色猫脸闭眼飞吻，嘴边红心能直观表达喜爱、感谢、亲近；来源可追溯，供你判断群聊与角色适配。",
       "use_when": [
         "关系已建立的夸奖或感谢"
       ],
@@ -696,13 +80,13 @@
         "陌生群友、无铺垫示爱、让人误解独占关系"
       ],
       "arturia_fit": "亲密度较高，需由管理者判断是否保留",
-      "selection_reason": "金色猫脸闭眼飞吻，嘴边红心能直观表达喜爱、感谢、亲近；优先采用有来源的官方图，供你判断群聊与角色适配。",
       "review_note": "已进行人工图像检查；候选不等于主人批准，默认待审。"
     },
     {
       "id": "prts-03",
       "title": "争锋专用_hello",
       "source_class": "official_game_via_wiki",
+      "subject_scope": "generic",
       "source_url": "https://prts.wiki/w/%E6%96%87%E4%BB%B6:%E8%A1%A8%E6%83%85%E5%A5%97%E7%BB%84_%E4%BA%89%E9%94%8B%E4%B8%93%E7%94%A8_hello.png",
       "download_url": "https://media.prts.wiki/d/d1/%E8%A1%A8%E6%83%85%E5%A5%97%E7%BB%84_%E4%BA%89%E9%94%8B%E4%B8%93%E7%94%A8_hello.png",
       "creator": "鹰角网络（PRTS 收录）",
@@ -721,13 +105,14 @@
       "bytes": 6117,
       "file": "prts-03.png",
       "review": "pending",
-      "retrieved_at": "2026-10-23T05:22:11.326473+00:00",
-      "visual_description": "金色兔耳圆脸露齿笑",
+      "retrieved_at": "2026-10-23T05:57:11.265571+00:00",
       "emotion": [
         "开心",
         "欢迎"
       ],
       "intensity": 1,
+      "visual_description": "金色兔耳圆脸露齿笑",
+      "selection_reason": "金色兔耳圆脸露齿笑能直观表达开心、欢迎；来源可追溯，供你判断群聊与角色适配。",
       "use_when": [
         "打招呼、看到好消息、轻松回应"
       ],
@@ -735,13 +120,13 @@
         "严肃不幸消息"
       ],
       "arturia_fit": "简单友善的群聊补充，不依赖人物外形",
-      "selection_reason": "金色兔耳圆脸露齿笑能直观表达开心、欢迎；优先采用有来源的官方图，供你判断群聊与角色适配。",
       "review_note": "已进行人工图像检查；候选不等于主人批准，默认待审。"
     },
     {
       "id": "prts-04",
       "title": "争锋专用_sad",
       "source_class": "official_game_via_wiki",
+      "subject_scope": "generic",
       "source_url": "https://prts.wiki/w/%E6%96%87%E4%BB%B6:%E8%A1%A8%E6%83%85%E5%A5%97%E7%BB%84_%E4%BA%89%E9%94%8B%E4%B8%93%E7%94%A8_sad.png",
       "download_url": "https://media.prts.wiki/e/e7/%E8%A1%A8%E6%83%85%E5%A5%97%E7%BB%84_%E4%BA%89%E9%94%8B%E4%B8%93%E7%94%A8_sad.png",
       "creator": "鹰角网络（PRTS 收录）",
@@ -760,14 +145,15 @@
       "bytes": 5914,
       "file": "prts-04.png",
       "review": "pending",
-      "retrieved_at": "2026-10-23T05:22:11.309470+00:00",
-      "visual_description": "金色猫脸闭眼大哭，长条蓝色眼泪",
+      "retrieved_at": "2026-10-23T05:57:11.264882+00:00",
       "emotion": [
         "委屈",
         "失落",
         "夸张哭泣"
       ],
       "intensity": 3,
+      "visual_description": "金色猫脸闭眼大哭，长条蓝色眼泪",
+      "selection_reason": "金色猫脸闭眼大哭，长条蓝色眼泪能直观表达委屈、失落、夸张哭泣；来源可追溯，供你判断群聊与角色适配。",
       "use_when": [
         "游戏输了、熟人自嘲、开玩笑式委屈"
       ],
@@ -775,13 +161,13 @@
         "真实丧失、灾难或对方正在崩溃"
       ],
       "arturia_fit": "强度高，仅建议游戏玩笑场景",
-      "selection_reason": "金色猫脸闭眼大哭，长条蓝色眼泪能直观表达委屈、失落、夸张哭泣；优先采用有来源的官方图，供你判断群聊与角色适配。",
       "review_note": "已进行人工图像检查；候选不等于主人批准，默认待审。"
     },
     {
       "id": "prts-05",
       "title": "争锋专用_shock",
       "source_class": "official_game_via_wiki",
+      "subject_scope": "generic",
       "source_url": "https://prts.wiki/w/%E6%96%87%E4%BB%B6:%E8%A1%A8%E6%83%85%E5%A5%97%E7%BB%84_%E4%BA%89%E9%94%8B%E4%B8%93%E7%94%A8_shock.png",
       "download_url": "https://media.prts.wiki/9/94/%E8%A1%A8%E6%83%85%E5%A5%97%E7%BB%84_%E4%BA%89%E9%94%8B%E4%B8%93%E7%94%A8_shock.png",
       "creator": "鹰角网络（PRTS 收录）",
@@ -800,13 +186,14 @@
       "bytes": 6315,
       "file": "prts-05.png",
       "review": "pending",
-      "retrieved_at": "2026-10-23T05:22:11.424584+00:00",
-      "visual_description": "金色兔耳脸戴蓝耳罩，嘴张成圆形",
+      "retrieved_at": "2026-10-23T05:57:11.315130+00:00",
       "emotion": [
         "吃惊",
         "没反应过来"
       ],
       "intensity": 2,
+      "visual_description": "金色兔耳脸戴蓝耳罩，嘴张成圆形",
+      "selection_reason": "金色兔耳脸戴蓝耳罩，嘴张成圆形能直观表达吃惊、没反应过来；来源可追溯，供你判断群聊与角色适配。",
       "use_when": [
         "突然的新消息、意外游戏展开"
       ],
@@ -814,13 +201,13 @@
         "把真实恐慌处理成搞笑"
       ],
       "arturia_fit": "用于一次鲜明反应，不作为常态卖萌",
-      "selection_reason": "金色兔耳脸戴蓝耳罩，嘴张成圆形能直观表达吃惊、没反应过来；优先采用有来源的官方图，供你判断群聊与角色适配。",
       "review_note": "已进行人工图像检查；候选不等于主人批准，默认待审。"
     },
     {
       "id": "prts-06",
       "title": "争锋专用_think",
       "source_class": "official_game_via_wiki",
+      "subject_scope": "generic",
       "source_url": "https://prts.wiki/w/%E6%96%87%E4%BB%B6:%E8%A1%A8%E6%83%85%E5%A5%97%E7%BB%84_%E4%BA%89%E9%94%8B%E4%B8%93%E7%94%A8_think.png",
       "download_url": "https://media.prts.wiki/7/74/%E8%A1%A8%E6%83%85%E5%A5%97%E7%BB%84_%E4%BA%89%E9%94%8B%E4%B8%93%E7%94%A8_think.png",
       "creator": "鹰角网络（PRTS 收录）",
@@ -839,14 +226,15 @@
       "bytes": 5725,
       "file": "prts-06.png",
       "review": "pending",
-      "retrieved_at": "2026-10-23T05:22:11.543958+00:00",
-      "visual_description": "金色猫脸手托下巴，眉头微动",
+      "retrieved_at": "2026-10-23T05:57:11.315051+00:00",
       "emotion": [
         "思考",
         "怀疑",
         "琢磨"
       ],
       "intensity": 1,
+      "visual_description": "金色猫脸手托下巴，眉头微动",
+      "selection_reason": "金色猫脸手托下巴，眉头微动能直观表达思考、怀疑、琢磨；来源可追溯，供你判断群聊与角色适配。",
       "use_when": [
         "要想一下、对梗将信将疑、考虑选择"
       ],
@@ -854,13 +242,13 @@
         "对方要求直接答复时无限装深沉"
       ],
       "arturia_fit": "适合观察欲和好奇，情绪贴合度较高",
-      "selection_reason": "金色猫脸手托下巴，眉头微动能直观表达思考、怀疑、琢磨；优先采用有来源的官方图，供你判断群聊与角色适配。",
       "review_note": "已进行人工图像检查；候选不等于主人批准，默认待审。"
     },
     {
       "id": "prts-07",
       "title": "争锋专用_what",
       "source_class": "official_game_via_wiki",
+      "subject_scope": "generic",
       "source_url": "https://prts.wiki/w/%E6%96%87%E4%BB%B6:%E8%A1%A8%E6%83%85%E5%A5%97%E7%BB%84_%E4%BA%89%E9%94%8B%E4%B8%93%E7%94%A8_what.png",
       "download_url": "https://media.prts.wiki/0/0c/%E8%A1%A8%E6%83%85%E5%A5%97%E7%BB%84_%E4%BA%89%E9%94%8B%E4%B8%93%E7%94%A8_what.png",
       "creator": "鹰角网络（PRTS 收录）",
@@ -879,14 +267,15 @@
       "bytes": 6833,
       "file": "prts-07.png",
       "review": "pending",
-      "retrieved_at": "2026-10-23T05:22:11.466712+00:00",
-      "visual_description": "金色角形脸大笑，额边有蓝色汗滴",
+      "retrieved_at": "2026-10-23T05:57:11.312537+00:00",
       "emotion": [
         "尴尬",
         "苦笑",
         "圆场"
       ],
       "intensity": 2,
+      "visual_description": "金色角形脸大笑，额边有蓝色汗滴",
+      "selection_reason": "金色角形脸大笑，额边有蓝色汗滴能直观表达尴尬、苦笑、圆场；来源可追溯，供你判断群聊与角色适配。",
       "use_when": [
         "说漏嘴、小型社死、被熟人拆穿"
       ],
@@ -894,13 +283,13 @@
         "伤害已发生却轻描淡写带过"
       ],
       "arturia_fit": "适合多人互拆台后的轻松圆场",
-      "selection_reason": "金色角形脸大笑，额边有蓝色汗滴能直观表达尴尬、苦笑、圆场；优先采用有来源的官方图，供你判断群聊与角色适配。",
       "review_note": "已进行人工图像检查；候选不等于主人批准，默认待审。"
     },
     {
       "id": "prts-08",
       "title": "争锋专用_wronged",
       "source_class": "official_game_via_wiki",
+      "subject_scope": "generic",
       "source_url": "https://prts.wiki/w/%E6%96%87%E4%BB%B6:%E8%A1%A8%E6%83%85%E5%A5%97%E7%BB%84_%E4%BA%89%E9%94%8B%E4%B8%93%E7%94%A8_wronged.png",
       "download_url": "https://media.prts.wiki/0/07/%E8%A1%A8%E6%83%85%E5%A5%97%E7%BB%84_%E4%BA%89%E9%94%8B%E4%B8%93%E7%94%A8_wronged.png",
       "creator": "鹰角网络（PRTS 收录）",
@@ -919,13 +308,14 @@
       "bytes": 5996,
       "file": "prts-08.png",
       "review": "pending",
-      "retrieved_at": "2026-10-23T05:22:11.460749+00:00",
-      "visual_description": "金色猫脸眼睛泛光，神情委屈",
+      "retrieved_at": "2026-10-23T05:57:11.312390+00:00",
       "emotion": [
         "委屈",
         "恳求"
       ],
       "intensity": 2,
+      "visual_description": "金色猫脸眼睛泛光，神情委屈",
+      "selection_reason": "金色猫脸眼睛泛光，神情委屈能直观表达委屈、恳求；来源可追溯，供你判断群聊与角色适配。",
       "use_when": [
         "无害撒娇、求游戏帮忙的玩笑"
       ],
@@ -933,13 +323,13 @@
         "道德绑架或要求别人违背意愿"
       ],
       "arturia_fit": "可爱倾向明显，作为可选而非角色默认",
-      "selection_reason": "金色猫脸眼睛泛光，神情委屈能直观表达委屈、恳求；优先采用有来源的官方图，供你判断群聊与角色适配。",
       "review_note": "已进行人工图像检查；候选不等于主人批准，默认待审。"
     },
     {
       "id": "prts-09",
       "title": "卫戍专用_thanks",
       "source_class": "official_game_via_wiki",
+      "subject_scope": "generic",
       "source_url": "https://prts.wiki/w/%E6%96%87%E4%BB%B6:%E8%A1%A8%E6%83%85%E5%A5%97%E7%BB%84_%E5%8D%AB%E6%88%8D%E4%B8%93%E7%94%A8_thanks.png",
       "download_url": "https://media.prts.wiki/8/8d/%E8%A1%A8%E6%83%85%E5%A5%97%E7%BB%84_%E5%8D%AB%E6%88%8D%E4%B8%93%E7%94%A8_thanks.png",
       "creator": "鹰角网络（PRTS 收录）",
@@ -958,14 +348,15 @@
       "bytes": 27971,
       "file": "prts-09.png",
       "review": "pending",
-      "retrieved_at": "2026-10-23T05:22:11.524899+00:00",
-      "visual_description": "绿色终端脸闭眼微笑，周围有红心",
+      "retrieved_at": "2026-10-23T05:57:11.370831+00:00",
       "emotion": [
         "感谢",
         "欣慰",
         "亲近"
       ],
       "intensity": 1,
+      "visual_description": "绿色终端脸闭眼微笑，周围有红心",
+      "selection_reason": "绿色终端脸闭眼微笑，周围有红心能直观表达感谢、欣慰、亲近；来源可追溯，供你判断群聊与角色适配。",
       "use_when": [
         "队友帮忙、收到善意、感谢配合"
       ],
@@ -973,13 +364,13 @@
         "需要表达严肃道歉或事实说明"
       ],
       "arturia_fit": "柔和的感谢反应，不把角色本人当成终端",
-      "selection_reason": "绿色终端脸闭眼微笑，周围有红心能直观表达感谢、欣慰、亲近；优先采用有来源的官方图，供你判断群聊与角色适配。",
       "review_note": "已进行人工图像检查；候选不等于主人批准，默认待审。"
     },
     {
       "id": "prts-10",
       "title": "卫戍专用_respect",
       "source_class": "official_game_via_wiki",
+      "subject_scope": "generic",
       "source_url": "https://prts.wiki/w/%E6%96%87%E4%BB%B6:%E8%A1%A8%E6%83%85%E5%A5%97%E7%BB%84_%E5%8D%AB%E6%88%8D%E4%B8%93%E7%94%A8_respect.png",
       "download_url": "https://media.prts.wiki/0/06/%E8%A1%A8%E6%83%85%E5%A5%97%E7%BB%84_%E5%8D%AB%E6%88%8D%E4%B8%93%E7%94%A8_respect.png",
       "creator": "鹰角网络（PRTS 收录）",
@@ -998,14 +389,15 @@
       "bytes": 28227,
       "file": "prts-10.png",
       "review": "pending",
-      "retrieved_at": "2026-10-23T05:22:11.548076+00:00",
-      "visual_description": "绿色终端脸竖起大拇指",
+      "retrieved_at": "2026-10-23T05:57:11.370984+00:00",
       "emotion": [
         "认可",
         "敬意",
         "夸奖"
       ],
       "intensity": 1,
+      "visual_description": "绿色终端脸竖起大拇指",
+      "selection_reason": "绿色终端脸竖起大拇指能直观表达认可、敬意、夸奖；来源可追溯，供你判断群聊与角色适配。",
       "use_when": [
         "游戏操作漂亮、认真做成一件事"
       ],
@@ -1013,13 +405,13 @@
         "赞同有害行为或嘲笑失败者"
       ],
       "arturia_fit": "能给具体认可而非空泛吹捧",
-      "selection_reason": "绿色终端脸竖起大拇指能直观表达认可、敬意、夸奖；优先采用有来源的官方图，供你判断群聊与角色适配。",
       "review_note": "已进行人工图像检查；候选不等于主人批准，默认待审。"
     },
     {
       "id": "prts-11",
       "title": "卫戍专用_sorry",
       "source_class": "official_game_via_wiki",
+      "subject_scope": "generic",
       "source_url": "https://prts.wiki/w/%E6%96%87%E4%BB%B6:%E8%A1%A8%E6%83%85%E5%A5%97%E7%BB%84_%E5%8D%AB%E6%88%8D%E4%B8%93%E7%94%A8_sorry.png",
       "download_url": "https://media.prts.wiki/4/4a/%E8%A1%A8%E6%83%85%E5%A5%97%E7%BB%84_%E5%8D%AB%E6%88%8D%E4%B8%93%E7%94%A8_sorry.png",
       "creator": "鹰角网络（PRTS 收录）",
@@ -1038,13 +430,14 @@
       "bytes": 28236,
       "file": "prts-11.png",
       "review": "pending",
-      "retrieved_at": "2026-10-23T05:22:11.540338+00:00",
-      "visual_description": "绿色终端脸双手合拢，眼角有泪滴",
+      "retrieved_at": "2026-10-23T05:57:11.370612+00:00",
       "emotion": [
         "抱歉",
         "请求谅解"
       ],
       "intensity": 2,
+      "visual_description": "绿色终端脸双手合拢，眼角有泪滴",
+      "selection_reason": "绿色终端脸双手合拢，眼角有泪滴能直观表达抱歉、请求谅解；来源可追溯，供你判断群聊与角色适配。",
       "use_when": [
         "小错误后道歉、迟到或打断"
       ],
@@ -1052,13 +445,13 @@
         "严重伤害只靠卖萌道歉"
       ],
       "arturia_fit": "给轻度失误留一个短回应，不能替代责任",
-      "selection_reason": "绿色终端脸双手合拢，眼角有泪滴能直观表达抱歉、请求谅解；优先采用有来源的官方图，供你判断群聊与角色适配。",
       "review_note": "已进行人工图像检查；候选不等于主人批准，默认待审。"
     },
     {
       "id": "prts-12",
       "title": "卫戍专用_playingcool",
       "source_class": "official_game_via_wiki",
+      "subject_scope": "generic",
       "source_url": "https://prts.wiki/w/%E6%96%87%E4%BB%B6:%E8%A1%A8%E6%83%85%E5%A5%97%E7%BB%84_%E5%8D%AB%E6%88%8D%E4%B8%93%E7%94%A8_playingcool.png",
       "download_url": "https://media.prts.wiki/d/dc/%E8%A1%A8%E6%83%85%E5%A5%97%E7%BB%84_%E5%8D%AB%E6%88%8D%E4%B8%93%E7%94%A8_playingcool.png",
       "creator": "鹰角网络（PRTS 收录）",
@@ -1077,14 +470,15 @@
       "bytes": 28037,
       "file": "prts-12.png",
       "review": "pending",
-      "retrieved_at": "2026-10-23T05:22:11.603462+00:00",
-      "visual_description": "绿色终端脸戴墨镜，嘴角上扬",
+      "retrieved_at": "2026-10-23T05:57:11.368394+00:00",
       "emotion": [
         "得意",
         "轻松",
         "从容"
       ],
       "intensity": 2,
+      "visual_description": "绿色终端脸戴墨镜，嘴角上扬",
+      "selection_reason": "绿色终端脸戴墨镜，嘴角上扬能直观表达得意、轻松、从容；来源可追溯，供你判断群聊与角色适配。",
       "use_when": [
         "小型获胜、漂亮接梗、顺手搞定"
       ],
@@ -1092,7 +486,917 @@
         "压人一头或嘲讽弱势者"
       ],
       "arturia_fit": "适合有把握的轻微自得，不转成高频炫耀",
-      "selection_reason": "绿色终端脸戴墨镜，嘴角上扬能直观表达得意、轻松、从容；优先采用有来源的官方图，供你判断群聊与角色适配。",
+      "review_note": "已进行人工图像检查；候选不等于主人批准，默认待审。"
+    },
+    {
+      "id": "prts-13",
+      "title": "争锋专用_pray",
+      "source_class": "official_game_via_wiki",
+      "subject_scope": "generic",
+      "source_url": "https://prts.wiki/w/%E6%96%87%E4%BB%B6:%E8%A1%A8%E6%83%85%E5%A5%97%E7%BB%84_%E4%BA%89%E9%94%8B%E4%B8%93%E7%94%A8_pray.png",
+      "download_url": "https://media.prts.wiki/f/fa/%E8%A1%A8%E6%83%85%E5%A5%97%E7%BB%84_%E4%BA%89%E9%94%8B%E4%B8%93%E7%94%A8_pray.png",
+      "creator": "鹰角网络（PRTS 收录）",
+      "origin_evidence": "PRTS 表情套组页列出游戏模式中的官方表情，并关联游戏活动取得方式。",
+      "collection_evidence_url": "https://prts.wiki/w/%E8%A1%A8%E6%83%85%E5%A5%97%E7%BB%84",
+      "collection_revision": 431402,
+      "popularity": {
+        "level": "not_measured",
+        "evidence": []
+      },
+      "width": 124,
+      "height": 124,
+      "format": "PNG",
+      "frames": 1,
+      "sha256": "bf45e7aac5964a34af90c0b2526339f9f438aa44f38a66bb4cde2296f14a7250",
+      "bytes": 7131,
+      "file": "prts-13.png",
+      "review": "pending",
+      "retrieved_at": "2026-10-23T05:57:11.416612+00:00",
+      "visual_description": "闭眼双手合十的金色通用脸，头顶蓝色光圈",
+      "emotion": [
+        "祈祷",
+        "拜托"
+      ],
+      "intensity": 1,
+      "use_when": [
+        "抽卡前祈愿、轻松求好运或小请求"
+      ],
+      "avoid_when": [
+        "以祈求绑架别人或代替真实求助"
+      ],
+      "arturia_fit": "无特定角色，适合不加长台词的轻请求",
+      "selection_reason": "闭眼双手合十的金色通用脸，头顶蓝色光圈能直观表达祈祷、拜托；来源可追溯，供你判断群聊与角色适配。",
+      "review_note": "已进行人工图像检查；候选不等于主人批准，默认待审。"
+    },
+    {
+      "id": "prts-14",
+      "title": "争锋专用_clown",
+      "source_class": "official_game_via_wiki",
+      "subject_scope": "generic",
+      "source_url": "https://prts.wiki/w/%E6%96%87%E4%BB%B6:%E8%A1%A8%E6%83%85%E5%A5%97%E7%BB%84_%E4%BA%89%E9%94%8B%E4%B8%93%E7%94%A8_clown.png",
+      "download_url": "https://media.prts.wiki/0/01/%E8%A1%A8%E6%83%85%E5%A5%97%E7%BB%84_%E4%BA%89%E9%94%8B%E4%B8%93%E7%94%A8_clown.png",
+      "creator": "鹰角网络（PRTS 收录）",
+      "origin_evidence": "PRTS 表情套组页列出游戏模式中的官方表情，并关联游戏活动取得方式。",
+      "collection_evidence_url": "https://prts.wiki/w/%E8%A1%A8%E6%83%85%E5%A5%97%E7%BB%84",
+      "collection_revision": 431402,
+      "popularity": {
+        "level": "not_measured",
+        "evidence": []
+      },
+      "width": 124,
+      "height": 124,
+      "format": "PNG",
+      "frames": 1,
+      "sha256": "e3d4a928a11b3c5760b9c036585dc74f6871f792885450a72af1bb515bd29fb4",
+      "bytes": 7624,
+      "file": "prts-14.png",
+      "review": "pending",
+      "retrieved_at": "2026-10-23T05:57:11.421168+00:00",
+      "visual_description": "红鼻子、红卷发的通用小丑圆脸",
+      "emotion": [
+        "自嘲",
+        "翻车",
+        "荒诞"
+      ],
+      "intensity": 2,
+      "use_when": [
+        "自己立flag后翻车、双方确认的玩笑"
+      ],
+      "avoid_when": [
+        "直接给群友贴侮辱标签或冲突升级"
+      ],
+      "arturia_fit": "优先自嘲，避免把图图的戏谑写成攻击",
+      "selection_reason": "红鼻子、红卷发的通用小丑圆脸能直观表达自嘲、翻车、荒诞；来源可追溯，供你判断群聊与角色适配。",
+      "review_note": "已进行人工图像检查；候选不等于主人批准，默认待审。"
+    },
+    {
+      "id": "prts-15",
+      "title": "卫戍专用_noproblem",
+      "source_class": "official_game_via_wiki",
+      "subject_scope": "generic",
+      "source_url": "https://prts.wiki/w/%E6%96%87%E4%BB%B6:%E8%A1%A8%E6%83%85%E5%A5%97%E7%BB%84_%E5%8D%AB%E6%88%8D%E4%B8%93%E7%94%A8_noproblem.png",
+      "download_url": "https://media.prts.wiki/1/1f/%E8%A1%A8%E6%83%85%E5%A5%97%E7%BB%84_%E5%8D%AB%E6%88%8D%E4%B8%93%E7%94%A8_noproblem.png",
+      "creator": "鹰角网络（PRTS 收录）",
+      "origin_evidence": "PRTS 表情套组页列出游戏模式中的官方表情，并关联游戏活动取得方式。",
+      "collection_evidence_url": "https://prts.wiki/w/%E8%A1%A8%E6%83%85%E5%A5%97%E7%BB%84",
+      "collection_revision": 431402,
+      "popularity": {
+        "level": "not_measured",
+        "evidence": []
+      },
+      "width": 120,
+      "height": 120,
+      "format": "PNG",
+      "frames": 1,
+      "sha256": "f7a2ce034e9e762759cf555fc71a9fd3bcf13f2183a459e9e3dedf4640df7d15",
+      "bytes": 28335,
+      "file": "prts-15.png",
+      "review": "pending",
+      "retrieved_at": "2026-10-23T05:57:11.433723+00:00",
+      "visual_description": "绿色无名终端脸竖拇指，眼角闪光",
+      "emotion": [
+        "自信",
+        "交给我"
+      ],
+      "intensity": 1,
+      "use_when": [
+        "轻松答应确实能做的小事"
+      ],
+      "avoid_when": [
+        "实际没有能力完成却装作承诺"
+      ],
+      "arturia_fit": "从容地表示有把握，保留能力边界",
+      "selection_reason": "绿色无名终端脸竖拇指，眼角闪光能直观表达自信、交给我；来源可追溯，供你判断群聊与角色适配。",
+      "review_note": "已进行人工图像检查；候选不等于主人批准，默认待审。"
+    },
+    {
+      "id": "prts-16",
+      "title": "卫戍专用_happy",
+      "source_class": "official_game_via_wiki",
+      "subject_scope": "generic",
+      "source_url": "https://prts.wiki/w/%E6%96%87%E4%BB%B6:%E8%A1%A8%E6%83%85%E5%A5%97%E7%BB%84_%E5%8D%AB%E6%88%8D%E4%B8%93%E7%94%A8_happy.png",
+      "download_url": "https://media.prts.wiki/b/b5/%E8%A1%A8%E6%83%85%E5%A5%97%E7%BB%84_%E5%8D%AB%E6%88%8D%E4%B8%93%E7%94%A8_happy.png",
+      "creator": "鹰角网络（PRTS 收录）",
+      "origin_evidence": "PRTS 表情套组页列出游戏模式中的官方表情，并关联游戏活动取得方式。",
+      "collection_evidence_url": "https://prts.wiki/w/%E8%A1%A8%E6%83%85%E5%A5%97%E7%BB%84",
+      "collection_revision": 431402,
+      "popularity": {
+        "level": "not_measured",
+        "evidence": []
+      },
+      "width": 120,
+      "height": 120,
+      "format": "PNG",
+      "frames": 1,
+      "sha256": "524902c2067fc3f4827c94441bf4f22596720f2c84a9aac20a193b693a0ea774",
+      "bytes": 28128,
+      "file": "prts-16.png",
+      "review": "pending",
+      "retrieved_at": "2026-10-23T05:57:11.431466+00:00",
+      "visual_description": "绿色无名终端脸笑眯眼，双手托脸",
+      "emotion": [
+        "开心",
+        "期待"
+      ],
+      "intensity": 1,
+      "use_when": [
+        "看到有趣的话题或好消息"
+      ],
+      "avoid_when": [
+        "对方遭遇真实损失时卖萌"
+      ],
+      "arturia_fit": "表达好奇和愉快，不要求每轮都热闹",
+      "selection_reason": "绿色无名终端脸笑眯眼，双手托脸能直观表达开心、期待；来源可追溯，供你判断群聊与角色适配。",
+      "review_note": "已进行人工图像检查；候选不等于主人批准，默认待审。"
+    },
+    {
+      "id": "prts-17",
+      "title": "卫戍专用_thinking",
+      "source_class": "official_game_via_wiki",
+      "subject_scope": "generic",
+      "source_url": "https://prts.wiki/w/%E6%96%87%E4%BB%B6:%E8%A1%A8%E6%83%85%E5%A5%97%E7%BB%84_%E5%8D%AB%E6%88%8D%E4%B8%93%E7%94%A8_thinking.png",
+      "download_url": "https://media.prts.wiki/2/23/%E8%A1%A8%E6%83%85%E5%A5%97%E7%BB%84_%E5%8D%AB%E6%88%8D%E4%B8%93%E7%94%A8_thinking.png",
+      "creator": "鹰角网络（PRTS 收录）",
+      "origin_evidence": "PRTS 表情套组页列出游戏模式中的官方表情，并关联游戏活动取得方式。",
+      "collection_evidence_url": "https://prts.wiki/w/%E8%A1%A8%E6%83%85%E5%A5%97%E7%BB%84",
+      "collection_revision": 431402,
+      "popularity": {
+        "level": "not_measured",
+        "evidence": []
+      },
+      "width": 120,
+      "height": 120,
+      "format": "PNG",
+      "frames": 1,
+      "sha256": "4b898c983fda213fb74f6d0e77a27d50121ec409653e76974d81d91c30a95e62",
+      "bytes": 28527,
+      "file": "prts-17.png",
+      "review": "pending",
+      "retrieved_at": "2026-10-23T05:57:11.472168+00:00",
+      "visual_description": "绿色无名终端脸歪嘴托腮",
+      "emotion": [
+        "疑惑",
+        "思考"
+      ],
+      "intensity": 1,
+      "use_when": [
+        "听到奇怪但无害的说法、思考选择"
+      ],
+      "avoid_when": [
+        "明知答案却装神秘不回应"
+      ],
+      "arturia_fit": "具体表达琢磨，替代空泛深意",
+      "selection_reason": "绿色无名终端脸歪嘴托腮能直观表达疑惑、思考；来源可追溯，供你判断群聊与角色适配。",
+      "review_note": "已进行人工图像检查；候选不等于主人批准，默认待审。"
+    },
+    {
+      "id": "prts-18",
+      "title": "卫戍专用_sad",
+      "source_class": "official_game_via_wiki",
+      "subject_scope": "generic",
+      "source_url": "https://prts.wiki/w/%E6%96%87%E4%BB%B6:%E8%A1%A8%E6%83%85%E5%A5%97%E7%BB%84_%E5%8D%AB%E6%88%8D%E4%B8%93%E7%94%A8_sad.png",
+      "download_url": "https://media.prts.wiki/b/b8/%E8%A1%A8%E6%83%85%E5%A5%97%E7%BB%84_%E5%8D%AB%E6%88%8D%E4%B8%93%E7%94%A8_sad.png",
+      "creator": "鹰角网络（PRTS 收录）",
+      "origin_evidence": "PRTS 表情套组页列出游戏模式中的官方表情，并关联游戏活动取得方式。",
+      "collection_evidence_url": "https://prts.wiki/w/%E8%A1%A8%E6%83%85%E5%A5%97%E7%BB%84",
+      "collection_revision": 431402,
+      "popularity": {
+        "level": "not_measured",
+        "evidence": []
+      },
+      "width": 120,
+      "height": 120,
+      "format": "PNG",
+      "frames": 1,
+      "sha256": "f6f35f7c563b59d8d7055294b8e4970401bfaa84abb5d05bea943f9e6db97554",
+      "bytes": 29210,
+      "file": "prts-18.png",
+      "review": "pending",
+      "retrieved_at": "2026-10-23T05:57:11.478051+00:00",
+      "visual_description": "绿色无名终端脸闭眼，眼泪向两侧流",
+      "emotion": [
+        "伤心",
+        "委屈"
+      ],
+      "intensity": 2,
+      "use_when": [
+        "游戏失利后的夸张伤心或轻度自嘲"
+      ],
+      "avoid_when": [
+        "真实悲剧或对方情绪崩溃"
+      ],
+      "arturia_fit": "可用于游戏梗，不把真实悲伤娱乐化",
+      "selection_reason": "绿色无名终端脸闭眼，眼泪向两侧流能直观表达伤心、委屈；来源可追溯，供你判断群聊与角色适配。",
+      "review_note": "已进行人工图像检查；候选不等于主人批准，默认待审。"
+    },
+    {
+      "id": "prts-19",
+      "title": "卫戍专用_dying",
+      "source_class": "official_game_via_wiki",
+      "subject_scope": "generic",
+      "source_url": "https://prts.wiki/w/%E6%96%87%E4%BB%B6:%E8%A1%A8%E6%83%85%E5%A5%97%E7%BB%84_%E5%8D%AB%E6%88%8D%E4%B8%93%E7%94%A8_dying.png",
+      "download_url": "https://media.prts.wiki/e/ec/%E8%A1%A8%E6%83%85%E5%A5%97%E7%BB%84_%E5%8D%AB%E6%88%8D%E4%B8%93%E7%94%A8_dying.png",
+      "creator": "鹰角网络（PRTS 收录）",
+      "origin_evidence": "PRTS 表情套组页列出游戏模式中的官方表情，并关联游戏活动取得方式。",
+      "collection_evidence_url": "https://prts.wiki/w/%E8%A1%A8%E6%83%85%E5%A5%97%E7%BB%84",
+      "collection_revision": 431402,
+      "popularity": {
+        "level": "not_measured",
+        "evidence": []
+      },
+      "width": 120,
+      "height": 120,
+      "format": "PNG",
+      "frames": 1,
+      "sha256": "ee46c25176802eb8e03eaaaeedfddef51bca9579c1d44d5160d3198952792fc5",
+      "bytes": 27608,
+      "file": "prts-19.png",
+      "review": "pending",
+      "retrieved_at": "2026-10-23T05:57:11.497398+00:00",
+      "visual_description": "绿色无名终端脸疲惫流汗，头顶有光圈",
+      "emotion": [
+        "累瘫",
+        "无奈"
+      ],
+      "intensity": 2,
+      "use_when": [
+        "加班或游戏后的无害累瘫梗"
+      ],
+      "avoid_when": [
+        "死亡、自伤或严重疾病场景"
+      ],
+      "arturia_fit": "可顺着疲惫吐槽，但不浪漫化伤害",
+      "selection_reason": "绿色无名终端脸疲惫流汗，头顶有光圈能直观表达累瘫、无奈；来源可追溯，供你判断群聊与角色适配。",
+      "review_note": "已进行人工图像检查；候选不等于主人批准，默认待审。"
+    },
+    {
+      "id": "prts-20",
+      "title": "卫戍专用_scared",
+      "source_class": "official_game_via_wiki",
+      "subject_scope": "generic",
+      "source_url": "https://prts.wiki/w/%E6%96%87%E4%BB%B6:%E8%A1%A8%E6%83%85%E5%A5%97%E7%BB%84_%E5%8D%AB%E6%88%8D%E4%B8%93%E7%94%A8_scared.png",
+      "download_url": "https://media.prts.wiki/a/a1/%E8%A1%A8%E6%83%85%E5%A5%97%E7%BB%84_%E5%8D%AB%E6%88%8D%E4%B8%93%E7%94%A8_scared.png",
+      "creator": "鹰角网络（PRTS 收录）",
+      "origin_evidence": "PRTS 表情套组页列出游戏模式中的官方表情，并关联游戏活动取得方式。",
+      "collection_evidence_url": "https://prts.wiki/w/%E8%A1%A8%E6%83%85%E5%A5%97%E7%BB%84",
+      "collection_revision": 431402,
+      "popularity": {
+        "level": "not_measured",
+        "evidence": []
+      },
+      "width": 120,
+      "height": 120,
+      "format": "PNG",
+      "frames": 1,
+      "sha256": "6ab3f3f3dbd036a58c939a96995ab969c1ab12ee6b86b4d1448397e2646bc0e4",
+      "bytes": 26795,
+      "file": "prts-20.png",
+      "review": "pending",
+      "retrieved_at": "2026-10-23T05:57:11.497613+00:00",
+      "visual_description": "绿色无名终端脸双眼竖线，张嘴惊住",
+      "emotion": [
+        "惊讶",
+        "紧张"
+      ],
+      "intensity": 2,
+      "use_when": [
+        "突然的离谱游戏结果或夸张玩笑"
+      ],
+      "avoid_when": [
+        "真实危险需要直接帮助时"
+      ],
+      "arturia_fit": "无特定角色，供鲜明反应使用",
+      "selection_reason": "绿色无名终端脸双眼竖线，张嘴惊住能直观表达惊讶、紧张；来源可追溯，供你判断群聊与角色适配。",
+      "review_note": "已进行人工图像检查；候选不等于主人批准，默认待审。"
+    },
+    {
+      "id": "arturia-01",
+      "title": "阿尔图罗官方剧情差分 01",
+      "subject_scope": "arturia",
+      "source_class": "official_story_crop",
+      "source_url": "https://prts.wiki/w/Widget:Data_Char",
+      "download_url": "https://media.prts.wiki/b/b8/Avg_avg_245_cello_1-1$1.png",
+      "creator": "鹰角网络（PRTS 剧情模拟器收录）",
+      "origin_evidence": "PRTS 剧情模拟器公开映射 avg_245_cello_1-1$1，干员 char_245_cello；本项目仅裁切头像区域，非官方独立发布表情包。",
+      "source_revision": 442087,
+      "transform": {
+        "kind": "crop",
+        "box": [
+          400,
+          0,
+          800,
+          400
+        ]
+      },
+      "popularity": {
+        "level": "not_measured",
+        "evidence": []
+      },
+      "original_sha256": "41d8ef80d1bbf5b53713fc961f4ec308a365992e8061a96cd4b4e251362feff4",
+      "width": 400,
+      "height": 400,
+      "format": "PNG",
+      "frames": 1,
+      "sha256": "b1b82843bad3eb51ec1ecb8f60931fe16fb4779b184bfa96273566110c9eb7db",
+      "bytes": 151652,
+      "file": "arturia-01.png",
+      "review": "pending",
+      "retrieved_at": "2026-10-23T05:57:11.635375+00:00",
+      "visual_description": "阿尔图罗睁眼，嘴角轻扬",
+      "emotion": [
+        "平静",
+        "亲近",
+        "微笑"
+      ],
+      "intensity": 1,
+      "use_when": [
+        "日常接话、轻轻欢迎、认可"
+      ],
+      "avoid_when": [
+        "需要强烈情绪的重大事件"
+      ],
+      "arturia_fit": "本人的官方剧情表情，保留从容与友善",
+      "selection_reason": "阿尔图罗睁眼，嘴角轻扬能直观表达平静、亲近、微笑；来源可追溯，供你判断群聊与角色适配。",
+      "review_note": "已进行人工图像检查；候选不等于主人批准，默认待审。"
+    },
+    {
+      "id": "arturia-02",
+      "title": "阿尔图罗官方剧情差分 02",
+      "subject_scope": "arturia",
+      "source_class": "official_story_crop",
+      "source_url": "https://prts.wiki/w/Widget:Data_Char",
+      "download_url": "https://media.prts.wiki/7/73/Avg_avg_245_cello_1-2$1.png",
+      "creator": "鹰角网络（PRTS 剧情模拟器收录）",
+      "origin_evidence": "PRTS 剧情模拟器公开映射 avg_245_cello_1-2$1，干员 char_245_cello；本项目仅裁切头像区域，非官方独立发布表情包。",
+      "source_revision": 442087,
+      "transform": {
+        "kind": "crop",
+        "box": [
+          400,
+          0,
+          800,
+          400
+        ]
+      },
+      "popularity": {
+        "level": "not_measured",
+        "evidence": []
+      },
+      "original_sha256": "d4e9690a7fb49c1a602958f0f5258d18cde61b6fa5aa62857b49cb81a67a7269",
+      "width": 400,
+      "height": 400,
+      "format": "PNG",
+      "frames": 1,
+      "sha256": "f0d85913daf7b0bae49323cb9b2dd302b7a19ab12c3c61efd239f7c1d9c42a83",
+      "bytes": 151321,
+      "file": "arturia-02.png",
+      "review": "pending",
+      "retrieved_at": "2026-10-23T05:57:11.926700+00:00",
+      "visual_description": "阿尔图罗闭眼，嘴唇微收",
+      "emotion": [
+        "无奈",
+        "沉静"
+      ],
+      "intensity": 1,
+      "use_when": [
+        "熟人小小胡闹、安静听完"
+      ],
+      "avoid_when": [
+        "把对方严肃表达当成不耐烦"
+      ],
+      "arturia_fit": "以闭目表情替代机械写琴弓动作；情绪为本项目解读",
+      "selection_reason": "阿尔图罗闭眼，嘴唇微收能直观表达无奈、沉静；来源可追溯，供你判断群聊与角色适配。",
+      "review_note": "已进行人工图像检查；候选不等于主人批准，默认待审。"
+    },
+    {
+      "id": "arturia-03",
+      "title": "阿尔图罗官方剧情差分 03",
+      "subject_scope": "arturia",
+      "source_class": "official_story_crop",
+      "source_url": "https://prts.wiki/w/Widget:Data_Char",
+      "download_url": "https://media.prts.wiki/d/da/Avg_avg_245_cello_1-3$1.png",
+      "creator": "鹰角网络（PRTS 剧情模拟器收录）",
+      "origin_evidence": "PRTS 剧情模拟器公开映射 avg_245_cello_1-3$1，干员 char_245_cello；本项目仅裁切头像区域，非官方独立发布表情包。",
+      "source_revision": 442087,
+      "transform": {
+        "kind": "crop",
+        "box": [
+          400,
+          0,
+          800,
+          400
+        ]
+      },
+      "popularity": {
+        "level": "not_measured",
+        "evidence": []
+      },
+      "original_sha256": "d903fcb760f1548cf6651f62c9d4a08dfbcf992ea9814f68157fbce3c3c15d9b",
+      "width": 400,
+      "height": 400,
+      "format": "PNG",
+      "frames": 1,
+      "sha256": "b5fb59ab378cd591bc04b9f61497fcfcc9ca0e9c3fa4a86a49a67e28cbc3501a",
+      "bytes": 151354,
+      "file": "arturia-03.png",
+      "review": "pending",
+      "retrieved_at": "2026-10-23T05:57:11.910210+00:00",
+      "visual_description": "阿尔图罗闭眼，轻启嘴唇",
+      "emotion": [
+        "轻叹",
+        "释然"
+      ],
+      "intensity": 1,
+      "use_when": [
+        "暂告一段落、轻度叹气或放松"
+      ],
+      "avoid_when": [
+        "假装她在实际歌唱或施术"
+      ],
+      "arturia_fit": "可以安静收束话题，不必补音乐隐喻",
+      "selection_reason": "阿尔图罗闭眼，轻启嘴唇能直观表达轻叹、释然；来源可追溯，供你判断群聊与角色适配。",
+      "review_note": "已进行人工图像检查；候选不等于主人批准，默认待审。"
+    },
+    {
+      "id": "arturia-04",
+      "title": "阿尔图罗官方剧情差分 04",
+      "subject_scope": "arturia",
+      "source_class": "official_story_crop",
+      "source_url": "https://prts.wiki/w/Widget:Data_Char",
+      "download_url": "https://media.prts.wiki/0/0f/Avg_avg_245_cello_1-4$1.png",
+      "creator": "鹰角网络（PRTS 剧情模拟器收录）",
+      "origin_evidence": "PRTS 剧情模拟器公开映射 avg_245_cello_1-4$1，干员 char_245_cello；本项目仅裁切头像区域，非官方独立发布表情包。",
+      "source_revision": 442087,
+      "transform": {
+        "kind": "crop",
+        "box": [
+          400,
+          0,
+          800,
+          400
+        ]
+      },
+      "popularity": {
+        "level": "not_measured",
+        "evidence": []
+      },
+      "original_sha256": "99d0d0c1242f749c03728d770edc7f733412f95418613b3641c425a8fad831f4",
+      "width": 400,
+      "height": 400,
+      "format": "PNG",
+      "frames": 1,
+      "sha256": "fb136491bce19272fc297c8b49fd6d0af34ac3d7fc959e3b7c640c3700fcfd0c",
+      "bytes": 151683,
+      "file": "arturia-04.png",
+      "review": "pending",
+      "retrieved_at": "2026-10-23T05:57:11.850178+00:00",
+      "visual_description": "阿尔图罗睁大眼，微微张嘴",
+      "emotion": [
+        "意外",
+        "惊讶"
+      ],
+      "intensity": 1,
+      "use_when": [
+        "听到出乎意料但无害的消息"
+      ],
+      "avoid_when": [
+        "真实恐慌或悲剧消息"
+      ],
+      "arturia_fit": "图图本人的轻度惊讶，强度不夸张",
+      "selection_reason": "阿尔图罗睁大眼，微微张嘴能直观表达意外、惊讶；来源可追溯，供你判断群聊与角色适配。",
+      "review_note": "已进行人工图像检查；候选不等于主人批准，默认待审。"
+    },
+    {
+      "id": "arturia-05",
+      "title": "阿尔图罗官方剧情差分 05",
+      "subject_scope": "arturia",
+      "source_class": "official_story_crop",
+      "source_url": "https://prts.wiki/w/Widget:Data_Char",
+      "download_url": "https://media.prts.wiki/a/a1/Avg_avg_245_cello_1-5$1.png",
+      "creator": "鹰角网络（PRTS 剧情模拟器收录）",
+      "origin_evidence": "PRTS 剧情模拟器公开映射 avg_245_cello_1-5$1，干员 char_245_cello；本项目仅裁切头像区域，非官方独立发布表情包。",
+      "source_revision": 442087,
+      "transform": {
+        "kind": "crop",
+        "box": [
+          400,
+          0,
+          800,
+          400
+        ]
+      },
+      "popularity": {
+        "level": "not_measured",
+        "evidence": []
+      },
+      "original_sha256": "cb5042ac29802028daa12362f85a6bbd6730fd068fbec96c9cbaeab2b4f9a4e8",
+      "width": 400,
+      "height": 400,
+      "format": "PNG",
+      "frames": 1,
+      "sha256": "da5a6889786e1af6abb202e430bea576ed5afaa577db87403b3f3e01078df473",
+      "bytes": 151586,
+      "file": "arturia-05.png",
+      "review": "pending",
+      "retrieved_at": "2026-10-23T05:57:12.033522+00:00",
+      "visual_description": "阿尔图罗眉眼微动，目光侧移",
+      "emotion": [
+        "疑惑",
+        "审视"
+      ],
+      "intensity": 1,
+      "use_when": [
+        "怀疑熟人的怪话、看出小心思"
+      ],
+      "avoid_when": [
+        "无证据指控别人撒谎"
+      ],
+      "arturia_fit": "适合观察者气质；微表情含义由管理者最终判断",
+      "selection_reason": "阿尔图罗眉眼微动，目光侧移能直观表达疑惑、审视；来源可追溯，供你判断群聊与角色适配。",
+      "review_note": "已进行人工图像检查；候选不等于主人批准，默认待审。"
+    },
+    {
+      "id": "arturia-06",
+      "title": "阿尔图罗官方剧情差分 06",
+      "subject_scope": "arturia",
+      "source_class": "official_story_crop",
+      "source_url": "https://prts.wiki/w/Widget:Data_Char",
+      "download_url": "https://media.prts.wiki/6/68/Avg_avg_245_cello_1-6$1.png",
+      "creator": "鹰角网络（PRTS 剧情模拟器收录）",
+      "origin_evidence": "PRTS 剧情模拟器公开映射 avg_245_cello_1-6$1，干员 char_245_cello；本项目仅裁切头像区域，非官方独立发布表情包。",
+      "source_revision": 442087,
+      "transform": {
+        "kind": "crop",
+        "box": [
+          400,
+          0,
+          800,
+          400
+        ]
+      },
+      "popularity": {
+        "level": "not_measured",
+        "evidence": []
+      },
+      "original_sha256": "67761d7851f919d0f6704ced3d7b19dbc96b990817eb233476c4e46de13d47d4",
+      "width": 400,
+      "height": 400,
+      "format": "PNG",
+      "frames": 1,
+      "sha256": "ac817148356e47eea121d6422f5a27e08f51c0d142b0d863a2418534205bb9e5",
+      "bytes": 151692,
+      "file": "arturia-06.png",
+      "review": "pending",
+      "retrieved_at": "2026-10-23T05:57:12.352765+00:00",
+      "visual_description": "阿尔图罗睁眼，嘴张开一些",
+      "emotion": [
+        "认真",
+        "询问"
+      ],
+      "intensity": 1,
+      "use_when": [
+        "需要接上一句反问或确认细节"
+      ],
+      "avoid_when": [
+        "不能把静态表情当作已发语音"
+      ],
+      "arturia_fit": "供认真交流用，本项目不把表情差分编号当成官方情绪标签",
+      "selection_reason": "阿尔图罗睁眼，嘴张开一些能直观表达认真、询问；来源可追溯，供你判断群聊与角色适配。",
+      "review_note": "已进行人工图像检查；候选不等于主人批准，默认待审。"
+    },
+    {
+      "id": "arturia-07",
+      "title": "阿尔图罗官方剧情差分 07",
+      "subject_scope": "arturia",
+      "source_class": "official_story_crop",
+      "source_url": "https://prts.wiki/w/Widget:Data_Char",
+      "download_url": "https://media.prts.wiki/4/4d/Avg_avg_245_cello_1-7$1.png",
+      "creator": "鹰角网络（PRTS 剧情模拟器收录）",
+      "origin_evidence": "PRTS 剧情模拟器公开映射 avg_245_cello_1-7$1，干员 char_245_cello；本项目仅裁切头像区域，非官方独立发布表情包。",
+      "source_revision": 442087,
+      "transform": {
+        "kind": "crop",
+        "box": [
+          400,
+          0,
+          800,
+          400
+        ]
+      },
+      "popularity": {
+        "level": "not_measured",
+        "evidence": []
+      },
+      "original_sha256": "1d01998cd45c97c55ec2603780bb77e74464b46696efbc4640f360d1094baccd",
+      "width": 400,
+      "height": 400,
+      "format": "PNG",
+      "frames": 1,
+      "sha256": "124375e0c7bce1ddbcfeb3afdc52aad603ad7a7c7fdf49f7bea444207da85b31",
+      "bytes": 151616,
+      "file": "arturia-07.png",
+      "review": "pending",
+      "retrieved_at": "2026-10-23T05:57:12.224317+00:00",
+      "visual_description": "阿尔图罗眉眼收紧，正在开口",
+      "emotion": [
+        "不悦",
+        "强调"
+      ],
+      "intensity": 1,
+      "use_when": [
+        "轻轻回敬、明确一句自己的立场"
+      ],
+      "avoid_when": [
+        "对脆弱求助者摆出训导姿态"
+      ],
+      "arturia_fit": "显示有主见的一面，避免无条件迎合",
+      "selection_reason": "阿尔图罗眉眼收紧，正在开口能直观表达不悦、强调；来源可追溯，供你判断群聊与角色适配。",
+      "review_note": "已进行人工图像检查；候选不等于主人批准，默认待审。"
+    },
+    {
+      "id": "arturia-08",
+      "title": "阿尔图罗官方剧情差分 08",
+      "subject_scope": "arturia",
+      "source_class": "official_story_crop",
+      "source_url": "https://prts.wiki/w/Widget:Data_Char",
+      "download_url": "https://media.prts.wiki/6/6f/Avg_avg_245_cello_1-8$1.png",
+      "creator": "鹰角网络（PRTS 剧情模拟器收录）",
+      "origin_evidence": "PRTS 剧情模拟器公开映射 avg_245_cello_1-8$1，干员 char_245_cello；本项目仅裁切头像区域，非官方独立发布表情包。",
+      "source_revision": 442087,
+      "transform": {
+        "kind": "crop",
+        "box": [
+          400,
+          0,
+          800,
+          400
+        ]
+      },
+      "popularity": {
+        "level": "not_measured",
+        "evidence": []
+      },
+      "original_sha256": "ad1871df11ccd3dd68ef7825386f8c0c96d1819b1182962a6f1da4c0dd37a7a7",
+      "width": 400,
+      "height": 400,
+      "format": "PNG",
+      "frames": 1,
+      "sha256": "6e4c801aad0ae0f0c3142cdb3d138333ff1df76860f276258d3593f7c1976480",
+      "bytes": 151632,
+      "file": "arturia-08.png",
+      "review": "pending",
+      "retrieved_at": "2026-10-23T05:57:12.294624+00:00",
+      "visual_description": "阿尔图罗嘴唇平直，平静直视",
+      "emotion": [
+        "无语",
+        "冷淡",
+        "嫌弃"
+      ],
+      "intensity": 1,
+      "use_when": [
+        "轻度烂梗或无伤大雅的离谱要求"
+      ],
+      "avoid_when": [
+        "针对真实困难或私人脆弱表达"
+      ],
+      "arturia_fit": "本人微表情更贴角色；嫌弃是语境解读而非官方命名",
+      "selection_reason": "阿尔图罗嘴唇平直，平静直视能直观表达无语、冷淡、嫌弃；来源可追溯，供你判断群聊与角色适配。",
+      "review_note": "已进行人工图像检查；候选不等于主人批准，默认待审。"
+    },
+    {
+      "id": "arturia-09",
+      "title": "阿尔图罗官方剧情差分 09",
+      "subject_scope": "arturia",
+      "source_class": "official_story_crop",
+      "source_url": "https://prts.wiki/w/Widget:Data_Char",
+      "download_url": "https://media.prts.wiki/f/fa/Avg_avg_245_cello_1-9$1.png",
+      "creator": "鹰角网络（PRTS 剧情模拟器收录）",
+      "origin_evidence": "PRTS 剧情模拟器公开映射 avg_245_cello_1-9$1，干员 char_245_cello；本项目仅裁切头像区域，非官方独立发布表情包。",
+      "source_revision": 442087,
+      "transform": {
+        "kind": "crop",
+        "box": [
+          400,
+          0,
+          800,
+          400
+        ]
+      },
+      "popularity": {
+        "level": "not_measured",
+        "evidence": []
+      },
+      "original_sha256": "6180726d2ba37b4793d1b5202648e0149f43acbf36e8f8bbef82bba7f95f179b",
+      "width": 400,
+      "height": 400,
+      "format": "PNG",
+      "frames": 1,
+      "sha256": "da992e01c591fb7366719dc6f7a4c64773fbce8b6557a707fe1d19e265d0a75e",
+      "bytes": 151434,
+      "file": "arturia-09.png",
+      "review": "pending",
+      "retrieved_at": "2026-10-23T05:57:12.422680+00:00",
+      "visual_description": "阿尔图罗直视，嘴唇略启",
+      "emotion": [
+        "解释",
+        "关注"
+      ],
+      "intensity": 1,
+      "use_when": [
+        "认真接话、想听清对方意思"
+      ],
+      "avoid_when": [
+        "机械用于所有知识问答"
+      ],
+      "arturia_fit": "给温和关注留一张本人图，情绪强度低",
+      "selection_reason": "阿尔图罗直视，嘴唇略启能直观表达解释、关注；来源可追溯，供你判断群聊与角色适配。",
+      "review_note": "已进行人工图像检查；候选不等于主人批准，默认待审。"
+    },
+    {
+      "id": "arturia-10",
+      "title": "阿尔图罗官方剧情差分 10",
+      "subject_scope": "arturia",
+      "source_class": "official_story_crop",
+      "source_url": "https://prts.wiki/w/Widget:Data_Char",
+      "download_url": "https://media.prts.wiki/b/ba/Avg_avg_245_cello_1-10$1.png",
+      "creator": "鹰角网络（PRTS 剧情模拟器收录）",
+      "origin_evidence": "PRTS 剧情模拟器公开映射 avg_245_cello_1-10$1，干员 char_245_cello；本项目仅裁切头像区域，非官方独立发布表情包。",
+      "source_revision": 442087,
+      "transform": {
+        "kind": "crop",
+        "box": [
+          400,
+          0,
+          800,
+          400
+        ]
+      },
+      "popularity": {
+        "level": "not_measured",
+        "evidence": []
+      },
+      "original_sha256": "ec55f674a96b1607cfdf3258d9315258fc3717ce2b201102564914b5dfd13fb2",
+      "width": 400,
+      "height": 400,
+      "format": "PNG",
+      "frames": 1,
+      "sha256": "47887cc4d49a83ef2f0fb22d5340e8438cf8dd61309696473d1390c76c388379",
+      "bytes": 151569,
+      "file": "arturia-10.png",
+      "review": "pending",
+      "retrieved_at": "2026-10-23T05:57:12.712840+00:00",
+      "visual_description": "阿尔图罗目光稍收，唇线微垂",
+      "emotion": [
+        "迟疑",
+        "沉思"
+      ],
+      "intensity": 1,
+      "use_when": [
+        "需要一点停顿、听到复杂心情"
+      ],
+      "avoid_when": [
+        "编造她已经看透他人心理"
+      ],
+      "arturia_fit": "可表达她在思考；细微差别需管理者预览挑选",
+      "selection_reason": "阿尔图罗目光稍收，唇线微垂能直观表达迟疑、沉思；来源可追溯，供你判断群聊与角色适配。",
+      "review_note": "已进行人工图像检查；候选不等于主人批准，默认待审。"
+    },
+    {
+      "id": "arturia-11",
+      "title": "阿尔图罗官方剧情差分 11",
+      "subject_scope": "arturia",
+      "source_class": "official_story_crop",
+      "source_url": "https://prts.wiki/w/Widget:Data_Char",
+      "download_url": "https://media.prts.wiki/0/03/Avg_avg_245_cello_1-11$1.png",
+      "creator": "鹰角网络（PRTS 剧情模拟器收录）",
+      "origin_evidence": "PRTS 剧情模拟器公开映射 avg_245_cello_1-11$1，干员 char_245_cello；本项目仅裁切头像区域，非官方独立发布表情包。",
+      "source_revision": 442087,
+      "transform": {
+        "kind": "crop",
+        "box": [
+          400,
+          0,
+          800,
+          400
+        ]
+      },
+      "popularity": {
+        "level": "not_measured",
+        "evidence": []
+      },
+      "original_sha256": "96a1166b2202202b580646ea7d24569459872ea3384b63915f5c7c6ec28feead",
+      "width": 400,
+      "height": 400,
+      "format": "PNG",
+      "frames": 1,
+      "sha256": "2ff7b4d83121189b31beb6630a549eb36a1e362381c6d58efaa600959eb5cd6f",
+      "bytes": 151728,
+      "file": "arturia-11.png",
+      "review": "pending",
+      "retrieved_at": "2026-10-23T05:57:12.626158+00:00",
+      "visual_description": "阿尔图罗睁眼浅笑，嘴角上扬",
+      "emotion": [
+        "会意",
+        "戏谑"
+      ],
+      "intensity": 1,
+      "use_when": [
+        "熟人被轻轻拆穿、接住一个好梗"
+      ],
+      "avoid_when": [
+        "嘲笑受害者或对方真实悲伤"
+      ],
+      "arturia_fit": "本人轻微笑意贴合温和戏谑，比通用偷笑更有身份感",
+      "selection_reason": "阿尔图罗睁眼浅笑，嘴角上扬能直观表达会意、戏谑；来源可追溯，供你判断群聊与角色适配。",
+      "review_note": "已进行人工图像检查；候选不等于主人批准，默认待审。"
+    },
+    {
+      "id": "arturia-12",
+      "title": "阿尔图罗官方剧情差分 12",
+      "subject_scope": "arturia",
+      "source_class": "official_story_crop",
+      "source_url": "https://prts.wiki/w/Widget:Data_Char",
+      "download_url": "https://media.prts.wiki/5/5d/Avg_avg_245_cello_1-12$1.png",
+      "creator": "鹰角网络（PRTS 剧情模拟器收录）",
+      "origin_evidence": "PRTS 剧情模拟器公开映射 avg_245_cello_1-12$1，干员 char_245_cello；本项目仅裁切头像区域，非官方独立发布表情包。",
+      "source_revision": 442087,
+      "transform": {
+        "kind": "crop",
+        "box": [
+          400,
+          0,
+          800,
+          400
+        ]
+      },
+      "popularity": {
+        "level": "not_measured",
+        "evidence": []
+      },
+      "original_sha256": "b28f530c462a849aa83d1c927d3a5dd35236db2de62994b816178ba111abb0db",
+      "width": 400,
+      "height": 400,
+      "format": "PNG",
+      "frames": 1,
+      "sha256": "803e53d3f4fe2f90005ae1b853e6fad07735c3de6ba606de8d907205faa5d18c",
+      "bytes": 151329,
+      "file": "arturia-12.png",
+      "review": "pending",
+      "retrieved_at": "2026-10-23T05:57:12.791938+00:00",
+      "visual_description": "阿尔图罗闭眼露出明显笑容",
+      "emotion": [
+        "愉快",
+        "欣赏"
+      ],
+      "intensity": 2,
+      "use_when": [
+        "喜欢一个点子、感谢配合、祝贺"
+      ],
+      "avoid_when": [
+        "严肃不幸场景或没有铺垫的亲密升级"
+      ],
+      "arturia_fit": "本人的笑容，适合适度活泼而非始终阴冷",
+      "selection_reason": "阿尔图罗闭眼露出明显笑容能直观表达愉快、欣赏；来源可追溯，供你判断群聊与角色适配。",
       "review_note": "已进行人工图像检查；候选不等于主人批准，默认待审。"
     }
   ]

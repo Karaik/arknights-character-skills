@@ -10,7 +10,7 @@ function fixture(t) {
   const root = fs.mkdtempSync(path.join(os.tmpdir(), 'arturia-stickers-'));
   t.after(() => fs.rmSync(root, { recursive: true, force: true }));
   fs.writeFileSync(path.join(root, 'smile.png'), 'fixture-image');
-  const item = { id: 'official-smile', file: 'smile.png', review: 'pending',
+  const item = { id: 'official-smile', file: 'smile.png', review: 'pending', subject_scope:'generic',
     sha256: crypto.createHash('sha256').update('fixture-image').digest('hex') };
   return { root, item };
 }
@@ -45,6 +45,12 @@ test('unknown marker IDs do not become arbitrary URLs or leak marker syntax', t 
   const { root } = fixture(t);
   assert.deepEqual(replaceMarkers('[[sticker:unknown]]', root, []), []);
   assert.deepEqual(replaceMarkers('[[sticker:https://evil.test/x]]', root, []), []);
+});
+
+test('other or unidentified characters are excluded even if marked approved',t=>{
+  const {root,item}=fixture(t);
+  for(const scope of ['other','unknown',undefined])
+    assert.equal(resolveSticker(root,[{...item,review:'approved',subject_scope:scope}],item.id),null);
 });
 
 test('each reply has at most one sticker and preserves surrounding text', t => {

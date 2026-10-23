@@ -4,11 +4,11 @@
 
 ## 先看这三个地方
 
-- [表情审核页面](review/index.html)：28 张实际官方候选，每张都有情绪、出处、选用理由及不适用场景。全部待你审核。
+- [表情审核页面](review/index.html)：32 张实际候选（20 张无角色通用图＋12 张图图本人官方剧情差分裁切），每张都有情绪、出处、选用理由及不适用场景。初始全部待你审核。
 - [Skill 入口](skills/arturia/SKILL.md)：人物核心与按需资料。
-- [Koishi 接入说明](docs/koishi.md)：实际 ChatLuna 1.4.2 可解析导出与受控发送插件，不会自动部署。
+- [Koishi 接入说明](docs/koishi.md)：实际 ChatLuna 1.4.2 可解析导出与受控发送插件。txy 已按管理者后续授权安装并启用，测试预设与生产角色分开。
 
-预览：[官方庆典表情](review/contact-sheet-01.jpg) · [官方游戏内表情](review/contact-sheet-02.jpg)。[热门塑心同人 GIF 线索](review/community-leads.md)单列，当前尚未取得原始 GIF，没有以封面充数。
+预览：[无角色通用表情](review/contact-sheet-01.jpg) · [图图本人表情差分](review/contact-sheet-02.jpg)。[热门塑心同人 GIF 线索](review/community-leads.md)单列，当前尚未取得那套原始 GIF，没有以封面充数。
 
 ## 模块
 
@@ -51,8 +51,8 @@ python scripts/package_release.py
 
 ## 验证边界
 
-已做完整图片解码、哈希与元数据核对，真实 ChatLuna 预设解析和 pure-text 渲染验证，以及独立角色场景演练。它们不能替代对 Gemini、DeepSeek 或其他实际渠道的长期评测。本次没有调用付费推理、安装服务端插件、修改线上提示或发送 QQ 消息。
+已做完整图片解码、哈希与元数据核对，真实 ChatLuna 预设解析和 pure-text 渲染验证，以及独立角色场景演练。后续按管理者授权在 txy Koishi 容器中安装、启用插件，并以实际 Koishi Context 的 before-send 钩子做隔离验证；仅测试生成像素图，未发送 QQ 消息。测试预设名为“阿尔图罗-skill测试”，未切换生产角色。它们不能替代对 Gemini、DeepSeek 或其他实际渠道的长期评测；没有调用付费推理。
 
 ## 素材说明
 
-16 张来自 Yostar 官方 CDN；12 张来自 PRTS 收录的官方游戏内套组。官方来源不等于已经测得热门。图片保留原样和版权标记；原权利归属不因私有仓库而改变。原创代码与整理说明采用 MIT，第三方图像及原作内容不在 MIT 授权范围内，见 [素材来源](sources/assets.md)。
+20 张来自 PRTS 收录的官方无角色通用套组；12 张裁自阿尔图罗本人官方剧情表情差分，记录原图哈希和裁切坐标，不冒充官方独立发布表情包。其他干员／身份不明人物的图已移除。官方来源不等于测得热门。原创代码与整理说明采用 MIT，第三方图像及原作内容不在 MIT 授权范围内，见 [素材来源](sources/assets.md)。

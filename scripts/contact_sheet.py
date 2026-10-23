@@ -17,7 +17,9 @@ def main():
         for i, item in enumerate(subset):
             x,y = (i%4)*width,(i//4)*height
             draw.rounded_rectangle((x+6,y+6,x+width-6,y+height-6),radius=10,fill='#ffffff')
-            image = Image.open(ROOT/'skills/arturia/assets/stickers'/item['file']).convert('RGBA')
+            source=Image.open(ROOT/'skills/arturia/assets/stickers'/item['file'])
+            source.seek(getattr(source,'n_frames',1)//2)
+            image=source.convert('RGBA')
             image.thumbnail((225,210))
             sheet.paste(image,(x+(width-image.width)//2,y+12+(210-image.height)//2),image)
             draw.text((x+15,y+225),item['id'],font=font,fill='#182635')

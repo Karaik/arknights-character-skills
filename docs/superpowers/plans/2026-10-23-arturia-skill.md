@@ -15,14 +15,15 @@
 - Koishi compatibility is required.
 - Official assets and community use evidence have separate classifications.
 - The owner decides sticker suitability. Pending is the default.
-- No server mutations, API key export, private group transcript publication, or artificial QQ traffic.
+- Updated authorization: relevant Koishi plugin installation/application for isolated tests is allowed, without extra backups. No API key export, private transcript publication or unsolicited QQ traffic.
+- Sticker subjects are restricted to generic expressions and Arturia herself; other or unidentified characters are excluded.
 
 ## Tasks
 
-- [ ] Research PRTS revisions and extract source-bounded personality evidence into sources and references.
-- [ ] Collect and decode 20–40 sticker candidates; generate per-item emotion, context, reason, provenance and hashes.
-- [ ] Record baseline behavior failures from the earlier prompt and independent evaluation; implement concise behavior modules and scenario cases.
-- [ ] Test approval gating, path bounds, marker rendering, and deterministic build before implementing exporter and Koishi adapter.
-- [ ] Build skill, ChatLuna preset/world lore, candidate preview catalog and approved-only runtime bundle.
-- [ ] Parse export with pinned ChatLuna package; independently evaluate roleplay and approval boundaries; repair observed issues.
+- [x] Research PRTS revisions and extract source-bounded personality evidence into sources and references.
+- [x] Collect and decode 20–40 sticker candidates; generate per-item emotion, context, reason, provenance and hashes.
+- [x] Record baseline behavior failures from the earlier prompt and independent evaluation; implement concise behavior modules and scenario cases.
+- [x] Test approval gating, path bounds, marker rendering, and deterministic build before implementing exporter and Koishi adapter.
+- [x] Build skill, ChatLuna preset/world lore, candidate preview catalog and approved-only runtime bundle.
+- [x] Parse export with pinned ChatLuna package; independently evaluate roleplay and approval boundaries; repair observed issues.
 - [ ] Inspect every image visually; run all checks, publish private repository and verify remote visibility and commit.

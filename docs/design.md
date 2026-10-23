@@ -10,7 +10,8 @@ Approved by the owner on 2026-10-23 (Asia/Tokyo). Implementation follows the pre
 4. Approximately 20–40 useful sticker candidates, quality permitting. Actual files, hashes, provenance and emotion metadata; visual contact sheets and a review catalog. Pending items never enter live exports.
 5. A deterministic exporter for ordinary ChatLuna presets and world lore, a standard Skills package, and a MemesLuna-compatible approved image collection. A local Koishi adapter handles controlled sticker selection and rendering without giving arbitrary file or shell access.
 6. Meaningful checks of source coverage, link integrity, image decoding, review gating, deterministic generation, and actual ChatLuna preset parsing; model behavior checks separate from structural validation.
-7. No live server deployment, plugin installation, config reload, context deletion, or QQ test messages.
+7. Updated authorization: the owner permits installing and applying relevant Koishi plugins for tests, without an extra backup. Test in an isolated context without unsolicited group messages or context deletion.
+8. Updated sticker scope: only generic non-character expressions and Arturia herself. Exclude all other named or unidentified characters, regardless of popularity.
 
 ## Design
 
