@@ -1,0 +1,12 @@
+{
+  "date": "2026-10-23",
+  "repository": "https://github.com/Karaik/arknights-character-skills",
+  "visibility_verified": "PRIVATE",
+  "local_path": "D:/Code/arknights-character-skills",
+  "source_material": {"prts_revisions": [442654,424629,427233], "story_expression_mapping_revision":442087},
+  "sticker_candidates": {"total":32,"generic":20,"arturia":12,"other_characters":0,"approved":0,"pending":32},
+  "checks": {"node_tests_passed":10,"python_tests_passed":2,"actual_chatluna_parser":"1.4.2","images_decoded_and_hashed":32,"skill_validator":"passed","zip_determinism":"verified"},
+  "live_test": {"plugin_version":"0.1.1","plugin_enabled":true,"preset":"阿尔图罗-skill测试","isolated_context_hook":"passed","qq_logged_in":true,"onebot_established_connections":1,"ccs_rsshub_http":200,"synthetic_qq_messages":0,"extra_backup_created":false},
+  "intentional_review_gate": "Candidate selection remains with the owner. Empty allowed groups and empty runtime image manifest are deliberate, not a failed install.",
+  "limitations": ["No live target-model comparison", "No real QQ image upload", "Arturia crops are official story sprite derivatives, not a separately published official sticker pack", "Popular Arturia fan GIF set has a verified source lead, but original GIFs were not obtained"]
+}

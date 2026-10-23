@@ -26,4 +26,4 @@
 - [x] Test approval gating, path bounds, marker rendering, and deterministic build before implementing exporter and Koishi adapter.
 - [x] Build skill, ChatLuna preset/world lore, candidate preview catalog and approved-only runtime bundle.
 - [x] Parse export with pinned ChatLuna package; independently evaluate roleplay and approval boundaries; repair observed issues.
-- [ ] Inspect every image visually; run all checks, publish private repository and verify remote visibility and commit.
+- [x] Inspect every image visually; run all checks, publish private repository and verify remote visibility and commit.
