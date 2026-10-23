@@ -1,0 +1,80 @@
+{
+  "stickers": [
+    {
+      "id": "arturia-sway-01",
+      "title": "图图摇摆·暖棕散发与棱片光环",
+      "subject_scope": "arturia",
+      "source_class": "owner_reviewed_redraw",
+      "asset_origin": "repository",
+      "source_url": "https://www.bilibili.com/video/BV1ErnJ6zEwi/",
+      "download_url": "../skills/arturia/assets/stickers/arturia-sway-01.gif",
+      "creator": "本项目本地描改（Astra）；造型参考雨灯结衣，原动作来源疚刃",
+      "origin_evidence": "用户提供动作GIF，并指定雨灯结衣的阿尔图罗同款描改作造型参考；重新描改原GIF，未粘贴视频像素。光环依据PRTS收录的默认游戏模型与立绘。",
+      "reference_sources": [
+        {
+          "role": "character_redraw_reference",
+          "url": "https://www.bilibili.com/video/BV1ErnJ6zEwi/",
+          "creator": "雨灯结衣"
+        },
+        {
+          "role": "dance_source_cited_by_reference",
+          "url": "https://www.bilibili.com/video/BV16Vap6yEGP/",
+          "creator": "疚刃"
+        },
+        {
+          "role": "default_game_halo_parts",
+          "url": "https://torappu.prts.wiki/assets/char_spine/char_245_cello/meta.json"
+        },
+        {
+          "role": "official_illustration_via_wiki",
+          "url": "https://prts.wiki/w/文件:立绘_塑心_1.png"
+        }
+      ],
+      "original_source_sha256": "f98154e870a2ff26af1b5840eb963204f6f17e0e6a54688982850c7f95a977cf",
+      "modifications": [
+        "仅塑心本人，去除原动作模板的兔耳、马尾和兔尾",
+        "全角度连续散发，较亮低饱和暖棕作为内层质感",
+        "白袖黑手套、领饰、眼下痣与双金裙边",
+        "光环按默认游戏模型重画为棱片及断裂碎段，随转身改变层次"
+      ],
+      "popularity": {
+        "level": "not_measured",
+        "evidence": []
+      },
+      "width": 512,
+      "height": 512,
+      "format": "GIF",
+      "frames": 70,
+      "duration_ms": 7000,
+      "loop": 0,
+      "sha256": "de763f3ba064b5c11c0d16da67e737f48704431cc3780dd741fb761218e58fa2",
+      "bytes": 1649743,
+      "file": "arturia-sway-01.gif",
+      "review": "pending",
+      "retrieved_at": "2026-10-23T08:12:58.588397+00:00",
+      "visual_description": "Q版塑心举手摇摆并转身，灰黑散发配暖棕内层，白袖黑裙及不规则碎片光环；透明循环动图",
+      "emotion": [
+        "开心",
+        "轻快",
+        "欢迎",
+        "撒娇接梗"
+      ],
+      "intensity": 2,
+      "use_when": [
+        "被博士叫到后轻快回应或说“我在”",
+        "欢迎回来、开心加入群聊话题",
+        "熟人互逗或轻松求关注",
+        "用户明确要这张图图摇摆表情"
+      ],
+      "avoid_when": [
+        "博士在认真诉苦、明确生气或请求紧急帮助",
+        "回答事实、步骤或代码时用动图代替答案",
+        "短时间反复用同一张图敷衍不同博士"
+      ],
+      "arturia_fit": "让图图本人的出场与轻快反应可见；可用于亲近的群聊接梗，演出和文字仍依情境变化。",
+      "selection_reason": "用户要求作为高频表情并明确认可halo-v3成品；保留原动作节奏，角色主体单一，可直接由现有Koishi发送层处理。",
+      "usage_priority": "常用；在合适情绪下自然使用，高频不等于每条必发",
+      "review_note": "准备按用户明确反馈“这个gif可以的”入库，批准通过审核命令单独记录。"
+    }
+  ]
+}

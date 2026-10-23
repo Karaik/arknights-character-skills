@@ -1,0 +1,34 @@
+{
+  "success": true,
+  "selectedGroupConversations": 5,
+  "allowedGroups": 5,
+  "oldModelCounts": {
+    "openai-like/DeepSeek-V4-Flash": 4,
+    "openai-like/claude-sonnet-4-6": 1
+  },
+  "newModel": "openai-like/gpt-6-luna",
+  "productionPresetSha256": "99c76c66f3c15ebc48cf6dde75f4a7d17f7ad82dbdb652e03fccb02736f11302",
+  "configurationChangedLines": 1,
+  "historyUnchangedDuringTransaction": true,
+  "historyCountsBefore": [
+    30,
+    48,
+    2,
+    62,
+    816
+  ],
+  "historyCountsAfter": [
+    30,
+    48,
+    2,
+    62,
+    816
+  ],
+  "historyExactAfterStart": true,
+  "koishiStartedAt": "2026-10-23T09:00:14.687776277Z",
+  "koishiHttp": 200,
+  "napcatStartedAt": "2026-10-23T01:57:12.08521103Z",
+  "napcatRestarted": false,
+  "extraBackupFilesCreated": false,
+  "syntheticQqMessagesSent": 0
+}

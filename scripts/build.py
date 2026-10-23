@@ -37,18 +37,22 @@ def build(root=ROOT, target=None):
     common = '\n\n'.join((skill/file).read_text(encoding='utf-8').strip() for file in profile['always'])
     approved = approved_stickers(load_catalog(root))
     lines = ['表情由 Koishi 发送层处理。只可使用本清单里的 ID，每次最多一张；标记形式 [[sticker:ID]]。',
-             '图片主体只允许无特定角色的通用表情或阿尔图罗本人；其他角色和身份不明人物一律不使用。']
+             '图片主体只允许无特定角色的通用表情或阿尔图罗本人；其他角色和身份不明人物一律不使用。',
+             '先接当前博士的话，再按情绪选图；常用表情可以自然参与接梗，文字、短动作和纯图片都是回应方式。事实问答、认真诉苦和紧急求助先直接回应，不机械配图；连续接话时变化表达。']
     if approved:
-        lines.extend(f"- {x['id']}: {'、'.join(x['emotion'])}（强度{x['intensity']}）；适用：{'；'.join(x['use_when'])}；不用于：{'；'.join(x['avoid_when'])}" for x in approved)
+        lines.extend(f"- {x['id']}: {'、'.join(x['emotion'])}（强度{x['intensity']}）；适用：{'；'.join(x['use_when'])}；不用于：{'；'.join(x['avoid_when'])}；使用：{x.get('usage_priority','按当前情绪自然选择')}" for x in approved)
     else:
         lines.append('当前没有获批表情；只回复文字，不输出任何 sticker 标记。')
+    example_messages=[]
+    approved_ids={x['id']for x in approved}
+    examples=json.loads((skill/profile['examples']).read_text(encoding='utf-8'))['examples']
+    for example in examples:
+        if not set(example.get('requires_stickers',[])).issubset(approved_ids):continue
+        example_messages.extend([{'role':'user','content':example['user']},
+                                 {'role':'assistant','content':example['assistant']}])
     preset = {
         'keywords': profile['aliases'],
-        'prompts': [{'role': 'system', 'content': core+'\n\n'+common+'\n\n'+'\n'.join(lines)},
-                    {'role': 'user', 'content': '图图又活了，看看这次能活多久。'},
-                    {'role': 'assistant', 'content': '（微微偏过头，含着一点笑意）刚回来就给我计时？博士，至少先说一句欢迎吧。'},
-                    {'role': 'user', 'content': '今天上班好烦，不想听建议。'},
-                    {'role': 'assistant', 'content': '（收起笑意，把身旁的位置留出来）好，博士，今天不劝你努力。先把让你烦的事留在门外。'}],
+        'prompts': [{'role': 'system', 'content': core+'\n\n'+common+'\n\n'+'\n'.join(lines)}]+example_messages,
         'format_user_prompt': '用户{sender}（ID:{sender_id}）说：{prompt}',
         'world_lores': [{'scanDepth': 3, 'tokenLimit': 1800, 'recursiveScan': False}] + [
             {'keywords': item['keywords'], 'content': (skill/item['file']).read_text(encoding='utf-8'),

@@ -1,0 +1,42 @@
+{
+  "verifiedAtUtc": "2026-10-23T09:20:59.202662+00:00",
+  "productionPresetSha256": "f25958999c48883b5d2d9d160a3780e271ca16b9f94c8053d18c5ab57d311dba",
+  "testPresetSha256": "0e11fc68c039956f1afbefbbc9632b29d3ca67ba978d8c418dd83c1626334d69",
+  "presetAliases": [
+    "塑心",
+    "阿尔图罗",
+    "图图",
+    "图图姐",
+    "香草榜第一",
+    "Arturia",
+    "Virtuosa",
+    "ヴィルトゥオーサ"
+  ],
+  "examplePairs": 3,
+  "allowedGroups": 5,
+  "approvedImages": [
+    "arturia-sway-01"
+  ],
+  "gifSha256": "de763f3ba064b5c11c0d16da67e737f48704431cc3780dd741fb761218e58fa2",
+  "allMembersDoctors": true,
+  "performanceModule": true,
+  "consoleWebSocket": "connected",
+  "koishiHttp": 200,
+  "rsshubHttp": 200,
+  "rssFeedHttp": 200,
+  "qq": {
+    "isLogin": true,
+    "isOffline": false,
+    "coreReady": true,
+    "loginError": ""
+  },
+  "koishiStartedAt": "2026-10-23T09:00:14.687776277Z",
+  "napcatStartedAt": "2026-10-23T01:57:12.08521103Z",
+  "oneBotConnections": 1,
+  "selectedGroupModels": {
+    "openai-like/gpt-6-luna": 5
+  },
+  "syntheticQqMessagesSent": 0,
+  "extraBackupFilesCreated": false,
+  "ownerAuthorization": "正式启用，5 个群改用 gpt-6-luna（推荐）"
+}

@@ -1,0 +1,50 @@
+{
+  "verifiedAtUtc": "2026-10-23T08:49:34.134276+00:00",
+  "host": "txy",
+  "koishiVersion": "4.18.11",
+  "chatlunaVersion": "1.4.2",
+  "installedPluginVersion": "0.1.1",
+  "testPreset": "阿尔图罗-skill测试",
+  "testPresetSha256": "21404c633d59a3513b4755cbaf1dc5ec75809ed9dedca12f96bfa26e6b0e08e6",
+  "productionPresetSha256": "9895114882613e477d76486b3d5ed0bf3a7b494703ddd8c4a99a5a7e38c6fa32",
+  "productionPresetReplaced": false,
+  "approvedImages": [
+    "arturia-sway-01"
+  ],
+  "allowedLiveGroups": 0,
+  "installedGifSha256": "de763f3ba064b5c11c0d16da67e737f48704431cc3780dd741fb761218e58fa2",
+  "modelProbe": {
+    "model": "gpt-6-luna",
+    "calls": 12,
+    "baselineCases": 6,
+    "modularCases": 6,
+    "errors": 0,
+    "approvedGifBytes": 1649743,
+    "mime": "image/gif",
+    "actualInstalledHook": true,
+    "qqMessagesSent": 0
+  },
+  "conversationRouting": {
+    "selectedSharedRoleBindings": 5,
+    "currentRouteRequestForDeepSeek": {
+      "http": 404,
+      "errorType": "model_not_found"
+    },
+    "existingModelsChanged": false,
+    "configuredModelsMissingFromCurrentCatalog": [
+      "openai-like/DeepSeek-V4-Flash",
+      "openai-like/claude-sonnet-4-6"
+    ]
+  },
+  "health": {
+    "koishiHttpFromServer": 200,
+    "koishiHttpFromClient": 200,
+    "koishiEntryJsHttp": 200,
+    "koishiCssHttp": 200,
+    "qqIsLogin": true,
+    "qqIsOffline": false,
+    "napcatCoreReady": true
+  },
+  "serviceRestarted": false,
+  "extraBackupCreated": false
+}

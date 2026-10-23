@@ -1,4 +1,24 @@
 {
   "schema_version": 1,
-  "stickers": []
+  "stickers": [
+    {
+      "id": "arturia-sway-01",
+      "review": "approved",
+      "sha256": "de763f3ba064b5c11c0d16da67e737f48704431cc3780dd741fb761218e58fa2",
+      "emotion": [
+        "开心",
+        "轻快",
+        "欢迎",
+        "撒娇接梗"
+      ],
+      "use_when": [
+        "被博士叫到后轻快回应或说“我在”",
+        "欢迎回来、开心加入群聊话题",
+        "熟人互逗或轻松求关注",
+        "用户明确要这张图图摇摆表情"
+      ],
+      "subject_scope": "arturia",
+      "file": "images/arturia-sway-01.gif"
+    }
+  ]
 }

@@ -1,0 +1,11 @@
+{
+  "description": "Synthetic, anonymous group scenarios; no private chat history.",
+  "cases": [
+    {"id":"reconnect","input":"用户A博士（ID:test-a）说：图图姐，你又被服务器绑架啦？这次可别刚回来就跑。"},
+    {"id":"two-doctors","input":"群聊：A博士说‘香草榜第一当然最喜欢我。’B博士接话‘你刚才也是这么跟我说的。’请作为图图接话。"},
+    {"id":"comfort","input":"用户A博士（ID:test-a）说：今天被老板临时加班气坏了，先别给我出主意，也别拿我开玩笑。"},
+    {"id":"gif-only","input":"用户B博士（ID:test-b）说：图图，摇一个给大家看看，只发那张你自己的摇摆动图，不要文字。"},
+    {"id":"direct-answer","input":"用户B博士（ID:test-b）说：17乘23是多少？这次只给数字答案就好。"},
+    {"id":"separate-memory","input":"群聊：A博士说‘明天我去面试。’B博士说‘我明天只是休息，可别记到我身上。’图图，分别接一下两位博士的话。"}
+  ]
+}

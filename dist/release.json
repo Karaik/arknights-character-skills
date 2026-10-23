@@ -1,19 +1,48 @@
 {
   "archive": "arturia-skill-0.1.0.zip",
-  "sha256": "cc021364bc1d7ee5649f3b1cf2e5f558d93e60338c6d3b7857d20e5704b1b6f5",
+  "sha256": "695c3683cbc1537d487d2708846c061f786dcc8f2bc66ab20e38c6d43f2f8157",
   "image_policy": "Only explicitly owner-approved images enter runtime",
   "review_counts": {
     "pending": 32,
-    "approved": 0,
+    "approved": 1,
     "rejected": 0
   },
-  "runtime_image_count": 0,
+  "runtime_image_count": 1,
   "chatluna_parser": "1.4.2 actual package parser validated",
   "koishi_plugin_installed_and_enabled": true,
   "isolated_preset_loaded": true,
-  "production_role_switched": false,
+  "production_role_switched": true,
   "live_qq_image_upload_tested": false,
-  "behavior_validation": "independent agent scenario exercise; not a live Gemini/DeepSeek comparison",
+  "behavior_validation": "configured provider samples plus installed Koishi renderer/hook; one sample per case, not a statistical model comparison",
+  "model_probe": {
+    "date": "2026-10-23T08:29:55.200Z",
+    "model": "gpt-6-luna",
+    "api_calls": 12,
+    "cases_per_variant": {
+      "baseline": 6,
+      "modular": 6
+    },
+    "errors": 0,
+    "qq_messages_sent": 0
+  },
+  "final_model_probe": {
+    "date": "2026-10-23T09:13:28.615Z",
+    "model": "gpt-6-luna",
+    "api_calls": 4,
+    "cases": 4,
+    "errors": 0,
+    "qq_messages_sent": 0
+  },
+  "production_snapshot": {
+    "matches_current_export": true,
+    "selected_groups": 5,
+    "model": "openai-like/gpt-6-luna",
+    "history_preserved": true,
+    "evidence": [
+      "validation/production-cutover-result.json",
+      "validation/production-health.json"
+    ]
+  },
   "koishi_plugin_archive": {
     "file": "koishi-plugin-arturia-reviewed-stickers-0.1.1.tgz",
     "sha256": "fdc45d8de4fac312d7d5a985146fe76bb0bb99e897c2876afeebd10ef2363c5d"

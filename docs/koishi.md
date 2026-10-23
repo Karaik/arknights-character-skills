@@ -4,7 +4,7 @@
 
 ## 先审表情
 
-打开 `review/index.html`，看原图、情绪、来源、理由、适用和回避场景。32 张初始都是 pending，只含无角色通用图和图图本人。管理者确认 ID 后，可以在仓库本地执行：
+打开 `review/index.html`，看原图、情绪、来源、理由、适用和回避场景。目前 33 张中，`arturia-sway-01` 已由管理者明确批准，其余 32 张 pending；只含无角色通用图和图图本人。管理者确认其他 ID 后，可以在仓库本地执行：
 
 ```powershell
 python scripts/review_stickers.py approve arturia-11 prts-06 --note "管理者明确保留这两个ID"
@@ -18,7 +18,7 @@ python scripts/validate.py
 ## 普通 ChatLuna 接法（优先）
 
 1. 本地执行 `python scripts/build.py`。`build/arturia.yml` 是可直接被 ChatLuna 1.4.2 解析的普通预设，包含八个身份别名、常驻核心和四个世界书模块。
-2. 经另行批准后，备份服务端原 `arturia.yml`，再将此生成文件放进 Koishi 的 `data/chathub/presets`。不要用整个 Koishi 配置覆盖现有配置。
+2. 将生成文件放进 Koishi 的 `data/chathub/presets`。本次先更新独立文件 `arturia-skill-test.yml`，随后管理者明确批准正式启用，已替换正式 `arturia.yml` 并将 5 个群当前会话模型切为 `gpt-6-luna`。管理者明确无需额外备份，本次未创建备份文件，聊天历史完整保留。
 3. 在目标会话选择“阿尔图罗”预设。保留会话选择的模型；全局默认和已存在会话模型可能不同。
 4. 表情接法使用下面的本地插件。不开表情时，直接保持普通纯文本预设即可。
 
@@ -38,7 +38,9 @@ npm pack ./adapters/koishi --pack-destination ./build
 
 `adapters/chatluna/config.example.yml` 是合并参考，真实插件组和实例名沿用现有部署。图片标记需要完整交给发送钩子，所以推荐关闭角色流式输出，关闭分句发送，保留 `pure-text`。不要全局改其他业务的渲染方式。
 
-已验证：真实 ChatLuna pure-text 渲染保留标记；真实 Koishi 消息元素可由钩子替换；未审核、未知、越界路径或哈希变化的图片不能发送。在服务器实际安装的插件上，用独立 Koishi Context 和生成像素图验证了钩子、内联图片、撤销和只剩引用时的拦截；没有连接 QQ 适配器、没有做真实 QQ 图片上传或给群里发测试消息。当前生产配置 allowedGuilds 为空、已批准图片数为 0，等管理者选择。
+已验证：真实 ChatLuna pure-text 渲染保留标记；真实 Koishi 消息元素可由钩子替换；未审核、未知、越界路径或哈希变化的图片不能发送。服务器已用独立 Koishi Context 验证像素图的钩子、撤销和空引用拦截；本次又把实际模型产生的 `[[sticker:arturia-sway-01]]` 经渲染及已安装钩子转成 `image/gif` 内联数据，字节哈希与已批准原文件一致。没有连接测试 QQ 适配器，也没有群发测试。运行清单已有 1 张批准 GIF；经管理者确认，生产 allowedGuilds 现为 5 个既有群，群 ID 仅保存在服务器配置中。
+
+`exports/chatluna/runtime-manifest.json` 的相对图片路径在同级 `images/` 中完整提供。只有 approved 素材进入该目录；重新打包会移除已撤销的旧运行图片。
 
 审批清单在每次处理图片标记时重新读取，撤销批准后不会继续使用进程内旧审批。更新或撤回图片时，重新生成并整体替换运行目录，不把旧文件混入新包。插件代码本身升级仍需按 Koishi 常规方式重载插件。
 
@@ -57,6 +59,8 @@ npm pack ./adapters/koishi --pack-destination ./build
 ## 旧上下文与模型
 
 先保留原历史，在独立会话评估新版。旧回复可能延续同一种语气；不清空数据库。模型采样参数不统一乱调，也不把角色设定当作解除模型限制的手段。
+
+本次实际调用见 `validation/model-probe-results.json`：同一当前可用渠道 `gpt-6-luna`，6 个匿名场景各比较旧版／新版一次。预设由实际 ChatLuna parser 读取，世界书仅按本项目的普通字面关键词匹配装配；测试不等同完整运行中的会话服务，也不含既有群聊历史。正式迁移经管理者确认后完成，5 个目标群的模型已统一为 `gpt-6-luna`，历史记录在 SQLite 内存演练、实际事务及重载后均校验未变；没有清空会话。
 
 官方依据：
 

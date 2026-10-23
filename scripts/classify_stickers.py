@@ -41,12 +41,17 @@ def main():
     p=ROOT/'stickers/catalog.json'
     data=json.loads(p.read_text(encoding='utf-8'))
     for item in data['stickers']:
+        if item.get('asset_origin') == 'repository':
+            for key in ['visual_description', 'emotion', 'intensity', 'use_when', 'avoid_when', 'arturia_fit', 'selection_reason']:
+                if not item.get(key):raise ValueError(f"{item['id']}: missing curated classification {key}")
+            continue
         visual, emotion, intensity, use, avoid, fit=ROWS[item['id']]
         item.update(visual_description=visual,emotion=emotion,intensity=intensity,
                     use_when=[use],avoid_when=[avoid],arturia_fit=fit,
-                    selection_reason=f"{visual}能直观表达{'、'.join(emotion)}；来源可追溯，供你判断群聊与角色适配。",
-                    review_note='已进行人工图像检查；候选不等于主人批准，默认待审。')
+                    selection_reason=f"{visual}能直观表达{'、'.join(emotion)}；来源可追溯，供你判断群聊与角色适配。")
+        if item['review'] == 'pending':
+            item['review_note']='已进行人工图像检查；候选不等于主人批准，默认待审。'
     p.write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n',encoding='utf-8', newline='\n')
-    print(f'Classified {len(data["stickers"])} candidates after inspecting both contact sheets.')
+    print(f'Classified {len(data["stickers"])} images; curated repository metadata and owner decisions retained.')
 
 if __name__=='__main__':main()

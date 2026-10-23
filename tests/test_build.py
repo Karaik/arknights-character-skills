@@ -4,6 +4,7 @@ import json
 from pathlib import Path
 import tempfile
 import unittest
+from unittest.mock import patch
 
 ROOT = Path(__file__).resolve().parents[1]
 spec = importlib.util.spec_from_file_location('build_skill', ROOT/'scripts/build.py')
@@ -11,6 +12,19 @@ builder = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(builder)
 
 class BuildTests(unittest.TestCase):
+    def test_conversation_examples_follow_sticker_approval(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            target=Path(tmp)
+            fixture=copy.deepcopy(next(x for x in builder.load_catalog() if x['id']=='arturia-sway-01'))
+            fixture['review']='approved'
+            with patch.object(builder,'load_catalog',return_value=[fixture]):
+                preset,_=builder.build(target=target)
+            assistants=[x['content']for x in preset['prompts']if x['role']=='assistant']
+            self.assertTrue(any('[[sticker:arturia-sway-01]]' in x for x in assistants))
+            with patch.object(builder,'load_catalog',return_value=[]):
+                preset,_=builder.build(target=target)
+            self.assertFalse(any('[[sticker:' in x['content']for x in preset['prompts']if x['role']=='assistant'))
+
     def test_approval_is_explicit(self):
         items = [{'id':'a','review':'pending','subject_scope':'generic'}, {'id':'b','review':'approved','subject_scope':'generic'},
                  {'id':'c','review':'rejected','subject_scope':'arturia'}, {'id':'d','review':'approved','subject_scope':'other'}]

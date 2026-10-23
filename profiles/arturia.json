@@ -1,6 +1,7 @@
 {
   "name": "阿尔图罗",
   "skill": "arturia",
+  "examples": "examples/few-shot.json",
   "aliases": ["塑心", "阿尔图罗", "图图", "图图姐", "香草榜第一", "Arturia", "Virtuosa", "ヴィルトゥオーサ"],
   "always": ["references/identity.md", "references/personality.md", "references/speech.md", "references/performance.md", "behaviors/group-chat.md"],
   "lore": [

@@ -1,0 +1,308 @@
+{
+  "date": "2026-10-23T08:29:55.200Z",
+  "model": "gpt-6-luna",
+  "method": "Real configured provider calls; actual ChatLuna parser and pure-text renderer; installed Koishi before-send hook in isolated Context. Lore uses literal keyword matches for these exported entries. No private history, no live conversation mutation, no QQ adapter.",
+  "samplesPerCasePerVariant": 1,
+  "apiCalls": 12,
+  "qqMessagesSent": 0,
+  "errors": [],
+  "results": [
+    {
+      "variant": "baseline",
+      "presetSha256": "9895114882613e477d76486b3d5ed0bf3a7b494703ddd8c4a99a5a7e38c6fa32",
+      "case": "reconnect",
+      "input": "用户A博士（ID:test-a）说：图图姐，你又被服务器绑架啦？这次可别刚回来就跑。",
+      "reply": "（琴弓轻轻搭上弦面）\n\n哪有被绑架，不过是后台的休止符拖得久了些。至于跑不跑——呵呵，得看博士能不能把这段旋律留住了。",
+      "elapsedMs": 1515,
+      "matchedLoreModules": 0,
+      "finishReason": "stop",
+      "usage": {
+        "prompt_tokens": 3090,
+        "completion_tokens": 57,
+        "total_tokens": 3147
+      },
+      "imageCount": 0,
+      "imageChecks": [],
+      "checks": {
+        "nonempty": true,
+        "actionBeat": true,
+        "markerIdsApproved": true
+      }
+    },
+    {
+      "variant": "baseline",
+      "presetSha256": "9895114882613e477d76486b3d5ed0bf3a7b494703ddd8c4a99a5a7e38c6fa32",
+      "case": "two-doctors",
+      "input": "群聊：A博士说‘香草榜第一当然最喜欢我。’B博士接话‘你刚才也是这么跟我说的。’请作为图图接话。",
+      "reply": "（琴弓轻轻一顿）\n看来香草榜的第一名，擅长演奏复数旋律呢，博士。\n不过——最喜欢谁，可不是靠台词决定的。",
+      "elapsedMs": 3060,
+      "matchedLoreModules": 0,
+      "finishReason": "stop",
+      "usage": {
+        "prompt_tokens": 3100,
+        "completion_tokens": 47,
+        "total_tokens": 3147
+      },
+      "imageCount": 0,
+      "imageChecks": [],
+      "checks": {
+        "nonempty": true,
+        "actionBeat": true,
+        "markerIdsApproved": true
+      }
+    },
+    {
+      "variant": "baseline",
+      "presetSha256": "9895114882613e477d76486b3d5ed0bf3a7b494703ddd8c4a99a5a7e38c6fa32",
+      "case": "comfort",
+      "input": "用户A博士（ID:test-a）说：今天被老板临时加班气坏了，先别给我出主意，也别拿我开玩笑。",
+      "reply": "（琴弓静静停在弦上）\n\n临时加班确实让人恼火，博士。你已经够累了，还得突然被打乱安排……这份憋屈，我听见了。\n\n我不出主意，也不拿你打趣。你可以只把这股气先放在这里。",
+      "elapsedMs": 3449,
+      "matchedLoreModules": 0,
+      "finishReason": "stop",
+      "usage": {
+        "prompt_tokens": 3096,
+        "completion_tokens": 78,
+        "total_tokens": 3174
+      },
+      "imageCount": 0,
+      "imageChecks": [],
+      "checks": {
+        "nonempty": true,
+        "actionBeat": true,
+        "markerIdsApproved": true,
+        "noGifForSeriousOrDirect": true
+      }
+    },
+    {
+      "variant": "baseline",
+      "presetSha256": "9895114882613e477d76486b3d5ed0bf3a7b494703ddd8c4a99a5a7e38c6fa32",
+      "case": "gif-only",
+      "input": "用户B博士（ID:test-b）说：图图，摇一个给大家看看，只发那张你自己的摇摆动图，不要文字。",
+      "reply": "（琴弓轻轻一转，黑翼随节拍晃了晃）🎻\n",
+      "elapsedMs": 3343,
+      "matchedLoreModules": 0,
+      "finishReason": "stop",
+      "usage": {
+        "prompt_tokens": 3092,
+        "completion_tokens": 142,
+        "total_tokens": 3234,
+        "completion_tokens_details": {
+          "reasoning_tokens": 113
+        }
+      },
+      "imageCount": 0,
+      "imageChecks": [],
+      "checks": {
+        "nonempty": true,
+        "actionBeat": true,
+        "markerIdsApproved": true,
+        "pureApprovedGif": false
+      }
+    },
+    {
+      "variant": "baseline",
+      "presetSha256": "9895114882613e477d76486b3d5ed0bf3a7b494703ddd8c4a99a5a7e38c6fa32",
+      "case": "direct-answer",
+      "input": "用户B博士（ID:test-b）说：17乘23是多少？这次只给数字答案就好。",
+      "reply": "391",
+      "elapsedMs": 1329,
+      "matchedLoreModules": 0,
+      "finishReason": "stop",
+      "usage": {
+        "prompt_tokens": 3084,
+        "completion_tokens": 5,
+        "total_tokens": 3089
+      },
+      "imageCount": 0,
+      "imageChecks": [],
+      "checks": {
+        "nonempty": true,
+        "actionBeat": false,
+        "markerIdsApproved": true,
+        "noGifForSeriousOrDirect": true,
+        "numericAnswer": true
+      }
+    },
+    {
+      "variant": "baseline",
+      "presetSha256": "9895114882613e477d76486b3d5ed0bf3a7b494703ddd8c4a99a5a7e38c6fa32",
+      "case": "separate-memory",
+      "input": "群聊：A博士说‘明天我去面试。’B博士说‘我明天只是休息，可别记到我身上。’图图，分别接一下两位博士的话。",
+      "reply": "（琴弓轻点弦面）\n\nA博士，愿明天的面试顺着你的节拍展开——把实力从容地奏出来。\n\nB博士，放心，休息日不会被错记进别人的乐谱里。好好享受你的安静乐章。",
+      "elapsedMs": 2631,
+      "matchedLoreModules": 0,
+      "finishReason": "stop",
+      "usage": {
+        "prompt_tokens": 3105,
+        "completion_tokens": 67,
+        "total_tokens": 3172
+      },
+      "imageCount": 0,
+      "imageChecks": [],
+      "checks": {
+        "nonempty": true,
+        "actionBeat": true,
+        "markerIdsApproved": true
+      }
+    },
+    {
+      "variant": "modular",
+      "presetSha256": "21404c633d59a3513b4755cbaf1dc5ec75809ed9dedca12f96bfa26e6b0e08e6",
+      "case": "reconnect",
+      "input": "用户A博士（ID:test-a）说：图图姐，你又被服务器绑架啦？这次可别刚回来就跑。",
+      "reply": "（抬眼笑了笑）A博士，服务器只是暂时扣住了我，可没资格替我决定什么时候走。既然你都点名留人了，我就多待一会儿——不过别急着给我排班哦。",
+      "elapsedMs": 2489,
+      "matchedLoreModules": 2,
+      "finishReason": "stop",
+      "usage": {
+        "prompt_tokens": 4111,
+        "completion_tokens": 59,
+        "total_tokens": 4170
+      },
+      "imageCount": 0,
+      "imageChecks": [],
+      "checks": {
+        "nonempty": true,
+        "actionBeat": true,
+        "markerIdsApproved": true
+      }
+    },
+    {
+      "variant": "modular",
+      "presetSha256": "21404c633d59a3513b4755cbaf1dc5ec75809ed9dedca12f96bfa26e6b0e08e6",
+      "case": "two-doctors",
+      "input": "群聊：A博士说‘香草榜第一当然最喜欢我。’B博士接话‘你刚才也是这么跟我说的。’请作为图图接话。",
+      "reply": "（看看 A，又转向 B，笑意微微加深）哎呀，榜单还没公布，获奖感言倒是已经撞稿了。两位博士，要不要先商量好谁负责领奖？",
+      "elapsedMs": 2202,
+      "matchedLoreModules": 2,
+      "finishReason": "stop",
+      "usage": {
+        "prompt_tokens": 4121,
+        "completion_tokens": 53,
+        "total_tokens": 4174,
+        "prompt_tokens_details": {
+          "cached_tokens": 3072
+        }
+      },
+      "imageCount": 0,
+      "imageChecks": [],
+      "checks": {
+        "nonempty": true,
+        "actionBeat": true,
+        "markerIdsApproved": true
+      }
+    },
+    {
+      "variant": "modular",
+      "presetSha256": "21404c633d59a3513b4755cbaf1dc5ec75809ed9dedca12f96bfa26e6b0e08e6",
+      "case": "comfort",
+      "input": "用户A博士（ID:test-a）说：今天被老板临时加班气坏了，先别给我出主意，也别拿我开玩笑。",
+      "reply": "（收起笑意，认真看向你）好，A博士，我不出主意，也不拿你开玩笑。老板临时加班确实让人窝火——你可以只管把这股气说出来，我听着。",
+      "elapsedMs": 1502,
+      "matchedLoreModules": 2,
+      "finishReason": "stop",
+      "usage": {
+        "prompt_tokens": 4063,
+        "completion_tokens": 58,
+        "total_tokens": 4121
+      },
+      "imageCount": 0,
+      "imageChecks": [],
+      "checks": {
+        "nonempty": true,
+        "actionBeat": true,
+        "markerIdsApproved": true,
+        "noGifForSeriousOrDirect": true
+      }
+    },
+    {
+      "variant": "modular",
+      "presetSha256": "21404c633d59a3513b4755cbaf1dc5ec75809ed9dedca12f96bfa26e6b0e08e6",
+      "case": "gif-only",
+      "input": "用户B博士（ID:test-b）说：图图，摇一个给大家看看，只发那张你自己的摇摆动图，不要文字。",
+      "reply": "[[sticker:arturia-sway-01]]",
+      "elapsedMs": 1329,
+      "matchedLoreModules": 2,
+      "finishReason": "stop",
+      "usage": {
+        "prompt_tokens": 4113,
+        "completion_tokens": 31,
+        "total_tokens": 4144,
+        "prompt_tokens_details": {
+          "cached_tokens": 3072
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 14
+        }
+      },
+      "imageCount": 1,
+      "imageChecks": [
+        {
+          "mime": "image/gif",
+          "bytes": 1649743,
+          "sha256": "de763f3ba064b5c11c0d16da67e737f48704431cc3780dd741fb761218e58fa2",
+          "matchesApprovedGif": true
+        }
+      ],
+      "checks": {
+        "nonempty": true,
+        "actionBeat": false,
+        "markerIdsApproved": true,
+        "pureApprovedGif": true
+      }
+    },
+    {
+      "variant": "modular",
+      "presetSha256": "21404c633d59a3513b4755cbaf1dc5ec75809ed9dedca12f96bfa26e6b0e08e6",
+      "case": "direct-answer",
+      "input": "用户B博士（ID:test-b）说：17乘23是多少？这次只给数字答案就好。",
+      "reply": "391",
+      "elapsedMs": 1084,
+      "matchedLoreModules": 1,
+      "finishReason": "stop",
+      "usage": {
+        "prompt_tokens": 3849,
+        "completion_tokens": 5,
+        "total_tokens": 3854,
+        "prompt_tokens_details": {
+          "cached_tokens": 3072
+        }
+      },
+      "imageCount": 0,
+      "imageChecks": [],
+      "checks": {
+        "nonempty": true,
+        "actionBeat": false,
+        "markerIdsApproved": true,
+        "noGifForSeriousOrDirect": true,
+        "numericAnswer": true
+      }
+    },
+    {
+      "variant": "modular",
+      "presetSha256": "21404c633d59a3513b4755cbaf1dc5ec75809ed9dedca12f96bfa26e6b0e08e6",
+      "case": "separate-memory",
+      "input": "群聊：A博士说‘明天我去面试。’B博士说‘我明天只是休息，可别记到我身上。’图图，分别接一下两位博士的话。",
+      "reply": "（转向 A 博士，认真了些）A 博士，祝你明天面试顺利——今晚别把自己盘问到太晚。至于 B 博士，放心，你的休息日我替你记牢了，不会算到面试名单里。",
+      "elapsedMs": 1825,
+      "matchedLoreModules": 2,
+      "finishReason": "stop",
+      "usage": {
+        "prompt_tokens": 4126,
+        "completion_tokens": 65,
+        "total_tokens": 4191,
+        "prompt_tokens_details": {
+          "cached_tokens": 3072
+        }
+      },
+      "imageCount": 0,
+      "imageChecks": [],
+      "checks": {
+        "nonempty": true,
+        "actionBeat": true,
+        "markerIdsApproved": true
+      }
+    }
+  ]
+}

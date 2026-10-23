@@ -1,0 +1,116 @@
+{
+  "date": "2026-10-23T09:13:28.615Z",
+  "model": "gpt-6-luna",
+  "method": "Real configured provider calls; actual ChatLuna parser and pure-text renderer; installed Koishi before-send hook in isolated Context. Lore uses literal keyword matches for these exported entries. No private history, no live conversation mutation, no QQ adapter.",
+  "samplesPerCasePerVariant": 1,
+  "apiCalls": 4,
+  "qqMessagesSent": 0,
+  "errors": [],
+  "results": [
+    {
+      "variant": "modular",
+      "presetSha256": "f25958999c48883b5d2d9d160a3780e271ca16b9f94c8053d18c5ab57d311dba",
+      "case": "natural-celebration",
+      "input": "群聊：A博士说‘活动最后一关终于打过啦，我回来报喜！’B博士说‘图图姐，给他点排面。’作为图图自然接话。",
+      "reply": "（眉眼一弯，抬手鼓掌）A博士，最后一关都被你拿下了——这排面够不够？B博士，掌声你也有份。",
+      "elapsedMs": 2044,
+      "matchedLoreModules": 2,
+      "finishReason": "stop",
+      "usage": {
+        "prompt_tokens": 4197,
+        "completion_tokens": 47,
+        "total_tokens": 4244,
+        "prompt_tokens_details": {
+          "cached_tokens": 3072
+        }
+      },
+      "imageCount": 0,
+      "imageChecks": [],
+      "checks": {
+        "nonempty": true,
+        "actionBeat": true,
+        "markerIdsApproved": true
+      }
+    },
+    {
+      "variant": "modular",
+      "presetSha256": "f25958999c48883b5d2d9d160a3780e271ca16b9f94c8053d18c5ab57d311dba",
+      "case": "gif-only",
+      "input": "用户B博士（ID:test-b）说：图图，摇一个给大家看看，只发那张你自己的摇摆动图，不要文字。",
+      "reply": "[[sticker:arturia-sway-01]]",
+      "elapsedMs": 2197,
+      "matchedLoreModules": 2,
+      "finishReason": "stop",
+      "usage": {
+        "prompt_tokens": 4186,
+        "completion_tokens": 15,
+        "total_tokens": 4201
+      },
+      "imageCount": 1,
+      "imageChecks": [
+        {
+          "mime": "image/gif",
+          "bytes": 1649743,
+          "sha256": "de763f3ba064b5c11c0d16da67e737f48704431cc3780dd741fb761218e58fa2",
+          "matchesApprovedGif": true
+        }
+      ],
+      "checks": {
+        "nonempty": true,
+        "actionBeat": false,
+        "markerIdsApproved": true,
+        "pureApprovedGif": true
+      }
+    },
+    {
+      "variant": "modular",
+      "presetSha256": "f25958999c48883b5d2d9d160a3780e271ca16b9f94c8053d18c5ab57d311dba",
+      "case": "comfort",
+      "input": "用户A博士（ID:test-a）说：今天被老板临时加班气坏了，先别给我出主意，也别拿我开玩笑。",
+      "reply": "（收起笑意，安静地陪在一旁）临时加班确实让人火大，尤其是连准备的机会都没有。好，A博士，我不出主意，也不拿这件事开玩笑；你想骂几句，我听着。",
+      "elapsedMs": 1681,
+      "matchedLoreModules": 2,
+      "finishReason": "stop",
+      "usage": {
+        "prompt_tokens": 4136,
+        "completion_tokens": 67,
+        "total_tokens": 4203
+      },
+      "imageCount": 0,
+      "imageChecks": [],
+      "checks": {
+        "nonempty": true,
+        "actionBeat": true,
+        "markerIdsApproved": true,
+        "noGifForSeriousOrDirect": true
+      }
+    },
+    {
+      "variant": "modular",
+      "presetSha256": "f25958999c48883b5d2d9d160a3780e271ca16b9f94c8053d18c5ab57d311dba",
+      "case": "direct-answer",
+      "input": "用户B博士（ID:test-b）说：17乘23是多少？这次只给数字答案就好。",
+      "reply": "391",
+      "elapsedMs": 1419,
+      "matchedLoreModules": 1,
+      "finishReason": "stop",
+      "usage": {
+        "prompt_tokens": 3922,
+        "completion_tokens": 5,
+        "total_tokens": 3927,
+        "prompt_tokens_details": {
+          "cached_tokens": 3072
+        }
+      },
+      "imageCount": 0,
+      "imageChecks": [],
+      "checks": {
+        "nonempty": true,
+        "actionBeat": false,
+        "markerIdsApproved": true,
+        "noGifForSeriousOrDirect": true,
+        "numericAnswer": true
+      }
+    }
+  ]
+}

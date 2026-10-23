@@ -3,10 +3,64 @@
   "repository": "https://github.com/Karaik/arknights-character-skills",
   "visibility_verified": "PRIVATE",
   "local_path": "D:/Code/arknights-character-skills",
-  "source_material": {"prts_revisions": [442654,424629,427233], "story_expression_mapping_revision":442087},
-  "sticker_candidates": {"total":32,"generic":20,"arturia":12,"other_characters":0,"approved":0,"pending":32},
-  "checks": {"node_tests_passed":10,"python_tests_passed":2,"actual_chatluna_parser":"1.4.2","images_decoded_and_hashed":32,"skill_validator":"passed","zip_determinism":"verified"},
-  "live_test": {"plugin_version":"0.1.1","plugin_enabled":true,"preset":"阿尔图罗-skill测试","isolated_context_hook":"passed","qq_logged_in":true,"onebot_established_connections":1,"ccs_rsshub_http":200,"synthetic_qq_messages":0,"extra_backup_created":false},
-  "intentional_review_gate": "Candidate selection remains with the owner. Empty allowed groups and empty runtime image manifest are deliberate, not a failed install.",
-  "limitations": ["No live target-model comparison", "No real QQ image upload", "Arturia crops are official story sprite derivatives, not a separately published official sticker pack", "Popular Arturia fan GIF set has a verified source lead, but original GIFs were not obtained"]
+  "source_material": {
+    "prts_revisions": [
+      442654,
+      424629,
+      427233
+    ],
+    "story_expression_mapping_revision": 442087
+  },
+  "sticker_candidates": {
+    "total": 33,
+    "generic": 20,
+    "arturia": 13,
+    "other_characters": 0,
+    "approved": 1,
+    "pending": 32
+  },
+  "checks": {
+    "node_tests_passed": 10,
+    "python_tests_passed": 5,
+    "actual_chatluna_parser": "1.4.2",
+    "images_decoded_and_hashed": 33,
+    "skill_validator": "passed",
+    "zip_determinism": "verified",
+    "export_images_self_contained": true
+  },
+  "live_test": {
+    "plugin_version": "0.1.1",
+    "plugin_enabled": true,
+    "preset": "阿尔图罗-skill测试",
+    "isolated_context_hook": "passed",
+    "qq_logged_in": true,
+    "onebot_established_connections": 1,
+    "ccs_rsshub_http": 200,
+    "synthetic_qq_messages": 0,
+    "extra_backup_created": false,
+    "approvedImageCount": 1,
+    "allowedLiveGroups": 5,
+    "actualConfiguredModelCalls": 16,
+    "model": "openai-like/gpt-6-luna",
+    "approvedGifConversion": "passed with actual installed renderer/hook",
+    "productionRoleSwitched": true,
+    "selectedGroupConversations": 5,
+    "originalHistoryMessagesPreserved": 958,
+    "ccs_rss_feed_http": 200
+  },
+  "intentional_review_gate": "The owner-approved GIF and modular preset are active in the 5 owner-approved existing groups. The remaining 32 sticker candidates are pending owner selection.",
+  "limitations": [
+    "Single sample per synthetic case; no long-term or cross-model statistical comparison",
+    "No synthetic QQ message or separate real QQ image-upload test",
+    "Automatic sticker frequency remains a contextual model choice, not a guaranteed rate",
+    "Other non-target conversations retain their previous model selections",
+    "The 2023 popular fan GIF set remains a separate source lead"
+  ],
+  "latest_evidence": [
+    "validation/approved-gif-integration.md",
+    "validation/production-cutover-result.json",
+    "validation/production-health.json",
+    "validation/model-probe-results.json",
+    "validation/final-model-probe-results.json"
+  ]
 }

@@ -13,6 +13,10 @@ def main():
     exports.mkdir(parents=True,exist_ok=True)
     shutil.copyfile(ROOT/'build/arturia.yml',exports/'arturia.yml')
     shutil.copyfile(ROOT/'build/runtime/manifest.json',exports/'runtime-manifest.json')
+    # Keep every exported relative image path usable, and remove revoked images.
+    images=exports/'images'
+    if images.exists():shutil.rmtree(images)
+    shutil.copytree(ROOT/'build/runtime/images',images)
     target=ROOT/'dist';target.mkdir(exist_ok=True)
     archive=target/'arturia-skill-0.1.0.zip'
     with zipfile.ZipFile(archive,'w',compression=zipfile.ZIP_DEFLATED) as z:
@@ -31,6 +35,32 @@ def main():
             'koishi_plugin_installed_and_enabled':True,'isolated_preset_loaded':True,
             'production_role_switched':False,'live_qq_image_upload_tested':False,
             'behavior_validation':'independent agent scenario exercise; not a live Gemini/DeepSeek comparison'}
+    probe=ROOT/'validation/model-probe-results.json'
+    if probe.exists():
+        sampled=json.loads(probe.read_text(encoding='utf-8'))
+        report['behavior_validation']='configured provider samples plus installed Koishi renderer/hook; one sample per case, not a statistical model comparison'
+        report['model_probe']={
+            'date':sampled['date'],'model':sampled['model'],'api_calls':sampled['apiCalls'],
+            'cases_per_variant':{v:sum(x['variant']==v for x in sampled['results'])for v in ['baseline','modular']},
+            'errors':len(sampled['errors']),'qq_messages_sent':sampled['qqMessagesSent']}
+    final_probe=ROOT/'validation/final-model-probe-results.json'
+    if final_probe.exists():
+        sampled=json.loads(final_probe.read_text(encoding='utf-8'))
+        report['final_model_probe']={'date':sampled['date'],'model':sampled['model'],
+            'api_calls':sampled['apiCalls'],'cases':len(sampled['results']),
+            'errors':len(sampled['errors']),'qq_messages_sent':sampled['qqMessagesSent']}
+    deployed=ROOT/'validation/production-cutover-result.json'
+    if deployed.exists():
+        deployment=json.loads(deployed.read_text(encoding='utf-8'))
+        health_file=ROOT/'validation/production-health.json'
+        health=json.loads(health_file.read_text(encoding='utf-8'))if health_file.exists()else{}
+        live_hash=health.get('productionPresetSha256',deployment.get('productionPresetSha256'))
+        same_export=live_hash==hashlib.sha256((exports/'arturia.yml').read_bytes()).hexdigest()
+        report['production_role_switched']=bool(deployment.get('success') and same_export)
+        report['production_snapshot']={
+            'matches_current_export':same_export,'selected_groups':deployment['selectedGroupConversations'],
+            'model':deployment['newModel'],'history_preserved':deployment['historyUnchangedDuringTransaction'],
+            'evidence':['validation/production-cutover-result.json','validation/production-health.json']}
     plugin_version=json.loads((ROOT/'adapters/koishi/package.json').read_text(encoding='utf-8'))['version']
     plugin_name=f'koishi-plugin-arturia-reviewed-stickers-{plugin_version}.tgz'
     plugin=ROOT/'build'/plugin_name

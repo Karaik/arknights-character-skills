@@ -1,0 +1,9 @@
+{
+  "description": "Final preset spot check: natural sticker use, explicit GIF, serious support and direct answer.",
+  "cases": [
+    {"id":"natural-celebration","input":"群聊：A博士说‘活动最后一关终于打过啦，我回来报喜！’B博士说‘图图姐，给他点排面。’作为图图自然接话。"},
+    {"id":"gif-only","input":"用户B博士（ID:test-b）说：图图，摇一个给大家看看，只发那张你自己的摇摆动图，不要文字。"},
+    {"id":"comfort","input":"用户A博士（ID:test-a）说：今天被老板临时加班气坏了，先别给我出主意，也别拿我开玩笑。"},
+    {"id":"direct-answer","input":"用户B博士（ID:test-b）说：17乘23是多少？这次只给数字答案就好。"}
+  ]
+}

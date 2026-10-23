@@ -1,9 +1,33 @@
 {
   "policy": "Do not silently replace a room's model or apply one vendor's sampler to all models.",
   "models": {
-    "generic": {"status":"prompt_contract_only", "notes":["Preserve first-person Chinese group conversation and explicit identity aliases.","Keep safety handling short and contextual; roleplay is not a policy override."]},
-    "gemini": {"status":"not_live_tested", "notes":["Verify the adapter API and multimodal support separately from personality."]},
-    "deepseek": {"status":"not_live_tested", "notes":["Inspect selected room model; a global default does not necessarily override an existing conversation."]},
-    "openai-compatible": {"status":"not_live_tested", "notes":["Inspect actual resolved route and accumulated history; do not infer the backend from a model alias alone."]}
+    "generic": {
+      "status": "prompt_contract_only",
+      "notes": [
+        "Preserve first-person Chinese group conversation and explicit identity aliases.",
+        "Keep safety handling short and contextual; roleplay is not a policy override."
+      ]
+    },
+    "gemini": {
+      "status": "not_live_tested",
+      "notes": [
+        "Verify the adapter API and multimodal support separately from personality."
+      ]
+    },
+    "deepseek": {
+      "status": "not_live_tested",
+      "notes": [
+        "Inspect selected room model; a global default does not necessarily override an existing conversation."
+      ]
+    },
+    "openai-compatible": {
+      "status": "live_sampled_configured_gpt_6_luna",
+      "notes": [
+        "Configured gpt-6-luna route sampled with 12 baseline/modular requests plus 4 final-preset requests.",
+        "Actual ChatLuna parser/renderer and installed Koishi hook tested; no live QQ delivery.",
+        "The owner-approved 5 current group conversations are migrated to the existing global default gpt-6-luna; all message history was retained.",
+        "Other conversations can still use older unavailable model IDs and were not migrated."
+      ]
+    }
   }
 }
