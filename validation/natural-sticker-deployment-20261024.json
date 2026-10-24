@@ -1,0 +1,70 @@
+{
+  "success": true,
+  "date": "2026-10-24T05:24:43.510150+00:00",
+  "formalPresetSha256": "3ff3d20e4844d0b62a05497250ad18f95a5583b1e1595df61b790eb37ce0692c",
+  "previousPresetSha256": "5051ba6f7d19467f2d2fb0422a5fc59bac11ea88c953fb41a8f7100ca00d2745",
+  "skills": [
+    {
+      "name": "arturia",
+      "sha256": "72aa7450453b8c0b36a4b37ed06372062faf150604b553e70ab31086a9f52a00"
+    },
+    {
+      "name": "arturia-banter",
+      "sha256": "44a616c2f0237d3ef22144f792afbc18a2e0fbb6e21a14a484d9e96a7561e1db"
+    },
+    {
+      "name": "arturia-comfort",
+      "sha256": "3c7002d3285c2e17f1d27a3174c97a61bfe7c60fa027a371e1fac4e58b40a8f6"
+    },
+    {
+      "name": "arturia-examples",
+      "sha256": "8a032a6d5015a7b379a59f820e6f4e414afe754db6348465b2ad57952e724db8"
+    },
+    {
+      "name": "arturia-lore",
+      "sha256": "3f00f98e2eda700b2843e10c514a51920ec681fa0effe599bfe5b25cd79ab89a"
+    },
+    {
+      "name": "arturia-relationships",
+      "sha256": "ad18cd82a5a53860bd88234c5c8268eba0fb8b6a63bdb6e79c5162ac9c8f0222"
+    },
+    {
+      "name": "arturia-stickers",
+      "sha256": "274eb52689776ef467c6449f52c59fbf8a55199fb3c82171368058aeceffe6af"
+    }
+  ],
+  "manifestSha256": "bad5426d92083a075c6fa11f2ba88f6e60fcbe472bf29274bc197a89af0339a5",
+  "imageHashesUnchanged": true,
+  "imageCount": 7,
+  "configurationUnchanged": true,
+  "historyOriginalRowsPreserved": true,
+  "historyRowsBefore": 962,
+  "historyRowsAfter": 962,
+  "activeGroups": 5,
+  "chatMode": "plugin",
+  "model": "openai-like/gpt-6-luna",
+  "changedFiles": [
+    "data/chatluna/skills/arturia/SKILL.md",
+    "data/chatluna/skills/arturia-banter/SKILL.md",
+    "data/chatluna/skills/arturia-comfort/SKILL.md",
+    "data/chatluna/skills/arturia-examples/SKILL.md",
+    "data/chatluna/skills/arturia-stickers/SKILL.md",
+    "data/chathub/presets/arturia.yml"
+  ],
+  "consoleHTTP": 200,
+  "koishiRestarted": false,
+  "testPresetPresent": false,
+  "syntheticQqMessagesSent": 0,
+  "extraBackupFilesCreated": false,
+  "runtimeContentReadbackVerified": true,
+  "runtimeContentReadbackScope": "Actual native Skills console body hashes; formal preset disk/parser plus fs.watch/computed source, no active-preset-content RPC",
+  "runtimeReadbackEvidence": "validation/natural-sticker-live-readback.json",
+  "originalWholeHistoryRowsPreserved": 1497,
+  "productionSampling": {
+    "temperature": 1,
+    "presencePenalty": 0,
+    "frequencyPenalty": 0,
+    "topP": null,
+    "probeDifference": "Model probe leaves sampling unspecified, relying on provider default; request bodies are not byte-identical"
+  }
+}

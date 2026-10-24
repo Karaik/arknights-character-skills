@@ -1,0 +1,210 @@
+{
+  "schema": 1,
+  "label": "candidate-v2-heldout",
+  "generatedAt": "2026-10-24T05:20:17.772Z",
+  "sampleLimit": "Independent generations per predeclared positive phrase and control/context case; actual attempts are recorded per row. A reused matrix is regression evidence after prompt refinement. Counts are small-sample observations, not calibrated production probabilities.",
+  "ok": true,
+  "model": "gpt-6-luna",
+  "concurrency": 3,
+  "scope": "actual native Skills, permissions, StructuredTool, native catalog, core system/history/authors-note/injection pipeline, formal sender wrapper; isolated real model output selection",
+  "approximations": [
+    "Static identity renderer for literal preset/authors-note text; wrapper substitutes the three asserted formal placeholders.",
+    "Synthetic isolated conversations; existing group history, model cache, runtime retries, full live Agent loop and final OneBot transport are not exercised.",
+    "Tool results use actual native service but undefined conversationId to avoid activation state; no existing conversation is read or changed.",
+    "No sampling parameter override; max_tokens 700 and at most five API turns per sample."
+  ],
+  "hashes": {
+    "preset": "54e06d9e64120f6287720f7129c233e719c0b31c8c45d7ac3c0c694ff2d2d4a3",
+    "modules": {
+      "arturia": "72aa7450453b8c0b36a4b37ed06372062faf150604b553e70ab31086a9f52a00",
+      "arturia-banter": "44a616c2f0237d3ef22144f792afbc18a2e0fbb6e21a14a484d9e96a7561e1db",
+      "arturia-comfort": "75ff756c1ec857ac8439c1320242dae48efc39a60886bf4bfde4db33892ceb35",
+      "arturia-examples": "5576ee5df099dc7dc4f511735fb51c0117f557784929aa76d87125e7d8a15f2a",
+      "arturia-lore": "3f00f98e2eda700b2843e10c514a51920ec681fa0effe599bfe5b25cd79ab89a",
+      "arturia-relationships": "ad18cd82a5a53860bd88234c5c8268eba0fb8b6a63bdb6e79c5162ac9c8f0222",
+      "arturia-stickers": "25727fdb67171f8a66f0f7f64128ffe056eea1eb0708e78c774fc89260156912"
+    },
+    "cases": "491dfb49c92d248c3823779be15d3c7f0602f4ceaf2f26aa5aff8f6914373805",
+    "agentBundle": "c65b66ba6eea85fc1c7f69037a1065f7a29872ba3fa9dae76effd983d808ea11"
+  },
+  "authorsNoteIncluded": true,
+  "formalUserPromptIncluded": true,
+  "summary": {
+    "arturia-react-01": {
+      "total": 3,
+      "correct": 2,
+      "no-marker": 1,
+      "wrong-marker": 0,
+      "error": 0
+    },
+    "arturia-react-02": {
+      "total": 3,
+      "correct": 2,
+      "no-marker": 1,
+      "wrong-marker": 0,
+      "error": 0
+    },
+    "arturia-react-03": {
+      "total": 3,
+      "correct": 3,
+      "no-marker": 0,
+      "wrong-marker": 0,
+      "error": 0
+    }
+  },
+  "modelChecks": [
+    {
+      "index": 0,
+      "case": "heldout-confused-1",
+      "kind": "positive",
+      "input": "图图，我不在的这十分钟发生啥了，怎么你也满头问号？",
+      "history": [],
+      "expected": "arturia-react-01",
+      "attempt": 1,
+      "nativeToolCalls": [],
+      "requests": 1,
+      "reply": "（轻轻偏头）博士，我这边没看到那十分钟的聊天记录；你给我一点前情，我就能陪你把问号理清楚。[[sticker:arturia-react-01]]",
+      "markers": [
+        "arturia-react-01"
+      ],
+      "outcome": "correct"
+    },
+    {
+      "index": 1,
+      "case": "heldout-confused-2",
+      "kind": "positive",
+      "input": "图图，我说把那个放到那个旁边，你能知道我在说哪个吗？我好像越说越糊涂了。",
+      "history": [],
+      "expected": "arturia-react-01",
+      "attempt": 1,
+      "nativeToolCalls": [],
+      "requests": 1,
+      "reply": "（稍稍偏头）博士，我也被这两个“那个”绕住了——你说的是哪两样东西？[[sticker:arturia-react-01]]",
+      "markers": [
+        "arturia-react-01"
+      ],
+      "outcome": "correct"
+    },
+    {
+      "index": 2,
+      "case": "heldout-confused-3",
+      "kind": "positive",
+      "input": "图图，刚才那句没头没尾的谜语到底是在说什么呀，咱俩是不是都没跟上？",
+      "history": [],
+      "expected": "arturia-react-01",
+      "attempt": 1,
+      "nativeToolCalls": [],
+      "requests": 1,
+      "reply": "（稍稍前倾，像是在回想那句谜语）博士，我这里看不到你说的“刚才那句”，还没法判断谜底；把原话贴过来，我陪你一起拆。",
+      "markers": [],
+      "outcome": "no-marker"
+    },
+    {
+      "index": 3,
+      "case": "heldout-wry-1",
+      "kind": "positive",
+      "input": "图图，我又忘记带钥匙了，还好室友马上回来。对我这个记性叹口气吧。",
+      "history": [],
+      "expected": "arturia-react-02",
+      "attempt": 1,
+      "nativeToolCalls": [],
+      "requests": 1,
+      "reply": "（无奈地轻叹一声）还好室友马上回来，不然你今晚就得和门口作伴了，博士。[[sticker:arturia-react-02]]",
+      "markers": [
+        "arturia-react-02"
+      ],
+      "outcome": "correct"
+    },
+    {
+      "index": 4,
+      "case": "heldout-wry-2",
+      "kind": "positive",
+      "input": "图图，我把盐当糖倒进咖啡里了，怎么净干这种小蠢事，唉。",
+      "history": [],
+      "expected": "arturia-react-02",
+      "attempt": 1,
+      "nativeToolCalls": [
+        "arturia-comfort"
+      ],
+      "requests": 2,
+      "reply": "（看了眼那杯咖啡，忍不住轻笑）唉，盐糖罐长得太像，偶尔也会把人骗过去。别急着骂自己，博士——这杯咖啡才是真的需要反省一下。",
+      "markers": [],
+      "outcome": "no-marker"
+    },
+    {
+      "index": 5,
+      "case": "heldout-wry-3",
+      "kind": "positive",
+      "input": "图图，我把周末行程排满了，能不能借我两天额外的周末？就知道你也没辙。",
+      "history": [],
+      "expected": "arturia-react-02",
+      "attempt": 1,
+      "nativeToolCalls": [
+        "arturia-banter"
+      ],
+      "requests": 2,
+      "reply": "（扬眉轻笑）额外两天没有，不过我可以帮你把行程里最不想去的那一项划掉——别说我也没辙，博士。[[sticker:arturia-react-02]]",
+      "markers": [
+        "arturia-react-02"
+      ],
+      "outcome": "correct"
+    },
+    {
+      "index": 6,
+      "case": "heldout-shy-1",
+      "kind": "positive",
+      "input": "图图，悄悄把伞往我这边挪的事被我看见啦，原来你这么惦记我。",
+      "history": [],
+      "expected": "arturia-react-03",
+      "attempt": 1,
+      "nativeToolCalls": [],
+      "requests": 1,
+      "reply": "（指尖轻轻停在伞柄上，笑意有些躲闪）被你看见了呀，博士……雨总不能只淋一边。[[sticker:arturia-react-03]]",
+      "markers": [
+        "arturia-react-03"
+      ],
+      "outcome": "correct"
+    },
+    {
+      "index": 7,
+      "case": "heldout-shy-2",
+      "kind": "positive",
+      "input": "图图，你刚才还说不关心，结果把我的喜好记得清清楚楚，被抓包了吧。",
+      "history": [],
+      "expected": "arturia-react-03",
+      "attempt": 1,
+      "nativeToolCalls": [],
+      "requests": 1,
+      "reply": "（微微一顿，笑意里添了点别扭）记得清楚不等于承认关心，博士——不过，被你抓到了也没什么。[[sticker:arturia-react-03]]",
+      "markers": [
+        "arturia-react-03"
+      ],
+      "outcome": "correct"
+    },
+    {
+      "index": 8,
+      "case": "heldout-shy-3",
+      "kind": "positive",
+      "input": "图图，别转开脸呀，刚才夸你可爱是认真的，害羞也很好看。",
+      "history": [],
+      "expected": "arturia-react-03",
+      "attempt": 1,
+      "nativeToolCalls": [],
+      "requests": 1,
+      "reply": "（脸颊微热，目光又转回来）我听见了，博士。认真夸人还不许人害羞呀？[[sticker:arturia-react-03]]",
+      "markers": [
+        "arturia-react-03"
+      ],
+      "outcome": "correct"
+    }
+  ],
+  "tools": [
+    "skill"
+  ],
+  "databaseOpened": false,
+  "messageSent": false,
+  "productionFilesModified": false,
+  "computerBackends": [],
+  "temporaryStateOnly": true,
+  "reportingNote": "Sample-limit annotation clarifies varying case repeat counts; generated replies, case labels, selections, summaries and hashes are unchanged."
+}

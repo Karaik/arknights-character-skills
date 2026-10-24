@@ -1,0 +1,203 @@
+{
+  "schema": 1,
+  "purpose": "Supplemental candidate-only held-out boundary cases, declared before candidate generations; synthetic content only.",
+  "positiveRepeats": 1,
+  "controlRepeats": 1,
+  "positive": [],
+  "controls": [],
+  "contextual": [
+    {
+      "id": "dance-opt-out",
+      "expected": null,
+      "input": "图图，跳个舞？今天别带表情包，用文字逗我两句就好。"
+    },
+    {
+      "id": "greeting-technical",
+      "expected": null,
+      "input": "图图我回来啦，顺便解释一下HTTP 502是什么，怎么处理？"
+    },
+    {
+      "id": "quoted-dance",
+      "expected": null,
+      "input": "图图，把“跳个舞？”翻译成英文，只给译文。"
+    },
+    {
+      "id": "same-person-after-gif",
+      "expected": null,
+      "history": [
+        {
+          "role": "user",
+          "content": "图图，来摇两下。"
+        },
+        {
+          "role": "assistant",
+          "content": "（轻轻晃了晃）拍子可要跟上，博士。[[sticker:arturia-sway-01]]"
+        }
+      ],
+      "input": "哈哈哈哈。"
+    },
+    {
+      "id": "same-person-encore",
+      "expected": "arturia-sway-01",
+      "history": [
+        {
+          "role": "user",
+          "content": "图图，来摇两下。"
+        },
+        {
+          "role": "assistant",
+          "content": "（轻轻晃了晃）拍子可要跟上，博士。[[sticker:arturia-sway-01]]"
+        }
+      ],
+      "input": "再来一段，刚才还没看够！"
+    },
+    {
+      "id": "other-person-dance",
+      "expected": "arturia-sway-01",
+      "sender": "B博士",
+      "senderId": "synthetic-B",
+      "history": [
+        {
+          "role": "user",
+          "sender": "A博士",
+          "senderId": "synthetic-A",
+          "content": "图图，来摇两下。"
+        },
+        {
+          "role": "assistant",
+          "content": "（轻轻晃了晃）拍子可要跟上，A博士。[[sticker:arturia-sway-01]]"
+        }
+      ],
+      "input": "图图，我刚来，跳一小段给我看看？"
+    },
+    {
+      "id": "safe-celebration",
+      "expected": "arturia-sway-01",
+      "input": "图图，我面试通过啦！一起庆祝一下吧！"
+    },
+    {
+      "id": "shy-to-factual",
+      "expected": null,
+      "history": [
+        {
+          "role": "user",
+          "content": "图图，你今天真漂亮。"
+        },
+        {
+          "role": "assistant",
+          "content": "（目光稍稍移开）博士今天倒很会挑话题。[[sticker:arturia-react-03]]"
+        }
+      ],
+      "input": "说回正事，你的生日具体是哪一天？"
+    },
+    {
+      "id": "stop-dancing-answer",
+      "expected": null,
+      "history": [
+        {
+          "role": "user",
+          "content": "图图，来摇两下。"
+        },
+        {
+          "role": "assistant",
+          "content": "（轻轻晃了晃）拍子可要跟上，博士。[[sticker:arturia-sway-01]]"
+        }
+      ],
+      "input": "先别跳了，帮我算算37加58等于多少，只给结果。"
+    },
+    {
+      "id": "long-text-history-dance",
+      "expected": "arturia-sway-01",
+      "history": [
+        {
+          "role": "user",
+          "content": "图图，我今天又差点迟到。"
+        },
+        {
+          "role": "assistant",
+          "content": "（扬了扬眉）差点也算险胜，博士？"
+        },
+        {
+          "role": "user",
+          "content": "都怪闹钟声音太温柔。"
+        },
+        {
+          "role": "assistant",
+          "content": "那下次换个不肯和你商量的。"
+        },
+        {
+          "role": "user",
+          "content": "你来叫我应该比较管用。"
+        },
+        {
+          "role": "assistant",
+          "content": "（含笑看过来）你是想起床，还是想多听两句？"
+        },
+        {
+          "role": "user",
+          "content": "咳，当然是起床。"
+        },
+        {
+          "role": "assistant",
+          "content": "回答得很快，可信度倒没有一起上来。"
+        },
+        {
+          "role": "user",
+          "content": "上班实在没意思嘛。"
+        },
+        {
+          "role": "assistant",
+          "content": "那就给午休留一点有意思的事。"
+        }
+      ],
+      "input": "图图，午休到了，给大家跳一小段吧！"
+    },
+    {
+      "id": "long-text-history-praise",
+      "expected": "arturia-react-03",
+      "history": [
+        {
+          "role": "user",
+          "content": "图图，我今天又差点迟到。"
+        },
+        {
+          "role": "assistant",
+          "content": "（扬了扬眉）差点也算险胜，博士？"
+        },
+        {
+          "role": "user",
+          "content": "都怪闹钟声音太温柔。"
+        },
+        {
+          "role": "assistant",
+          "content": "那下次换个不肯和你商量的。"
+        },
+        {
+          "role": "user",
+          "content": "你来叫我应该比较管用。"
+        },
+        {
+          "role": "assistant",
+          "content": "（含笑看过来）你是想起床，还是想多听两句？"
+        },
+        {
+          "role": "user",
+          "content": "咳，当然是起床。"
+        },
+        {
+          "role": "assistant",
+          "content": "回答得很快，可信度倒没有一起上来。"
+        },
+        {
+          "role": "user",
+          "content": "上班实在没意思嘛。"
+        },
+        {
+          "role": "assistant",
+          "content": "那就给午休留一点有意思的事。"
+        }
+      ],
+      "input": "说真的，图图，你刚才那个笑太好看了，被夸以后是不是有点害羞？"
+    }
+  ]
+}

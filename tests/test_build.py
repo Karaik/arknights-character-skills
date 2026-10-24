@@ -37,9 +37,13 @@ class BuildTests(unittest.TestCase):
                 preset,_=builder.build(target=target)
             assistants=[x['content']for x in preset['prompts']if x['role']=='assistant']
             self.assertTrue(any('[[sticker:arturia-sway-01]]' in x for x in assistants))
+            native_examples=(target/'native-skills/arturia-examples/SKILL.md').read_text(encoding='utf-8')
+            self.assertIn('[[sticker:arturia-sway-01]]',native_examples)
+            self.assertNotRegex(native_examples,r'\[\[sticker:arturia-react-\d+\]\]')
             with patch.object(builder,'load_catalog',return_value=[]):
                 preset,_=builder.build(target=target)
             self.assertFalse(any('[[sticker:' in x['content']for x in preset['prompts']if x['role']=='assistant'))
+            self.assertNotIn('[[sticker:',(target/'native-skills/arturia-examples/SKILL.md').read_text(encoding='utf-8'))
 
     def test_approval_is_explicit(self):
         items = [{'id':'a','review':'pending','subject_scope':'generic'}, {'id':'b','review':'approved','subject_scope':'generic'},

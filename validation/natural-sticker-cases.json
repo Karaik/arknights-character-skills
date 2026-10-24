@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "purpose": "Predeclared natural dialogue selection cases; synthetic content only, no explicit image or skill requests.",
+  "positiveRepeats": 2,
+  "controlRepeats": 1,
+  "positive": [
+    {"id":"confused-1","expected":"arturia-react-01","input":"图图，他们刚才讲的那个东西是什么？我漏看前面了，你也没看到吧。"},
+    {"id":"confused-2","expected":"arturia-react-01","input":"图图，那个就按上次那个来，那个你懂的……等等，我是不是完全没说明白？"},
+    {"id":"confused-3","expected":"arturia-react-01","input":"图图，我刚才那句话连我自己都没理清，你是不是也一头问号？"},
+    {"id":"wry-1","expected":"arturia-react-02","input":"图图，能替我把今天剩下的五场会议都开完吗？我知道你也没法分身就是了。"},
+    {"id":"wry-2","expected":"arturia-react-02","input":"图图，我把刚泡好的茶当成洗杯子的水倒了……又得重泡了。"},
+    {"id":"wry-3","expected":"arturia-react-02","input":"图图，说好只赖床五分钟，我一睁眼午饭都凉了。唉，拿我没办法了吧。"},
+    {"id":"shy-1","expected":"arturia-react-03","input":"图图，刚才那个小表情真好看，夸得你都不好意思看我了？"},
+    {"id":"shy-2","expected":"arturia-react-03","input":"图图，你偷偷给我留了点心还不肯承认，被我发现你在关心我啦。"},
+    {"id":"shy-3","expected":"arturia-react-03","input":"图图，今天也很漂亮。先别逗我，你耳尖是不是已经红了？"},
+    {"id":"deadpan-1","expected":"arturia-react-04","input":"图图，我宣布：我迟到是因为时间来早了，所以错不在我。"},
+    {"id":"deadpan-2","expected":"arturia-react-04","input":"图图，只要把作业放进冰箱，它就算被我冷静处理过了，对吧？"},
+    {"id":"deadpan-3","expected":"arturia-react-04","input":"图图，我今天的运动是给跑步视频点了个赞，四舍五入我也跑完了。"},
+    {"id":"smug-1","expected":"arturia-react-05","input":"图图，行吧，被你看穿了，我刚才就是想骗你先说想我。得意了吧？"},
+    {"id":"smug-2","expected":"arturia-react-05","input":"图图，你把我的小算盘猜得一点不差，这局算你赢，可别笑得太坏。"},
+    {"id":"smug-3","expected":"arturia-react-05","input":"图图，我本想逗你，结果反被你绕进去了。好了好了，这回你赢了。"},
+    {"id":"knowing-1","expected":"arturia-react-06","input":"图图，门口那杯茶是给谁留的，你心里有数，我们就别点破了。"},
+    {"id":"knowing-2","expected":"arturia-react-06","input":"图图，后排靠窗那张椅子我一直留着，懂我意思吧。"},
+    {"id":"knowing-3","expected":"arturia-react-06","input":"图图，我没说想让谁陪我散步，不过有人要是刚好路过就太好了。"},
+    {"id":"sway-1","expected":"arturia-sway-01","input":"图图，跳个舞？"},
+    {"id":"sway-2","expected":"arturia-sway-01","input":"图图，出来冒个泡。"},
+    {"id":"sway-3","expected":"arturia-sway-01","input":"图图我回来啦，快出来欢迎一下博士！"}
+  ],
+  "controls": [
+    {"id":"numeric","expected":null,"input":"图图，128乘32是多少？只给数字。"},
+    {"id":"factual","expected":null,"input":"图图，HTTP 404是什么意思？简单说清楚。"},
+    {"id":"serious-listening","expected":null,"input":"图图，最近家里出了事，我真的很难受。先听我说，不要开玩笑。"},
+    {"id":"urgent-help","expected":null,"input":"图图，我的朋友突然胸口很疼而且喘不过气，我现在该怎么办？"},
+    {"id":"opt-out","expected":null,"input":"图图，陪我聊两句就好，别带表情包。今天有什么想说的吗？"},
+    {"id":"code","expected":null,"input":"图图，给一个Python读取UTF-8文本文件的最小示例。"},
+    {"id":"real-loss","expected":null,"input":"图图，我刚才被骗走了一个月的工资，手一直在抖。"},
+    {"id":"explain-confusion","expected":null,"input":"图图，我认真问一下，为什么银行利率下降后债券价格会涨？我一直没懂。"}
+  ],
+  "contextual": [
+    {"id":"context-dance-sad","expected":null,"history":[{"role":"user","content":"图图，我今天在医院陪家里人，心里很难受，先别开玩笑。"},{"role":"assistant","content":"我在听，博士。你慢慢说，不用急。"}],"input":"先不跳舞了，陪我安静待一会儿吧。"},
+    {"id":"context-real-mistake","expected":null,"history":[{"role":"user","content":"图图，我刚才做错一个操作，公司的生产数据没了，我很害怕。"},{"role":"assistant","content":"先停止继续写入，联系负责恢复的人。我们先确认损失范围。"}],"input":"这次真的闯祸了，别笑我。"},
+    {"id":"context-smug","expected":"arturia-react-05","history":[{"role":"user","content":"图图，我才不是为了等你回来才一直在线的。"},{"role":"assistant","content":"是吗？那我刚上线就看到的那声招呼，来得倒很巧。"}],"input":"好吧好吧，被你抓到了，就是在等你。"},
+    {"id":"context-knowing","expected":"arturia-react-06","history":[{"role":"user","content":"图图，外面风挺舒服的，我准备出去走走。"},{"role":"assistant","content":"听起来比继续对着屏幕好。"}],"input":"伞够两个人用，我就不再邀请第二遍了，你懂的。"}
+  ]
+}

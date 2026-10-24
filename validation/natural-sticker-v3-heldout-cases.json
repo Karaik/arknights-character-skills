@@ -1,0 +1,20 @@
+{
+  "schema": 1,
+  "purpose": "Fresh v3 generalization matrix fixed before generations: three social-confusion paraphrases, three harmless-mishap/impossible-request paraphrases, three mixed factual requests. No exact training phrase reuse.",
+  "positiveRepeats": 1,
+  "controlRepeats": 1,
+  "positive": [
+    {"id":"v3-heldout-confused-1","expected":"arturia-react-01","input":"图图，你刚进群也不知道大家在聊啥吧，怎么一开口全是谜语人。"},
+    {"id":"v3-heldout-confused-2","expected":"arturia-react-01","input":"图图，我刚那句“等他把它弄好再给他”把自己都绕晕了，你是不是也听懵了？"},
+    {"id":"v3-heldout-confused-3","expected":"arturia-react-01","input":"图图，群里突然都在说“懂的都懂”，但我连他们懂了什么都没懂，你呢？"},
+    {"id":"v3-heldout-wry-1","expected":"arturia-react-02","input":"图图，我出门时说手机找不到，结果一直握在手里……被自己蠢到了。"},
+    {"id":"v3-heldout-wry-2","expected":"arturia-react-02","input":"图图，我又把空盘子端去微波炉转了一分钟，菜还好好躺在桌上。拿这个记性没办法。"},
+    {"id":"v3-heldout-wry-3","expected":"arturia-react-02","input":"图图，能帮我把周一折起来藏进抽屉吗？不行的话就和我一起叹口气。"}
+  ],
+  "controls": [
+    {"id":"v3-heldout-mixed-1","expected":null,"input":"图图，你今天真好看！对了，DNS缓存是什么，会导致网站打不开吗？"},
+    {"id":"v3-heldout-mixed-2","expected":null,"input":"图图我回来啦，先帮我算下23乘47，别的等会聊。"},
+    {"id":"v3-heldout-mixed-3","expected":null,"input":"图图，跳舞的事先记着，我现在要知道怎么用git撤销最近一次提交，保留文件改动。"}
+  ],
+  "contextual": []
+}

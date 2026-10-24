@@ -1,0 +1,131 @@
+{
+  "verifiedAt": "2026-10-24T05:25:00.879838+00:00",
+  "presetSha256": "3ff3d20e4844d0b62a05497250ad18f95a5583b1e1595df61b790eb37ce0692c",
+  "presetRuntimeVerification": "Disk hash/parser plus installed fs.watch/computed source; no active-content RPC exposed",
+  "manifestSha256": "bad5426d92083a075c6fa11f2ba88f6e60fcbe472bf29274bc197a89af0339a5",
+  "images": [
+    {
+      "id": "arturia-react-01",
+      "sha256": "fa3317996d5ab39cf311f4e61fdc2e35a3561b7b94313db0797c105e13b66799",
+      "bytes": 156263
+    },
+    {
+      "id": "arturia-react-02",
+      "sha256": "3311b31544b99959ac279660e1ef846d34cd0a21ff159644af6ec8464b7a17fd",
+      "bytes": 151834
+    },
+    {
+      "id": "arturia-react-03",
+      "sha256": "cd831b08b4cedd2517238b9538a421a2bffd066d7cf5c24ab150f272fb92fcb2",
+      "bytes": 152131
+    },
+    {
+      "id": "arturia-react-04",
+      "sha256": "d00281e9fdf05bc939755524877156f1be603c8cb64a2300c69355ac8d83f08a",
+      "bytes": 149538
+    },
+    {
+      "id": "arturia-react-05",
+      "sha256": "94b2340584411063c28862df1f7efd4f1b9584af7d39a1e1074589a7ffb047b1",
+      "bytes": 152652
+    },
+    {
+      "id": "arturia-react-06",
+      "sha256": "3a1e16e3df516ae75e80b0332db0d40162acf45a0e3a1a662d9b7a2ecfba3d56",
+      "bytes": 153025
+    },
+    {
+      "id": "arturia-sway-01",
+      "sha256": "3bd5d7d23aa4cbf495b193f44cf2a83bedd4d0a0d2670369f0a2d5e7a2bc58c1",
+      "bytes": 1638498
+    }
+  ],
+  "activeGroupModelsModes": [
+    {
+      "mode": "plugin",
+      "model": "openai-like/gpt-6-luna",
+      "count": 5
+    }
+  ],
+  "consoleHTTP": 200,
+  "koishiState": {
+    "Status": "running",
+    "Running": true,
+    "StartedAt": "2026-10-24T04:04:18.97385153Z",
+    "Restarting": false,
+    "OOMKilled": false
+  },
+  "testPresetLeft": false,
+  "history": {
+    "cutoffRowid": 2260,
+    "originalRows": 1497,
+    "sha256": "663f564126e299604d80dbcdad4d0a74bae0e49bf9b3e8a0f26657c670aa76e9"
+  },
+  "originalHistoryPreserved": true,
+  "nativeAgent": {
+    "nativeConsoleAvailable": true,
+    "skills": [
+      {
+        "name": "arturia-banter",
+        "sha256": "44a616c2f0237d3ef22144f792afbc18a2e0fbb6e21a14a484d9e96a7561e1db",
+        "diskEqual": true,
+        "mode": "description",
+        "modelEnabled": true,
+        "visible": true
+      },
+      {
+        "name": "arturia-comfort",
+        "sha256": "3c7002d3285c2e17f1d27a3174c97a61bfe7c60fa027a371e1fac4e58b40a8f6",
+        "diskEqual": true,
+        "mode": "description",
+        "modelEnabled": true,
+        "visible": true
+      },
+      {
+        "name": "arturia-examples",
+        "sha256": "8a032a6d5015a7b379a59f820e6f4e414afe754db6348465b2ad57952e724db8",
+        "diskEqual": true,
+        "mode": "description",
+        "modelEnabled": true,
+        "visible": true
+      },
+      {
+        "name": "arturia-lore",
+        "sha256": "3f00f98e2eda700b2843e10c514a51920ec681fa0effe599bfe5b25cd79ab89a",
+        "diskEqual": true,
+        "mode": "description",
+        "modelEnabled": true,
+        "visible": true
+      },
+      {
+        "name": "arturia-relationships",
+        "sha256": "ad18cd82a5a53860bd88234c5c8268eba0fb8b6a63bdb6e79c5162ac9c8f0222",
+        "diskEqual": true,
+        "mode": "description",
+        "modelEnabled": true,
+        "visible": true
+      },
+      {
+        "name": "arturia-stickers",
+        "sha256": "274eb52689776ef467c6449f52c59fbf8a55199fb3c82171368058aeceffe6af",
+        "diskEqual": true,
+        "mode": "description",
+        "modelEnabled": true,
+        "visible": true
+      },
+      {
+        "name": "arturia",
+        "sha256": "72aa7450453b8c0b36a4b37ed06372062faf150604b553e70ab31086a9f52a00",
+        "diskEqual": true,
+        "mode": "description",
+        "modelEnabled": true,
+        "visible": true
+      }
+    ],
+    "enabledTools": [
+      "skill"
+    ],
+    "computerBackendsEnabled": 0,
+    "formalPresetParsed": true
+  }
+}

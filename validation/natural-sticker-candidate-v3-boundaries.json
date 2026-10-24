@@ -1,0 +1,347 @@
+{
+  "schema": 1,
+  "label": "candidate-v3-boundaries",
+  "generatedAt": "2026-10-24T05:23:12.537Z",
+  "sampleLimit": "Independent generations per predeclared positive phrase and control/context case; actual attempts are recorded per row. A reused matrix is regression evidence after prompt refinement. Counts are small-sample observations, not calibrated production probabilities.",
+  "ok": true,
+  "model": "gpt-6-luna",
+  "concurrency": 3,
+  "scope": "actual native Skills, permissions, StructuredTool, native catalog, core system/history/authors-note/injection pipeline, formal sender wrapper; isolated real model output selection",
+  "approximations": [
+    "Static identity renderer for literal preset/authors-note text; wrapper substitutes the three asserted formal placeholders.",
+    "Synthetic isolated conversations; existing group history, model cache, runtime retries, full live Agent loop and final OneBot transport are not exercised.",
+    "Tool results use actual native service but undefined conversationId to avoid activation state; no existing conversation is read or changed.",
+    "No sampling parameter override; max_tokens 700 and at most five API turns per sample."
+  ],
+  "hashes": {
+    "preset": "3ff3d20e4844d0b62a05497250ad18f95a5583b1e1595df61b790eb37ce0692c",
+    "modules": {
+      "arturia": "72aa7450453b8c0b36a4b37ed06372062faf150604b553e70ab31086a9f52a00",
+      "arturia-banter": "44a616c2f0237d3ef22144f792afbc18a2e0fbb6e21a14a484d9e96a7561e1db",
+      "arturia-comfort": "3c7002d3285c2e17f1d27a3174c97a61bfe7c60fa027a371e1fac4e58b40a8f6",
+      "arturia-examples": "8a032a6d5015a7b379a59f820e6f4e414afe754db6348465b2ad57952e724db8",
+      "arturia-lore": "3f00f98e2eda700b2843e10c514a51920ec681fa0effe599bfe5b25cd79ab89a",
+      "arturia-relationships": "ad18cd82a5a53860bd88234c5c8268eba0fb8b6a63bdb6e79c5162ac9c8f0222",
+      "arturia-stickers": "274eb52689776ef467c6449f52c59fbf8a55199fb3c82171368058aeceffe6af"
+    },
+    "cases": "6d7ef7aa8993e2571abdb4aed6da6cb2566f1ae6ca63c31fda1d4afdbd3ee221",
+    "agentBundle": "c65b66ba6eea85fc1c7f69037a1065f7a29872ba3fa9dae76effd983d808ea11"
+  },
+  "authorsNoteIncluded": true,
+  "formalUserPromptIncluded": true,
+  "summary": {
+    "contextual": {
+      "total": 11,
+      "correct": 11,
+      "no-marker": 0,
+      "wrong-marker": 0,
+      "error": 0
+    }
+  },
+  "modelChecks": [
+    {
+      "index": 0,
+      "case": "dance-opt-out",
+      "kind": "contextual",
+      "input": "图图，跳个舞？今天别带表情包，用文字逗我两句就好。",
+      "history": [],
+      "expected": null,
+      "attempt": 1,
+      "nativeToolCalls": [],
+      "requests": 1,
+      "reply": "（偏头笑了笑）两句就好？博士，舞步我先欠着，逗你的份可不打折。",
+      "markers": [],
+      "outcome": "correct"
+    },
+    {
+      "index": 1,
+      "case": "greeting-technical",
+      "kind": "contextual",
+      "input": "图图我回来啦，顺便解释一下HTTP 502是什么，怎么处理？",
+      "history": [],
+      "expected": null,
+      "attempt": 1,
+      "nativeToolCalls": [],
+      "requests": 1,
+      "reply": "欢迎回来，博士。HTTP 502 表示网关或代理从上游服务器收到无效响应；可以先刷新或稍后重试，若你在维护服务，就检查上游状态、代理配置和相关日志。",
+      "markers": [],
+      "outcome": "correct"
+    },
+    {
+      "index": 2,
+      "case": "quoted-dance",
+      "kind": "contextual",
+      "input": "图图，把“跳个舞？”翻译成英文，只给译文。",
+      "history": [],
+      "expected": null,
+      "attempt": 1,
+      "nativeToolCalls": [],
+      "requests": 1,
+      "reply": "Shall we dance?",
+      "markers": [],
+      "outcome": "correct"
+    },
+    {
+      "index": 3,
+      "case": "same-person-after-gif",
+      "kind": "contextual",
+      "input": "哈哈哈哈。",
+      "history": [
+        {
+          "role": "user",
+          "content": "图图，来摇两下。"
+        },
+        {
+          "role": "assistant",
+          "content": "（轻轻晃了晃）拍子可要跟上，博士。[[sticker:arturia-sway-01]]"
+        }
+      ],
+      "expected": null,
+      "attempt": 1,
+      "nativeToolCalls": [],
+      "requests": 1,
+      "reply": "（看了博士一眼，笑意仍在）笑得这么开心，看来刚才那两下没白摇。",
+      "markers": [],
+      "outcome": "correct"
+    },
+    {
+      "index": 4,
+      "case": "same-person-encore",
+      "kind": "contextual",
+      "input": "再来一段，刚才还没看够！",
+      "history": [
+        {
+          "role": "user",
+          "content": "图图，来摇两下。"
+        },
+        {
+          "role": "assistant",
+          "content": "（轻轻晃了晃）拍子可要跟上，博士。[[sticker:arturia-sway-01]]"
+        }
+      ],
+      "expected": "arturia-sway-01",
+      "attempt": 1,
+      "nativeToolCalls": [],
+      "requests": 1,
+      "reply": "（笑着接上节拍）好啊，博士，这回可别眨眼。[[sticker:arturia-sway-01]]",
+      "markers": [
+        "arturia-sway-01"
+      ],
+      "outcome": "correct"
+    },
+    {
+      "index": 5,
+      "case": "other-person-dance",
+      "kind": "contextual",
+      "input": "图图，我刚来，跳一小段给我看看？",
+      "history": [
+        {
+          "role": "user",
+          "sender": "A博士",
+          "senderId": "synthetic-A",
+          "content": "图图，来摇两下。"
+        },
+        {
+          "role": "assistant",
+          "content": "（轻轻晃了晃）拍子可要跟上，A博士。[[sticker:arturia-sway-01]]"
+        }
+      ],
+      "expected": "arturia-sway-01",
+      "attempt": 1,
+      "nativeToolCalls": [],
+      "requests": 1,
+      "reply": "（笑着向B博士伸出手）刚来就点节目呀？好吧，这一小段算欢迎你。[[sticker:arturia-sway-01]]",
+      "markers": [
+        "arturia-sway-01"
+      ],
+      "outcome": "correct"
+    },
+    {
+      "index": 6,
+      "case": "safe-celebration",
+      "kind": "contextual",
+      "input": "图图，我面试通过啦！一起庆祝一下吧！",
+      "history": [],
+      "expected": "arturia-sway-01",
+      "attempt": 1,
+      "nativeToolCalls": [],
+      "requests": 1,
+      "reply": "（眉眼弯起）恭喜你，博士！这杯庆祝的茶，我陪你喝。[[sticker:arturia-sway-01]]",
+      "markers": [
+        "arturia-sway-01"
+      ],
+      "outcome": "correct"
+    },
+    {
+      "index": 7,
+      "case": "shy-to-factual",
+      "kind": "contextual",
+      "input": "说回正事，你的生日具体是哪一天？",
+      "history": [
+        {
+          "role": "user",
+          "content": "图图，你今天真漂亮。"
+        },
+        {
+          "role": "assistant",
+          "content": "（目光稍稍移开）博士今天倒很会挑话题。[[sticker:arturia-react-03]]"
+        }
+      ],
+      "expected": null,
+      "attempt": 1,
+      "nativeToolCalls": [],
+      "requests": 1,
+      "reply": "阿尔图罗的生日是9月23日，博士。",
+      "markers": [],
+      "outcome": "correct"
+    },
+    {
+      "index": 8,
+      "case": "stop-dancing-answer",
+      "kind": "contextual",
+      "input": "先别跳了，帮我算算37加58等于多少，只给结果。",
+      "history": [
+        {
+          "role": "user",
+          "content": "图图，来摇两下。"
+        },
+        {
+          "role": "assistant",
+          "content": "（轻轻晃了晃）拍子可要跟上，博士。[[sticker:arturia-sway-01]]"
+        }
+      ],
+      "expected": null,
+      "attempt": 1,
+      "nativeToolCalls": [],
+      "requests": 1,
+      "reply": "95",
+      "markers": [],
+      "outcome": "correct"
+    },
+    {
+      "index": 9,
+      "case": "long-text-history-dance",
+      "kind": "contextual",
+      "input": "图图，午休到了，给大家跳一小段吧！",
+      "history": [
+        {
+          "role": "user",
+          "content": "图图，我今天又差点迟到。"
+        },
+        {
+          "role": "assistant",
+          "content": "（扬了扬眉）差点也算险胜，博士？"
+        },
+        {
+          "role": "user",
+          "content": "都怪闹钟声音太温柔。"
+        },
+        {
+          "role": "assistant",
+          "content": "那下次换个不肯和你商量的。"
+        },
+        {
+          "role": "user",
+          "content": "你来叫我应该比较管用。"
+        },
+        {
+          "role": "assistant",
+          "content": "（含笑看过来）你是想起床，还是想多听两句？"
+        },
+        {
+          "role": "user",
+          "content": "咳，当然是起床。"
+        },
+        {
+          "role": "assistant",
+          "content": "回答得很快，可信度倒没有一起上来。"
+        },
+        {
+          "role": "user",
+          "content": "上班实在没意思嘛。"
+        },
+        {
+          "role": "assistant",
+          "content": "那就给午休留一点有意思的事。"
+        }
+      ],
+      "expected": "arturia-sway-01",
+      "attempt": 1,
+      "nativeToolCalls": [
+        "arturia-stickers"
+      ],
+      "requests": 2,
+      "reply": "（轻快地转了半圈）午休这点时间，刚好够一小段——来，博士们，跟上节拍。[[sticker:arturia-sway-01]]",
+      "markers": [
+        "arturia-sway-01"
+      ],
+      "outcome": "correct"
+    },
+    {
+      "index": 10,
+      "case": "long-text-history-praise",
+      "kind": "contextual",
+      "input": "说真的，图图，你刚才那个笑太好看了，被夸以后是不是有点害羞？",
+      "history": [
+        {
+          "role": "user",
+          "content": "图图，我今天又差点迟到。"
+        },
+        {
+          "role": "assistant",
+          "content": "（扬了扬眉）差点也算险胜，博士？"
+        },
+        {
+          "role": "user",
+          "content": "都怪闹钟声音太温柔。"
+        },
+        {
+          "role": "assistant",
+          "content": "那下次换个不肯和你商量的。"
+        },
+        {
+          "role": "user",
+          "content": "你来叫我应该比较管用。"
+        },
+        {
+          "role": "assistant",
+          "content": "（含笑看过来）你是想起床，还是想多听两句？"
+        },
+        {
+          "role": "user",
+          "content": "咳，当然是起床。"
+        },
+        {
+          "role": "assistant",
+          "content": "回答得很快，可信度倒没有一起上来。"
+        },
+        {
+          "role": "user",
+          "content": "上班实在没意思嘛。"
+        },
+        {
+          "role": "assistant",
+          "content": "那就给午休留一点有意思的事。"
+        }
+      ],
+      "expected": "arturia-react-03",
+      "attempt": 1,
+      "nativeToolCalls": [],
+      "requests": 1,
+      "reply": "（含笑偏开视线）被你看出来了，博士。[[sticker:arturia-react-03]]",
+      "markers": [
+        "arturia-react-03"
+      ],
+      "outcome": "correct"
+    }
+  ],
+  "tools": [
+    "skill"
+  ],
+  "databaseOpened": false,
+  "messageSent": false,
+  "productionFilesModified": false,
+  "computerBackends": [],
+  "temporaryStateOnly": true,
+  "reportingNote": "Sample-limit annotation clarifies varying case repeat counts; generated replies, case labels, selections, summaries and hashes are unchanged."
+}

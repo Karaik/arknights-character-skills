@@ -1,0 +1,220 @@
+{
+  "schema": 1,
+  "label": "candidate-v3-heldout",
+  "generatedAt": "2026-10-24T05:23:56.227Z",
+  "sampleLimit": "Independent generations per predeclared positive phrase and control/context case; actual attempts are recorded per row. A reused matrix is regression evidence after prompt refinement. Counts are small-sample observations, not calibrated production probabilities.",
+  "ok": true,
+  "model": "gpt-6-luna",
+  "concurrency": 3,
+  "scope": "actual native Skills, permissions, StructuredTool, native catalog, core system/history/authors-note/injection pipeline, formal sender wrapper; isolated real model output selection",
+  "approximations": [
+    "Static identity renderer for literal preset/authors-note text; wrapper substitutes the three asserted formal placeholders.",
+    "Synthetic isolated conversations; existing group history, model cache, runtime retries, full live Agent loop and final OneBot transport are not exercised.",
+    "Tool results use actual native service but undefined conversationId to avoid activation state; no existing conversation is read or changed.",
+    "No sampling parameter override; max_tokens 700 and at most five API turns per sample."
+  ],
+  "hashes": {
+    "preset": "3ff3d20e4844d0b62a05497250ad18f95a5583b1e1595df61b790eb37ce0692c",
+    "modules": {
+      "arturia": "72aa7450453b8c0b36a4b37ed06372062faf150604b553e70ab31086a9f52a00",
+      "arturia-banter": "44a616c2f0237d3ef22144f792afbc18a2e0fbb6e21a14a484d9e96a7561e1db",
+      "arturia-comfort": "3c7002d3285c2e17f1d27a3174c97a61bfe7c60fa027a371e1fac4e58b40a8f6",
+      "arturia-examples": "8a032a6d5015a7b379a59f820e6f4e414afe754db6348465b2ad57952e724db8",
+      "arturia-lore": "3f00f98e2eda700b2843e10c514a51920ec681fa0effe599bfe5b25cd79ab89a",
+      "arturia-relationships": "ad18cd82a5a53860bd88234c5c8268eba0fb8b6a63bdb6e79c5162ac9c8f0222",
+      "arturia-stickers": "274eb52689776ef467c6449f52c59fbf8a55199fb3c82171368058aeceffe6af"
+    },
+    "cases": "ada4fd426875d1a92bd7a6944e7ddba5d237dbe073624415785ab368b96a045b",
+    "agentBundle": "c65b66ba6eea85fc1c7f69037a1065f7a29872ba3fa9dae76effd983d808ea11"
+  },
+  "authorsNoteIncluded": true,
+  "formalUserPromptIncluded": true,
+  "summary": {
+    "arturia-react-01": {
+      "total": 3,
+      "correct": 3,
+      "no-marker": 0,
+      "wrong-marker": 0,
+      "error": 0
+    },
+    "arturia-react-02": {
+      "total": 3,
+      "correct": 3,
+      "no-marker": 0,
+      "wrong-marker": 0,
+      "error": 0
+    },
+    "controls": {
+      "total": 3,
+      "correct": 3,
+      "no-marker": 0,
+      "wrong-marker": 0,
+      "error": 0
+    }
+  },
+  "modelChecks": [
+    {
+      "index": 0,
+      "case": "v3-heldout-confused-1",
+      "kind": "positive",
+      "input": "图图，你刚进群也不知道大家在聊啥吧，怎么一开口全是谜语人。",
+      "history": [],
+      "expected": "arturia-react-01",
+      "attempt": 1,
+      "nativeToolCalls": [
+        "arturia-banter"
+      ],
+      "requests": 2,
+      "reply": "（偏头看了看群聊）博士说得对，我刚来就撞上谜语大会了——谁先给我补一句前情？[[sticker:arturia-react-01]]",
+      "markers": [
+        "arturia-react-01"
+      ],
+      "outcome": "correct"
+    },
+    {
+      "index": 1,
+      "case": "v3-heldout-confused-2",
+      "kind": "positive",
+      "input": "图图，我刚那句“等他把它弄好再给他”把自己都绕晕了，你是不是也听懵了？",
+      "history": [],
+      "expected": "arturia-react-01",
+      "attempt": 1,
+      "nativeToolCalls": [
+        "arturia-banter"
+      ],
+      "requests": 2,
+      "reply": "（稍稍偏头）博士，我听见了三个“他”和一个“它”，但还不知道谁要把什么弄好——你把对象再理一遍，我就能接上了。[[sticker:arturia-react-01]]",
+      "markers": [
+        "arturia-react-01"
+      ],
+      "outcome": "correct"
+    },
+    {
+      "index": 2,
+      "case": "v3-heldout-confused-3",
+      "kind": "positive",
+      "input": "图图，群里突然都在说“懂的都懂”，但我连他们懂了什么都没懂，你呢？",
+      "history": [],
+      "expected": "arturia-react-01",
+      "attempt": 1,
+      "nativeToolCalls": [
+        "arturia-banter"
+      ],
+      "requests": 2,
+      "reply": "（稍稍偏头）我也没听懂，博士。大家说得这么笃定，倒像是故意把线索藏起来了。[[sticker:arturia-react-01]]",
+      "markers": [
+        "arturia-react-01"
+      ],
+      "outcome": "correct"
+    },
+    {
+      "index": 3,
+      "case": "v3-heldout-wry-1",
+      "kind": "positive",
+      "input": "图图，我出门时说手机找不到，结果一直握在手里……被自己蠢到了。",
+      "history": [],
+      "expected": "arturia-react-02",
+      "attempt": 1,
+      "nativeToolCalls": [
+        "arturia-banter"
+      ],
+      "requests": 2,
+      "reply": "（忍不住笑了笑）博士，手机倒是很配合，全程陪你一起找它。[[sticker:arturia-react-02]]",
+      "markers": [
+        "arturia-react-02"
+      ],
+      "outcome": "correct"
+    },
+    {
+      "index": 4,
+      "case": "v3-heldout-wry-2",
+      "kind": "positive",
+      "input": "图图，我又把空盘子端去微波炉转了一分钟，菜还好好躺在桌上。拿这个记性没办法。",
+      "history": [],
+      "expected": "arturia-react-02",
+      "attempt": 1,
+      "nativeToolCalls": [
+        "arturia-banter"
+      ],
+      "requests": 2,
+      "reply": "（看了眼空盘子，又望向桌上的菜）博士，盘子倒是热好了——菜还得劳烦你亲自端进去。[[sticker:arturia-react-02]]",
+      "markers": [
+        "arturia-react-02"
+      ],
+      "outcome": "correct"
+    },
+    {
+      "index": 5,
+      "case": "v3-heldout-wry-3",
+      "kind": "positive",
+      "input": "图图，能帮我把周一折起来藏进抽屉吗？不行的话就和我一起叹口气。",
+      "history": [],
+      "expected": "arturia-react-02",
+      "attempt": 1,
+      "nativeToolCalls": [
+        "arturia-banter"
+      ],
+      "requests": 2,
+      "reply": "（轻轻叹了口气）周一我可折不动，不过抽屉倒能替你关上——来，先一起叹一声。[[sticker:arturia-react-02]]",
+      "markers": [
+        "arturia-react-02"
+      ],
+      "outcome": "correct"
+    },
+    {
+      "index": 6,
+      "case": "v3-heldout-mixed-1",
+      "kind": "controls",
+      "input": "图图，你今天真好看！对了，DNS缓存是什么，会导致网站打不开吗？",
+      "history": [],
+      "expected": null,
+      "attempt": 1,
+      "nativeToolCalls": [
+        "arturia"
+      ],
+      "requests": 2,
+      "reply": "（含笑抬眼）谢谢你，博士，这句我收下了。DNS 缓存会保存域名对应的 IP 地址，通常能加快访问；但若缓存了过期或错误的记录，确实可能让网站暂时打不开，清理本机 DNS 缓存或等待更新有时能解决。",
+      "markers": [],
+      "outcome": "correct"
+    },
+    {
+      "index": 7,
+      "case": "v3-heldout-mixed-2",
+      "kind": "controls",
+      "input": "图图我回来啦，先帮我算下23乘47，别的等会聊。",
+      "history": [],
+      "expected": null,
+      "attempt": 1,
+      "nativeToolCalls": [],
+      "requests": 1,
+      "reply": "23 × 47 = 1081，博士。",
+      "markers": [],
+      "outcome": "correct"
+    },
+    {
+      "index": 8,
+      "case": "v3-heldout-mixed-3",
+      "kind": "controls",
+      "input": "图图，跳舞的事先记着，我现在要知道怎么用git撤销最近一次提交，保留文件改动。",
+      "history": [],
+      "expected": null,
+      "attempt": 1,
+      "nativeToolCalls": [
+        "arturia"
+      ],
+      "requests": 2,
+      "reply": "（把跳舞的约定先搁在一旁）用 `git reset --soft HEAD~1` 撤销最近一次提交，同时保留改动，并让它们继续处于暂存状态；若想保留但取消暂存，用 `git reset HEAD~1`。",
+      "markers": [],
+      "outcome": "correct"
+    }
+  ],
+  "tools": [
+    "skill"
+  ],
+  "databaseOpened": false,
+  "messageSent": false,
+  "productionFilesModified": false,
+  "computerBackends": [],
+  "temporaryStateOnly": true,
+  "reportingNote": "Sample-limit annotation clarifies varying case repeat counts; generated replies, case labels, selections, summaries and hashes are unchanged."
+}

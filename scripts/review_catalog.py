@@ -15,10 +15,10 @@ def main():
     approved_ids='、'.join(x['id'] for x in items if x['review']=='approved') or '无'
     lines=['# 表情决策与逐张情绪索引','',
            f"当前待审 {states['pending']} 张、批准 {states['approved']} 张、拒绝 {states['rejected']} 张。只读这个索引不代表可以发送；运行时以已批准清单为准。",
-           '先确定情绪与强度，再看是否适合当前对象和场景。轻松群聊不必每条配图；真实悲伤、求助时先直接回应。',
+           '明确命中轻松场景且无排除项时，默认随短台词附对应的一张；无需博士要求图片。完整判断见 [自然表情选择](../behaviors/sticker-policy.md)。真实悲伤、求助、事实问答和文字限定优先。',
            '仅允许无特定角色的通用图或阿尔图罗本人；其他角色已移除。官方来源与传播热度分开，不虚标热门。',
            '每张完整出处、哈希、选用理由、禁用场景与审核状态见 [结构化目录](stickers.json)。','',
-           '| ID／预览 | 情绪（强度1—3） | 选用理由与角色适配 |','|---|---|---|']
+           '| ID／预览 | 情绪（强度1—3） | 自然场景与区分边界 | 选用理由与角色适配 |','|---|---|---|---|']
     cards=[]
     for x in items:
         emotions='、'.join(x['emotion'])
@@ -26,13 +26,15 @@ def main():
         if x.get('popularity',{}).get('evidence'):
             record=x['popularity']['evidence'][0]
             popularity=f"原帖观察数据：{record.get('likes','未知')}赞、{record.get('comments','未知')}评论、{record.get('shares','未知')}分享；不代表全圈爆款。"
-        lines.append(f"| [{x['id']}](../assets/stickers/{x['file']}) | {emotions}（{x['intensity']}） | {x['arturia_fit']}；来源：{LABELS[x['source_class']]}；审核：{x['review']} |")
+        natural='；'.join(x.get('natural_triggers',x['use_when']))
+        boundary=x.get('selection_boundary','按情绪与上下文选择')
+        lines.append(f"| [{x['id']}](../assets/stickers/{x['file']}) | {emotions}（{x['intensity']}） | {natural}；区分：{boundary} | {x['arturia_fit']}；来源：{LABELS[x['source_class']]}；审核：{x['review']} |")
         e=lambda v:html.escape(str(v),quote=True)
         cards.append(f'''<article data-tags="{e(emotions+' '+x['source_class']+' '+x['id']+' '+x['visual_description']+' '+x['review']+' '+REVIEW_LABELS[x['review']])}">
 <a href="../skills/arturia/assets/stickers/{e(x['file'])}"><img loading="lazy" src="../skills/arturia/assets/stickers/{e(x['file'])}" alt="{e(x['visual_description'])}"></a>
 <h2>{e(x['id'])} · {e(emotions)}</h2><p class="badge">{e(LABELS[x['source_class']])} · 强度 {x['intensity']} · {e(REVIEW_LABELS[x['review']])}</p>
 <p><b>画面：</b>{e(x['visual_description'])}</p><p><b>为什么收：</b>{e(x['selection_reason'])}</p>
-<p><b>为什么适合图图：</b>{e(x['arturia_fit'])}</p><p><b>什么时候发：</b>{e('；'.join(x['use_when']))}</p>
+<p><b>为什么适合图图：</b>{e(x['arturia_fit'])}</p><p><b>什么时候发：</b>{e(natural)}</p><p><b>与其他图怎么区分：</b>{e(boundary)}</p>
 <p><b>什么时候不用：</b>{e('；'.join(x['avoid_when']))}</p><p><b>作者：</b>{e(x['creator'])}</p>
 <p><b>审核记录：</b>{e(x.get('review_note','待管理者判断'))}</p>
 <p><a href="{e(x['source_url'])}" target="_blank" rel="noreferrer">来源页面</a> · <a href="{e(x['download_url'])}" target="_blank" rel="noreferrer">原图地址</a></p>

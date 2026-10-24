@@ -132,6 +132,40 @@ def main():
             report['production_snapshot']={'matches_current_export':True,'selected_groups':activation['activeGroups'],
                 'model':'openai-like/gpt-6-luna','chat_mode':'plugin','history_preserved':activation['historyUnchangedDuringTransaction'],
                 'evidence':[native_file.relative_to(ROOT).as_posix()]}
+    optimization_file=ROOT/'validation/natural-sticker-deployment-20261024.json'
+    optimization_readback=ROOT/'validation/natural-sticker-live-readback.json'
+    evaluation_file=ROOT/'validation/natural-sticker-candidate-v3.json'
+    if all(p.exists()for p in [optimization_file,optimization_readback,evaluation_file]):
+        deployment=json.loads(optimization_file.read_text(encoding='utf-8'))
+        readback=json.loads(optimization_readback.read_text(encoding='utf-8'))
+        evaluation=json.loads(evaluation_file.read_text(encoding='utf-8'))
+        index=json.loads((exports/'native-skills.json').read_text(encoding='utf-8'))
+        expected_modules={x['name']:x['sha256']for x in index['skills']}
+        preset_hash=hashlib.sha256((exports/'arturia.yml').read_bytes()).hexdigest()
+        current=bool(deployment['success']and deployment['formalPresetSha256']==preset_hash
+                     and readback['presetSha256']==preset_hash and evaluation['hashes']['preset']==preset_hash
+                     and evaluation['hashes']['modules']==expected_modules
+                     and {x['name']:x['sha256']for x in readback['nativeAgent']['skills']}==expected_modules
+                     and readback['manifestSha256']==hashlib.sha256((exports/'runtime-manifest.json').read_bytes()).hexdigest()
+                     and readback['originalHistoryPreserved']and readback['nativeAgent']['nativeConsoleAvailable'])
+        positives=[x for x in evaluation['modelChecks']if x['kind']=='positive']
+        report['natural_sticker_optimization']={'matches_current_export':current,
+            'model':evaluation['model'],'exact_positive_selections':sum(x['outcome']=='correct'for x in positives),
+            'positive_samples':len(positives),'sample_limit':evaluation['sampleLimit'],
+            'qq_messages_sent':deployment['syntheticQqMessagesSent'],
+            'evidence':[p.relative_to(ROOT).as_posix()for p in [optimization_file,optimization_readback,evaluation_file]]}
+        if current:
+            report['formal_preset_loaded']=True;report['production_role_switched']=True
+            report['production_snapshot']={'matches_current_export':True,'selected_groups':deployment['activeGroups'],
+                'model':deployment['model'],'chat_mode':deployment['chatMode'],
+                'history_preserved':readback['originalHistoryPreserved'],'restart_required':False,
+                'preset_verification':readback['presetRuntimeVerification'],
+                'evidence':[optimization_file.relative_to(ROOT).as_posix(),optimization_readback.relative_to(ROOT).as_posix()]}
+            report['native_agent']={'matches_current_export':True,'version':'1.0.49',
+                'ui_route':'/chatluna-agent','loaded_skill_count':len(readback['nativeAgent']['skills']),
+                'test_preset_removed':not readback['testPresetLeft'],'chat_mode':deployment['chatMode'],
+                'evidence':[optimization_readback.relative_to(ROOT).as_posix()]}
+            report['behavior_validation']='natural utterance samples with native Skills and prompt pipeline; synthetic context, no QQ group delivery test'
     (target/'release.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n',encoding='utf-8', newline='\n')
     print(json.dumps(report,ensure_ascii=False))
 
