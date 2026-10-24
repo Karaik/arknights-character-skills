@@ -1,0 +1,49 @@
+{
+  "date": "2026-10-24T04:04:25.872724+00:00",
+  "plugin": "koishi-plugin-chatluna-agent",
+  "version": "1.0.49",
+  "installed": true,
+  "enabled": true,
+  "skills": [
+    {
+      "name": "arturia",
+      "sha256": "6a7483cc963063e31064e884813c9a775bff8bfd096692be6f2966ec514192ff"
+    },
+    {
+      "name": "arturia-relationships",
+      "sha256": "ad18cd82a5a53860bd88234c5c8268eba0fb8b6a63bdb6e79c5162ac9c8f0222"
+    },
+    {
+      "name": "arturia-lore",
+      "sha256": "3f00f98e2eda700b2843e10c514a51920ec681fa0effe599bfe5b25cd79ab89a"
+    },
+    {
+      "name": "arturia-banter",
+      "sha256": "2e42fb94d8dcdbcbb721fde23a6445c48239d5826f21516c5ac1b4b397d8a725"
+    },
+    {
+      "name": "arturia-comfort",
+      "sha256": "75ff756c1ec857ac8439c1320242dae48efc39a60886bf4bfde4db33892ceb35"
+    },
+    {
+      "name": "arturia-stickers",
+      "sha256": "296ce7c982fc54700aee380f43b6f5375ab6294ccdf3f0de40bb86a8590a0289"
+    },
+    {
+      "name": "arturia-examples",
+      "sha256": "0c407a2e00c000128250822f3dbd6a08e4f3428675f21334c5e7e9b14bb064c8"
+    }
+  ],
+  "formalPresetSha256": "5051ba6f7d19467f2d2fb0422a5fc59bac11ea88c953fb41a8f7100ca00d2745",
+  "testPresetRemoved": true,
+  "activeGroupChatMode": "plugin",
+  "activeGroups": 5,
+  "historyUnchangedDuringTransaction": true,
+  "historyRowsBefore": 1487,
+  "historyRowsAfter": 1487,
+  "historyExactAtStartup": true,
+  "napcatRestarted": false,
+  "koishiRestartedForPluginActivation": true,
+  "consoleHTTP": 200,
+  "nativeRuntimeVerification": "passed; native-agent-console-state.json and native-skills-probe-results.json"
+}

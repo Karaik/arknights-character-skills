@@ -1,0 +1,55 @@
+{
+  "verifiedAt": "2026-10-24T04:09:33.772Z",
+  "nativeAgentConsoleAvailable": true,
+  "route": "/chatluna-agent",
+  "enabledSkills": [
+    {
+      "name": "arturia-banter",
+      "enabled": true,
+      "modelEnabled": true,
+      "contentChars": 380
+    },
+    {
+      "name": "arturia-comfort",
+      "enabled": true,
+      "modelEnabled": true,
+      "contentChars": 336
+    },
+    {
+      "name": "arturia-examples",
+      "enabled": true,
+      "modelEnabled": true,
+      "contentChars": 967
+    },
+    {
+      "name": "arturia-lore",
+      "enabled": true,
+      "modelEnabled": true,
+      "contentChars": 852
+    },
+    {
+      "name": "arturia-relationships",
+      "enabled": true,
+      "modelEnabled": true,
+      "contentChars": 727
+    },
+    {
+      "name": "arturia-stickers",
+      "enabled": true,
+      "modelEnabled": true,
+      "contentChars": 1329
+    },
+    {
+      "name": "arturia",
+      "enabled": true,
+      "modelEnabled": true,
+      "contentChars": 3931
+    }
+  ],
+  "enabledTools": [
+    "skill"
+  ],
+  "computerBackendsEnabled": 0,
+  "unrelatedBuiltinSkillsEnabled": 0,
+  "testPresetLeft": false
+}

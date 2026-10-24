@@ -1,6 +1,6 @@
 # 阿尔图罗角色 Skill · Koishi / ChatLuna
 
-面向 QQ 群聊的塑心／阿尔图罗／图图／图图姐／香草榜第一角色包。它们是同一个身份。资料、说话风格、关系、场景行为和表情分别维护，主 Skill 只保留运行核心。
+面向 QQ 群聊的塑心／阿尔图罗／图图／图图姐／香草榜第一角色包。资料、语气、关系、场景行为和表情分别维护；正式接入 ChatLuna Agent 原生 Skills，管理入口为 **ChatLuna Agent → Skills**。
 
 本群每位群友都是独立的博士；用昵称与发送者身份分别维护关系。角色保留简短括号演出，单独在 [演出模块](skills/arturia/references/performance.md) 管理神态、动作与台词的配合。
 
@@ -8,7 +8,7 @@
 
 - [当前表情包](review/index.html)：管理者指定的 7 张素材（6 张透明静图＋1 张原 70 帧摇摆 GIF），逐张标注情绪、出处、理由、适用和回避场景。
 - [Skill 入口](skills/arturia/SKILL.md)：人物核心与按需资料。
-- [Koishi 接入说明](docs/koishi.md)：实际 ChatLuna 1.4.2 可解析导出与受控发送插件。txy 已经管理者确认正式启用，5 个群当前会话切换为 `gpt-6-luna`，并保留独立测试预设。
+- [Koishi 接入说明](docs/koishi.md)：ChatLuna Agent 1.0.49 原生技能、正式身份预设与表情发送插件。txy 五个群使用 `gpt-6-luna` 与 `plugin` 模式；旧测试预设已删除。
 
 预览：[七张表情总览](review/contact-sheet-01.jpg) · [Photoshop 透明处理预览](artwork/arturia-reactions-20261024/six-reactions-transparency-preview.jpg) · [可编辑 PSD](artwork/arturia-reactions-20261024/arturia-six-reactions.psd)。[历史社区来源线索](review/community-leads.md)另列。
 
@@ -32,7 +32,8 @@ sources/                   PRTS 修订号、抓取哈希、社区来源线索
 review/                    可视化候选目录
 validation/                行为案例及验证记录
 exports/chatluna/          最新可查看的生成预设快照
-dist/                      可导入 Skills ZIP
+  native-skills/           七个正文自包含的原生角色模块
+dist/                      原生 ChatLuna Skills ZIP 与通用资料包
 ```
 
 事实来自 PRTS 档案、完整基础语音、模组故事和密录“天空与流云”。性格提炼与原创群聊例子分别标明。生日为 9 月 23 日、身高 168cm，已修正旧提示中的错误。

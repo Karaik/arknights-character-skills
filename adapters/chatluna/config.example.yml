@@ -1,12 +1,14 @@
-# Manually merge selected fields after reviewing backups; this is not a complete Koishi config.
+# Merge selected fields; this is not a complete Koishi config.
 # Preserve the room's chosen model. The repository does not choose a paid API provider.
 plugins:
   chatluna:
     defaultPreset: 阿尔图罗
+    defaultChatMode: plugin
     outputMode: pure-text
     streamResponse: false
     splitMessage: none
     defaultGroupRouteMode: shared
+  chatluna-agent: {} # Pin koishi-plugin-chatluna-agent to 1.0.49; configure Skills in its native UI.
   arturia-reviewed-stickers:
     manifestPath: data/arturia/runtime/manifest.json
     allowedGuilds: [] # Empty means disabled. Set only the groups you explicitly choose.

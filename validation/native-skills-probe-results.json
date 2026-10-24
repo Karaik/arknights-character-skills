@@ -1,0 +1,70 @@
+{
+  "ok": true,
+  "scope": "actual native Skills, permissions, StructuredTool and description catalog prompt pipeline",
+  "fullPluginConsoleStartup": false,
+  "modelCalled": true,
+  "modelChecks": [
+    {
+      "case": "native-sticker-selection",
+      "nativeToolCalls": [
+        "arturia-stickers"
+      ],
+      "reply": "[[sticker:arturia-react-03]]",
+      "passed": true
+    },
+    {
+      "case": "native-comfort",
+      "nativeToolCalls": [
+        "arturia-comfort"
+      ],
+      "reply": "（收起笑意，轻轻叹了口气）老板临时加班，确实很烦——本来属于你的时间，就这么被一句话拿走了。你说吧，我听着。",
+      "passed": true
+    }
+  ],
+  "databaseOpened": false,
+  "messageSent": false,
+  "productionFilesModified": false,
+  "core": "arturia",
+  "loaded": [
+    {
+      "name": "arturia-banter",
+      "chars": 470,
+      "sha256": "29fac032aad9908a384e57dac90f6ad1c88f3c844b5ed5814007724debed24a7"
+    },
+    {
+      "name": "arturia-comfort",
+      "chars": 426,
+      "sha256": "00a94333dffb93adbb9048bdbdf0bb44f634029fc7f88cffe34ed4fc5e59e2bc"
+    },
+    {
+      "name": "arturia-examples",
+      "chars": 1057,
+      "sha256": "62839ca6f9b6c0d31e056ed24cfadb2579f2e9e3bc2f8a4fa168930e5e423da2"
+    },
+    {
+      "name": "arturia-lore",
+      "chars": 942,
+      "sha256": "d1cfb3d36d2ba237d254eafd8d5918015b897c23a0830bba27f0f7566d47f280"
+    },
+    {
+      "name": "arturia-relationships",
+      "chars": 817,
+      "sha256": "0000d2f37f7aae770fd46ce111ea3396591ab3b566a77b3714ad53f15f0b493b"
+    },
+    {
+      "name": "arturia-stickers",
+      "chars": 1419,
+      "sha256": "71704f25ac0281d26656892e0fbdf9f1a5b3c9fe338452c3b79e5d1ba80f6295"
+    },
+    {
+      "name": "arturia",
+      "chars": 4021,
+      "sha256": "1cc351579755980af59fb04245658551c785f15e44a24d3e05e4922e9bf94480"
+    }
+  ],
+  "tools": [
+    "skill"
+  ],
+  "computerBackends": [],
+  "temporaryStateOnly": true
+}

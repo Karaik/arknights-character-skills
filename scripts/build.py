@@ -18,6 +18,29 @@ def approved_stickers(items):
 def md_body(text):
     return text.split('---', 2)[-1].strip() if text.startswith('---\n') else text.strip()
 
+def build_native_skills(skill, target, core, common, sticker_lines):
+    """Native Skills load their own bodies, so modules include needed text."""
+    modules = [
+        ('arturia', '阿尔图罗角色核心：当前角色为塑心、阿尔图罗、图图时加载身份、性格、语气、演出与群聊约定。', core+'\n\n'+common),
+        ('arturia-relationships', '阿尔图罗人物关系：讨论费德里科、阿米娅、博士或原作关系时加载。', (skill/'references/relationships.md').read_text(encoding='utf-8')),
+        ('arturia-lore', '阿尔图罗剧情与设定：讨论源石技艺、监督、模组、时装和时间线时加载。', (skill/'references/lore/timeline.md').read_text(encoding='utf-8')),
+        ('arturia-banter', '阿尔图罗接梗：当前以图图身份与博士调侃、玩笑、互逗时加载。', (skill/'behaviors/banter.md').read_text(encoding='utf-8')),
+        ('arturia-comfort', '阿尔图罗陪伴：当前以图图身份回应博士疲惫、抱怨、难过或需要倾听时加载。', (skill/'behaviors/comfort.md').read_text(encoding='utf-8')),
+        ('arturia-stickers', '阿尔图罗表情：当前图图要发表情时加载七张已批准图片的情绪、适用与回避场景。', '\n'.join(sticker_lines)),
+        ('arturia-examples', '阿尔图罗表达示例：图图回复重复或需要参考自然对话、神态与动作配合时加载。', (skill/'examples/dialogue.md').read_text(encoding='utf-8')),
+    ]
+    native=target/'native-skills'
+    if native.exists(): shutil.rmtree(native)
+    items=[]
+    for name,description,body in modules:
+        folder=native/name;folder.mkdir(parents=True)
+        text='---\n'+yaml.safe_dump({'name':name,'description':description},allow_unicode=True,sort_keys=False).strip()+'\n---\n\n'+body.strip()+'\n'
+        path=folder/'SKILL.md';path.write_text(text,encoding='utf-8',newline='\n')
+        items.append({'name':name,'description':description,'file':name+'/SKILL.md','sha256':hashlib.sha256(path.read_bytes()).hexdigest(),'mode':'description'})
+    (target/'native-skills.json').write_text(json.dumps({'schema_version':1,'plugin':'koishi-plugin-chatluna-agent','version':'1.0.49','chat_mode':'plugin','skills':items},ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+    return items
+
+
 def build(root=ROOT, target=None):
     target = target or root/'build'
     profile = json.loads((root/'profiles/arturia.json').read_text(encoding='utf-8'))
@@ -43,6 +66,9 @@ def build(root=ROOT, target=None):
         lines.extend(f"- {x['id']}: {'、'.join(x['emotion'])}（强度{x['intensity']}）；适用：{'；'.join(x['use_when'])}；不用于：{'；'.join(x['avoid_when'])}；使用：{x.get('usage_priority','按当前情绪自然选择')}" for x in approved)
     else:
         lines.append('当前没有获批表情；只回复文字，不输出任何 sticker 标记。')
+    native_items=build_native_skills(skill,target,core,common,lines)
+    native_runtime=profile.get('runtime')=='chatluna-agent'
+    native_note=('\n\n当前运行于 ChatLuna plugin 模式，提供原生 skill 工具。当前身份始终是阿尔图罗；按当前话题调用技能加载完整模块，不向群友描述加载过程，也不要求博士知道技能名。\n'+'\n'.join(f"- {x['name']}: {x['description']}"for x in native_items))if native_runtime else ''
     example_messages=[]
     approved_ids={x['id']for x in approved}
     examples=json.loads((skill/profile['examples']).read_text(encoding='utf-8'))['examples']
@@ -52,11 +78,11 @@ def build(root=ROOT, target=None):
                                  {'role':'assistant','content':example['assistant']}])
     preset = {
         'keywords': profile['aliases'],
-        'prompts': [{'role': 'system', 'content': core+'\n\n'+common+'\n\n'+'\n'.join(lines)}]+example_messages,
+        'prompts': [{'role': 'system', 'content': core+'\n\n'+common+'\n\n'+'\n'.join(lines)+native_note}]+example_messages,
         'format_user_prompt': '用户{sender}（ID:{sender_id}）说：{prompt}',
         'world_lores': [{'scanDepth': 3, 'tokenLimit': 1800, 'recursiveScan': False}] + [
             {'keywords': item['keywords'], 'content': (skill/item['file']).read_text(encoding='utf-8'),
-             'scanDepth': 3, 'enabled': True} for item in profile['lore']],
+             'scanDepth': 3, 'enabled': True} for item in ([]if native_runtime else profile['lore'])],
         'authors_note': {'content': '每位群友都是独立的博士，按昵称与引用分清对象。接眼前具体的话，保留简短括号演出，让神态或小动作与台词一起表现当下情绪；自然短答也可以。',
                          'insertPosition': 'in_chat', 'insertDepth': 0, 'insertFrequency': 1}
     }
@@ -91,4 +117,4 @@ if __name__ == '__main__':
     parser.add_argument('--output', type=Path)
     args = parser.parse_args()
     preset, manifest = build(target=args.output)
-    print(f"Built {len(preset['keywords'])} aliases, {len(preset['world_lores'])-1} lore modules, {len(manifest['stickers'])} approved images.")
+    print(f"Built {len(preset['keywords'])} aliases, 7 native skills, {len(manifest['stickers'])} approved images.")

@@ -4,6 +4,7 @@ import json
 from pathlib import Path
 import tempfile
 import unittest
+import yaml
 from unittest.mock import patch
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -12,6 +13,21 @@ builder = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(builder)
 
 class BuildTests(unittest.TestCase):
+    def test_native_skill_modules_include_text_and_follow_approval(self):
+        with tempfile.TemporaryDirectory()as tmp:
+            target=Path(tmp);preset,_=builder.build(target=target)
+            index=json.loads((target/'native-skills.json').read_text(encoding='utf-8'))
+            self.assertEqual(len(index['skills']),7)
+            for item in index['skills']:
+                text=(target/'native-skills'/item['file']).read_text(encoding='utf-8')
+                metadata=yaml.safe_load(text.split('---',2)[1])
+                self.assertEqual(metadata['name'],item['name'])
+                self.assertGreater(len(text.split('---',2)[2].strip()),100)
+                self.assertNotIn('## 按需要读取',text)
+            self.assertEqual(len(preset['world_lores']),1)
+            with patch.object(builder,'load_catalog',return_value=[]):builder.build(target=target)
+            self.assertNotIn('arturia-sway-01',(target/'native-skills/arturia-stickers/SKILL.md').read_text(encoding='utf-8'))
+
     def test_conversation_examples_follow_sticker_approval(self):
         with tempfile.TemporaryDirectory() as tmp:
             target=Path(tmp)

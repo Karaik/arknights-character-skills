@@ -1,71 +1,70 @@
-# Koishi / ChatLuna 接入说明
+# Koishi / ChatLuna 正式接入
 
-本仓库已做离线接口验证，并按管理者后续授权在 txy 安装和启用了发送插件，另导入独立测试预设。验证版本：Koishi 4.18.11、ChatLuna 1.4.2；本地 Node 22.19.0。现有 OneBot 6.9.5 / NapCat 无需替换。
+当前正式版本使用 Koishi 4.18.11、ChatLuna 1.4.2、`koishi-plugin-chatluna-agent` 1.0.49，以及 `arturia-reviewed-stickers` 0.1.1。前者提供原生 Skills 管理和加载，后者只负责把批准的表情 ID 转成图片；两者作用不同。
 
-## 先审表情
+## 在哪里管理 Skills
 
-打开 `review/index.html`，看原图、情绪、来源、理由、适用和回避场景。当前为管理者明确指定的六张透明静图和一张 70 帧 GIF，共七张，均只含图图本人。重新生成本套素材的目录和预设时执行：
+刷新 Koishi 控制台后，打开侧栏 **ChatLuna Agent → Skills**，页面路径 `/chatluna-agent`。管理页面需要控制台账户 authority ≥ 3。
+
+当前启用七个独立原生技能：
+
+| 名称 | 内容 |
+|---|---|
+| `arturia` | 身份、性格、说话方式、演出和多人群聊约定 |
+| `arturia-relationships` | 原作人物关系 |
+| `arturia-lore` | 技艺、剧情、模组与时间线 |
+| `arturia-banter` | 接梗和熟人互逗 |
+| `arturia-comfort` | 抱怨、疲惫与陪伴 |
+| `arturia-stickers` | 七张批准表情的情绪、适用与回避场景 |
+| `arturia-examples` | 对话和演出示例 |
+
+这些模块均使用 `description` 模式，模型按需调用原生 `skill` 工具读取完整正文。也可在已启用的会话手动输入 `/arturia-stickers …` 等技能前缀。无需为读取角色模块启用文件、终端或 Computer 工具。
+
+当前七个模块的主会话工具权限只启用 `skill`，Computer 后端关闭，内置开发技能禁用。插件对普通 ChatLuna 来源没有按“预设”划分技能权限，因此未使用全局 `full` 模式强行注入阿尔图罗身份；正式预设负责稳定身份，模块仅在相关任务中加载。
+
+## 正式预设和会话模式
+
+正式文件为 `data/chathub/presets/arturia.yml`，对应“阿尔图罗”，并保留塑心、图图、图图姐、香草榜第一等八个身份别名。
+
+旧 `arturia-skill-test.yml` 已删除，未被任何会话引用。现有五个群的当前会话已改为 **`plugin`** 模式，模型仍为 `gpt-6-luna`。本次事务前后 1487 条原历史记录哈希一致，未清空会话。ChatLuna 的新会话默认模式也设为 `plugin`。
+
+原生模块导入路径是 `data/chatluna/skills/<模块名>/SKILL.md`。实际运行配置由插件维护在 `data/chatluna/agents/config.json`；该现场配置不提交到 Git。
+
+## 本地维护和重新导出
+
+原始资料仍在 `skills/arturia/` 分模块维护。构建会生成正文自包含的原生模块，避免把仅含附件链接的入口误当作完整运行能力。
 
 ```powershell
 python scripts/review_catalog.py
 python scripts/build.py
 python scripts/validate.py
+python scripts/package_release.py
 ```
 
-这些命令只生成本地产物。以后增加素材仍需管理者明确选用；不要重新采集旧候选来覆盖本套七张清单。
+产物：
 
-## 普通 ChatLuna 接法（优先）
+- `exports/chatluna/arturia.yml`：正式身份预设，包含原生技能调用指引。
+- `exports/chatluna/native-skills/`：七个原生模块。
+- `dist/arturia-chatluna-skills.zip`：可通过 Agent 的 Skills 页面导入。
+- `dist/arturia-skill-0.1.0.zip`：通用模块化资料包，含参考与图片；与原生加载包用途不同。
+- `exports/chatluna/runtime-manifest.json` 和 `images/`：七张批准表情。
 
-1. 本地执行 `python scripts/build.py`。`build/arturia.yml` 是可直接被 ChatLuna 1.4.2 解析的普通预设，包含八个身份别名、常驻核心和四个世界书模块。
-2. 将生成文件放进 Koishi 的 `data/chathub/presets`。本次先更新独立文件 `arturia-skill-test.yml`，随后管理者明确批准正式启用，已替换正式 `arturia.yml` 并将 5 个群当前会话模型切为 `gpt-6-luna`。管理者明确无需额外备份，本次未创建备份文件，聊天历史完整保留。
-3. 在目标会话选择“阿尔图罗”预设。保留会话选择的模型；全局默认和已存在会话模型可能不同。
-4. 表情接法使用下面的本地插件。不开表情时，直接保持普通纯文本预设即可。
+不要重新创建测试预设。对生产更新使用正式名称，并在部署前核对导出的哈希和原生模块目录。
 
-`authors_note` 按 ChatLuna 1.4.2 实际字段 `insertFrequency` 输出；与某些旧文档的 `insertionFrequency` 不同，已经过真实解析器核验。
+## 表情发送
 
-## Koishi 发送适配器
+`arturia-reviewed-stickers` 监听 Koishi 的 `before-send`，将 `[[sticker:ID]]` 转成经过哈希验证的 `h.image(Buffer, mime)`；每次最多一张，限既有五群白名单。PNG 和 GIF 使用对应 MIME，容器之间无需共享图片路径。
 
-仓库提供一个很小的本地插件 `adapters/koishi`，不是新机器人框架。它监听真实 Koishi `before-send` 事件，限于指定 OneBot 群；将已批准的 `[[sticker:ID]]` 转成 Koishi `h.image(Buffer, mime)`。PNG/GIF 等使用相应 MIME。图片经校验后以内联数据交给 OneBot，避免依赖两个容器相同的本地文件路径。
+当前六张透明静图分别用于疑惑、为难、害羞、无语、得意、戏谑；摇摆 GIF 保持 70 帧、每帧 100ms、共 7 秒。详见 [逐张分类](../skills/arturia/references/stickers.md)。
 
-本地打包：
+## 验证范围
 
-```powershell
-npm pack ./adapters/koishi --pack-destination ./build
-```
+`native-agent-console-state.json` 记录真实管理页面接口返回的七个可见技能、正文读取与唯一启用工具。`native-skills-probe-results.json` 通过已安装包的实际原生 StructuredTool 逐个加载七个模块，并使用当前模型验证表情、陪伴两条工具调用链；探针在独立进程执行，不创建测试预设或正式聊天历史。
 
-之后经批准，在 Koishi 项目安装生成的本地 tgz。复制 `build/runtime/` 到容器内可读的目录，例：`/koishi/data/arturia/runtime/`；插件的 `manifestPath` 指向里面的 manifest.json。每个文件都须与 manifest 的相对路径一致。`allowedGuilds` 默认空，完全不处理群消息；由管理者填入允许群。
-
-`adapters/chatluna/config.example.yml` 是合并参考，真实插件组和实例名沿用现有部署。图片标记需要完整交给发送钩子，所以推荐关闭角色流式输出，关闭分句发送，保留 `pure-text`。不要全局改其他业务的渲染方式。
-
-已验证：真实 ChatLuna pure-text 渲染保留标记；真实 Koishi 消息元素可由钩子替换；未审核、未知、越界路径或哈希变化的图片不能发送。2026-10-24 在服务器用已安装插件、真实 Koishi Context 和真实 ChatLuna parser，逐张验证本套六张 PNG 与一张 GIF 的内联数据及完整哈希。运行清单已原子替换，正式预设仅更新表情选择段；ChatLuna 的 PresetService 文件监听负责热更新，Koishi 与 NapCat 无需重启。既有五群白名单和其余角色设定保持原值，未操作聊天数据库。验证未连接 QQ 测试适配器或发送群消息。记录见 `validation/sticker-replacement-20261024.json`。
-
-`exports/chatluna/runtime-manifest.json` 的相对图片路径在同级 `images/` 中完整提供。只有 approved 素材进入该目录；重新打包会移除已撤销的旧运行图片。
-
-后续验收已用当前配置渠道跑完六张静图、纯 GIF、诉苦和数字问答共九个合成用例，均符合选图预期。真实 Koishi OneBot encoder 再通过 NapCat 已认证调试 WebSocket 向机器人自身发送 PNG/GIF 各一条，`get_msg` 回读确认均含图片；未向群发送测试消息。`validation/qq-self-probe.cjs` 从 stdin 接收临时认证，执行前获取当前登录账号，发送目的地仅允许这个账号本身；认证值、账号及消息 ID 均不写入公开结果。此验证使用独立 Context，正式五群配置保持原值。
-
-审批清单在每次处理图片标记时重新读取，撤销批准后不会继续使用进程内旧审批。更新或撤回图片时，重新生成并整体替换运行目录，不把旧文件混入新包。插件代码本身升级仍需按 Koishi 常规方式重载插件。
-
-## MemesLuna 可选接法
-
-`build/memesluna-approved/` 是经批准七张图片的上传目录；`build/memesluna-labels.json` 是标签对照，**不是 MemesLuna 原生可直接导入的配置文件**。本次使用现有发送插件，无需另装 MemesLuna。
-
-如果选择它提供图片路由，可用同 Docker 网络可达的 Koishi 服务名，避免写死容器 IP。本仓库优先使用上面的本地发送适配器，减少 URL、图床过期和渲染差异；不同时要求两条发图链路。
-
-## 标准 Skills 接法（可选）
-
-`dist/arturia-skill-0.1.0.zip` 包含独立 `arturia/SKILL.md`、所有参考与候选图。ChatLuna Agent 安装后可导入该目录；按官方文档核对 `plugin` 模式与 skill/file_read 权限。素材目录仍不是获批清单。普通 ChatLuna 接法不依赖 Agent，也不需要开放服务器 Shell 或任意文件工具。
-
-本仓库没有声称 `chatluna-character` 与普通 ChatLuna 预设直接互通。若以后采用 Character 插件，其状态／触发格式需要独立适配；本次不用它替换现有工作流。
-
-## 旧上下文与模型
-
-先保留原历史，在独立会话评估新版。旧回复可能延续同一种语气；不清空数据库。模型采样参数不统一乱调，也不把角色设定当作解除模型限制的手段。
-
-本次实际调用见 `validation/model-probe-results.json`：同一当前可用渠道 `gpt-6-luna`，6 个匿名场景各比较旧版／新版一次。预设由实际 ChatLuna parser 读取，世界书仅按本项目的普通字面关键词匹配装配；测试不等同完整运行中的会话服务，也不含既有群聊历史。正式迁移经管理者确认后完成，5 个目标群的模型已统一为 `gpt-6-luna`，历史记录在 SQLite 内存演练、实际事务及重载后均校验未变；没有清空会话。
+`native-agent-activation-20261024.json` 记录正式插件、五群模式切换和历史校验。之前的 `qq-self-probe-results.json` 则证明 PNG/GIF 各一次机器人自聊上传及图片元素回读；它不是本次原生技能调用后的群聊全链路回归。
 
 官方依据：
 
-- https://chatluna.chat/guide/preset-system/write-preset.html
 - https://chatluna.chat/ecosystem/plugin/extension-agent.html
-- https://github.com/lumia1998/koishi-plugin-memesluna
-- https://github.com/koishijs/satori （before-send 与 h.image 的消息发送接口）
+- https://chatluna.chat/guide/preset-system/write-preset.html
+- https://registry.npmjs.org/koishi-plugin-chatluna-agent/1.0.49

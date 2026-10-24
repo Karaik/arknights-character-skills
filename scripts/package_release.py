@@ -13,6 +13,10 @@ def main():
     exports.mkdir(parents=True,exist_ok=True)
     shutil.copyfile(ROOT/'build/arturia.yml',exports/'arturia.yml')
     shutil.copyfile(ROOT/'build/runtime/manifest.json',exports/'runtime-manifest.json')
+    native=exports/'native-skills'
+    if native.exists():shutil.rmtree(native)
+    shutil.copytree(ROOT/'build/native-skills',native)
+    shutil.copyfile(ROOT/'build/native-skills.json',exports/'native-skills.json')
     # Keep every exported relative image path usable, and remove revoked images.
     images=exports/'images'
     if images.exists():shutil.rmtree(images)
@@ -26,13 +30,20 @@ def main():
                 info.compress_type=zipfile.ZIP_DEFLATED
                 info.external_attr=0o644 << 16
                 z.writestr(info,path.read_bytes())
+    native_archive=target/'arturia-chatluna-skills.zip'
+    with zipfile.ZipFile(native_archive,'w',compression=zipfile.ZIP_DEFLATED)as z:
+        for path in sorted((ROOT/'build/native-skills').rglob('SKILL.md')):
+            info=zipfile.ZipInfo(path.relative_to(ROOT/'build/native-skills').as_posix(),date_time=(1980,1,1,0,0,0))
+            info.compress_type=zipfile.ZIP_DEFLATED;info.external_attr=0o644<<16
+            z.writestr(info,path.read_bytes())
     items=load_catalog()
     report={'archive':archive.name,'sha256':hashlib.sha256(archive.read_bytes()).hexdigest(),
+            'native_skill_archive':native_archive.name,'native_skill_count':7,
             'image_policy':'Only explicitly owner-approved images enter runtime',
             'review_counts':{s:sum(x['review']==s for x in items) for s in ['pending','approved','rejected']},
             'runtime_image_count':len(manifest['stickers']),
             'chatluna_parser':'1.4.2 actual package parser validated',
-            'koishi_plugin_installed_and_enabled':True,'isolated_preset_loaded':True,
+            'koishi_plugin_installed_and_enabled':True,'formal_preset_loaded':False,
             'production_role_switched':False,'live_qq_image_upload_tested':False,
             'behavior_validation':'independent agent scenario exercise; not a live Gemini/DeepSeek comparison'}
     probe=ROOT/'validation/model-probe-results.json'
@@ -100,6 +111,27 @@ def main():
             'messages_sent':delivery['qqMessagesSent'],'group_messages_sent':delivery['groupMessagesSent'],
             'verified_stickers':[x['stickerId'] for x in delivery['results']],
             'evidence':delivery_file.relative_to(ROOT).as_posix()}
+    native_file=ROOT/'validation/native-agent-activation-20261024.json'
+    native_console=ROOT/'validation/native-agent-console-state.json'
+    native_probe=ROOT/'validation/native-skills-probe-results.json'
+    if all(p.exists()for p in [native_file,native_console,native_probe]):
+        activation=json.loads(native_file.read_text(encoding='utf-8'))
+        console=json.loads(native_console.read_text(encoding='utf-8'))
+        probe=json.loads(native_probe.read_text(encoding='utf-8'))
+        index=json.loads((exports/'native-skills.json').read_text(encoding='utf-8'))
+        current=bool(activation['formalPresetSha256']==hashlib.sha256((exports/'arturia.yml').read_bytes()).hexdigest()
+                     and {x['name']:x['sha256']for x in activation['skills']}=={x['name']:x['sha256']for x in index['skills']}
+                     and console['nativeAgentConsoleAvailable']and probe['ok'])
+        report['native_agent']={'matches_current_export':current,'version':activation['version'],
+            'ui_route':console['route'],'loaded_skill_count':len(probe['loaded']),
+            'model_tool_cases_passed':len(probe['modelChecks']),'test_preset_removed':activation['testPresetRemoved'],
+            'chat_mode':activation['activeGroupChatMode'],
+            'evidence':[p.relative_to(ROOT).as_posix()for p in [native_file,native_console,native_probe]]}
+        if current:
+            report['formal_preset_loaded']=True;report['production_role_switched']=True
+            report['production_snapshot']={'matches_current_export':True,'selected_groups':activation['activeGroups'],
+                'model':'openai-like/gpt-6-luna','chat_mode':'plugin','history_preserved':activation['historyUnchangedDuringTransaction'],
+                'evidence':[native_file.relative_to(ROOT).as_posix()]}
     (target/'release.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n',encoding='utf-8', newline='\n')
     print(json.dumps(report,ensure_ascii=False))
 
