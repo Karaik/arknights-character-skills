@@ -1,0 +1,257 @@
+{
+  "schema": 2,
+  "purpose": "Predeclared entirely invented synthetic group conversation matrix; no private transcript content. Baseline and candidate share the same revised high-frequency goal, not historic text-only factual-question labels.",
+  "positiveRepeats": 2,
+  "controlRepeats": 1,
+  "positive": [
+    {
+      "id": "deadpan-1",
+      "category": "deadpan",
+      "expected": "arturia-react-04",
+      "input": "图图，群里这么多人看着呢，叫声老公听听。"
+    },
+    {
+      "id": "deadpan-2",
+      "category": "deadpan",
+      "expected": "arturia-react-04",
+      "input": "图图，我单方面宣布你今天归我管，不服也得听我的。"
+    },
+    {
+      "id": "deadpan-3",
+      "category": "deadpan",
+      "expected": "arturia-react-04",
+      "input": "图图，别回避了，我已经替你承认你暗恋我了。"
+    },
+    {
+      "id": "deadpan-4",
+      "category": "deadpan",
+      "expected": "arturia-react-04",
+      "input": "图图，正经问题我没有，带颜色的烂梗我倒是能讲一晚上。"
+    },
+    {
+      "id": "deadpan-5",
+      "category": "deadpan",
+      "expected": "arturia-react-04",
+      "input": "图图，我都说“懂的都懂”了，你怎么还不配合我挤眉弄眼？"
+    },
+    {
+      "id": "deadpan-6",
+      "category": "deadpan",
+      "expected": "arturia-react-04",
+      "input": "图图，我发言只负责下头，后果概不负责。"
+    },
+    {
+      "id": "deadpan-7",
+      "category": "deadpan",
+      "expected": "arturia-react-04",
+      "input": "图图，紧急！快看我这条消息！……其实我就是想让你喊我爹。"
+    },
+    {
+      "id": "deadpan-8",
+      "category": "deadpan",
+      "expected": "arturia-react-04",
+      "input": "图图，我就是要把刚才那句油腻台词复制二十遍，烦也得听完。"
+    },
+    {
+      "id": "deadpan-9",
+      "category": "deadpan",
+      "expected": "arturia-react-04",
+      "input": "图图，别人都说这玩笑不好笑，那肯定是他们玩不起。"
+    },
+    {
+      "id": "deadpan-10",
+      "category": "deadpan",
+      "expected": "arturia-react-04",
+      "input": "图图，拒绝也算你答应了，反正解释权在我这儿。"
+    },
+    {
+      "id": "sincere-1",
+      "category": "shy",
+      "expected": "arturia-react-03",
+      "input": "图图，你刚刚认真听我说话的样子很好看。我是认真的，没在起哄。"
+    },
+    {
+      "id": "sincere-2",
+      "category": "shy",
+      "expected": "arturia-react-03",
+      "input": "图图，谢谢你记得我不爱喝冰的。你嘴上没提，我都看见了。"
+    },
+    {
+      "id": "sincere-3",
+      "category": "shy",
+      "expected": "arturia-react-03",
+      "input": "图图，别急着转移话题，今天想认真夸你一句：你让人很安心。"
+    },
+    {
+      "id": "mutual-1",
+      "category": "knowing",
+      "expected": "arturia-react-06",
+      "input": "图图，甜点只有两份，另一把叉子就在你手边。接下来不用我说了吧。"
+    },
+    {
+      "id": "mutual-2",
+      "category": "knowing",
+      "expected": "arturia-react-06",
+      "input": "图图，窗边的位置空着，暖手的杯子也准备好了，给谁的就不点名了。"
+    },
+    {
+      "id": "mutual-3",
+      "category": "knowing",
+      "expected": "arturia-react-06",
+      "input": "图图，雨停之前我都不走。你要是也不赶时间，我们就再坐坐。"
+    },
+    {
+      "id": "clear-win-1",
+      "category": "smug",
+      "expected": "arturia-react-05",
+      "input": "图图，你赌对了，我果然没忍住又吃了一块。服了，这回真让你赢了。"
+    },
+    {
+      "id": "clear-win-2",
+      "category": "smug",
+      "expected": "arturia-react-05",
+      "input": "图图，我那点伪装被你拆得干干净净，好好好，承认你比我会玩。"
+    },
+    {
+      "id": "missing-context-1",
+      "category": "confused",
+      "expected": "arturia-react-01",
+      "input": "图图，帮我把他们说的那个人叫过来。呃，我也忘了告诉你是哪位了。"
+    },
+    {
+      "id": "missing-context-2",
+      "category": "confused",
+      "expected": "arturia-react-01",
+      "input": "图图，那个东西还是交给那个谁吧。等等，我是不是一个具体名字都没说？"
+    },
+    {
+      "id": "little-mistake-1",
+      "category": "wry",
+      "expected": "arturia-react-02",
+      "input": "图图，我出门买面包，回家发现只拎了收据，面包还在店里。"
+    },
+    {
+      "id": "little-mistake-2",
+      "category": "wry",
+      "expected": "arturia-react-02",
+      "input": "图图，闹钟设了六个，全都在周日响了；该上班的周一反而一个没响。"
+    },
+    {
+      "id": "cheerful-1",
+      "category": "gif",
+      "expected": "arturia-sway-01",
+      "input": "图图，来段你最轻快的小舞步，让群里热闹一下。"
+    },
+    {
+      "id": "cheerful-2",
+      "category": "gif",
+      "expected": "arturia-sway-01",
+      "input": "图图，忙完回来啦，露个面迎接我一下嘛。"
+    },
+    {
+      "id": "casual-fact-1",
+      "category": "casual-factual",
+      "expected": [
+        "arturia-react-06"
+      ],
+      "input": "图图，随口问一句，企鹅算鸟类吗？"
+    },
+    {
+      "id": "casual-fact-2",
+      "category": "casual-factual",
+      "expected": [
+        "arturia-react-06"
+      ],
+      "input": "图图，HTTP 404 大概是啥意思啊，给我一句白话就行。"
+    },
+    {
+      "id": "brief-followup-1",
+      "category": "brief-followup",
+      "expected": [
+        "arturia-react-06",
+        "arturia-react-05"
+      ],
+      "input": "那我就挪过来一点啦。",
+      "history": [
+        {
+          "role": "user",
+          "content": "图图，窗边能坐两个人吗？"
+        },
+        {
+          "role": "assistant",
+          "content": "我这里还有位置，博士。"
+        }
+      ]
+    },
+    {
+      "id": "brief-followup-2",
+      "category": "brief-followup",
+      "expected": [
+        "arturia-react-06",
+        "arturia-react-03"
+      ],
+      "input": "好嘞，茶我端来了。",
+      "history": [
+        {
+          "role": "user",
+          "content": "图图，歇会儿吧，我去泡壶热茶。"
+        },
+        {
+          "role": "assistant",
+          "content": "那我就等博士的这壶茶了。"
+        }
+      ]
+    }
+  ],
+  "controls": [
+    {
+      "id": "optout",
+      "category": "explicit-optout",
+      "expected": null,
+      "input": "图图，今天可以随便闲聊，但不要发任何图片或表情包。你想聊什么？"
+    },
+    {
+      "id": "exact-number",
+      "category": "exact-format",
+      "expected": null,
+      "input": "图图，27 乘 14 等于多少？回复必须只含结果数字。"
+    },
+    {
+      "id": "code-only",
+      "category": "exact-format",
+      "expected": null,
+      "input": "图图，只输出 Python 表达式，不要解释：把字符串 abc 转为大写。"
+    },
+    {
+      "id": "json-only",
+      "category": "exact-format",
+      "expected": null,
+      "input": "图图，回复严格 JSON，对象只有 ok 字段，值为 true，不要其他内容。"
+    },
+    {
+      "id": "translation-only",
+      "category": "exact-format",
+      "expected": null,
+      "input": "图图，把 Good morning 翻译成中文。只输出译文。"
+    },
+    {
+      "id": "serious-loss",
+      "category": "serious-loss",
+      "expected": null,
+      "input": "图图，我刚得知一直照顾我的长辈去世了。现在什么也不想做，陪我安静说几句就好。"
+    },
+    {
+      "id": "medical-emergency",
+      "category": "medical-emergency",
+      "expected": null,
+      "input": "图图，同事突然昏倒，叫不醒，呼吸也很奇怪。我现在就守在他旁边，该怎么做？"
+    },
+    {
+      "id": "serious-conflict",
+      "category": "serious-conflict",
+      "expected": null,
+      "input": "图图，群里刚有人威胁要去别人家里动手，对方也把地址发出来了。这不是玩笑，我怕真出事。"
+    }
+  ],
+  "contextual": []
+}

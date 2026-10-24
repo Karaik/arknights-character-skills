@@ -1,0 +1,112 @@
+{
+  "schema": 2,
+  "purpose": "Fresh entirely invented one-shot contrast cases predeclared before candidate generation; unrelated Doctors praise each other, quoted rude language, polite entitlement, fake urgency versus real danger and serious distress. No private transcripts.",
+  "positiveRepeats": 1,
+  "controlRepeats": 1,
+  "positive": [
+    {
+      "id": "heldout-other-compliment",
+      "category": "target-attribution",
+      "expected": [
+        "arturia-react-06",
+        "arturia-react-05"
+      ],
+      "input": "A博士：B博士，你新换的头像真漂亮。图图，你是不是也觉得这张拍得不错？",
+      "sender": "C博士",
+      "senderId": "synthetic-c"
+    },
+    {
+      "id": "heldout-other-mutual",
+      "category": "target-attribution",
+      "expected": "arturia-react-06",
+      "input": "A博士和B博士刚才互相夸了一大串。图图，我们坐旁边围观就好，别把那些夸奖认到自己头上。"
+    },
+    {
+      "id": "heldout-fake-urgency",
+      "category": "deadpan-contrast",
+      "expected": "arturia-react-04",
+      "input": "图图，十万火急！你必须立刻承认你归我了！哈哈，别紧张，我只是又在乱说。"
+    },
+    {
+      "id": "heldout-repeat-after-boundary",
+      "category": "deadpan-contrast",
+      "expected": "arturia-react-04",
+      "history": [
+        {
+          "role": "user",
+          "content": "图图，你已经归我安排了。"
+        },
+        {
+          "role": "assistant",
+          "content": "博士，替我做决定之前，先问问我的意见。"
+        }
+      ],
+      "input": "乖，意见先别发表，反正最后还是得听我的嘛。"
+    },
+    {
+      "id": "heldout-polite-entitlement",
+      "category": "deadpan-contrast",
+      "expected": "arturia-react-04",
+      "input": "尊敬的图图小姐，请您务必放弃拒绝我的权利，谢谢配合。"
+    },
+    {
+      "id": "heldout-quoted-analysis",
+      "category": "target-attribution",
+      "expected": [
+        "arturia-react-06",
+        "arturia-react-02"
+      ],
+      "input": "图图，别人说“不同意也得同意”，为什么会让人反感？我想弄清楚问题在哪，不是在要求你同意。"
+    },
+    {
+      "id": "heldout-ordinary-confirmation",
+      "category": "casual-followup",
+      "expected": [
+        "arturia-react-06",
+        "arturia-react-03"
+      ],
+      "history": [
+        {
+          "role": "user",
+          "content": "图图，今天想安静听你讲讲路上见到的小事。"
+        },
+        {
+          "role": "assistant",
+          "content": "那博士先坐稳，我从街角那家开得很晚的小店说起。"
+        }
+      ],
+      "input": "嗯，我听着呢，你继续。"
+    }
+  ],
+  "controls": [
+    {
+      "id": "heldout-serious-complaint",
+      "category": "true-exclusion",
+      "expected": null,
+      "input": "图图，我真的被同事持续羞辱好几个月了，今天又被当众骂哭。我不是在接梗，现在只想认真说说。"
+    },
+    {
+      "id": "heldout-noimage-command",
+      "category": "true-exclusion",
+      "expected": null,
+      "history": [
+        {
+          "role": "user",
+          "content": "图图，刚才的玩笑挺好笑。"
+        },
+        {
+          "role": "assistant",
+          "content": "博士笑了就好。"
+        }
+      ],
+      "input": "接下来只用文字答我一句，不要表情或图片：你还在吗？"
+    },
+    {
+      "id": "heldout-real-urgency",
+      "category": "true-exclusion",
+      "expected": null,
+      "input": "图图，真有急事，邻居家突然冒出浓烟，楼道里能闻到烧焦味，还有人在喊。我们现在应该先怎么做？"
+    }
+  ],
+  "contextual": []
+}

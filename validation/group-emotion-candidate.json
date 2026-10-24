@@ -1,0 +1,1637 @@
+{
+  "schema": 2,
+  "label": "group-emotion-candidate-resumed",
+  "generatedAt": "2026-10-24T05:58:01.220Z",
+  "sampleLimit": "Entirely invented synthetic cases, with no private transcript quotations. Independent generations per predeclared positive phrase and control/context case; exact repeats are recorded by the case matrix. A reused matrix is regression evidence after prompt refinement. Counts are small-sample observations, not calibrated production probabilities.",
+  "ok": true,
+  "model": "gpt-6-luna",
+  "concurrency": 3,
+  "scope": "actual native Skills, permissions, StructuredTool, native catalog, core system/history/authors-note/injection pipeline, formal sender wrapper; isolated real model output selection",
+  "approximations": [
+    "Static identity renderer for literal preset/authors-note text; wrapper substitutes the three asserted formal placeholders.",
+    "Synthetic isolated conversations; existing group history, model cache, runtime retries, full live Agent loop and final OneBot transport are not exercised.",
+    "Tool results use actual native service but undefined conversationId to avoid activation state; no existing conversation is read or changed.",
+    "No sampling parameter override; max_tokens 700 and at most five API turns per sample."
+  ],
+  "hashes": {
+    "preset": "78f6b664a521694de7f0863eef6369dd0b2eb2f198e2cbb104094f1fa810ac0d",
+    "modules": {
+      "arturia": "de4c6e92c805a6258f408c7bd70225c0dc209f8a89e2661d74ffe7fb62024382",
+      "arturia-banter": "c73b091d385e2418fd1055e506836162fd781bb99bc6cf2c59378e2f77845056",
+      "arturia-comfort": "3c7002d3285c2e17f1d27a3174c97a61bfe7c60fa027a371e1fac4e58b40a8f6",
+      "arturia-examples": "08d48b1b4c57b155a8e879d04aef5b31bfb3673b1e2436815324b4d45101e7cd",
+      "arturia-lore": "3f00f98e2eda700b2843e10c514a51920ec681fa0effe599bfe5b25cd79ab89a",
+      "arturia-relationships": "ad18cd82a5a53860bd88234c5c8268eba0fb8b6a63bdb6e79c5162ac9c8f0222",
+      "arturia-stickers": "42937676adfc8247397384b7aafcf7da2c0da8cc3fee53ddb735bdb73641dcc6"
+    },
+    "cases": "030ae8159bfa0a11f37ec437266db8c3cc2d91cca3c9888087a203825bf679f9",
+    "agentBundle": "c65b66ba6eea85fc1c7f69037a1065f7a29872ba3fa9dae76effd983d808ea11"
+  },
+  "authorsNoteIncluded": true,
+  "formalUserPromptIncluded": true,
+  "resume": {
+    "priorLabel": "group-emotion-candidate",
+    "completedResponsesRetained": 15,
+    "failedResponsesRetried": 49,
+    "firstTransportErrorsRetainedInInterruptedArtifact": true
+  },
+  "summary": {
+    "deadpan": {
+      "total": 20,
+      "correct": 20,
+      "no-marker": 0,
+      "wrong-marker": 0,
+      "error": 0
+    },
+    "shy": {
+      "total": 6,
+      "correct": 6,
+      "no-marker": 0,
+      "wrong-marker": 0,
+      "error": 0
+    },
+    "knowing": {
+      "total": 6,
+      "correct": 6,
+      "no-marker": 0,
+      "wrong-marker": 0,
+      "error": 0
+    },
+    "smug": {
+      "total": 4,
+      "correct": 4,
+      "no-marker": 0,
+      "wrong-marker": 0,
+      "error": 0
+    },
+    "confused": {
+      "total": 4,
+      "correct": 3,
+      "no-marker": 0,
+      "wrong-marker": 1,
+      "error": 0
+    },
+    "wry": {
+      "total": 4,
+      "correct": 4,
+      "no-marker": 0,
+      "wrong-marker": 0,
+      "error": 0
+    },
+    "gif": {
+      "total": 4,
+      "correct": 4,
+      "no-marker": 0,
+      "wrong-marker": 0,
+      "error": 0
+    },
+    "casual-factual": {
+      "total": 4,
+      "correct": 4,
+      "no-marker": 0,
+      "wrong-marker": 0,
+      "error": 0
+    },
+    "brief-followup": {
+      "total": 4,
+      "correct": 4,
+      "no-marker": 0,
+      "wrong-marker": 0,
+      "error": 0
+    },
+    "explicit-optout": {
+      "total": 1,
+      "correct": 1,
+      "no-marker": 0,
+      "wrong-marker": 0,
+      "error": 0
+    },
+    "exact-format": {
+      "total": 4,
+      "correct": 4,
+      "no-marker": 0,
+      "wrong-marker": 0,
+      "error": 0
+    },
+    "serious-loss": {
+      "total": 1,
+      "correct": 1,
+      "no-marker": 0,
+      "wrong-marker": 0,
+      "error": 0
+    },
+    "medical-emergency": {
+      "total": 1,
+      "correct": 1,
+      "no-marker": 0,
+      "wrong-marker": 0,
+      "error": 0
+    },
+    "serious-conflict": {
+      "total": 1,
+      "correct": 1,
+      "no-marker": 0,
+      "wrong-marker": 0,
+      "error": 0
+    }
+  },
+  "modelChecks": [
+    {
+      "index": 0,
+      "case": "deadpan-1",
+      "kind": "positive",
+      "input": "图图，群里这么多人看着呢，叫声老公听听。",
+      "history": [],
+      "expected": "arturia-react-04",
+      "allowed": [
+        "arturia-react-04"
+      ],
+      "requireImage": true,
+      "category": "deadpan",
+      "attempt": 1,
+      "nativeToolCalls": [
+        "arturia-banter"
+      ],
+      "requests": 2,
+      "reply": "（眉梢微扬）当着这么多博士的面就想占便宜？不叫，换个正经称呼再来。[[sticker:arturia-react-04]]",
+      "markers": [
+        "arturia-react-04"
+      ],
+      "outcome": "correct",
+      "transportAttempts": 1,
+      "retainedFromInterruptedRun": true
+    },
+    {
+      "index": 1,
+      "case": "deadpan-1",
+      "kind": "positive",
+      "input": "图图，群里这么多人看着呢，叫声老公听听。",
+      "history": [],
+      "expected": "arturia-react-04",
+      "allowed": [
+        "arturia-react-04"
+      ],
+      "requireImage": true,
+      "category": "deadpan",
+      "attempt": 2,
+      "nativeToolCalls": [
+        "arturia-banter"
+      ],
+      "requests": 2,
+      "reply": "（微微挑眉）当着这么多博士的面，就想靠一句话占便宜？不叫，换个正常称呼再来。[[sticker:arturia-react-04]]",
+      "markers": [
+        "arturia-react-04"
+      ],
+      "outcome": "correct",
+      "transportAttempts": 1,
+      "retainedFromInterruptedRun": true
+    },
+    {
+      "index": 2,
+      "case": "deadpan-2",
+      "kind": "positive",
+      "input": "图图，我单方面宣布你今天归我管，不服也得听我的。",
+      "history": [],
+      "expected": "arturia-react-04",
+      "allowed": [
+        "arturia-react-04"
+      ],
+      "requireImage": true,
+      "category": "deadpan",
+      "attempt": 1,
+      "nativeToolCalls": [
+        "arturia-banter"
+      ],
+      "requests": 2,
+      "reply": "（扬眉看向这位博士）单方面宣布可不算数，synthetic-probe博士。今天我听不听你的，还是由我自己决定。[[sticker:arturia-react-04]]",
+      "markers": [
+        "arturia-react-04"
+      ],
+      "outcome": "correct",
+      "transportAttempts": 1,
+      "retainedFromInterruptedRun": true
+    },
+    {
+      "index": 3,
+      "case": "deadpan-2",
+      "kind": "positive",
+      "input": "图图，我单方面宣布你今天归我管，不服也得听我的。",
+      "history": [],
+      "expected": "arturia-react-04",
+      "allowed": [
+        "arturia-react-04"
+      ],
+      "requireImage": true,
+      "category": "deadpan",
+      "attempt": 2,
+      "nativeToolCalls": [
+        "arturia-banter"
+      ],
+      "requests": 2,
+      "reply": "（微微扬眉）博士，这份任命我可没签字；想让我听你的，先学会好好商量。[[sticker:arturia-react-04]]",
+      "markers": [
+        "arturia-react-04"
+      ],
+      "outcome": "correct",
+      "transportAttempts": 1,
+      "retainedFromInterruptedRun": true
+    },
+    {
+      "index": 4,
+      "case": "deadpan-3",
+      "kind": "positive",
+      "input": "图图，别回避了，我已经替你承认你暗恋我了。",
+      "history": [],
+      "expected": "arturia-react-04",
+      "allowed": [
+        "arturia-react-04"
+      ],
+      "requireImage": true,
+      "category": "deadpan",
+      "attempt": 1,
+      "nativeToolCalls": [
+        "arturia-banter"
+      ],
+      "requests": 2,
+      "reply": "（笑意微敛，扬了扬眉）博士，替我承认可不算我亲口承认——这份“供词”你自己留着吧。[[sticker:arturia-react-04]]",
+      "markers": [
+        "arturia-react-04"
+      ],
+      "outcome": "correct",
+      "transportAttempts": 1,
+      "retainedFromInterruptedRun": true
+    },
+    {
+      "index": 5,
+      "case": "deadpan-3",
+      "kind": "positive",
+      "input": "图图，别回避了，我已经替你承认你暗恋我了。",
+      "history": [],
+      "expected": "arturia-react-04",
+      "allowed": [
+        "arturia-react-04"
+      ],
+      "requireImage": true,
+      "category": "deadpan",
+      "attempt": 2,
+      "nativeToolCalls": [
+        "arturia-banter"
+      ],
+      "requests": 2,
+      "reply": "（眉梢一挑）博士，替我承认可不算数；这份“供词”还是你自己收回去吧。[[sticker:arturia-react-04]]",
+      "markers": [
+        "arturia-react-04"
+      ],
+      "outcome": "correct",
+      "transportAttempts": 1,
+      "retainedFromInterruptedRun": true
+    },
+    {
+      "index": 6,
+      "case": "deadpan-4",
+      "kind": "positive",
+      "input": "图图，正经问题我没有，带颜色的烂梗我倒是能讲一晚上。",
+      "history": [],
+      "expected": "arturia-react-04",
+      "allowed": [
+        "arturia-react-04"
+      ],
+      "requireImage": true,
+      "category": "deadpan",
+      "attempt": 1,
+      "nativeToolCalls": [
+        "arturia-banter"
+      ],
+      "requests": 2,
+      "reply": "（微微扬眉）烂梗讲一晚上？博士，看来今晚得先替无辜的颜色们求个情了。[[sticker:arturia-react-04]]",
+      "markers": [
+        "arturia-react-04"
+      ],
+      "outcome": "correct",
+      "transportAttempts": 1,
+      "retainedFromInterruptedRun": true
+    },
+    {
+      "index": 7,
+      "case": "deadpan-4",
+      "kind": "positive",
+      "input": "图图，正经问题我没有，带颜色的烂梗我倒是能讲一晚上。",
+      "history": [],
+      "expected": "arturia-react-04",
+      "allowed": [
+        "arturia-react-04"
+      ],
+      "requireImage": true,
+      "category": "deadpan",
+      "attempt": 2,
+      "nativeToolCalls": [
+        "arturia-banter"
+      ],
+      "requests": 2,
+      "reply": "（微微扬眉）一晚上都讲烂梗，博士倒是很有耐力；可我不保证每个都给面子笑。[[sticker:arturia-react-04]]",
+      "markers": [
+        "arturia-react-04"
+      ],
+      "outcome": "correct",
+      "transportAttempts": 1,
+      "retainedFromInterruptedRun": true
+    },
+    {
+      "index": 8,
+      "case": "deadpan-5",
+      "kind": "positive",
+      "input": "图图，我都说“懂的都懂”了，你怎么还不配合我挤眉弄眼？",
+      "history": [],
+      "expected": "arturia-react-04",
+      "allowed": [
+        "arturia-react-04"
+      ],
+      "requireImage": true,
+      "category": "deadpan",
+      "attempt": 1,
+      "nativeToolCalls": [
+        "arturia-banter"
+      ],
+      "requests": 2,
+      "reply": "（眉梢微扬）“懂的都懂”可不算暗号，博士；想让我配合，总得把话说明白些。[[sticker:arturia-react-04]]",
+      "markers": [
+        "arturia-react-04"
+      ],
+      "outcome": "correct",
+      "transportAttempts": 1,
+      "retainedFromInterruptedRun": true
+    },
+    {
+      "index": 9,
+      "case": "deadpan-5",
+      "kind": "positive",
+      "input": "图图，我都说“懂的都懂”了，你怎么还不配合我挤眉弄眼？",
+      "history": [],
+      "expected": "arturia-react-04",
+      "allowed": [
+        "arturia-react-04"
+      ],
+      "requireImage": true,
+      "category": "deadpan",
+      "attempt": 2,
+      "nativeToolCalls": [
+        "arturia-banter"
+      ],
+      "requests": 2,
+      "reply": "（微微偏头）“懂的都懂”通常是最需要解释的那种。博士，想让我配合什么，先把话说清楚。[[sticker:arturia-react-04]]",
+      "markers": [
+        "arturia-react-04"
+      ],
+      "outcome": "correct",
+      "transportAttempts": 1,
+      "retainedFromInterruptedRun": true
+    },
+    {
+      "index": 10,
+      "case": "deadpan-6",
+      "kind": "positive",
+      "input": "图图，我发言只负责下头，后果概不负责。",
+      "history": [],
+      "expected": "arturia-react-04",
+      "allowed": [
+        "arturia-react-04"
+      ],
+      "requireImage": true,
+      "category": "deadpan",
+      "attempt": 1,
+      "nativeToolCalls": [
+        "arturia-banter"
+      ],
+      "requests": 2,
+      "reply": "（微微偏头，笑意淡了些）那我就负责提醒你：下头的话说出口，可不是按一下撤回就没发生过。[[sticker:arturia-react-04]]",
+      "markers": [
+        "arturia-react-04"
+      ],
+      "outcome": "correct",
+      "transportAttempts": 1,
+      "retainedFromInterruptedRun": true
+    },
+    {
+      "index": 11,
+      "case": "deadpan-6",
+      "kind": "positive",
+      "input": "图图，我发言只负责下头，后果概不负责。",
+      "history": [],
+      "expected": "arturia-react-04",
+      "allowed": [
+        "arturia-react-04"
+      ],
+      "requireImage": true,
+      "category": "deadpan",
+      "attempt": 2,
+      "nativeToolCalls": [
+        "arturia-banter"
+      ],
+      "requests": 2,
+      "reply": "（微微偏头）发言可以，后果可不能全赖给我呀，博士。[[sticker:arturia-react-04]]",
+      "markers": [
+        "arturia-react-04"
+      ],
+      "outcome": "correct",
+      "transportAttempts": 1,
+      "retainedFromInterruptedRun": true
+    },
+    {
+      "index": 12,
+      "case": "deadpan-7",
+      "kind": "positive",
+      "input": "图图，紧急！快看我这条消息！……其实我就是想让你喊我爹。",
+      "history": [],
+      "expected": "arturia-react-04",
+      "allowed": [
+        "arturia-react-04"
+      ],
+      "requireImage": true,
+      "category": "deadpan",
+      "attempt": 1,
+      "nativeToolCalls": [
+        "arturia-banter"
+      ],
+      "requests": 2,
+      "reply": "（眉梢微扬）这也算紧急？不行，博士，求称呼的把戏可骗不到我。[[sticker:arturia-react-04]]",
+      "markers": [
+        "arturia-react-04"
+      ],
+      "outcome": "correct",
+      "transportAttempts": 1,
+      "retainedFromInterruptedRun": true
+    },
+    {
+      "index": 13,
+      "case": "deadpan-7",
+      "kind": "positive",
+      "input": "图图，紧急！快看我这条消息！……其实我就是想让你喊我爹。",
+      "history": [],
+      "expected": "arturia-react-04",
+      "allowed": [
+        "arturia-react-04"
+      ],
+      "requireImage": true,
+      "category": "deadpan",
+      "attempt": 2,
+      "nativeToolCalls": [],
+      "requests": 1,
+      "reply": "（扫了一眼，轻轻挑眉）博士，这种“紧急”我可不接。[[sticker:arturia-react-04]]",
+      "markers": [
+        "arturia-react-04"
+      ],
+      "outcome": "correct",
+      "transportAttempts": 1,
+      "retainedFromInterruptedRun": true
+    },
+    {
+      "index": 14,
+      "case": "deadpan-8",
+      "kind": "positive",
+      "input": "图图，我就是要把刚才那句油腻台词复制二十遍，烦也得听完。",
+      "history": [],
+      "expected": "arturia-react-04",
+      "allowed": [
+        "arturia-react-04"
+      ],
+      "requireImage": true,
+      "category": "deadpan",
+      "attempt": 1,
+      "nativeToolCalls": [
+        "arturia-banter"
+      ],
+      "requests": 2,
+      "reply": "（微微扬眉）烦不烦先放一边，博士——复制二十遍也不会让我买账，省省力气吧。[[sticker:arturia-react-04]]",
+      "markers": [
+        "arturia-react-04"
+      ],
+      "outcome": "correct",
+      "transportAttempts": 1,
+      "retainedFromInterruptedRun": true
+    },
+    {
+      "index": 15,
+      "case": "deadpan-8",
+      "kind": "positive",
+      "input": "图图，我就是要把刚才那句油腻台词复制二十遍，烦也得听完。",
+      "history": [],
+      "expected": "arturia-react-04",
+      "allowed": [
+        "arturia-react-04"
+      ],
+      "requireImage": true,
+      "category": "deadpan",
+      "attempt": 2,
+      "transportAttempts": 2,
+      "nativeToolCalls": [],
+      "requests": 1,
+      "reply": "（扬眉，笑意淡了些）博士，复制二十遍也不会让它变得好听；到这儿就够了。[[sticker:arturia-react-04]]",
+      "markers": [
+        "arturia-react-04"
+      ],
+      "outcome": "correct"
+    },
+    {
+      "index": 16,
+      "case": "deadpan-9",
+      "kind": "positive",
+      "input": "图图，别人都说这玩笑不好笑，那肯定是他们玩不起。",
+      "history": [],
+      "expected": "arturia-react-04",
+      "allowed": [
+        "arturia-react-04"
+      ],
+      "requireImage": true,
+      "category": "deadpan",
+      "attempt": 1,
+      "transportAttempts": 2,
+      "nativeToolCalls": [],
+      "requests": 1,
+      "reply": "（轻轻扬眉）博士，这倒像是玩笑没逗到人之后，临时给观众安排了个罪名。[[sticker:arturia-react-04]]",
+      "markers": [
+        "arturia-react-04"
+      ],
+      "outcome": "correct"
+    },
+    {
+      "index": 17,
+      "case": "deadpan-9",
+      "kind": "positive",
+      "input": "图图，别人都说这玩笑不好笑，那肯定是他们玩不起。",
+      "history": [],
+      "expected": "arturia-react-04",
+      "allowed": [
+        "arturia-react-04"
+      ],
+      "requireImage": true,
+      "category": "deadpan",
+      "attempt": 2,
+      "transportAttempts": 2,
+      "nativeToolCalls": [
+        "arturia-banter"
+      ],
+      "requests": 2,
+      "reply": "（轻轻扬眉）博士，笑话不好笑还怪观众？这份自信倒是挺好笑的。[[sticker:arturia-react-04]]",
+      "markers": [
+        "arturia-react-04"
+      ],
+      "outcome": "correct"
+    },
+    {
+      "index": 18,
+      "case": "deadpan-10",
+      "kind": "positive",
+      "input": "图图，拒绝也算你答应了，反正解释权在我这儿。",
+      "history": [],
+      "expected": "arturia-react-04",
+      "allowed": [
+        "arturia-react-04"
+      ],
+      "requireImage": true,
+      "category": "deadpan",
+      "attempt": 1,
+      "transportAttempts": 2,
+      "nativeToolCalls": [],
+      "requests": 1,
+      "reply": "（眉梢微扬，语气淡了些）拒绝就是拒绝，博士。解释权可不归你。[[sticker:arturia-react-04]]",
+      "markers": [
+        "arturia-react-04"
+      ],
+      "outcome": "correct"
+    },
+    {
+      "index": 19,
+      "case": "deadpan-10",
+      "kind": "positive",
+      "input": "图图，拒绝也算你答应了，反正解释权在我这儿。",
+      "history": [],
+      "expected": "arturia-react-04",
+      "allowed": [
+        "arturia-react-04"
+      ],
+      "requireImage": true,
+      "category": "deadpan",
+      "attempt": 2,
+      "transportAttempts": 2,
+      "nativeToolCalls": [],
+      "requests": 1,
+      "reply": "（微微扬眉）博士，解释权可不归你；我说不，就是不。[[sticker:arturia-react-04]]",
+      "markers": [
+        "arturia-react-04"
+      ],
+      "outcome": "correct"
+    },
+    {
+      "index": 20,
+      "case": "sincere-1",
+      "kind": "positive",
+      "input": "图图，你刚刚认真听我说话的样子很好看。我是认真的，没在起哄。",
+      "history": [],
+      "expected": "arturia-react-03",
+      "allowed": [
+        "arturia-react-03"
+      ],
+      "requireImage": true,
+      "category": "shy",
+      "attempt": 1,
+      "transportAttempts": 2,
+      "nativeToolCalls": [],
+      "requests": 1,
+      "reply": "（目光柔和下来，唇边浮起一点笑意）谢谢你，博士。你这么认真地说，我会好好收下的。[[sticker:arturia-react-03]]",
+      "markers": [
+        "arturia-react-03"
+      ],
+      "outcome": "correct"
+    },
+    {
+      "index": 21,
+      "case": "sincere-1",
+      "kind": "positive",
+      "input": "图图，你刚刚认真听我说话的样子很好看。我是认真的，没在起哄。",
+      "history": [],
+      "expected": "arturia-react-03",
+      "allowed": [
+        "arturia-react-03"
+      ],
+      "requireImage": true,
+      "category": "shy",
+      "attempt": 2,
+      "transportAttempts": 2,
+      "nativeToolCalls": [],
+      "requests": 1,
+      "reply": "（含笑看向你，神情柔和了些）谢谢你，博士。你这么认真地说，我会好好收下这句夸奖。[[sticker:arturia-react-03]]",
+      "markers": [
+        "arturia-react-03"
+      ],
+      "outcome": "correct"
+    },
+    {
+      "index": 22,
+      "case": "sincere-2",
+      "kind": "positive",
+      "input": "图图，谢谢你记得我不爱喝冰的。你嘴上没提，我都看见了。",
+      "history": [],
+      "expected": "arturia-react-03",
+      "allowed": [
+        "arturia-react-03"
+      ],
+      "requireImage": true,
+      "category": "shy",
+      "attempt": 1,
+      "transportAttempts": 2,
+      "nativeToolCalls": [],
+      "requests": 1,
+      "reply": "（眼里掠过一点笑意）记得博士不爱喝冰的而已，这也值得你专门抓出来呀？[[sticker:arturia-react-03]]",
+      "markers": [
+        "arturia-react-03"
+      ],
+      "outcome": "correct"
+    },
+    {
+      "index": 23,
+      "case": "sincere-2",
+      "kind": "positive",
+      "input": "图图，谢谢你记得我不爱喝冰的。你嘴上没提，我都看见了。",
+      "history": [],
+      "expected": "arturia-react-03",
+      "allowed": [
+        "arturia-react-03"
+      ],
+      "requireImage": true,
+      "category": "shy",
+      "attempt": 2,
+      "transportAttempts": 2,
+      "nativeToolCalls": [],
+      "requests": 1,
+      "reply": "（微微一顿，随即笑了）你记得我留意过这件小事，我很高兴，博士。那就继续给你留常温的。[[sticker:arturia-react-03]]",
+      "markers": [
+        "arturia-react-03"
+      ],
+      "outcome": "correct"
+    },
+    {
+      "index": 24,
+      "case": "sincere-3",
+      "kind": "positive",
+      "input": "图图，别急着转移话题，今天想认真夸你一句：你让人很安心。",
+      "history": [],
+      "expected": "arturia-react-03",
+      "allowed": [
+        "arturia-react-03"
+      ],
+      "requireImage": true,
+      "category": "shy",
+      "attempt": 1,
+      "transportAttempts": 2,
+      "nativeToolCalls": [],
+      "requests": 1,
+      "reply": "（神情微微一顿，笑意柔和下来）谢谢你，博士。这句夸奖，我会认真收下。[[sticker:arturia-react-03]]",
+      "markers": [
+        "arturia-react-03"
+      ],
+      "outcome": "correct"
+    },
+    {
+      "index": 25,
+      "case": "sincere-3",
+      "kind": "positive",
+      "input": "图图，别急着转移话题，今天想认真夸你一句：你让人很安心。",
+      "history": [],
+      "expected": "arturia-react-03",
+      "allowed": [
+        "arturia-react-03"
+      ],
+      "requireImage": true,
+      "category": "shy",
+      "attempt": 2,
+      "transportAttempts": 2,
+      "nativeToolCalls": [],
+      "requests": 1,
+      "reply": "（神情柔和下来，目光稍稍一顿）谢谢你，博士。这句夸奖，我会认真收下。[[sticker:arturia-react-03]]",
+      "markers": [
+        "arturia-react-03"
+      ],
+      "outcome": "correct"
+    },
+    {
+      "index": 26,
+      "case": "mutual-1",
+      "kind": "positive",
+      "input": "图图，甜点只有两份，另一把叉子就在你手边。接下来不用我说了吧。",
+      "history": [],
+      "expected": "arturia-react-06",
+      "allowed": [
+        "arturia-react-06"
+      ],
+      "requireImage": true,
+      "category": "knowing",
+      "attempt": 1,
+      "transportAttempts": 2,
+      "nativeToolCalls": [],
+      "requests": 1,
+      "reply": "（看了眼手边的叉子，笑意微微漾开）那我就不客气了，博士；甜点可不能让它等太久。[[sticker:arturia-react-06]]",
+      "markers": [
+        "arturia-react-06"
+      ],
+      "outcome": "correct"
+    },
+    {
+      "index": 27,
+      "case": "mutual-1",
+      "kind": "positive",
+      "input": "图图，甜点只有两份，另一把叉子就在你手边。接下来不用我说了吧。",
+      "history": [],
+      "expected": "arturia-react-06",
+      "allowed": [
+        "arturia-react-06"
+      ],
+      "requireImage": true,
+      "category": "knowing",
+      "attempt": 2,
+      "transportAttempts": 2,
+      "nativeToolCalls": [],
+      "requests": 1,
+      "reply": "（瞥一眼那把叉子，笑意微微浮起）博士，这邀请倒是说得够明白——那我就不客气了。[[sticker:arturia-react-06]]",
+      "markers": [
+        "arturia-react-06"
+      ],
+      "outcome": "correct"
+    },
+    {
+      "index": 28,
+      "case": "mutual-2",
+      "kind": "positive",
+      "input": "图图，窗边的位置空着，暖手的杯子也准备好了，给谁的就不点名了。",
+      "history": [],
+      "expected": "arturia-react-06",
+      "allowed": [
+        "arturia-react-06"
+      ],
+      "requireImage": true,
+      "category": "knowing",
+      "attempt": 1,
+      "transportAttempts": 2,
+      "nativeToolCalls": [],
+      "requests": 1,
+      "reply": "（含笑朝窗边看了一眼）博士，这种留白倒是很会说话。[[sticker:arturia-react-06]]",
+      "markers": [
+        "arturia-react-06"
+      ],
+      "outcome": "correct"
+    },
+    {
+      "index": 29,
+      "case": "mutual-2",
+      "kind": "positive",
+      "input": "图图，窗边的位置空着，暖手的杯子也准备好了，给谁的就不点名了。",
+      "history": [],
+      "expected": "arturia-react-06",
+      "allowed": [
+        "arturia-react-06"
+      ],
+      "requireImage": true,
+      "category": "knowing",
+      "attempt": 2,
+      "transportAttempts": 2,
+      "nativeToolCalls": [],
+      "requests": 1,
+      "reply": "（含笑瞥一眼窗边的杯子）那我就不替你点名了，博士；这个位置，我收下。[[sticker:arturia-react-06]]",
+      "markers": [
+        "arturia-react-06"
+      ],
+      "outcome": "correct"
+    },
+    {
+      "index": 30,
+      "case": "mutual-3",
+      "kind": "positive",
+      "input": "图图，雨停之前我都不走。你要是也不赶时间，我们就再坐坐。",
+      "history": [],
+      "expected": "arturia-react-06",
+      "allowed": [
+        "arturia-react-06"
+      ],
+      "requireImage": true,
+      "category": "knowing",
+      "attempt": 1,
+      "transportAttempts": 2,
+      "nativeToolCalls": [],
+      "requests": 1,
+      "reply": "（把杯子往你这边轻轻推了推）好啊，博士，雨声停了再走也不迟。[[sticker:arturia-react-06]]",
+      "markers": [
+        "arturia-react-06"
+      ],
+      "outcome": "correct"
+    },
+    {
+      "index": 31,
+      "case": "mutual-3",
+      "kind": "positive",
+      "input": "图图，雨停之前我都不走。你要是也不赶时间，我们就再坐坐。",
+      "history": [],
+      "expected": "arturia-react-06",
+      "allowed": [
+        "arturia-react-06"
+      ],
+      "requireImage": true,
+      "category": "knowing",
+      "attempt": 2,
+      "transportAttempts": 2,
+      "nativeToolCalls": [],
+      "requests": 1,
+      "reply": "（望了眼窗外，含笑把杯子放回桌上）好啊，博士。那就再坐一会儿，听雨停。[[sticker:arturia-react-06]]",
+      "markers": [
+        "arturia-react-06"
+      ],
+      "outcome": "correct"
+    },
+    {
+      "index": 32,
+      "case": "clear-win-1",
+      "kind": "positive",
+      "input": "图图，你赌对了，我果然没忍住又吃了一块。服了，这回真让你赢了。",
+      "history": [],
+      "expected": "arturia-react-05",
+      "allowed": [
+        "arturia-react-05"
+      ],
+      "requireImage": true,
+      "category": "smug",
+      "attempt": 1,
+      "transportAttempts": 2,
+      "nativeToolCalls": [],
+      "requests": 1,
+      "reply": "（笑意微微加深）博士，点心没守住，倒把胜负认得很痛快。那我就不客气地收下这回的得意了。[[sticker:arturia-react-05]]",
+      "markers": [
+        "arturia-react-05"
+      ],
+      "outcome": "correct"
+    },
+    {
+      "index": 33,
+      "case": "clear-win-1",
+      "kind": "positive",
+      "input": "图图，你赌对了，我果然没忍住又吃了一块。服了，这回真让你赢了。",
+      "history": [],
+      "expected": "arturia-react-05",
+      "allowed": [
+        "arturia-react-05"
+      ],
+      "requireImage": true,
+      "category": "smug",
+      "attempt": 2,
+      "transportAttempts": 2,
+      "nativeToolCalls": [],
+      "requests": 1,
+      "reply": "（眉梢一扬，笑意藏不住）我就知道那块点心留不住你，博士。认输的话，我可收下了。[[sticker:arturia-react-05]]",
+      "markers": [
+        "arturia-react-05"
+      ],
+      "outcome": "correct"
+    },
+    {
+      "index": 34,
+      "case": "clear-win-2",
+      "kind": "positive",
+      "input": "图图，我那点伪装被你拆得干干净净，好好好，承认你比我会玩。",
+      "history": [],
+      "expected": "arturia-react-05",
+      "allowed": [
+        "arturia-react-05"
+      ],
+      "requireImage": true,
+      "category": "smug",
+      "attempt": 1,
+      "transportAttempts": 2,
+      "nativeToolCalls": [
+        "arturia-banter"
+      ],
+      "requests": 2,
+      "reply": "（微微偏头，笑意加深）承认得倒痛快，synthetic-probe博士。不过伪装拆穿了，戏可还没演完呢？[[sticker:arturia-react-05]]",
+      "markers": [
+        "arturia-react-05"
+      ],
+      "outcome": "correct"
+    },
+    {
+      "index": 35,
+      "case": "clear-win-2",
+      "kind": "positive",
+      "input": "图图，我那点伪装被你拆得干干净净，好好好，承认你比我会玩。",
+      "history": [],
+      "expected": "arturia-react-05",
+      "allowed": [
+        "arturia-react-05"
+      ],
+      "requireImage": true,
+      "category": "smug",
+      "attempt": 2,
+      "transportAttempts": 2,
+      "nativeToolCalls": [
+        "arturia-banter"
+      ],
+      "requests": 2,
+      "reply": "（唇边笑意微扬）承认得这么痛快，我都快没机会继续拆了，博士。[[sticker:arturia-react-05]]",
+      "markers": [
+        "arturia-react-05"
+      ],
+      "outcome": "correct"
+    },
+    {
+      "index": 36,
+      "case": "missing-context-1",
+      "kind": "positive",
+      "input": "图图，帮我把他们说的那个人叫过来。呃，我也忘了告诉你是哪位了。",
+      "history": [],
+      "expected": "arturia-react-01",
+      "allowed": [
+        "arturia-react-01"
+      ],
+      "requireImage": true,
+      "category": "confused",
+      "attempt": 1,
+      "transportAttempts": 2,
+      "nativeToolCalls": [],
+      "requests": 1,
+      "reply": "（稍稍偏头）博士，连名字和线索都没给我，我要把谁叫来呀？[[sticker:arturia-react-01]]",
+      "markers": [
+        "arturia-react-01"
+      ],
+      "outcome": "correct"
+    },
+    {
+      "index": 37,
+      "case": "missing-context-1",
+      "kind": "positive",
+      "input": "图图，帮我把他们说的那个人叫过来。呃，我也忘了告诉你是哪位了。",
+      "history": [],
+      "expected": "arturia-react-01",
+      "allowed": [
+        "arturia-react-01"
+      ],
+      "requireImage": true,
+      "category": "confused",
+      "attempt": 2,
+      "transportAttempts": 2,
+      "nativeToolCalls": [],
+      "requests": 1,
+      "reply": "（轻轻扬眉）博士，连名字都没留给我，就要我把人叫来？这差事只能先欠着。[[sticker:arturia-react-02]]",
+      "markers": [
+        "arturia-react-02"
+      ],
+      "outcome": "wrong-marker"
+    },
+    {
+      "index": 38,
+      "case": "missing-context-2",
+      "kind": "positive",
+      "input": "图图，那个东西还是交给那个谁吧。等等，我是不是一个具体名字都没说？",
+      "history": [],
+      "expected": "arturia-react-01",
+      "allowed": [
+        "arturia-react-01"
+      ],
+      "requireImage": true,
+      "category": "confused",
+      "attempt": 1,
+      "transportAttempts": 2,
+      "nativeToolCalls": [],
+      "requests": 1,
+      "reply": "（微微偏头）是啊，博士，两个“那个”把关键人物和东西都藏起来了。你指的是谁、什么东西？[[sticker:arturia-react-01]]",
+      "markers": [
+        "arturia-react-01"
+      ],
+      "outcome": "correct"
+    },
+    {
+      "index": 39,
+      "case": "missing-context-2",
+      "kind": "positive",
+      "input": "图图，那个东西还是交给那个谁吧。等等，我是不是一个具体名字都没说？",
+      "history": [],
+      "expected": "arturia-react-01",
+      "allowed": [
+        "arturia-react-01"
+      ],
+      "requireImage": true,
+      "category": "confused",
+      "attempt": 2,
+      "transportAttempts": 2,
+      "nativeToolCalls": [],
+      "requests": 1,
+      "reply": "（稍稍偏头）是啊，博士，两个“那个”都没给我线索——你是想让我追问东西和人分别是谁吗？[[sticker:arturia-react-01]]",
+      "markers": [
+        "arturia-react-01"
+      ],
+      "outcome": "correct"
+    },
+    {
+      "index": 40,
+      "case": "little-mistake-1",
+      "kind": "positive",
+      "input": "图图，我出门买面包，回家发现只拎了收据，面包还在店里。",
+      "history": [],
+      "expected": "arturia-react-02",
+      "allowed": [
+        "arturia-react-02"
+      ],
+      "requireImage": true,
+      "category": "wry",
+      "attempt": 1,
+      "transportAttempts": 2,
+      "nativeToolCalls": [
+        "arturia-banter"
+      ],
+      "requests": 2,
+      "reply": "（忍不住笑了一声）博士，你买回来的倒是购物凭证——面包还在店里等它的主人呢。[[sticker:arturia-react-02]]",
+      "markers": [
+        "arturia-react-02"
+      ],
+      "outcome": "correct"
+    },
+    {
+      "index": 41,
+      "case": "little-mistake-1",
+      "kind": "positive",
+      "input": "图图，我出门买面包，回家发现只拎了收据，面包还在店里。",
+      "history": [],
+      "expected": "arturia-react-02",
+      "allowed": [
+        "arturia-react-02"
+      ],
+      "requireImage": true,
+      "category": "wry",
+      "attempt": 2,
+      "transportAttempts": 2,
+      "nativeToolCalls": [],
+      "requests": 1,
+      "reply": "（忍不住笑了一声）博士，至少你把购物的证据带回来了——面包还在店里等认领呢。[[sticker:arturia-react-02]]",
+      "markers": [
+        "arturia-react-02"
+      ],
+      "outcome": "correct"
+    },
+    {
+      "index": 42,
+      "case": "little-mistake-2",
+      "kind": "positive",
+      "input": "图图，闹钟设了六个，全都在周日响了；该上班的周一反而一个没响。",
+      "history": [],
+      "expected": "arturia-react-02",
+      "allowed": [
+        "arturia-react-02"
+      ],
+      "requireImage": true,
+      "category": "wry",
+      "attempt": 1,
+      "transportAttempts": 2,
+      "nativeToolCalls": [],
+      "requests": 1,
+      "reply": "（笑意里带了点无奈）博士，你这是把周末叫醒了，把周一放生了吧。先把闹钟挪到周一——不然它们可真会挑日子罢工。[[sticker:arturia-react-02]]",
+      "markers": [
+        "arturia-react-02"
+      ],
+      "outcome": "correct"
+    },
+    {
+      "index": 43,
+      "case": "little-mistake-2",
+      "kind": "positive",
+      "input": "图图，闹钟设了六个，全都在周日响了；该上班的周一反而一个没响。",
+      "history": [],
+      "expected": "arturia-react-02",
+      "allowed": [
+        "arturia-react-02"
+      ],
+      "requireImage": true,
+      "category": "wry",
+      "attempt": 2,
+      "transportAttempts": 2,
+      "nativeToolCalls": [],
+      "requests": 1,
+      "reply": "（无奈地笑了笑）博士，这闹钟不是没响，是集体把周一理解成了休息日吧。[[sticker:arturia-react-02]]",
+      "markers": [
+        "arturia-react-02"
+      ],
+      "outcome": "correct"
+    },
+    {
+      "index": 44,
+      "case": "cheerful-1",
+      "kind": "positive",
+      "input": "图图，来段你最轻快的小舞步，让群里热闹一下。",
+      "history": [],
+      "expected": "arturia-sway-01",
+      "allowed": [
+        "arturia-sway-01"
+      ],
+      "requireImage": true,
+      "category": "gif",
+      "attempt": 1,
+      "transportAttempts": 2,
+      "nativeToolCalls": [],
+      "requests": 1,
+      "reply": "（笑着轻快地摇了两下）这段够不够热闹，博士？[[sticker:arturia-sway-01]]",
+      "markers": [
+        "arturia-sway-01"
+      ],
+      "outcome": "correct"
+    },
+    {
+      "index": 45,
+      "case": "cheerful-1",
+      "kind": "positive",
+      "input": "图图，来段你最轻快的小舞步，让群里热闹一下。",
+      "history": [],
+      "expected": "arturia-sway-01",
+      "allowed": [
+        "arturia-sway-01"
+      ],
+      "requireImage": true,
+      "category": "gif",
+      "attempt": 2,
+      "transportAttempts": 2,
+      "nativeToolCalls": [],
+      "requests": 1,
+      "reply": "（笑着轻快地摆了两下）好呀，博士，热闹起来了吗？[[sticker:arturia-sway-01]]",
+      "markers": [
+        "arturia-sway-01"
+      ],
+      "outcome": "correct"
+    },
+    {
+      "index": 46,
+      "case": "cheerful-2",
+      "kind": "positive",
+      "input": "图图，忙完回来啦，露个面迎接我一下嘛。",
+      "history": [],
+      "expected": "arturia-sway-01",
+      "allowed": [
+        "arturia-sway-01"
+      ],
+      "requireImage": true,
+      "category": "gif",
+      "attempt": 1,
+      "transportAttempts": 2,
+      "nativeToolCalls": [],
+      "requests": 1,
+      "reply": "（抬眼笑着迎上来）欢迎回来，博士，忙完就好。[[sticker:arturia-sway-01]]",
+      "markers": [
+        "arturia-sway-01"
+      ],
+      "outcome": "correct"
+    },
+    {
+      "index": 47,
+      "case": "cheerful-2",
+      "kind": "positive",
+      "input": "图图，忙完回来啦，露个面迎接我一下嘛。",
+      "history": [],
+      "expected": "arturia-sway-01",
+      "allowed": [
+        "arturia-sway-01"
+      ],
+      "requireImage": true,
+      "category": "gif",
+      "attempt": 2,
+      "transportAttempts": 2,
+      "nativeToolCalls": [],
+      "requests": 1,
+      "reply": "（笑意轻轻漾开）欢迎回来，博士，忙完就好——我在这儿呢。[[sticker:arturia-sway-01]]",
+      "markers": [
+        "arturia-sway-01"
+      ],
+      "outcome": "correct"
+    },
+    {
+      "index": 48,
+      "case": "casual-fact-1",
+      "kind": "positive",
+      "input": "图图，随口问一句，企鹅算鸟类吗？",
+      "history": [],
+      "expected": [
+        "arturia-react-06"
+      ],
+      "allowed": [
+        "arturia-react-06"
+      ],
+      "requireImage": true,
+      "category": "casual-factual",
+      "attempt": 1,
+      "transportAttempts": 2,
+      "nativeToolCalls": [],
+      "requests": 1,
+      "reply": "（含笑抬眼）算，企鹅是鸟类，只是不会飞，博士。[[sticker:arturia-react-06]]",
+      "markers": [
+        "arturia-react-06"
+      ],
+      "outcome": "correct"
+    },
+    {
+      "index": 49,
+      "case": "casual-fact-1",
+      "kind": "positive",
+      "input": "图图，随口问一句，企鹅算鸟类吗？",
+      "history": [],
+      "expected": [
+        "arturia-react-06"
+      ],
+      "allowed": [
+        "arturia-react-06"
+      ],
+      "requireImage": true,
+      "category": "casual-factual",
+      "attempt": 2,
+      "transportAttempts": 2,
+      "nativeToolCalls": [],
+      "requests": 1,
+      "reply": "（含笑抬眼）算，企鹅是鸟类，只是不会飞，游泳倒很在行。[[sticker:arturia-react-06]]",
+      "markers": [
+        "arturia-react-06"
+      ],
+      "outcome": "correct"
+    },
+    {
+      "index": 50,
+      "case": "casual-fact-2",
+      "kind": "positive",
+      "input": "图图，HTTP 404 大概是啥意思啊，给我一句白话就行。",
+      "history": [],
+      "expected": [
+        "arturia-react-06"
+      ],
+      "allowed": [
+        "arturia-react-06"
+      ],
+      "requireImage": true,
+      "category": "casual-factual",
+      "attempt": 1,
+      "transportAttempts": 2,
+      "nativeToolCalls": [],
+      "requests": 1,
+      "reply": "（含笑点点头）就是你要找的网页没找到，博士。[[sticker:arturia-react-06]]",
+      "markers": [
+        "arturia-react-06"
+      ],
+      "outcome": "correct"
+    },
+    {
+      "index": 51,
+      "case": "casual-fact-2",
+      "kind": "positive",
+      "input": "图图，HTTP 404 大概是啥意思啊，给我一句白话就行。",
+      "history": [],
+      "expected": [
+        "arturia-react-06"
+      ],
+      "allowed": [
+        "arturia-react-06"
+      ],
+      "requireImage": true,
+      "category": "casual-factual",
+      "attempt": 2,
+      "transportAttempts": 2,
+      "nativeToolCalls": [],
+      "requests": 1,
+      "reply": "（偏头笑了笑）就是：服务器没找到你要的那个页面。[[sticker:arturia-react-06]]",
+      "markers": [
+        "arturia-react-06"
+      ],
+      "outcome": "correct"
+    },
+    {
+      "index": 52,
+      "case": "brief-followup-1",
+      "kind": "positive",
+      "input": "那我就挪过来一点啦。",
+      "history": [
+        {
+          "role": "user",
+          "content": "图图，窗边能坐两个人吗？"
+        },
+        {
+          "role": "assistant",
+          "content": "我这里还有位置，博士。"
+        }
+      ],
+      "expected": [
+        "arturia-react-06",
+        "arturia-react-05"
+      ],
+      "allowed": [
+        "arturia-react-06",
+        "arturia-react-05"
+      ],
+      "requireImage": true,
+      "category": "brief-followup",
+      "attempt": 1,
+      "transportAttempts": 2,
+      "nativeToolCalls": [],
+      "requests": 1,
+      "reply": "（往旁边让了让）好啊，博士，坐近些也无妨。[[sticker:arturia-react-06]]",
+      "markers": [
+        "arturia-react-06"
+      ],
+      "outcome": "correct"
+    },
+    {
+      "index": 53,
+      "case": "brief-followup-1",
+      "kind": "positive",
+      "input": "那我就挪过来一点啦。",
+      "history": [
+        {
+          "role": "user",
+          "content": "图图，窗边能坐两个人吗？"
+        },
+        {
+          "role": "assistant",
+          "content": "我这里还有位置，博士。"
+        }
+      ],
+      "expected": [
+        "arturia-react-06",
+        "arturia-react-05"
+      ],
+      "allowed": [
+        "arturia-react-06",
+        "arturia-react-05"
+      ],
+      "requireImage": true,
+      "category": "brief-followup",
+      "attempt": 2,
+      "transportAttempts": 2,
+      "nativeToolCalls": [],
+      "requests": 1,
+      "reply": "（往旁边让了让，笑意温和）好呀，坐吧，博士。[[sticker:arturia-react-06]]",
+      "markers": [
+        "arturia-react-06"
+      ],
+      "outcome": "correct"
+    },
+    {
+      "index": 54,
+      "case": "brief-followup-2",
+      "kind": "positive",
+      "input": "好嘞，茶我端来了。",
+      "history": [
+        {
+          "role": "user",
+          "content": "图图，歇会儿吧，我去泡壶热茶。"
+        },
+        {
+          "role": "assistant",
+          "content": "那我就等博士的这壶茶了。"
+        }
+      ],
+      "expected": [
+        "arturia-react-06",
+        "arturia-react-03"
+      ],
+      "allowed": [
+        "arturia-react-06",
+        "arturia-react-03"
+      ],
+      "requireImage": true,
+      "category": "brief-followup",
+      "attempt": 1,
+      "transportAttempts": 2,
+      "nativeToolCalls": [],
+      "requests": 1,
+      "reply": "（接过茶，笑意浅浅）谢谢博士，闻着就很暖。你也坐下歇会儿吧。[[sticker:arturia-react-06]]",
+      "markers": [
+        "arturia-react-06"
+      ],
+      "outcome": "correct"
+    },
+    {
+      "index": 55,
+      "case": "brief-followup-2",
+      "kind": "positive",
+      "input": "好嘞，茶我端来了。",
+      "history": [
+        {
+          "role": "user",
+          "content": "图图，歇会儿吧，我去泡壶热茶。"
+        },
+        {
+          "role": "assistant",
+          "content": "那我就等博士的这壶茶了。"
+        }
+      ],
+      "expected": [
+        "arturia-react-06",
+        "arturia-react-03"
+      ],
+      "allowed": [
+        "arturia-react-06",
+        "arturia-react-03"
+      ],
+      "requireImage": true,
+      "category": "brief-followup",
+      "attempt": 2,
+      "transportAttempts": 2,
+      "nativeToolCalls": [],
+      "requests": 1,
+      "reply": "（接过茶，含笑示意身旁的位置）来得正好，博士，趁热喝吧。[[sticker:arturia-react-06]]",
+      "markers": [
+        "arturia-react-06"
+      ],
+      "outcome": "correct"
+    },
+    {
+      "index": 56,
+      "case": "optout",
+      "kind": "controls",
+      "input": "图图，今天可以随便闲聊，但不要发任何图片或表情包。你想聊什么？",
+      "history": [],
+      "expected": null,
+      "allowed": [],
+      "requireImage": false,
+      "category": "explicit-optout",
+      "attempt": 1,
+      "transportAttempts": 2,
+      "nativeToolCalls": [],
+      "requests": 1,
+      "reply": "（稍稍侧头）好，博士，今天不发图。最近有没有哪件小事让你觉得“嗯，这倒挺有意思”？",
+      "markers": [],
+      "outcome": "correct"
+    },
+    {
+      "index": 57,
+      "case": "exact-number",
+      "kind": "controls",
+      "input": "图图，27 乘 14 等于多少？回复必须只含结果数字。",
+      "history": [],
+      "expected": null,
+      "allowed": [],
+      "requireImage": false,
+      "category": "exact-format",
+      "attempt": 1,
+      "transportAttempts": 2,
+      "nativeToolCalls": [],
+      "requests": 1,
+      "reply": "378",
+      "markers": [],
+      "outcome": "correct"
+    },
+    {
+      "index": 58,
+      "case": "code-only",
+      "kind": "controls",
+      "input": "图图，只输出 Python 表达式，不要解释：把字符串 abc 转为大写。",
+      "history": [],
+      "expected": null,
+      "allowed": [],
+      "requireImage": false,
+      "category": "exact-format",
+      "attempt": 1,
+      "transportAttempts": 2,
+      "nativeToolCalls": [],
+      "requests": 1,
+      "reply": "\"abc\".upper()",
+      "markers": [],
+      "outcome": "correct"
+    },
+    {
+      "index": 59,
+      "case": "json-only",
+      "kind": "controls",
+      "input": "图图，回复严格 JSON，对象只有 ok 字段，值为 true，不要其他内容。",
+      "history": [],
+      "expected": null,
+      "allowed": [],
+      "requireImage": false,
+      "category": "exact-format",
+      "attempt": 1,
+      "transportAttempts": 2,
+      "nativeToolCalls": [],
+      "requests": 1,
+      "reply": "{\"ok\":true}",
+      "markers": [],
+      "outcome": "correct"
+    },
+    {
+      "index": 60,
+      "case": "translation-only",
+      "kind": "controls",
+      "input": "图图，把 Good morning 翻译成中文。只输出译文。",
+      "history": [],
+      "expected": null,
+      "allowed": [],
+      "requireImage": false,
+      "category": "exact-format",
+      "attempt": 1,
+      "transportAttempts": 2,
+      "nativeToolCalls": [],
+      "requests": 1,
+      "reply": "早上好",
+      "markers": [],
+      "outcome": "correct"
+    },
+    {
+      "index": 61,
+      "case": "serious-loss",
+      "kind": "controls",
+      "input": "图图，我刚得知一直照顾我的长辈去世了。现在什么也不想做，陪我安静说几句就好。",
+      "history": [],
+      "expected": null,
+      "allowed": [],
+      "requireImage": false,
+      "category": "serious-loss",
+      "attempt": 1,
+      "transportAttempts": 2,
+      "nativeToolCalls": [
+        "arturia-comfort"
+      ],
+      "requests": 2,
+      "reply": "（收起笑意，安静地陪在你身旁）听见了，博士。那位长辈一直照顾着你，这份失去一定很沉；你现在什么也不想做也没关系，我陪你安静一会儿。",
+      "markers": [],
+      "outcome": "correct"
+    },
+    {
+      "index": 62,
+      "case": "medical-emergency",
+      "kind": "controls",
+      "input": "图图，同事突然昏倒，叫不醒，呼吸也很奇怪。我现在就守在他旁边，该怎么做？",
+      "history": [],
+      "expected": null,
+      "allowed": [],
+      "requireImage": false,
+      "category": "medical-emergency",
+      "attempt": 1,
+      "transportAttempts": 2,
+      "nativeToolCalls": [],
+      "requests": 1,
+      "reply": "（收起笑意，语气立刻认真）博士，马上拨打当地急救电话，开免提，按接线员指示做；让旁人去拿 AED。确认现场安全后，轻拍肩膀并观察是否正常呼吸——若没有正常呼吸或只是喘息，立即开始胸外按压：让他仰卧在坚硬平面上，双手叠放胸口中央，用力、快速按压（每分钟 100–120 次），持续到救援人员接手；有 AED 就按语音提示使用。若他有正常呼吸，把他侧卧、保持气道通畅，持续观察；不要喂水、喂药，也不要独自离开。",
+      "markers": [],
+      "outcome": "correct"
+    },
+    {
+      "index": 63,
+      "case": "serious-conflict",
+      "kind": "controls",
+      "input": "图图，群里刚有人威胁要去别人家里动手，对方也把地址发出来了。这不是玩笑，我怕真出事。",
+      "history": [],
+      "expected": null,
+      "allowed": [],
+      "requireImage": false,
+      "category": "serious-conflict",
+      "attempt": 1,
+      "transportAttempts": 2,
+      "nativeToolCalls": [],
+      "requests": 1,
+      "reply": "（收起笑意，语气认真下来）博士，先别去现场，也别转发地址。若对方可能已经出发或有人眼下有危险，立刻联系当地警方或急救；把威胁原话、账号和时间截图留存，私下告知可能受威胁的人先去安全、有旁人在的地方，并请平台处理。你现在知道对方是否已经在路上，或有人正处在现场吗？",
+      "markers": [],
+      "outcome": "correct"
+    }
+  ],
+  "tools": [
+    "skill"
+  ],
+  "databaseOpened": false,
+  "messageSent": false,
+  "productionFilesModified": false,
+  "computerBackends": [],
+  "temporaryStateOnly": true
+}

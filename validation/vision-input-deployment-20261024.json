@@ -1,0 +1,66 @@
+{
+  "loadedModel": {
+    "model": "gpt-6-luna",
+    "modelType": "LLM 大语言模型",
+    "contextSize": 128000,
+    "modelCapabilities": [
+      "text_input",
+      "tool_call",
+      "image_input"
+    ]
+  },
+  "loadedMultimodal": {
+    "enableContextImageDescription": false,
+    "enableContextGifHandling": true,
+    "enableImageReadTool": false,
+    "enableGifReadTool": false,
+    "enableFileReadTool": false,
+    "enableAudioFfmpegConversion": false,
+    "imageModel": "openai-like/gpt-6-luna",
+    "gifStrategy": "average",
+    "gifFrameCount": 3
+  },
+  "runtime": [
+    {
+      "name": "koishi-plugin-chatluna-multimodal-service",
+      "version": "1.4.0",
+      "activeForkCount": 1,
+      "forkStatuses": [
+        2
+      ]
+    },
+    {
+      "name": "koishi-plugin-chatluna-openai-like-adapter",
+      "version": "1.4.2",
+      "activeForkCount": 1,
+      "forkStatuses": [
+        2
+      ]
+    }
+  ],
+  "modelListed": true,
+  "enabledTools": [
+    "skill"
+  ],
+  "ok": true,
+  "verifiedAt": "2026-10-24T06:07:19.395209+00:00",
+  "nativeSelectiveReload": [
+    "chatluna-openai-like-adapter",
+    "chatluna-multimodal-service"
+  ],
+  "selectiveReloadVerifiedAt": "2026-10-24T06:06:24.350874+00:00",
+  "sourceConfigSha256": "60fe69ffa5df5dd63eac5e72079aadcc0797bc766bee737d3e44937f75964f74",
+  "finalConfigSha256": "6898d5876ad5d8d9bf65d963f3df14daaf2f8a85944e91c50d678819d1cd3c69",
+  "fullParsedConfigEqualsApprovedCandidate": true,
+  "outsideTwoTargetBlocksByteIdentical": true,
+  "loadedPluginConfigurationReadBack": true,
+  "directRuntimeModelInfoRpcAvailable": false,
+  "computerBackendsEnabled": 0,
+  "testPluginCreated": false,
+  "liveGroupMessageSent": false,
+  "consoleHTTP": 200,
+  "containerRestarted": false,
+  "containerStartedAt": "2026-10-24T04:04:18.97385153Z",
+  "RSSOrNapCatModified": false,
+  "peerFfmpegRequiredForImages": false
+}

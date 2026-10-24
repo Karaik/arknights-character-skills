@@ -166,6 +166,59 @@ def main():
                 'test_preset_removed':not readback['testPresetLeft'],'chat_mode':deployment['chatMode'],
                 'evidence':[optimization_readback.relative_to(ROOT).as_posix()]}
             report['behavior_validation']='natural utterance samples with native Skills and prompt pipeline; synthetic context, no QQ group delivery test'
+    emotion_file=ROOT/'validation/group-emotion-deployment-20261024.json'
+    emotion_readback=ROOT/'validation/group-emotion-live-readback.json'
+    emotion_evaluation=ROOT/'validation/group-emotion-candidate.json'
+    emotion_heldout=ROOT/'validation/group-emotion-heldout.json'
+    if all(p.exists()for p in [emotion_file,emotion_readback,emotion_evaluation,emotion_heldout]):
+        deployment=json.loads(emotion_file.read_text(encoding='utf-8'))
+        readback=json.loads(emotion_readback.read_text(encoding='utf-8'))
+        evaluation=json.loads(emotion_evaluation.read_text(encoding='utf-8'))
+        heldout=json.loads(emotion_heldout.read_text(encoding='utf-8'))
+        index=json.loads((exports/'native-skills.json').read_text(encoding='utf-8'))
+        expected_modules={x['name']:x['sha256']for x in index['skills']}
+        preset_hash=hashlib.sha256((exports/'arturia.yml').read_bytes()).hexdigest()
+        current=bool(deployment['success']and evaluation['ok']and heldout['ok']
+                     and deployment['formalPresetSha256']==preset_hash==readback['presetSha256']==evaluation['hashes']['preset']
+                     and heldout['hashes']['preset']==preset_hash and heldout['hashes']['modules']==expected_modules
+                     and evaluation['hashes']['modules']==expected_modules
+                     and {x['name']:x['sha256']for x in readback['nativeAgent']['skills']}==expected_modules
+                     and readback['manifestSha256']==hashlib.sha256((exports/'runtime-manifest.json').read_bytes()).hexdigest()
+                     and readback['originalHistoryPreserved']and readback['nativeAgent']['nativeConsoleAvailable']
+                     and not readback['testPresetLeft'])
+        report['group_emotion_optimization']={'matches_current_export':current,'model':evaluation['model'],
+            'summary':evaluation['summary'],'heldout_summary':heldout['summary'],'sample_limit':evaluation['sampleLimit'],
+            'policy':'Ordinary selected replies default to one appropriate sticker; understood unwanted banter can use deadpan; genuine distress, exact format and opt-outs stay text-only',
+            'qq_messages_sent':deployment['syntheticQqMessagesSent'],
+            'evidence':[p.relative_to(ROOT).as_posix()for p in [emotion_file,emotion_readback,emotion_evaluation,emotion_heldout]]}
+        if current:
+            report['formal_preset_loaded']=True;report['production_role_switched']=True
+            report['production_snapshot']={'matches_current_export':True,'selected_groups':deployment['activeGroups'],
+                'model':deployment['model'],'chat_mode':deployment['chatMode'],
+                'history_preserved':readback['originalHistoryPreserved'],
+                'preset_verification':readback['presetRuntimeVerification'],
+                'evidence':[emotion_file.relative_to(ROOT).as_posix(),emotion_readback.relative_to(ROOT).as_posix()]}
+            report['native_agent']={'matches_current_export':True,'version':'1.0.49','ui_route':'/chatluna-agent',
+                'loaded_skill_count':len(readback['nativeAgent']['skills']),'test_preset_removed':not readback['testPresetLeft'],
+                'chat_mode':deployment['chatMode'],'evidence':[emotion_readback.relative_to(ROOT).as_posix()]}
+            report['behavior_validation']='synthetic group banter, high-frequency image selection and true text-only exclusions through native Skills/prompt pipeline; private live replay is excluded from the repository'
+    vision_deployment_file=ROOT/'validation/vision-input-deployment-20261024.json'
+    vision_live_file=ROOT/'validation/vision-input-live-results-20261024.json'
+    vision_combined_file=ROOT/'validation/vision-input-combined-results-20261024.json'
+    if all(p.exists()for p in [vision_deployment_file,vision_live_file,vision_combined_file]):
+        deployment=json.loads(vision_deployment_file.read_text(encoding='utf-8'))
+        live=json.loads(vision_live_file.read_text(encoding='utf-8'))
+        combined=json.loads(vision_combined_file.read_text(encoding='utf-8'))
+        current=bool(deployment['ok']and live['ok']and combined['ok']and combined['combinedCheck']['passed']
+                     and combined['combinedCheck']['formalPresetSha256']==hashlib.sha256((exports/'arturia.yml').read_bytes()).hexdigest()
+                     and deployment['loadedPluginConfigurationReadBack']
+                     and 'image_input'in deployment['loadedModel']['modelCapabilities'])
+        report['vision_input']={'matches_current_export':current,'model':deployment['loadedModel']['model'],
+            'loaded_plugin_configuration_read_back':deployment['loadedPluginConfigurationReadBack'],
+            'direct_runtime_model_info_rpc_available':deployment['directRuntimeModelInfoRpcAvailable'],
+            'gif_frames_sent':deployment['loadedMultimodal']['gifFrameCount'],
+            'group_messages_sent':0,'scope':'loaded plugin configuration and active forks; installed native input/request pipeline plus synthetic model OCR and formal-preset reply; no live QQ group end-to-end test',
+            'evidence':[p.relative_to(ROOT).as_posix()for p in [vision_deployment_file,vision_live_file,vision_combined_file]]}
     (target/'release.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n',encoding='utf-8', newline='\n')
     print(json.dumps(report,ensure_ascii=False))
 

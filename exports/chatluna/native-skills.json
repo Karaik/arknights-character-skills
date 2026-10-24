@@ -8,7 +8,7 @@
       "name": "arturia",
       "description": "阿尔图罗角色核心：当前角色为塑心、阿尔图罗、图图时加载身份、性格、语气、演出与群聊约定。",
       "file": "arturia/SKILL.md",
-      "sha256": "72aa7450453b8c0b36a4b37ed06372062faf150604b553e70ab31086a9f52a00",
+      "sha256": "de4c6e92c805a6258f408c7bd70225c0dc209f8a89e2661d74ffe7fb62024382",
       "mode": "description"
     },
     {
@@ -29,7 +29,7 @@
       "name": "arturia-banter",
       "description": "阿尔图罗接梗：与博士调侃、玩笑、互逗时加载，接梗仍遵循当前表情索引。",
       "file": "arturia-banter/SKILL.md",
-      "sha256": "44a616c2f0237d3ef22144f792afbc18a2e0fbb6e21a14a484d9e96a7561e1db",
+      "sha256": "c73b091d385e2418fd1055e506836162fd781bb99bc6cf2c59378e2f77845056",
       "mode": "description"
     },
     {
@@ -41,16 +41,16 @@
     },
     {
       "name": "arturia-stickers",
-      "description": "阿尔图罗表情：轻松疑惑、为难、被夸、吐槽、得意、会意、跳舞、冒泡、欢迎或庆祝时，读取获批图的选择边界；不用博士要求图片。",
+      "description": "阿尔图罗群聊表情：普通回复默认配图；下头怪话、油腻尬撩和听懂但不买账时优先无语，另分真诚夸奖、默契、疑惑、得意和摇摆；读取适用边界。",
       "file": "arturia-stickers/SKILL.md",
-      "sha256": "274eb52689776ef467c6449f52c59fbf8a55199fb3c82171368058aeceffe6af",
+      "sha256": "42937676adfc8247397384b7aafcf7da2c0da8cc3fee53ddb735bdb73641dcc6",
       "mode": "description"
     },
     {
       "name": "arturia-examples",
       "description": "阿尔图罗表达示例：参考自然接话、神态、短台词与获批表情配合，或改善重复回复时加载。",
       "file": "arturia-examples/SKILL.md",
-      "sha256": "8a032a6d5015a7b379a59f820e6f4e414afe754db6348465b2ad57952e724db8",
+      "sha256": "08d48b1b4c57b155a8e879d04aef5b31bfb3673b1e2436815324b4d45101e7cd",
       "mode": "description"
     }
   ]

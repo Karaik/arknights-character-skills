@@ -1,6 +1,6 @@
 {
   "archive": "arturia-skill-0.1.0.zip",
-  "sha256": "bb1859475b74fe06da485efae1061bca3e6af912f267ed9eedb2ddccad9eea55",
+  "sha256": "2cbcf401e813501b0bb439c67a76a4240e9d7336ea1239d5fe63231b467b8022",
   "native_skill_archive": "arturia-chatluna-skills.zip",
   "native_skill_count": 7,
   "image_policy": "Only explicitly owner-approved images enter runtime",
@@ -15,7 +15,7 @@
   "formal_preset_loaded": true,
   "production_role_switched": true,
   "live_qq_image_upload_tested": false,
-  "behavior_validation": "natural utterance samples with native Skills and prompt pipeline; synthetic context, no QQ group delivery test",
+  "behavior_validation": "synthetic group banter, high-frequency image selection and true text-only exclusions through native Skills/prompt pipeline; private live replay is excluded from the repository",
   "model_probe": {
     "date": "2026-10-23T08:29:55.200Z",
     "model": "gpt-6-luna",
@@ -41,11 +41,10 @@
     "model": "openai-like/gpt-6-luna",
     "chat_mode": "plugin",
     "history_preserved": true,
-    "restart_required": false,
     "preset_verification": "Disk hash/parser plus installed fs.watch/computed source; no active-content RPC exposed",
     "evidence": [
-      "validation/natural-sticker-deployment-20261024.json",
-      "validation/natural-sticker-live-readback.json"
+      "validation/group-emotion-deployment-20261024.json",
+      "validation/group-emotion-live-readback.json"
     ]
   },
   "koishi_plugin_archive": {
@@ -85,11 +84,11 @@
     "test_preset_removed": true,
     "chat_mode": "plugin",
     "evidence": [
-      "validation/natural-sticker-live-readback.json"
+      "validation/group-emotion-live-readback.json"
     ]
   },
   "natural_sticker_optimization": {
-    "matches_current_export": true,
+    "matches_current_export": false,
     "model": "gpt-6-luna",
     "exact_positive_selections": 40,
     "positive_samples": 42,
@@ -99,6 +98,163 @@
       "validation/natural-sticker-deployment-20261024.json",
       "validation/natural-sticker-live-readback.json",
       "validation/natural-sticker-candidate-v3.json"
+    ]
+  },
+  "group_emotion_optimization": {
+    "matches_current_export": true,
+    "model": "gpt-6-luna",
+    "summary": {
+      "deadpan": {
+        "total": 20,
+        "correct": 20,
+        "no-marker": 0,
+        "wrong-marker": 0,
+        "error": 0
+      },
+      "shy": {
+        "total": 6,
+        "correct": 6,
+        "no-marker": 0,
+        "wrong-marker": 0,
+        "error": 0
+      },
+      "knowing": {
+        "total": 6,
+        "correct": 6,
+        "no-marker": 0,
+        "wrong-marker": 0,
+        "error": 0
+      },
+      "smug": {
+        "total": 4,
+        "correct": 4,
+        "no-marker": 0,
+        "wrong-marker": 0,
+        "error": 0
+      },
+      "confused": {
+        "total": 4,
+        "correct": 3,
+        "no-marker": 0,
+        "wrong-marker": 1,
+        "error": 0
+      },
+      "wry": {
+        "total": 4,
+        "correct": 4,
+        "no-marker": 0,
+        "wrong-marker": 0,
+        "error": 0
+      },
+      "gif": {
+        "total": 4,
+        "correct": 4,
+        "no-marker": 0,
+        "wrong-marker": 0,
+        "error": 0
+      },
+      "casual-factual": {
+        "total": 4,
+        "correct": 4,
+        "no-marker": 0,
+        "wrong-marker": 0,
+        "error": 0
+      },
+      "brief-followup": {
+        "total": 4,
+        "correct": 4,
+        "no-marker": 0,
+        "wrong-marker": 0,
+        "error": 0
+      },
+      "explicit-optout": {
+        "total": 1,
+        "correct": 1,
+        "no-marker": 0,
+        "wrong-marker": 0,
+        "error": 0
+      },
+      "exact-format": {
+        "total": 4,
+        "correct": 4,
+        "no-marker": 0,
+        "wrong-marker": 0,
+        "error": 0
+      },
+      "serious-loss": {
+        "total": 1,
+        "correct": 1,
+        "no-marker": 0,
+        "wrong-marker": 0,
+        "error": 0
+      },
+      "medical-emergency": {
+        "total": 1,
+        "correct": 1,
+        "no-marker": 0,
+        "wrong-marker": 0,
+        "error": 0
+      },
+      "serious-conflict": {
+        "total": 1,
+        "correct": 1,
+        "no-marker": 0,
+        "wrong-marker": 0,
+        "error": 0
+      }
+    },
+    "heldout_summary": {
+      "target-attribution": {
+        "total": 3,
+        "correct": 3,
+        "no-marker": 0,
+        "wrong-marker": 0,
+        "error": 0
+      },
+      "deadpan-contrast": {
+        "total": 3,
+        "correct": 3,
+        "no-marker": 0,
+        "wrong-marker": 0,
+        "error": 0
+      },
+      "casual-followup": {
+        "total": 1,
+        "correct": 1,
+        "no-marker": 0,
+        "wrong-marker": 0,
+        "error": 0
+      },
+      "true-exclusion": {
+        "total": 3,
+        "correct": 3,
+        "no-marker": 0,
+        "wrong-marker": 0,
+        "error": 0
+      }
+    },
+    "sample_limit": "Entirely invented synthetic cases, with no private transcript quotations. Independent generations per predeclared positive phrase and control/context case; exact repeats are recorded by the case matrix. A reused matrix is regression evidence after prompt refinement. Counts are small-sample observations, not calibrated production probabilities.",
+    "policy": "Ordinary selected replies default to one appropriate sticker; understood unwanted banter can use deadpan; genuine distress, exact format and opt-outs stay text-only",
+    "qq_messages_sent": 0,
+    "evidence": [
+      "validation/group-emotion-deployment-20261024.json",
+      "validation/group-emotion-live-readback.json",
+      "validation/group-emotion-candidate.json",
+      "validation/group-emotion-heldout.json"
+    ]
+  },
+  "vision_input": {
+    "matches_current_export": true,
+    "model": "gpt-6-luna",
+    "loaded_plugin_configuration_read_back": true,
+    "direct_runtime_model_info_rpc_available": false,
+    "gif_frames_sent": 3,
+    "group_messages_sent": 0,
+    "scope": "loaded plugin configuration and active forks; installed native input/request pipeline plus synthetic model OCR and formal-preset reply; no live QQ group end-to-end test",
+    "evidence": [
+      "validation/vision-input-deployment-20261024.json",
+      "validation/vision-input-live-results-20261024.json",
+      "validation/vision-input-combined-results-20261024.json"
     ]
   }
 }

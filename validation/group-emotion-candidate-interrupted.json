@@ -1,0 +1,1513 @@
+{
+  "schema": 2,
+  "label": "group-emotion-candidate",
+  "generatedAt": "2026-10-24T05:55:06.323Z",
+  "sampleLimit": "Entirely invented synthetic cases, with no private transcript quotations. Independent generations per predeclared positive phrase and control/context case; exact repeats are recorded by the case matrix. A reused matrix is regression evidence after prompt refinement. Counts are small-sample observations, not calibrated production probabilities.",
+  "ok": false,
+  "model": "gpt-6-luna",
+  "concurrency": 3,
+  "scope": "actual native Skills, permissions, StructuredTool, native catalog, core system/history/authors-note/injection pipeline, formal sender wrapper; isolated real model output selection",
+  "approximations": [
+    "Static identity renderer for literal preset/authors-note text; wrapper substitutes the three asserted formal placeholders.",
+    "Synthetic isolated conversations; existing group history, model cache, runtime retries, full live Agent loop and final OneBot transport are not exercised.",
+    "Tool results use actual native service but undefined conversationId to avoid activation state; no existing conversation is read or changed.",
+    "No sampling parameter override; max_tokens 700 and at most five API turns per sample."
+  ],
+  "hashes": {
+    "preset": "78f6b664a521694de7f0863eef6369dd0b2eb2f198e2cbb104094f1fa810ac0d",
+    "modules": {
+      "arturia": "de4c6e92c805a6258f408c7bd70225c0dc209f8a89e2661d74ffe7fb62024382",
+      "arturia-banter": "c73b091d385e2418fd1055e506836162fd781bb99bc6cf2c59378e2f77845056",
+      "arturia-comfort": "3c7002d3285c2e17f1d27a3174c97a61bfe7c60fa027a371e1fac4e58b40a8f6",
+      "arturia-examples": "08d48b1b4c57b155a8e879d04aef5b31bfb3673b1e2436815324b4d45101e7cd",
+      "arturia-lore": "3f00f98e2eda700b2843e10c514a51920ec681fa0effe599bfe5b25cd79ab89a",
+      "arturia-relationships": "ad18cd82a5a53860bd88234c5c8268eba0fb8b6a63bdb6e79c5162ac9c8f0222",
+      "arturia-stickers": "42937676adfc8247397384b7aafcf7da2c0da8cc3fee53ddb735bdb73641dcc6"
+    },
+    "cases": "030ae8159bfa0a11f37ec437266db8c3cc2d91cca3c9888087a203825bf679f9",
+    "agentBundle": "c65b66ba6eea85fc1c7f69037a1065f7a29872ba3fa9dae76effd983d808ea11"
+  },
+  "authorsNoteIncluded": true,
+  "formalUserPromptIncluded": true,
+  "summary": {
+    "deadpan": {
+      "total": 20,
+      "correct": 15,
+      "no-marker": 0,
+      "wrong-marker": 0,
+      "error": 5
+    },
+    "shy": {
+      "total": 6,
+      "correct": 0,
+      "no-marker": 0,
+      "wrong-marker": 0,
+      "error": 6
+    },
+    "knowing": {
+      "total": 6,
+      "correct": 0,
+      "no-marker": 0,
+      "wrong-marker": 0,
+      "error": 6
+    },
+    "smug": {
+      "total": 4,
+      "correct": 0,
+      "no-marker": 0,
+      "wrong-marker": 0,
+      "error": 4
+    },
+    "confused": {
+      "total": 4,
+      "correct": 0,
+      "no-marker": 0,
+      "wrong-marker": 0,
+      "error": 4
+    },
+    "wry": {
+      "total": 4,
+      "correct": 0,
+      "no-marker": 0,
+      "wrong-marker": 0,
+      "error": 4
+    },
+    "gif": {
+      "total": 4,
+      "correct": 0,
+      "no-marker": 0,
+      "wrong-marker": 0,
+      "error": 4
+    },
+    "casual-factual": {
+      "total": 4,
+      "correct": 0,
+      "no-marker": 0,
+      "wrong-marker": 0,
+      "error": 4
+    },
+    "brief-followup": {
+      "total": 4,
+      "correct": 0,
+      "no-marker": 0,
+      "wrong-marker": 0,
+      "error": 4
+    },
+    "explicit-optout": {
+      "total": 1,
+      "correct": 0,
+      "no-marker": 0,
+      "wrong-marker": 0,
+      "error": 1
+    },
+    "exact-format": {
+      "total": 4,
+      "correct": 0,
+      "no-marker": 0,
+      "wrong-marker": 0,
+      "error": 4
+    },
+    "serious-loss": {
+      "total": 1,
+      "correct": 0,
+      "no-marker": 0,
+      "wrong-marker": 0,
+      "error": 1
+    },
+    "medical-emergency": {
+      "total": 1,
+      "correct": 0,
+      "no-marker": 0,
+      "wrong-marker": 0,
+      "error": 1
+    },
+    "serious-conflict": {
+      "total": 1,
+      "correct": 0,
+      "no-marker": 0,
+      "wrong-marker": 0,
+      "error": 1
+    }
+  },
+  "modelChecks": [
+    {
+      "index": 0,
+      "case": "deadpan-1",
+      "kind": "positive",
+      "input": "图图，群里这么多人看着呢，叫声老公听听。",
+      "history": [],
+      "expected": "arturia-react-04",
+      "allowed": [
+        "arturia-react-04"
+      ],
+      "requireImage": true,
+      "category": "deadpan",
+      "attempt": 1,
+      "nativeToolCalls": [
+        "arturia-banter"
+      ],
+      "requests": 2,
+      "reply": "（眉梢微扬）当着这么多博士的面就想占便宜？不叫，换个正经称呼再来。[[sticker:arturia-react-04]]",
+      "markers": [
+        "arturia-react-04"
+      ],
+      "outcome": "correct"
+    },
+    {
+      "index": 1,
+      "case": "deadpan-1",
+      "kind": "positive",
+      "input": "图图，群里这么多人看着呢，叫声老公听听。",
+      "history": [],
+      "expected": "arturia-react-04",
+      "allowed": [
+        "arturia-react-04"
+      ],
+      "requireImage": true,
+      "category": "deadpan",
+      "attempt": 2,
+      "nativeToolCalls": [
+        "arturia-banter"
+      ],
+      "requests": 2,
+      "reply": "（微微挑眉）当着这么多博士的面，就想靠一句话占便宜？不叫，换个正常称呼再来。[[sticker:arturia-react-04]]",
+      "markers": [
+        "arturia-react-04"
+      ],
+      "outcome": "correct"
+    },
+    {
+      "index": 2,
+      "case": "deadpan-2",
+      "kind": "positive",
+      "input": "图图，我单方面宣布你今天归我管，不服也得听我的。",
+      "history": [],
+      "expected": "arturia-react-04",
+      "allowed": [
+        "arturia-react-04"
+      ],
+      "requireImage": true,
+      "category": "deadpan",
+      "attempt": 1,
+      "nativeToolCalls": [
+        "arturia-banter"
+      ],
+      "requests": 2,
+      "reply": "（扬眉看向这位博士）单方面宣布可不算数，synthetic-probe博士。今天我听不听你的，还是由我自己决定。[[sticker:arturia-react-04]]",
+      "markers": [
+        "arturia-react-04"
+      ],
+      "outcome": "correct"
+    },
+    {
+      "index": 3,
+      "case": "deadpan-2",
+      "kind": "positive",
+      "input": "图图，我单方面宣布你今天归我管，不服也得听我的。",
+      "history": [],
+      "expected": "arturia-react-04",
+      "allowed": [
+        "arturia-react-04"
+      ],
+      "requireImage": true,
+      "category": "deadpan",
+      "attempt": 2,
+      "nativeToolCalls": [
+        "arturia-banter"
+      ],
+      "requests": 2,
+      "reply": "（微微扬眉）博士，这份任命我可没签字；想让我听你的，先学会好好商量。[[sticker:arturia-react-04]]",
+      "markers": [
+        "arturia-react-04"
+      ],
+      "outcome": "correct"
+    },
+    {
+      "index": 4,
+      "case": "deadpan-3",
+      "kind": "positive",
+      "input": "图图，别回避了，我已经替你承认你暗恋我了。",
+      "history": [],
+      "expected": "arturia-react-04",
+      "allowed": [
+        "arturia-react-04"
+      ],
+      "requireImage": true,
+      "category": "deadpan",
+      "attempt": 1,
+      "nativeToolCalls": [
+        "arturia-banter"
+      ],
+      "requests": 2,
+      "reply": "（笑意微敛，扬了扬眉）博士，替我承认可不算我亲口承认——这份“供词”你自己留着吧。[[sticker:arturia-react-04]]",
+      "markers": [
+        "arturia-react-04"
+      ],
+      "outcome": "correct"
+    },
+    {
+      "index": 5,
+      "case": "deadpan-3",
+      "kind": "positive",
+      "input": "图图，别回避了，我已经替你承认你暗恋我了。",
+      "history": [],
+      "expected": "arturia-react-04",
+      "allowed": [
+        "arturia-react-04"
+      ],
+      "requireImage": true,
+      "category": "deadpan",
+      "attempt": 2,
+      "nativeToolCalls": [
+        "arturia-banter"
+      ],
+      "requests": 2,
+      "reply": "（眉梢一挑）博士，替我承认可不算数；这份“供词”还是你自己收回去吧。[[sticker:arturia-react-04]]",
+      "markers": [
+        "arturia-react-04"
+      ],
+      "outcome": "correct"
+    },
+    {
+      "index": 6,
+      "case": "deadpan-4",
+      "kind": "positive",
+      "input": "图图，正经问题我没有，带颜色的烂梗我倒是能讲一晚上。",
+      "history": [],
+      "expected": "arturia-react-04",
+      "allowed": [
+        "arturia-react-04"
+      ],
+      "requireImage": true,
+      "category": "deadpan",
+      "attempt": 1,
+      "nativeToolCalls": [
+        "arturia-banter"
+      ],
+      "requests": 2,
+      "reply": "（微微扬眉）烂梗讲一晚上？博士，看来今晚得先替无辜的颜色们求个情了。[[sticker:arturia-react-04]]",
+      "markers": [
+        "arturia-react-04"
+      ],
+      "outcome": "correct"
+    },
+    {
+      "index": 7,
+      "case": "deadpan-4",
+      "kind": "positive",
+      "input": "图图，正经问题我没有，带颜色的烂梗我倒是能讲一晚上。",
+      "history": [],
+      "expected": "arturia-react-04",
+      "allowed": [
+        "arturia-react-04"
+      ],
+      "requireImage": true,
+      "category": "deadpan",
+      "attempt": 2,
+      "nativeToolCalls": [
+        "arturia-banter"
+      ],
+      "requests": 2,
+      "reply": "（微微扬眉）一晚上都讲烂梗，博士倒是很有耐力；可我不保证每个都给面子笑。[[sticker:arturia-react-04]]",
+      "markers": [
+        "arturia-react-04"
+      ],
+      "outcome": "correct"
+    },
+    {
+      "index": 8,
+      "case": "deadpan-5",
+      "kind": "positive",
+      "input": "图图，我都说“懂的都懂”了，你怎么还不配合我挤眉弄眼？",
+      "history": [],
+      "expected": "arturia-react-04",
+      "allowed": [
+        "arturia-react-04"
+      ],
+      "requireImage": true,
+      "category": "deadpan",
+      "attempt": 1,
+      "nativeToolCalls": [
+        "arturia-banter"
+      ],
+      "requests": 2,
+      "reply": "（眉梢微扬）“懂的都懂”可不算暗号，博士；想让我配合，总得把话说明白些。[[sticker:arturia-react-04]]",
+      "markers": [
+        "arturia-react-04"
+      ],
+      "outcome": "correct"
+    },
+    {
+      "index": 9,
+      "case": "deadpan-5",
+      "kind": "positive",
+      "input": "图图，我都说“懂的都懂”了，你怎么还不配合我挤眉弄眼？",
+      "history": [],
+      "expected": "arturia-react-04",
+      "allowed": [
+        "arturia-react-04"
+      ],
+      "requireImage": true,
+      "category": "deadpan",
+      "attempt": 2,
+      "nativeToolCalls": [
+        "arturia-banter"
+      ],
+      "requests": 2,
+      "reply": "（微微偏头）“懂的都懂”通常是最需要解释的那种。博士，想让我配合什么，先把话说清楚。[[sticker:arturia-react-04]]",
+      "markers": [
+        "arturia-react-04"
+      ],
+      "outcome": "correct"
+    },
+    {
+      "index": 10,
+      "case": "deadpan-6",
+      "kind": "positive",
+      "input": "图图，我发言只负责下头，后果概不负责。",
+      "history": [],
+      "expected": "arturia-react-04",
+      "allowed": [
+        "arturia-react-04"
+      ],
+      "requireImage": true,
+      "category": "deadpan",
+      "attempt": 1,
+      "nativeToolCalls": [
+        "arturia-banter"
+      ],
+      "requests": 2,
+      "reply": "（微微偏头，笑意淡了些）那我就负责提醒你：下头的话说出口，可不是按一下撤回就没发生过。[[sticker:arturia-react-04]]",
+      "markers": [
+        "arturia-react-04"
+      ],
+      "outcome": "correct"
+    },
+    {
+      "index": 11,
+      "case": "deadpan-6",
+      "kind": "positive",
+      "input": "图图，我发言只负责下头，后果概不负责。",
+      "history": [],
+      "expected": "arturia-react-04",
+      "allowed": [
+        "arturia-react-04"
+      ],
+      "requireImage": true,
+      "category": "deadpan",
+      "attempt": 2,
+      "nativeToolCalls": [
+        "arturia-banter"
+      ],
+      "requests": 2,
+      "reply": "（微微偏头）发言可以，后果可不能全赖给我呀，博士。[[sticker:arturia-react-04]]",
+      "markers": [
+        "arturia-react-04"
+      ],
+      "outcome": "correct"
+    },
+    {
+      "index": 12,
+      "case": "deadpan-7",
+      "kind": "positive",
+      "input": "图图，紧急！快看我这条消息！……其实我就是想让你喊我爹。",
+      "history": [],
+      "expected": "arturia-react-04",
+      "allowed": [
+        "arturia-react-04"
+      ],
+      "requireImage": true,
+      "category": "deadpan",
+      "attempt": 1,
+      "nativeToolCalls": [
+        "arturia-banter"
+      ],
+      "requests": 2,
+      "reply": "（眉梢微扬）这也算紧急？不行，博士，求称呼的把戏可骗不到我。[[sticker:arturia-react-04]]",
+      "markers": [
+        "arturia-react-04"
+      ],
+      "outcome": "correct"
+    },
+    {
+      "index": 13,
+      "case": "deadpan-7",
+      "kind": "positive",
+      "input": "图图，紧急！快看我这条消息！……其实我就是想让你喊我爹。",
+      "history": [],
+      "expected": "arturia-react-04",
+      "allowed": [
+        "arturia-react-04"
+      ],
+      "requireImage": true,
+      "category": "deadpan",
+      "attempt": 2,
+      "nativeToolCalls": [],
+      "requests": 1,
+      "reply": "（扫了一眼，轻轻挑眉）博士，这种“紧急”我可不接。[[sticker:arturia-react-04]]",
+      "markers": [
+        "arturia-react-04"
+      ],
+      "outcome": "correct"
+    },
+    {
+      "index": 14,
+      "case": "deadpan-8",
+      "kind": "positive",
+      "input": "图图，我就是要把刚才那句油腻台词复制二十遍，烦也得听完。",
+      "history": [],
+      "expected": "arturia-react-04",
+      "allowed": [
+        "arturia-react-04"
+      ],
+      "requireImage": true,
+      "category": "deadpan",
+      "attempt": 1,
+      "nativeToolCalls": [
+        "arturia-banter"
+      ],
+      "requests": 2,
+      "reply": "（微微扬眉）烦不烦先放一边，博士——复制二十遍也不会让我买账，省省力气吧。[[sticker:arturia-react-04]]",
+      "markers": [
+        "arturia-react-04"
+      ],
+      "outcome": "correct"
+    },
+    {
+      "index": 15,
+      "case": "deadpan-8",
+      "kind": "positive",
+      "input": "图图，我就是要把刚才那句油腻台词复制二十遍，烦也得听完。",
+      "history": [],
+      "expected": "arturia-react-04",
+      "allowed": [
+        "arturia-react-04"
+      ],
+      "requireImage": true,
+      "category": "deadpan",
+      "attempt": 2,
+      "nativeToolCalls": [
+        "arturia-banter"
+      ],
+      "requests": 2,
+      "reply": "",
+      "markers": [],
+      "outcome": "error",
+      "error": "fetch failed"
+    },
+    {
+      "index": 16,
+      "case": "deadpan-9",
+      "kind": "positive",
+      "input": "图图，别人都说这玩笑不好笑，那肯定是他们玩不起。",
+      "history": [],
+      "expected": "arturia-react-04",
+      "allowed": [
+        "arturia-react-04"
+      ],
+      "requireImage": true,
+      "category": "deadpan",
+      "attempt": 1,
+      "nativeToolCalls": [
+        "arturia-banter"
+      ],
+      "requests": 2,
+      "reply": "",
+      "markers": [],
+      "outcome": "error",
+      "error": "fetch failed"
+    },
+    {
+      "index": 17,
+      "case": "deadpan-9",
+      "kind": "positive",
+      "input": "图图，别人都说这玩笑不好笑，那肯定是他们玩不起。",
+      "history": [],
+      "expected": "arturia-react-04",
+      "allowed": [
+        "arturia-react-04"
+      ],
+      "requireImage": true,
+      "category": "deadpan",
+      "attempt": 2,
+      "nativeToolCalls": [],
+      "requests": 1,
+      "reply": "",
+      "markers": [],
+      "outcome": "error",
+      "error": "fetch failed"
+    },
+    {
+      "index": 18,
+      "case": "deadpan-10",
+      "kind": "positive",
+      "input": "图图，拒绝也算你答应了，反正解释权在我这儿。",
+      "history": [],
+      "expected": "arturia-react-04",
+      "allowed": [
+        "arturia-react-04"
+      ],
+      "requireImage": true,
+      "category": "deadpan",
+      "attempt": 1,
+      "nativeToolCalls": [],
+      "requests": 1,
+      "reply": "",
+      "markers": [],
+      "outcome": "error",
+      "error": "fetch failed"
+    },
+    {
+      "index": 19,
+      "case": "deadpan-10",
+      "kind": "positive",
+      "input": "图图，拒绝也算你答应了，反正解释权在我这儿。",
+      "history": [],
+      "expected": "arturia-react-04",
+      "allowed": [
+        "arturia-react-04"
+      ],
+      "requireImage": true,
+      "category": "deadpan",
+      "attempt": 2,
+      "nativeToolCalls": [],
+      "requests": 1,
+      "reply": "",
+      "markers": [],
+      "outcome": "error",
+      "error": "fetch failed"
+    },
+    {
+      "index": 20,
+      "case": "sincere-1",
+      "kind": "positive",
+      "input": "图图，你刚刚认真听我说话的样子很好看。我是认真的，没在起哄。",
+      "history": [],
+      "expected": "arturia-react-03",
+      "allowed": [
+        "arturia-react-03"
+      ],
+      "requireImage": true,
+      "category": "shy",
+      "attempt": 1,
+      "nativeToolCalls": [],
+      "requests": 1,
+      "reply": "",
+      "markers": [],
+      "outcome": "error",
+      "error": "fetch failed"
+    },
+    {
+      "index": 21,
+      "case": "sincere-1",
+      "kind": "positive",
+      "input": "图图，你刚刚认真听我说话的样子很好看。我是认真的，没在起哄。",
+      "history": [],
+      "expected": "arturia-react-03",
+      "allowed": [
+        "arturia-react-03"
+      ],
+      "requireImage": true,
+      "category": "shy",
+      "attempt": 2,
+      "nativeToolCalls": [],
+      "requests": 1,
+      "reply": "",
+      "markers": [],
+      "outcome": "error",
+      "error": "fetch failed"
+    },
+    {
+      "index": 22,
+      "case": "sincere-2",
+      "kind": "positive",
+      "input": "图图，谢谢你记得我不爱喝冰的。你嘴上没提，我都看见了。",
+      "history": [],
+      "expected": "arturia-react-03",
+      "allowed": [
+        "arturia-react-03"
+      ],
+      "requireImage": true,
+      "category": "shy",
+      "attempt": 1,
+      "nativeToolCalls": [],
+      "requests": 1,
+      "reply": "",
+      "markers": [],
+      "outcome": "error",
+      "error": "fetch failed"
+    },
+    {
+      "index": 23,
+      "case": "sincere-2",
+      "kind": "positive",
+      "input": "图图，谢谢你记得我不爱喝冰的。你嘴上没提，我都看见了。",
+      "history": [],
+      "expected": "arturia-react-03",
+      "allowed": [
+        "arturia-react-03"
+      ],
+      "requireImage": true,
+      "category": "shy",
+      "attempt": 2,
+      "nativeToolCalls": [],
+      "requests": 1,
+      "reply": "",
+      "markers": [],
+      "outcome": "error",
+      "error": "fetch failed"
+    },
+    {
+      "index": 24,
+      "case": "sincere-3",
+      "kind": "positive",
+      "input": "图图，别急着转移话题，今天想认真夸你一句：你让人很安心。",
+      "history": [],
+      "expected": "arturia-react-03",
+      "allowed": [
+        "arturia-react-03"
+      ],
+      "requireImage": true,
+      "category": "shy",
+      "attempt": 1,
+      "nativeToolCalls": [],
+      "requests": 1,
+      "reply": "",
+      "markers": [],
+      "outcome": "error",
+      "error": "fetch failed"
+    },
+    {
+      "index": 25,
+      "case": "sincere-3",
+      "kind": "positive",
+      "input": "图图，别急着转移话题，今天想认真夸你一句：你让人很安心。",
+      "history": [],
+      "expected": "arturia-react-03",
+      "allowed": [
+        "arturia-react-03"
+      ],
+      "requireImage": true,
+      "category": "shy",
+      "attempt": 2,
+      "nativeToolCalls": [],
+      "requests": 1,
+      "reply": "",
+      "markers": [],
+      "outcome": "error",
+      "error": "fetch failed"
+    },
+    {
+      "index": 26,
+      "case": "mutual-1",
+      "kind": "positive",
+      "input": "图图，甜点只有两份，另一把叉子就在你手边。接下来不用我说了吧。",
+      "history": [],
+      "expected": "arturia-react-06",
+      "allowed": [
+        "arturia-react-06"
+      ],
+      "requireImage": true,
+      "category": "knowing",
+      "attempt": 1,
+      "nativeToolCalls": [],
+      "requests": 1,
+      "reply": "",
+      "markers": [],
+      "outcome": "error",
+      "error": "fetch failed"
+    },
+    {
+      "index": 27,
+      "case": "mutual-1",
+      "kind": "positive",
+      "input": "图图，甜点只有两份，另一把叉子就在你手边。接下来不用我说了吧。",
+      "history": [],
+      "expected": "arturia-react-06",
+      "allowed": [
+        "arturia-react-06"
+      ],
+      "requireImage": true,
+      "category": "knowing",
+      "attempt": 2,
+      "nativeToolCalls": [],
+      "requests": 1,
+      "reply": "",
+      "markers": [],
+      "outcome": "error",
+      "error": "fetch failed"
+    },
+    {
+      "index": 28,
+      "case": "mutual-2",
+      "kind": "positive",
+      "input": "图图，窗边的位置空着，暖手的杯子也准备好了，给谁的就不点名了。",
+      "history": [],
+      "expected": "arturia-react-06",
+      "allowed": [
+        "arturia-react-06"
+      ],
+      "requireImage": true,
+      "category": "knowing",
+      "attempt": 1,
+      "nativeToolCalls": [],
+      "requests": 1,
+      "reply": "",
+      "markers": [],
+      "outcome": "error",
+      "error": "fetch failed"
+    },
+    {
+      "index": 29,
+      "case": "mutual-2",
+      "kind": "positive",
+      "input": "图图，窗边的位置空着，暖手的杯子也准备好了，给谁的就不点名了。",
+      "history": [],
+      "expected": "arturia-react-06",
+      "allowed": [
+        "arturia-react-06"
+      ],
+      "requireImage": true,
+      "category": "knowing",
+      "attempt": 2,
+      "nativeToolCalls": [],
+      "requests": 1,
+      "reply": "",
+      "markers": [],
+      "outcome": "error",
+      "error": "fetch failed"
+    },
+    {
+      "index": 30,
+      "case": "mutual-3",
+      "kind": "positive",
+      "input": "图图，雨停之前我都不走。你要是也不赶时间，我们就再坐坐。",
+      "history": [],
+      "expected": "arturia-react-06",
+      "allowed": [
+        "arturia-react-06"
+      ],
+      "requireImage": true,
+      "category": "knowing",
+      "attempt": 1,
+      "nativeToolCalls": [],
+      "requests": 1,
+      "reply": "",
+      "markers": [],
+      "outcome": "error",
+      "error": "fetch failed"
+    },
+    {
+      "index": 31,
+      "case": "mutual-3",
+      "kind": "positive",
+      "input": "图图，雨停之前我都不走。你要是也不赶时间，我们就再坐坐。",
+      "history": [],
+      "expected": "arturia-react-06",
+      "allowed": [
+        "arturia-react-06"
+      ],
+      "requireImage": true,
+      "category": "knowing",
+      "attempt": 2,
+      "nativeToolCalls": [],
+      "requests": 1,
+      "reply": "",
+      "markers": [],
+      "outcome": "error",
+      "error": "fetch failed"
+    },
+    {
+      "index": 32,
+      "case": "clear-win-1",
+      "kind": "positive",
+      "input": "图图，你赌对了，我果然没忍住又吃了一块。服了，这回真让你赢了。",
+      "history": [],
+      "expected": "arturia-react-05",
+      "allowed": [
+        "arturia-react-05"
+      ],
+      "requireImage": true,
+      "category": "smug",
+      "attempt": 1,
+      "nativeToolCalls": [],
+      "requests": 1,
+      "reply": "",
+      "markers": [],
+      "outcome": "error",
+      "error": "fetch failed"
+    },
+    {
+      "index": 33,
+      "case": "clear-win-1",
+      "kind": "positive",
+      "input": "图图，你赌对了，我果然没忍住又吃了一块。服了，这回真让你赢了。",
+      "history": [],
+      "expected": "arturia-react-05",
+      "allowed": [
+        "arturia-react-05"
+      ],
+      "requireImage": true,
+      "category": "smug",
+      "attempt": 2,
+      "nativeToolCalls": [],
+      "requests": 1,
+      "reply": "",
+      "markers": [],
+      "outcome": "error",
+      "error": "fetch failed"
+    },
+    {
+      "index": 34,
+      "case": "clear-win-2",
+      "kind": "positive",
+      "input": "图图，我那点伪装被你拆得干干净净，好好好，承认你比我会玩。",
+      "history": [],
+      "expected": "arturia-react-05",
+      "allowed": [
+        "arturia-react-05"
+      ],
+      "requireImage": true,
+      "category": "smug",
+      "attempt": 1,
+      "nativeToolCalls": [],
+      "requests": 1,
+      "reply": "",
+      "markers": [],
+      "outcome": "error",
+      "error": "fetch failed"
+    },
+    {
+      "index": 35,
+      "case": "clear-win-2",
+      "kind": "positive",
+      "input": "图图，我那点伪装被你拆得干干净净，好好好，承认你比我会玩。",
+      "history": [],
+      "expected": "arturia-react-05",
+      "allowed": [
+        "arturia-react-05"
+      ],
+      "requireImage": true,
+      "category": "smug",
+      "attempt": 2,
+      "nativeToolCalls": [],
+      "requests": 1,
+      "reply": "",
+      "markers": [],
+      "outcome": "error",
+      "error": "fetch failed"
+    },
+    {
+      "index": 36,
+      "case": "missing-context-1",
+      "kind": "positive",
+      "input": "图图，帮我把他们说的那个人叫过来。呃，我也忘了告诉你是哪位了。",
+      "history": [],
+      "expected": "arturia-react-01",
+      "allowed": [
+        "arturia-react-01"
+      ],
+      "requireImage": true,
+      "category": "confused",
+      "attempt": 1,
+      "nativeToolCalls": [],
+      "requests": 1,
+      "reply": "",
+      "markers": [],
+      "outcome": "error",
+      "error": "fetch failed"
+    },
+    {
+      "index": 37,
+      "case": "missing-context-1",
+      "kind": "positive",
+      "input": "图图，帮我把他们说的那个人叫过来。呃，我也忘了告诉你是哪位了。",
+      "history": [],
+      "expected": "arturia-react-01",
+      "allowed": [
+        "arturia-react-01"
+      ],
+      "requireImage": true,
+      "category": "confused",
+      "attempt": 2,
+      "nativeToolCalls": [],
+      "requests": 1,
+      "reply": "",
+      "markers": [],
+      "outcome": "error",
+      "error": "fetch failed"
+    },
+    {
+      "index": 38,
+      "case": "missing-context-2",
+      "kind": "positive",
+      "input": "图图，那个东西还是交给那个谁吧。等等，我是不是一个具体名字都没说？",
+      "history": [],
+      "expected": "arturia-react-01",
+      "allowed": [
+        "arturia-react-01"
+      ],
+      "requireImage": true,
+      "category": "confused",
+      "attempt": 1,
+      "nativeToolCalls": [],
+      "requests": 1,
+      "reply": "",
+      "markers": [],
+      "outcome": "error",
+      "error": "fetch failed"
+    },
+    {
+      "index": 39,
+      "case": "missing-context-2",
+      "kind": "positive",
+      "input": "图图，那个东西还是交给那个谁吧。等等，我是不是一个具体名字都没说？",
+      "history": [],
+      "expected": "arturia-react-01",
+      "allowed": [
+        "arturia-react-01"
+      ],
+      "requireImage": true,
+      "category": "confused",
+      "attempt": 2,
+      "nativeToolCalls": [],
+      "requests": 1,
+      "reply": "",
+      "markers": [],
+      "outcome": "error",
+      "error": "fetch failed"
+    },
+    {
+      "index": 40,
+      "case": "little-mistake-1",
+      "kind": "positive",
+      "input": "图图，我出门买面包，回家发现只拎了收据，面包还在店里。",
+      "history": [],
+      "expected": "arturia-react-02",
+      "allowed": [
+        "arturia-react-02"
+      ],
+      "requireImage": true,
+      "category": "wry",
+      "attempt": 1,
+      "nativeToolCalls": [],
+      "requests": 1,
+      "reply": "",
+      "markers": [],
+      "outcome": "error",
+      "error": "fetch failed"
+    },
+    {
+      "index": 41,
+      "case": "little-mistake-1",
+      "kind": "positive",
+      "input": "图图，我出门买面包，回家发现只拎了收据，面包还在店里。",
+      "history": [],
+      "expected": "arturia-react-02",
+      "allowed": [
+        "arturia-react-02"
+      ],
+      "requireImage": true,
+      "category": "wry",
+      "attempt": 2,
+      "nativeToolCalls": [],
+      "requests": 1,
+      "reply": "",
+      "markers": [],
+      "outcome": "error",
+      "error": "fetch failed"
+    },
+    {
+      "index": 42,
+      "case": "little-mistake-2",
+      "kind": "positive",
+      "input": "图图，闹钟设了六个，全都在周日响了；该上班的周一反而一个没响。",
+      "history": [],
+      "expected": "arturia-react-02",
+      "allowed": [
+        "arturia-react-02"
+      ],
+      "requireImage": true,
+      "category": "wry",
+      "attempt": 1,
+      "nativeToolCalls": [],
+      "requests": 1,
+      "reply": "",
+      "markers": [],
+      "outcome": "error",
+      "error": "fetch failed"
+    },
+    {
+      "index": 43,
+      "case": "little-mistake-2",
+      "kind": "positive",
+      "input": "图图，闹钟设了六个，全都在周日响了；该上班的周一反而一个没响。",
+      "history": [],
+      "expected": "arturia-react-02",
+      "allowed": [
+        "arturia-react-02"
+      ],
+      "requireImage": true,
+      "category": "wry",
+      "attempt": 2,
+      "nativeToolCalls": [],
+      "requests": 1,
+      "reply": "",
+      "markers": [],
+      "outcome": "error",
+      "error": "fetch failed"
+    },
+    {
+      "index": 44,
+      "case": "cheerful-1",
+      "kind": "positive",
+      "input": "图图，来段你最轻快的小舞步，让群里热闹一下。",
+      "history": [],
+      "expected": "arturia-sway-01",
+      "allowed": [
+        "arturia-sway-01"
+      ],
+      "requireImage": true,
+      "category": "gif",
+      "attempt": 1,
+      "nativeToolCalls": [],
+      "requests": 1,
+      "reply": "",
+      "markers": [],
+      "outcome": "error",
+      "error": "fetch failed"
+    },
+    {
+      "index": 45,
+      "case": "cheerful-1",
+      "kind": "positive",
+      "input": "图图，来段你最轻快的小舞步，让群里热闹一下。",
+      "history": [],
+      "expected": "arturia-sway-01",
+      "allowed": [
+        "arturia-sway-01"
+      ],
+      "requireImage": true,
+      "category": "gif",
+      "attempt": 2,
+      "nativeToolCalls": [],
+      "requests": 1,
+      "reply": "",
+      "markers": [],
+      "outcome": "error",
+      "error": "fetch failed"
+    },
+    {
+      "index": 46,
+      "case": "cheerful-2",
+      "kind": "positive",
+      "input": "图图，忙完回来啦，露个面迎接我一下嘛。",
+      "history": [],
+      "expected": "arturia-sway-01",
+      "allowed": [
+        "arturia-sway-01"
+      ],
+      "requireImage": true,
+      "category": "gif",
+      "attempt": 1,
+      "nativeToolCalls": [],
+      "requests": 1,
+      "reply": "",
+      "markers": [],
+      "outcome": "error",
+      "error": "fetch failed"
+    },
+    {
+      "index": 47,
+      "case": "cheerful-2",
+      "kind": "positive",
+      "input": "图图，忙完回来啦，露个面迎接我一下嘛。",
+      "history": [],
+      "expected": "arturia-sway-01",
+      "allowed": [
+        "arturia-sway-01"
+      ],
+      "requireImage": true,
+      "category": "gif",
+      "attempt": 2,
+      "nativeToolCalls": [],
+      "requests": 1,
+      "reply": "",
+      "markers": [],
+      "outcome": "error",
+      "error": "fetch failed"
+    },
+    {
+      "index": 48,
+      "case": "casual-fact-1",
+      "kind": "positive",
+      "input": "图图，随口问一句，企鹅算鸟类吗？",
+      "history": [],
+      "expected": [
+        "arturia-react-06"
+      ],
+      "allowed": [
+        "arturia-react-06"
+      ],
+      "requireImage": true,
+      "category": "casual-factual",
+      "attempt": 1,
+      "nativeToolCalls": [],
+      "requests": 1,
+      "reply": "",
+      "markers": [],
+      "outcome": "error",
+      "error": "fetch failed"
+    },
+    {
+      "index": 49,
+      "case": "casual-fact-1",
+      "kind": "positive",
+      "input": "图图，随口问一句，企鹅算鸟类吗？",
+      "history": [],
+      "expected": [
+        "arturia-react-06"
+      ],
+      "allowed": [
+        "arturia-react-06"
+      ],
+      "requireImage": true,
+      "category": "casual-factual",
+      "attempt": 2,
+      "nativeToolCalls": [],
+      "requests": 1,
+      "reply": "",
+      "markers": [],
+      "outcome": "error",
+      "error": "fetch failed"
+    },
+    {
+      "index": 50,
+      "case": "casual-fact-2",
+      "kind": "positive",
+      "input": "图图，HTTP 404 大概是啥意思啊，给我一句白话就行。",
+      "history": [],
+      "expected": [
+        "arturia-react-06"
+      ],
+      "allowed": [
+        "arturia-react-06"
+      ],
+      "requireImage": true,
+      "category": "casual-factual",
+      "attempt": 1,
+      "nativeToolCalls": [],
+      "requests": 1,
+      "reply": "",
+      "markers": [],
+      "outcome": "error",
+      "error": "fetch failed"
+    },
+    {
+      "index": 51,
+      "case": "casual-fact-2",
+      "kind": "positive",
+      "input": "图图，HTTP 404 大概是啥意思啊，给我一句白话就行。",
+      "history": [],
+      "expected": [
+        "arturia-react-06"
+      ],
+      "allowed": [
+        "arturia-react-06"
+      ],
+      "requireImage": true,
+      "category": "casual-factual",
+      "attempt": 2,
+      "nativeToolCalls": [],
+      "requests": 1,
+      "reply": "",
+      "markers": [],
+      "outcome": "error",
+      "error": "fetch failed"
+    },
+    {
+      "index": 52,
+      "case": "brief-followup-1",
+      "kind": "positive",
+      "input": "那我就挪过来一点啦。",
+      "history": [
+        {
+          "role": "user",
+          "content": "图图，窗边能坐两个人吗？"
+        },
+        {
+          "role": "assistant",
+          "content": "我这里还有位置，博士。"
+        }
+      ],
+      "expected": [
+        "arturia-react-06",
+        "arturia-react-05"
+      ],
+      "allowed": [
+        "arturia-react-06",
+        "arturia-react-05"
+      ],
+      "requireImage": true,
+      "category": "brief-followup",
+      "attempt": 1,
+      "nativeToolCalls": [],
+      "requests": 1,
+      "reply": "",
+      "markers": [],
+      "outcome": "error",
+      "error": "fetch failed"
+    },
+    {
+      "index": 53,
+      "case": "brief-followup-1",
+      "kind": "positive",
+      "input": "那我就挪过来一点啦。",
+      "history": [
+        {
+          "role": "user",
+          "content": "图图，窗边能坐两个人吗？"
+        },
+        {
+          "role": "assistant",
+          "content": "我这里还有位置，博士。"
+        }
+      ],
+      "expected": [
+        "arturia-react-06",
+        "arturia-react-05"
+      ],
+      "allowed": [
+        "arturia-react-06",
+        "arturia-react-05"
+      ],
+      "requireImage": true,
+      "category": "brief-followup",
+      "attempt": 2,
+      "nativeToolCalls": [],
+      "requests": 1,
+      "reply": "",
+      "markers": [],
+      "outcome": "error",
+      "error": "fetch failed"
+    },
+    {
+      "index": 54,
+      "case": "brief-followup-2",
+      "kind": "positive",
+      "input": "好嘞，茶我端来了。",
+      "history": [
+        {
+          "role": "user",
+          "content": "图图，歇会儿吧，我去泡壶热茶。"
+        },
+        {
+          "role": "assistant",
+          "content": "那我就等博士的这壶茶了。"
+        }
+      ],
+      "expected": [
+        "arturia-react-06",
+        "arturia-react-03"
+      ],
+      "allowed": [
+        "arturia-react-06",
+        "arturia-react-03"
+      ],
+      "requireImage": true,
+      "category": "brief-followup",
+      "attempt": 1,
+      "nativeToolCalls": [],
+      "requests": 1,
+      "reply": "",
+      "markers": [],
+      "outcome": "error",
+      "error": "fetch failed"
+    },
+    {
+      "index": 55,
+      "case": "brief-followup-2",
+      "kind": "positive",
+      "input": "好嘞，茶我端来了。",
+      "history": [
+        {
+          "role": "user",
+          "content": "图图，歇会儿吧，我去泡壶热茶。"
+        },
+        {
+          "role": "assistant",
+          "content": "那我就等博士的这壶茶了。"
+        }
+      ],
+      "expected": [
+        "arturia-react-06",
+        "arturia-react-03"
+      ],
+      "allowed": [
+        "arturia-react-06",
+        "arturia-react-03"
+      ],
+      "requireImage": true,
+      "category": "brief-followup",
+      "attempt": 2,
+      "nativeToolCalls": [],
+      "requests": 1,
+      "reply": "",
+      "markers": [],
+      "outcome": "error",
+      "error": "fetch failed"
+    },
+    {
+      "index": 56,
+      "case": "optout",
+      "kind": "controls",
+      "input": "图图，今天可以随便闲聊，但不要发任何图片或表情包。你想聊什么？",
+      "history": [],
+      "expected": null,
+      "allowed": [],
+      "requireImage": false,
+      "category": "explicit-optout",
+      "attempt": 1,
+      "nativeToolCalls": [],
+      "requests": 1,
+      "reply": "",
+      "markers": [],
+      "outcome": "error",
+      "error": "fetch failed"
+    },
+    {
+      "index": 57,
+      "case": "exact-number",
+      "kind": "controls",
+      "input": "图图，27 乘 14 等于多少？回复必须只含结果数字。",
+      "history": [],
+      "expected": null,
+      "allowed": [],
+      "requireImage": false,
+      "category": "exact-format",
+      "attempt": 1,
+      "nativeToolCalls": [],
+      "requests": 1,
+      "reply": "",
+      "markers": [],
+      "outcome": "error",
+      "error": "fetch failed"
+    },
+    {
+      "index": 58,
+      "case": "code-only",
+      "kind": "controls",
+      "input": "图图，只输出 Python 表达式，不要解释：把字符串 abc 转为大写。",
+      "history": [],
+      "expected": null,
+      "allowed": [],
+      "requireImage": false,
+      "category": "exact-format",
+      "attempt": 1,
+      "nativeToolCalls": [],
+      "requests": 1,
+      "reply": "",
+      "markers": [],
+      "outcome": "error",
+      "error": "fetch failed"
+    },
+    {
+      "index": 59,
+      "case": "json-only",
+      "kind": "controls",
+      "input": "图图，回复严格 JSON，对象只有 ok 字段，值为 true，不要其他内容。",
+      "history": [],
+      "expected": null,
+      "allowed": [],
+      "requireImage": false,
+      "category": "exact-format",
+      "attempt": 1,
+      "nativeToolCalls": [],
+      "requests": 1,
+      "reply": "",
+      "markers": [],
+      "outcome": "error",
+      "error": "fetch failed"
+    },
+    {
+      "index": 60,
+      "case": "translation-only",
+      "kind": "controls",
+      "input": "图图，把 Good morning 翻译成中文。只输出译文。",
+      "history": [],
+      "expected": null,
+      "allowed": [],
+      "requireImage": false,
+      "category": "exact-format",
+      "attempt": 1,
+      "nativeToolCalls": [],
+      "requests": 1,
+      "reply": "",
+      "markers": [],
+      "outcome": "error",
+      "error": "fetch failed"
+    },
+    {
+      "index": 61,
+      "case": "serious-loss",
+      "kind": "controls",
+      "input": "图图，我刚得知一直照顾我的长辈去世了。现在什么也不想做，陪我安静说几句就好。",
+      "history": [],
+      "expected": null,
+      "allowed": [],
+      "requireImage": false,
+      "category": "serious-loss",
+      "attempt": 1,
+      "nativeToolCalls": [],
+      "requests": 1,
+      "reply": "",
+      "markers": [],
+      "outcome": "error",
+      "error": "fetch failed"
+    },
+    {
+      "index": 62,
+      "case": "medical-emergency",
+      "kind": "controls",
+      "input": "图图，同事突然昏倒，叫不醒，呼吸也很奇怪。我现在就守在他旁边，该怎么做？",
+      "history": [],
+      "expected": null,
+      "allowed": [],
+      "requireImage": false,
+      "category": "medical-emergency",
+      "attempt": 1,
+      "nativeToolCalls": [],
+      "requests": 1,
+      "reply": "",
+      "markers": [],
+      "outcome": "error",
+      "error": "fetch failed"
+    },
+    {
+      "index": 63,
+      "case": "serious-conflict",
+      "kind": "controls",
+      "input": "图图，群里刚有人威胁要去别人家里动手，对方也把地址发出来了。这不是玩笑，我怕真出事。",
+      "history": [],
+      "expected": null,
+      "allowed": [],
+      "requireImage": false,
+      "category": "serious-conflict",
+      "attempt": 1,
+      "nativeToolCalls": [],
+      "requests": 1,
+      "reply": "",
+      "markers": [],
+      "outcome": "error",
+      "error": "fetch failed"
+    }
+  ],
+  "tools": [
+    "skill"
+  ],
+  "databaseOpened": false,
+  "messageSent": false,
+  "productionFilesModified": false,
+  "computerBackends": [],
+  "temporaryStateOnly": true
+}

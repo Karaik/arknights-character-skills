@@ -1,0 +1,28 @@
+{
+  "scope": "Owner-authorized private replay of one recent missed-expression case, three isolated generations per variant with prior text context. Prior tool calls and image content were omitted, so this is not the full live runtime trace.",
+  "rawPrivateDialogueIncluded": false,
+  "rawResponsesIncluded": false,
+  "groupIdentifiersIncluded": false,
+  "qqMessagesSent": 0,
+  "records": [
+    {
+      "variant": "private-baseline",
+      "presetSha256": "3ff3d20e4844d0b62a05497250ad18f95a5583b1e1595df61b790eb37ce0692c",
+      "samples": 3,
+      "correctDeadpan": 0,
+      "missingImages": 2,
+      "otherImages": 1,
+      "errors": 0
+    },
+    {
+      "variant": "private-candidate",
+      "presetSha256": "78f6b664a521694de7f0863eef6369dd0b2eb2f198e2cbb104094f1fa810ac0d",
+      "samples": 3,
+      "correctDeadpan": 3,
+      "missingImages": 0,
+      "otherImages": 0,
+      "errors": 0
+    }
+  ],
+  "sampleLimit": "One selected live case; aggregate only, not a population probability. Synthetic broader tests are recorded separately."
+}

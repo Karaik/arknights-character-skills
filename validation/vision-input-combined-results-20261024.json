@@ -1,0 +1,101 @@
+{
+  "ok": true,
+  "date": "2026-10-24",
+  "scope": "installed native message transformer, core input handlers, multimodal GIF handler and OpenAI adapter request formatter",
+  "livePluginStartup": false,
+  "liveGroupMessageSent": false,
+  "databaseOpened": false,
+  "productionFilesModified": false,
+  "model": "gpt-6-luna",
+  "autoRecognizedImageInput": false,
+  "candidateSource": "deployed configuration read and validated through installed schemas",
+  "activeRuntimeMetadataRead": false,
+  "aliasPrefixStrippingRetainsImage": true,
+  "candidateCapabilities": [
+    "text_input",
+    "tool_call",
+    "image_input"
+  ],
+  "contextSizePreserved": 128000,
+  "config": {
+    "enableContextImageDescription": false,
+    "enableContextGifHandling": true,
+    "gifStrategy": "average",
+    "gifFrameCount": 3,
+    "enableImageReadTool": false,
+    "enableGifReadTool": false,
+    "enableFileReadTool": false,
+    "enableAudioFfmpegConversion": false
+  },
+  "cases": [
+    {
+      "case": "inline-png-wakeup",
+      "beforeImageParts": 0,
+      "afterImageParts": 1,
+      "adapterImageParts": 1,
+      "imageTransport": "PNG base64 image_url",
+      "passed": true
+    },
+    {
+      "case": "at-plus-png",
+      "beforeImageParts": 0,
+      "afterImageParts": 1,
+      "adapterImageParts": 1,
+      "imageTransport": "PNG base64 image_url",
+      "passed": true
+    },
+    {
+      "case": "quoted-png-wakeup",
+      "beforeImageParts": 0,
+      "afterImageParts": 1,
+      "adapterImageParts": 1,
+      "imageTransport": "PNG base64 image_url",
+      "passed": true
+    },
+    {
+      "case": "inline-gif-wakeup",
+      "beforeImageParts": 0,
+      "afterImageParts": 3,
+      "adapterImageParts": 3,
+      "imageTransport": "PNG base64 image_url",
+      "passed": true
+    },
+    {
+      "case": "text-only-control",
+      "beforeImageParts": 0,
+      "afterImageParts": 0,
+      "adapterImageParts": 0,
+      "imageTransport": "none",
+      "passed": true
+    }
+  ],
+  "modelChecks": [],
+  "combinedCheck": {
+    "case": "current-formal-role-image-plus-natural-sticker",
+    "scope": "installed preset parser messages and authors note plus native transformed image and shared request formatter; direct model selection without tool loop",
+    "formalPresetSha256": "78f6b664a521694de7f0863eef6369dd0b2eb2f198e2cbb104094f1fa810ac0d",
+    "imageParts": 1,
+    "reply": "图上写着“Q7M4K9”，右边是绿色，博士。[[sticker:arturia-react-06]]",
+    "selectedSticker": "arturia-react-06",
+    "passed": true,
+    "userRequestedImageOutput": false,
+    "forcedToolChoice": false
+  },
+  "packageEvidence": [
+    {
+      "name": "koishi-plugin-chatluna",
+      "version": "1.4.2",
+      "bundleSha256": "c0f3a54f92f7e41ce836ebaf646a7a7bf7d19fe713d3506c1d4b059e07cd9b2f"
+    },
+    {
+      "name": "koishi-plugin-chatluna-multimodal-service",
+      "version": "1.4.0",
+      "bundleSha256": "d7d9d0fadd3676f9f84ae7f1a291be76d36e89fd8e29bc20c1fabeb5cddcb89d"
+    },
+    {
+      "name": "koishi-plugin-chatluna-openai-like-adapter",
+      "version": "1.4.2",
+      "bundleSha256": "33e314353158a33bd938ebac4f30d36ef42c353b39dc838c9fda80da11604fdb"
+    }
+  ]
+}

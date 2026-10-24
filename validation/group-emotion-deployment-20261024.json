@@ -1,0 +1,64 @@
+{
+  "success": true,
+  "date": "2026-10-24T06:00:51.599516+00:00",
+  "formalPresetSha256": "78f6b664a521694de7f0863eef6369dd0b2eb2f198e2cbb104094f1fa810ac0d",
+  "previousPresetSha256": "3ff3d20e4844d0b62a05497250ad18f95a5583b1e1595df61b790eb37ce0692c",
+  "skills": [
+    {
+      "name": "arturia",
+      "sha256": "de4c6e92c805a6258f408c7bd70225c0dc209f8a89e2661d74ffe7fb62024382"
+    },
+    {
+      "name": "arturia-banter",
+      "sha256": "c73b091d385e2418fd1055e506836162fd781bb99bc6cf2c59378e2f77845056"
+    },
+    {
+      "name": "arturia-comfort",
+      "sha256": "3c7002d3285c2e17f1d27a3174c97a61bfe7c60fa027a371e1fac4e58b40a8f6"
+    },
+    {
+      "name": "arturia-examples",
+      "sha256": "08d48b1b4c57b155a8e879d04aef5b31bfb3673b1e2436815324b4d45101e7cd"
+    },
+    {
+      "name": "arturia-lore",
+      "sha256": "3f00f98e2eda700b2843e10c514a51920ec681fa0effe599bfe5b25cd79ab89a"
+    },
+    {
+      "name": "arturia-relationships",
+      "sha256": "ad18cd82a5a53860bd88234c5c8268eba0fb8b6a63bdb6e79c5162ac9c8f0222"
+    },
+    {
+      "name": "arturia-stickers",
+      "sha256": "42937676adfc8247397384b7aafcf7da2c0da8cc3fee53ddb735bdb73641dcc6"
+    }
+  ],
+  "manifestSha256": "bad5426d92083a075c6fa11f2ba88f6e60fcbe472bf29274bc197a89af0339a5",
+  "imageHashesUnchanged": true,
+  "imageCount": 7,
+  "historyOriginalRowsPreserved": true,
+  "historyRowsBefore": 998,
+  "historyRowsAfter": 998,
+  "activeGroups": 5,
+  "chatMode": "plugin",
+  "model": "openai-like/gpt-6-luna",
+  "changedFiles": [
+    "data/chatluna/skills/arturia/SKILL.md",
+    "data/chatluna/skills/arturia-banter/SKILL.md",
+    "data/chatluna/skills/arturia-examples/SKILL.md",
+    "data/chatluna/skills/arturia-stickers/SKILL.md",
+    "data/chathub/presets/arturia.yml"
+  ],
+  "consoleHTTP": 200,
+  "koishiRestarted": false,
+  "testPresetPresent": false,
+  "syntheticQqMessagesSent": 0,
+  "extraBackupFilesCreated": false,
+  "runtimeContentReadbackVerified": true,
+  "configurationUnchangedDuringPromptWrite": true,
+  "runtimeContentReadbackScope": "Actual native Skill content hashes plus formal preset disk/parser and installed watcher/computed implementation; no active-preset-content RPC",
+  "runtimeReadbackEvidence": "validation/group-emotion-live-readback.json",
+  "originalWholeHistoryRowsPreserved": 1539,
+  "visionConfigurationChangedSeparately": true,
+  "visionDeploymentEvidence": "validation/vision-input-deployment-20261024.json"
+}

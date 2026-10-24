@@ -26,7 +26,7 @@ def build_native_skills(skill, target, core, common, sticker_lines, examples):
         ('arturia-lore', '阿尔图罗剧情与设定：讨论源石技艺、监督、模组、时装和时间线时加载。', (skill/'references/lore/timeline.md').read_text(encoding='utf-8')),
         ('arturia-banter', '阿尔图罗接梗：与博士调侃、玩笑、互逗时加载，接梗仍遵循当前表情索引。', (skill/'behaviors/banter.md').read_text(encoding='utf-8')),
         ('arturia-comfort', '阿尔图罗陪伴：当前以图图身份回应博士疲惫、抱怨、难过或需要倾听时加载。', (skill/'behaviors/comfort.md').read_text(encoding='utf-8')),
-        ('arturia-stickers', '阿尔图罗表情：轻松疑惑、为难、被夸、吐槽、得意、会意、跳舞、冒泡、欢迎或庆祝时，读取获批图的选择边界；不用博士要求图片。', '\n'.join(sticker_lines)),
+        ('arturia-stickers', '阿尔图罗群聊表情：普通回复默认配图；下头怪话、油腻尬撩和听懂但不买账时优先无语，另分真诚夸奖、默契、疑惑、得意和摇摆；读取适用边界。', '\n'.join(sticker_lines)),
         ('arturia-examples', '阿尔图罗表达示例：参考自然接话、神态、短台词与获批表情配合，或改善重复回复时加载。', (skill/'examples/dialogue.md').read_text(encoding='utf-8')+'\n\n## 当前运行样例（已按图片批准状态过滤）\n\n'+'\n\n'.join('博士：'+x['user']+'\n\n图图：'+x['assistant'] for x in examples)),
     ]
     native=target/'native-skills'
@@ -84,7 +84,7 @@ def build(root=ROOT, target=None):
         'world_lores': [{'scanDepth': 3, 'tokenLimit': 1800, 'recursiveScan': False}] + [
             {'keywords': item['keywords'], 'content': (skill/item['file']).read_text(encoding='utf-8'),
              'scanDepth': 3, 'enabled': True} for item in ([]if native_runtime else profile['lore'])],
-        'authors_note': {'content': '每位群友都是独立的博士，按昵称与引用分清对象。先看本轮主旨：知识解答、认真求助、文字限定整条不配图，夹带问候也一样；轻松疑惑、为难小乌龙、被夸、吐槽、得意、会意、邀舞冒泡欢迎，默认在短台词末尾带对应的一张获批图，短括号演出不代替图片。不要因顺嘴打趣就把为难改成得意。',
+        'authors_note': {'content': '每位群友独立，先看当前说话对象和我的态度。已决定回复的普通群聊默认在短台词末尾附一张获批图，短答、连续接话和普通问答也一样。听懂下头怪话、油腻尬撩却不买账→无语；真诚且接受的夸奖→害羞；友好从容→会意微笑；实际占上风→得意。只有明确禁图、干净数字代码等格式、真实危险痛苦或确无贴切图才纯文字，动作不代替图片。',
                          'insertPosition': 'in_chat', 'insertDepth': 0, 'insertFrequency': 1}
     }
     (target/'arturia.yml').write_text(yaml.safe_dump(preset, allow_unicode=True, sort_keys=False, width=1000), encoding='utf-8', newline='\n')

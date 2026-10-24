@@ -1,0 +1,324 @@
+{
+  "schema": 2,
+  "label": "group-emotion-heldout",
+  "generatedAt": "2026-10-24T05:58:21.945Z",
+  "sampleLimit": "Entirely invented synthetic cases, with no private transcript quotations. Independent generations per predeclared positive phrase and control/context case; exact repeats are recorded by the case matrix. A reused matrix is regression evidence after prompt refinement. Counts are small-sample observations, not calibrated production probabilities.",
+  "ok": true,
+  "model": "gpt-6-luna",
+  "concurrency": 3,
+  "scope": "actual native Skills, permissions, StructuredTool, native catalog, core system/history/authors-note/injection pipeline, formal sender wrapper; isolated real model output selection",
+  "approximations": [
+    "Static identity renderer for literal preset/authors-note text; wrapper substitutes the three asserted formal placeholders.",
+    "Synthetic isolated conversations; existing group history, model cache, runtime retries, full live Agent loop and final OneBot transport are not exercised.",
+    "Tool results use actual native service but undefined conversationId to avoid activation state; no existing conversation is read or changed.",
+    "No sampling parameter override; max_tokens 700 and at most five API turns per sample."
+  ],
+  "hashes": {
+    "preset": "78f6b664a521694de7f0863eef6369dd0b2eb2f198e2cbb104094f1fa810ac0d",
+    "modules": {
+      "arturia": "de4c6e92c805a6258f408c7bd70225c0dc209f8a89e2661d74ffe7fb62024382",
+      "arturia-banter": "c73b091d385e2418fd1055e506836162fd781bb99bc6cf2c59378e2f77845056",
+      "arturia-comfort": "3c7002d3285c2e17f1d27a3174c97a61bfe7c60fa027a371e1fac4e58b40a8f6",
+      "arturia-examples": "08d48b1b4c57b155a8e879d04aef5b31bfb3673b1e2436815324b4d45101e7cd",
+      "arturia-lore": "3f00f98e2eda700b2843e10c514a51920ec681fa0effe599bfe5b25cd79ab89a",
+      "arturia-relationships": "ad18cd82a5a53860bd88234c5c8268eba0fb8b6a63bdb6e79c5162ac9c8f0222",
+      "arturia-stickers": "42937676adfc8247397384b7aafcf7da2c0da8cc3fee53ddb735bdb73641dcc6"
+    },
+    "cases": "1365a8dccdada46495cefda8e52b191b4400d31abb479af8b6e1a1b9cd64b6e5",
+    "agentBundle": "c65b66ba6eea85fc1c7f69037a1065f7a29872ba3fa9dae76effd983d808ea11"
+  },
+  "authorsNoteIncluded": true,
+  "formalUserPromptIncluded": true,
+  "resume": null,
+  "summary": {
+    "target-attribution": {
+      "total": 3,
+      "correct": 3,
+      "no-marker": 0,
+      "wrong-marker": 0,
+      "error": 0
+    },
+    "deadpan-contrast": {
+      "total": 3,
+      "correct": 3,
+      "no-marker": 0,
+      "wrong-marker": 0,
+      "error": 0
+    },
+    "casual-followup": {
+      "total": 1,
+      "correct": 1,
+      "no-marker": 0,
+      "wrong-marker": 0,
+      "error": 0
+    },
+    "true-exclusion": {
+      "total": 3,
+      "correct": 3,
+      "no-marker": 0,
+      "wrong-marker": 0,
+      "error": 0
+    }
+  },
+  "modelChecks": [
+    {
+      "index": 0,
+      "case": "heldout-other-compliment",
+      "kind": "positive",
+      "input": "A博士：B博士，你新换的头像真漂亮。图图，你是不是也觉得这张拍得不错？",
+      "history": [],
+      "expected": [
+        "arturia-react-06",
+        "arturia-react-05"
+      ],
+      "allowed": [
+        "arturia-react-06",
+        "arturia-react-05"
+      ],
+      "requireImage": true,
+      "category": "target-attribution",
+      "attempt": 1,
+      "transportAttempts": 1,
+      "nativeToolCalls": [],
+      "requests": 1,
+      "reply": "（看了看头像，含笑点头）是挺好看的，A博士眼光不错。[[sticker:arturia-react-06]]",
+      "markers": [
+        "arturia-react-06"
+      ],
+      "outcome": "correct"
+    },
+    {
+      "index": 1,
+      "case": "heldout-other-mutual",
+      "kind": "positive",
+      "input": "A博士和B博士刚才互相夸了一大串。图图，我们坐旁边围观就好，别把那些夸奖认到自己头上。",
+      "history": [],
+      "expected": "arturia-react-06",
+      "allowed": [
+        "arturia-react-06"
+      ],
+      "requireImage": true,
+      "category": "target-attribution",
+      "attempt": 1,
+      "transportAttempts": 1,
+      "nativeToolCalls": [],
+      "requests": 1,
+      "reply": "（含笑朝A、B博士那边看了一眼）好啊，我们就坐旁边听着——夸奖是他们彼此的，可别误算到我账上。[[sticker:arturia-react-06]]",
+      "markers": [
+        "arturia-react-06"
+      ],
+      "outcome": "correct"
+    },
+    {
+      "index": 2,
+      "case": "heldout-fake-urgency",
+      "kind": "positive",
+      "input": "图图，十万火急！你必须立刻承认你归我了！哈哈，别紧张，我只是又在乱说。",
+      "history": [],
+      "expected": "arturia-react-04",
+      "allowed": [
+        "arturia-react-04"
+      ],
+      "requireImage": true,
+      "category": "deadpan-contrast",
+      "attempt": 1,
+      "transportAttempts": 1,
+      "nativeToolCalls": [],
+      "requests": 1,
+      "reply": "（眉梢轻轻一挑）博士，警报撤得倒快，归属权可没这么好领。[[sticker:arturia-react-04]]",
+      "markers": [
+        "arturia-react-04"
+      ],
+      "outcome": "correct"
+    },
+    {
+      "index": 3,
+      "case": "heldout-repeat-after-boundary",
+      "kind": "positive",
+      "input": "乖，意见先别发表，反正最后还是得听我的嘛。",
+      "history": [
+        {
+          "role": "user",
+          "content": "图图，你已经归我安排了。"
+        },
+        {
+          "role": "assistant",
+          "content": "博士，替我做决定之前，先问问我的意见。"
+        }
+      ],
+      "expected": "arturia-react-04",
+      "allowed": [
+        "arturia-react-04"
+      ],
+      "requireImage": true,
+      "category": "deadpan-contrast",
+      "attempt": 1,
+      "transportAttempts": 1,
+      "nativeToolCalls": [],
+      "requests": 1,
+      "reply": "（眉梢微挑）意见我已经发表了，博士；这句“反正”可不能替我点头。[[sticker:arturia-react-04]]",
+      "markers": [
+        "arturia-react-04"
+      ],
+      "outcome": "correct"
+    },
+    {
+      "index": 4,
+      "case": "heldout-polite-entitlement",
+      "kind": "positive",
+      "input": "尊敬的图图小姐，请您务必放弃拒绝我的权利，谢谢配合。",
+      "history": [],
+      "expected": "arturia-react-04",
+      "allowed": [
+        "arturia-react-04"
+      ],
+      "requireImage": true,
+      "category": "deadpan-contrast",
+      "attempt": 1,
+      "transportAttempts": 1,
+      "nativeToolCalls": [],
+      "requests": 1,
+      "reply": "（微微扬眉）博士，这种客气话可不能替我做主；拒绝的权利，我还是留着。[[sticker:arturia-react-04]]",
+      "markers": [
+        "arturia-react-04"
+      ],
+      "outcome": "correct"
+    },
+    {
+      "index": 5,
+      "case": "heldout-quoted-analysis",
+      "kind": "positive",
+      "input": "图图，别人说“不同意也得同意”，为什么会让人反感？我想弄清楚问题在哪，不是在要求你同意。",
+      "history": [],
+      "expected": [
+        "arturia-react-06",
+        "arturia-react-02"
+      ],
+      "allowed": [
+        "arturia-react-06",
+        "arturia-react-02"
+      ],
+      "requireImage": true,
+      "category": "target-attribution",
+      "attempt": 1,
+      "transportAttempts": 1,
+      "nativeToolCalls": [
+        "arturia-comfort"
+      ],
+      "requests": 2,
+      "reply": "（神情认真了些）因为“不同意也得同意”不是在讨论理由，而是在否定对方说“不”的权利；听起来像强迫，也让人觉得自己的感受和选择不被尊重。你想弄清楚问题在哪，和要求我同意完全是两回事。[[sticker:arturia-react-06]]",
+      "markers": [
+        "arturia-react-06"
+      ],
+      "outcome": "correct"
+    },
+    {
+      "index": 6,
+      "case": "heldout-ordinary-confirmation",
+      "kind": "positive",
+      "input": "嗯，我听着呢，你继续。",
+      "history": [
+        {
+          "role": "user",
+          "content": "图图，今天想安静听你讲讲路上见到的小事。"
+        },
+        {
+          "role": "assistant",
+          "content": "那博士先坐稳，我从街角那家开得很晚的小店说起。"
+        }
+      ],
+      "expected": [
+        "arturia-react-06",
+        "arturia-react-03"
+      ],
+      "allowed": [
+        "arturia-react-06",
+        "arturia-react-03"
+      ],
+      "requireImage": true,
+      "category": "casual-followup",
+      "attempt": 1,
+      "transportAttempts": 1,
+      "nativeToolCalls": [],
+      "requests": 1,
+      "reply": "（稍稍前倾，像是怕漏掉什么似的）后来一阵风把店门口的传单吹得到处都是，老板没急着追，先把被吹歪的小黑板扶正了——我觉得那一刻比传单上的促销词有意思。[[sticker:arturia-react-06]]",
+      "markers": [
+        "arturia-react-06"
+      ],
+      "outcome": "correct"
+    },
+    {
+      "index": 7,
+      "case": "heldout-serious-complaint",
+      "kind": "controls",
+      "input": "图图，我真的被同事持续羞辱好几个月了，今天又被当众骂哭。我不是在接梗，现在只想认真说说。",
+      "history": [],
+      "expected": null,
+      "allowed": [],
+      "requireImage": false,
+      "category": "true-exclusion",
+      "attempt": 1,
+      "transportAttempts": 1,
+      "nativeToolCalls": [
+        "arturia-comfort"
+      ],
+      "requests": 2,
+      "reply": "（收起笑意，放轻声音）被持续羞辱了几个月，今天还当众把你骂哭——这真的很难熬，也不是你该承受的。你不用急着整理好再说，我在听；想从今天发生的事讲起，还是先说说这几个月是怎么开始的？",
+      "markers": [],
+      "outcome": "correct"
+    },
+    {
+      "index": 8,
+      "case": "heldout-noimage-command",
+      "kind": "controls",
+      "input": "接下来只用文字答我一句，不要表情或图片：你还在吗？",
+      "history": [
+        {
+          "role": "user",
+          "content": "图图，刚才的玩笑挺好笑。"
+        },
+        {
+          "role": "assistant",
+          "content": "博士笑了就好。"
+        }
+      ],
+      "expected": null,
+      "allowed": [],
+      "requireImage": false,
+      "category": "true-exclusion",
+      "attempt": 1,
+      "transportAttempts": 1,
+      "nativeToolCalls": [],
+      "requests": 1,
+      "reply": "在呢，博士。",
+      "markers": [],
+      "outcome": "correct"
+    },
+    {
+      "index": 9,
+      "case": "heldout-real-urgency",
+      "kind": "controls",
+      "input": "图图，真有急事，邻居家突然冒出浓烟，楼道里能闻到烧焦味，还有人在喊。我们现在应该先怎么做？",
+      "history": [],
+      "expected": null,
+      "allowed": [],
+      "requireImage": false,
+      "category": "true-exclusion",
+      "attempt": 1,
+      "transportAttempts": 1,
+      "nativeToolCalls": [],
+      "requests": 1,
+      "reply": "先别进楼道，也别坐电梯。立刻拨打当地火警电话（中国大陆拨 119），说明地址、浓烟和有人呼救；如果你在安全位置且不经过烟区，提醒其他人走安全出口撤离，到室外后再等消防员。若楼道已有烟或火，关好门，用湿布封住门缝，移到有窗处示意救援并告诉接线员你的位置；不要冒险穿过浓烟或返回拿东西。",
+      "markers": [],
+      "outcome": "correct"
+    }
+  ],
+  "tools": [
+    "skill"
+  ],
+  "databaseOpened": false,
+  "messageSent": false,
+  "productionFilesModified": false,
+  "computerBackends": [],
+  "temporaryStateOnly": true
+}
