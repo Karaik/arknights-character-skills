@@ -1,6 +1,6 @@
 {
   "archive": "arturia-skill-0.1.0.zip",
-  "sha256": "2cbcf401e813501b0bb439c67a76a4240e9d7336ea1239d5fe63231b467b8022",
+  "sha256": "167cc6712a5aec6d72bc8609facedc7e131e7a9d8cc94d5498b65d67f85f959c",
   "native_skill_archive": "arturia-chatluna-skills.zip",
   "native_skill_count": 7,
   "image_policy": "Only explicitly owner-approved images enter runtime",
@@ -12,10 +12,10 @@
   "runtime_image_count": 7,
   "chatluna_parser": "1.4.2 actual package parser validated",
   "koishi_plugin_installed_and_enabled": true,
-  "formal_preset_loaded": true,
-  "production_role_switched": true,
+  "formal_preset_loaded": false,
+  "production_role_switched": false,
   "live_qq_image_upload_tested": false,
-  "behavior_validation": "synthetic group banter, high-frequency image selection and true text-only exclusions through native Skills/prompt pipeline; private live replay is excluded from the repository",
+  "behavior_validation": "configured provider samples plus installed Koishi renderer/hook; one sample per case, not a statistical model comparison",
   "model_probe": {
     "date": "2026-10-23T08:29:55.200Z",
     "model": "gpt-6-luna",
@@ -36,15 +36,13 @@
     "qq_messages_sent": 0
   },
   "production_snapshot": {
-    "matches_current_export": true,
+    "matches_current_export": false,
     "selected_groups": 5,
     "model": "openai-like/gpt-6-luna",
-    "chat_mode": "plugin",
     "history_preserved": true,
-    "preset_verification": "Disk hash/parser plus installed fs.watch/computed source; no active-content RPC exposed",
     "evidence": [
-      "validation/group-emotion-deployment-20261024.json",
-      "validation/group-emotion-live-readback.json"
+      "validation/production-cutover-result.json",
+      "validation/production-health.json"
     ]
   },
   "koishi_plugin_archive": {
@@ -77,14 +75,17 @@
     "evidence": "validation/qq-self-probe-results.json"
   },
   "native_agent": {
-    "matches_current_export": true,
+    "matches_current_export": false,
     "version": "1.0.49",
     "ui_route": "/chatluna-agent",
     "loaded_skill_count": 7,
+    "model_tool_cases_passed": 2,
     "test_preset_removed": true,
     "chat_mode": "plugin",
     "evidence": [
-      "validation/group-emotion-live-readback.json"
+      "validation/native-agent-activation-20261024.json",
+      "validation/native-agent-console-state.json",
+      "validation/native-skills-probe-results.json"
     ]
   },
   "natural_sticker_optimization": {
@@ -101,7 +102,7 @@
     ]
   },
   "group_emotion_optimization": {
-    "matches_current_export": true,
+    "matches_current_export": false,
     "model": "gpt-6-luna",
     "summary": {
       "deadpan": {
@@ -256,5 +257,20 @@
       "validation/vision-input-live-results-20261024.json",
       "validation/vision-input-combined-results-20261024.json"
     ]
+  },
+  "gif_hd_update": {
+    "matches_current_runtime": true,
+    "dimensions": [
+      1024,
+      1024
+    ],
+    "frames": 70,
+    "duration_ms": 7000,
+    "bytes": 5047924,
+    "runtime_adapter_resolved": true,
+    "qq_messages_sent": 0,
+    "koishi_restarted": false,
+    "evidence": "validation/gif-hd-deployment-20261024.json",
+    "scope": "Runtime files and production adapter resolution verified; no new QQ upload test."
   }
 }

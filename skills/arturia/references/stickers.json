@@ -404,6 +404,16 @@
         {
           "role": "official_illustration_via_wiki",
           "url": "https://prts.wiki/w/文件:立绘_塑心_1.png"
+        },
+        {
+          "role": "neural_super_resolution_engine",
+          "url": "https://github.com/xinntao/Real-ESRGAN-ncnn-vulkan/releases/tag/v0.2.0",
+          "creator": "Xintao Wang / Real-ESRGAN"
+        },
+        {
+          "role": "neural_super_resolution_anime_model",
+          "url": "https://github.com/xinntao/Real-ESRGAN/releases/tag/v0.2.5.0",
+          "model": "realesr-animevideov3-x4"
         }
       ],
       "original_source_sha256": "f98154e870a2ff26af1b5840eb963204f6f17e0e6a54688982850c7f95a977cf",
@@ -419,14 +429,14 @@
         "level": "not_measured",
         "evidence": []
       },
-      "width": 512,
-      "height": 512,
+      "width": 1024,
+      "height": 1024,
       "format": "GIF",
       "frames": 70,
       "duration_ms": 7000,
       "loop": 0,
-      "sha256": "3bd5d7d23aa4cbf495b193f44cf2a83bedd4d0a0d2670369f0a2d5e7a2bc58c1",
-      "bytes": 1638498,
+      "sha256": "1703ed3a0e0b6062c6a93f630ba9fea93467cf5785023016931052fc7a67d848",
+      "bytes": 5047924,
       "file": "arturia-sway-01.gif",
       "review": "approved",
       "retrieved_at": "2026-10-23T08:12:58.588397+00:00",
@@ -452,16 +462,17 @@
       "arturia_fit": "让图图本人的出场与轻快反应可见；可用于亲近的群聊接梗，演出和文字仍依情境变化。",
       "selection_reason": "用户要求作为高频表情并明确认可halo-v3成品；保留原动作节奏，角色主体单一，可直接由现有Koishi发送层处理。",
       "usage_priority": "已决定回复的普通群聊，默认随短台词附与我态度贴切的一张；短答、连续接话和普通问答不自动禁图。",
-      "review_note": "管理者于2026-10-24明确要求将其他图片替换为本次上传的六格图，加已修70帧GIF共七张，并授权自行裁切、去白底和分类使用。 管理者随后标出u29至u32问题并明确要求自行修正；本次只修局部缺陷，保留70帧/7秒和七张表情清单。",
-      "reviewed_at": "2026-10-23T18:43:49.849002+00:00",
-      "revision_evidence": "artwork/arturia-gif-arm-fix-20261024/verification.json",
+      "review_note": "管理者于2026-10-24明确要求将其他图片替换为本次上传的六格图，加已修70帧GIF共七张，并授权自行裁切、去白底和分类使用。 管理者随后标出u29至u32问题并明确要求自行修正；本次只修局部缺陷，保留70帧/7秒和七张表情清单。 管理者随后明确要求制作高清GIF并同步角色Skill：以已批准512px版本做Real-ESRGAN动漫超分，运行版为1024×1024、70帧、每帧100ms、7秒，不插帧或新增姿势；112色保色调色盘与无损GIF结构优化后为5,047,924字节，低于原插件5MiB上限。超分、透明边缘、颜色与时序验证见artwork/arturia-gif-hd-20261024/verification.json。",
+      "reviewed_at": "2026-10-24T14:10:32.309299+00:00",
+      "revision_evidence": "artwork/arturia-gif-hd-20261024/verification.json",
       "natural_triggers": [
         "博士邀我跳舞、摇摆、助兴或再来一段",
         "轻松叫我出来、冒泡、露面",
         "博士回来打招呼，或分享值得庆祝的好消息"
       ],
-      "selection_boundary": "直接邀舞和轻快出场优先这张；语句里的舞蹈引文、认真任务或悲伤消息不触发"
+      "selection_boundary": "直接邀舞和轻快出场优先这张；语句里的舞蹈引文、认真任务或悲伤消息不触发",
+      "previous_revision_evidence": "artwork/arturia-gif-arm-fix-20261024/verification.json"
     }
   ],
-  "updated_at": "2026-10-23T18:12:23.144253+00:00"
+  "updated_at": "2026-10-24T14:10:32.309299+00:00"
 }

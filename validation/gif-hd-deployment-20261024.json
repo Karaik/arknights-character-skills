@@ -1,0 +1,34 @@
+{
+  "success": true,
+  "date": "2026-10-24T14:02:19.877237+00:00",
+  "hostRole": "txy",
+  "changedAssets": [
+    "images/arturia-sway-01.gif"
+  ],
+  "previousGifSha256": "3bd5d7d23aa4cbf495b193f44cf2a83bedd4d0a0d2670369f0a2d5e7a2bc58c1",
+  "gifSha256": "1703ed3a0e0b6062c6a93f630ba9fea93467cf5785023016931052fc7a67d848",
+  "manifestSha256": "15ccf20f8ccdb0241a29d68f65bf241784882aaf949e61563e3e9d81a55f506b",
+  "formalPresetSha256": "78f6b664a521694de7f0863eef6369dd0b2eb2f198e2cbb104094f1fa810ac0d",
+  "gifBytes": 5047924,
+  "gifDimensions": [
+    1024,
+    1024
+  ],
+  "gifFrames": 70,
+  "gifDurationMs": 7000,
+  "metadataVerifiedByExactTransferredHash": true,
+  "runtimeImageCount": 7,
+  "otherSixImagesUnchanged": true,
+  "configurationUnchanged": true,
+  "formalPresetUnchanged": true,
+  "koishiRestarted": false,
+  "consoleHTTP": 200,
+  "adapterResolution": {
+    "bytes": 5047924,
+    "sha256": "1703ed3a0e0b6062c6a93f630ba9fea93467cf5785023016931052fc7a67d848",
+    "mime": "image/gif",
+    "syntheticQqMessagesSent": 0
+  },
+  "syntheticQqMessagesSent": 0,
+  "scope": "Atomic local-file replacement and loaded package adapter resolve test; no QQ message sent."
+}

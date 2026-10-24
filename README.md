@@ -12,9 +12,11 @@
 
 预览：[七张表情总览](review/contact-sheet-01.jpg) · [Photoshop 透明处理预览](artwork/arturia-reactions-20261024/six-reactions-transparency-preview.jpg) · [可编辑 PSD](artwork/arturia-reactions-20261024/arturia-six-reactions.psd)。[历史社区来源线索](review/community-leads.md)另列。
 
-六张静图依次用于疑惑、为难、害羞、无语、得意和温柔戏谑；[摇摆 GIF](skills/arturia/assets/stickers/arturia-sway-01.gif) 用于开心、欢迎和轻快接梗。运行清单正好七张，GIF 保留原 70 帧、每帧 100ms、共 7 秒。
+六张静图依次用于疑惑、为难、害羞、无语、得意和温柔戏谑；[摇摆 GIF](skills/arturia/assets/stickers/arturia-sway-01.gif) 用于开心、欢迎和轻快接梗。运行清单正好七张；当前 GIF 已超分至 1024×1024，保留原 70 帧、每帧 100ms、共 7 秒，不插帧或新增姿势。运行文件为 5,047,924 字节（4.814 MiB），符合原插件 5 MiB 限制。
 
-摇摆 GIF 已修正四张抬臂画面的袖根与长发错层、裙边穿发，以及一处手套旁多余发色尖角。[实际帧前后对照](artwork/arturia-gif-arm-fix-20261024/light-four-poses-before-after.jpg)与[独立检查](artwork/arturia-gif-arm-fix-20261024/independent-qa.json)记录了修点；仅对应的 10 帧改变，其余 60 帧实际像素保持一致。
+此前的局部修正阶段已修正四张抬臂画面的袖根与长发错层、裙边穿发，以及一处手套旁多余发色尖角。[旧阶段前后对照](artwork/arturia-gif-arm-fix-20261024/light-four-poses-before-after.jpg)与[独立检查](artwork/arturia-gif-arm-fix-20261024/independent-qa.json)记录了当时仅 10 帧改变、其余 60 帧像素保持一致；该像素范围结论仅适用于旧阶段。本次高清化对原 35 个独立姿势统一超分，并按原时序重建 70 帧；[处理说明](artwork/arturia-gif-hd-20261024/README.md)、[细节对照](artwork/arturia-gif-hd-20261024/runtime-detail-comparison.png)和[验证记录](artwork/arturia-gif-hd-20261024/verification.json)记录了透明边缘、颜色、帧数、时长及体积检查。
+
+高清 GIF 已同步至 txy 正式运行目录，7 张运行素材中的另外 6 张保持不变；[本次部署验证](validation/gif-hd-deployment-20261024.json)确认新哈希与真实发图适配器解析成功，Koishi 未重启。本次没有发送 QQ 测试消息。
 
 ## 模块
 
@@ -62,7 +64,7 @@ python scripts/package_release.py
 
 初次接入已做完整图片解码、哈希与元数据核对，真实 ChatLuna 解析和 pure-text 渲染验证，以及独立角色场景演练。当时 `gpt-6-luna` 的 6 个匿名场景各跑旧版／新版一次，共 12 次实际调用，最终示例版本再做 4 次复核。随后管理者明确批准正式启用，迁移 5 个群当前会话的模型并开放这 5 个群的发图白名单，958 条原有历史记录校验一致。历史样本见 [实际调用结果](validation/model-probe-results.json)及[正式切换记录](validation/production-cutover-result.json)。
 
-2026-10-24 对当前七张素材新增 [9 个模型用例](validation/seven-sticker-model-results.json)：六种静态情绪和纯 GIF 请求均选中预期素材，诉苦及数字问答不夹图。随后使用实际 ChatLuna renderer、发送钩子、Koishi OneBot encoder 和已认证的 NapCat 调试 WebSocket，向机器人自身发送 PNG 与修正 GIF 各一条，并回读确认图片消息，见 [QQ 自发验证](validation/qq-self-probe-results.json)。测试使用匿名合成输入与独立 Context，不读取私有群聊正文，不等同生产群聊完整会话回归，也不证明长期自动发图频率。
+2026-10-24 在本次高清 GIF 升级前，对当时七张素材新增 [9 个模型用例](validation/seven-sticker-model-results.json)：六种静态情绪和纯 GIF 请求均选中预期素材，诉苦及数字问答不夹图。随后使用实际 ChatLuna renderer、发送钩子、Koishi OneBot encoder 和已认证的 NapCat 调试 WebSocket，向机器人自身发送 PNG 与修正 GIF 各一条，并回读确认图片消息，见 [QQ 自发验证](validation/qq-self-probe-results.json)。这些旧实发记录对应升级前的 GIF 与 manifest，不能代替当前高清 GIF 的部署和实发验证。测试使用匿名合成输入与独立 Context，不读取私有群聊正文，不等同生产群聊完整会话回归，也不证明长期自动发图频率。
 
 本次核对发现，5 个群当前会话原先为 4 个 DeepSeek、1 个 Sonnet，而当前启用渠道不提供这些 ID；实际 DeepSeek 请求返回 404。按管理者确认，这 5 个群已统一改为原有全局默认 `gpt-6-luna`。其它非目标会话的模型选择未迁移。
 

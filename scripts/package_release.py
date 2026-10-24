@@ -219,6 +219,18 @@ def main():
             'gif_frames_sent':deployment['loadedMultimodal']['gifFrameCount'],
             'group_messages_sent':0,'scope':'loaded plugin configuration and active forks; installed native input/request pipeline plus synthetic model OCR and formal-preset reply; no live QQ group end-to-end test',
             'evidence':[p.relative_to(ROOT).as_posix()for p in [vision_deployment_file,vision_live_file,vision_combined_file]]}
+    hd_file=ROOT/'validation/gif-hd-deployment-20261024.json'
+    if hd_file.exists():
+        hd=json.loads(hd_file.read_text(encoding='utf-8'))
+        gif=exports/'images/arturia-sway-01.gif'
+        current=bool(hd['success'] and hd['manifestSha256']==hashlib.sha256((exports/'runtime-manifest.json').read_bytes()).hexdigest()
+                     and hd['gifSha256']==hashlib.sha256(gif.read_bytes()).hexdigest()
+                     and hd['adapterResolution']['sha256']==hd['gifSha256'] and gif.stat().st_size<5*1024*1024)
+        report['gif_hd_update']={'matches_current_runtime':current,'dimensions':hd['gifDimensions'],
+                                'frames':hd['gifFrames'],'duration_ms':hd['gifDurationMs'],'bytes':hd['gifBytes'],
+                                'runtime_adapter_resolved':current,'qq_messages_sent':hd['syntheticQqMessagesSent'],
+                                'koishi_restarted':hd['koishiRestarted'],'evidence':hd_file.relative_to(ROOT).as_posix(),
+                                'scope':'Runtime files and production adapter resolution verified; no new QQ upload test.'}
     (target/'release.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n',encoding='utf-8', newline='\n')
     print(json.dumps(report,ensure_ascii=False))
 
