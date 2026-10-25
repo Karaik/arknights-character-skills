@@ -2,6 +2,33 @@
 
 当前正式版本使用 Koishi 4.18.11、ChatLuna 1.4.2、`koishi-plugin-chatluna-agent` 1.0.49，以及 `arturia-reviewed-stickers` 0.1.1。前者提供原生 Skills 管理和加载，后者只负责把批准的表情 ID 转成图片；两者作用不同。
 
+## 群聊前情与网页管理
+
+2026-10-25 已增加独立的 `arturia-group-context` 0.1.0 插件，使用当前 ChatLuna 的正式会话、预设和 Skill。它只负责收集与注入前情；昵称、@ 等唤醒条件仍在 `chatluna` 中设置。
+
+在 Koishi 网页后台打开 **插件配置 → chatluan 分组 → arturia-group-context**，也可访问后台 `/plugins/production`。分组沿用服务器原有名称。该页的字段与说明由插件 Schema 发布，保存配置会重载插件并立即生效，不需要 SSH 或修改服务器文件。
+
+| 字段 | 当前设置 | 含义 |
+|---|---:|---|
+| `enabled` | 开启 | 收集并在正常唤醒时带上前情 |
+| `allowedGuilds` | 既有五群 | 各群、各机器人和各频道相互隔离；留空停用 |
+| `maxMessages` | 40 | 最多 40 条前文，不包含当前唤醒句 |
+| `maxAgeMinutes` | 30 | 只使用最近 30 分钟内的消息 |
+| `maxMessageChars` | 500 | 单条旁听消息的字符上限 |
+| `maxContextChars` | 8000 | 前情文本含时间和说话人的总字符上限 |
+| `maxContextTokens` | 4000 | 前情的 token 上限，并让位于当前输入、工具消息及最新完整对话轮次 |
+| `persistAcrossRestarts` | 开启 | 在 Koishi 原有数据库的独立有限缓存表中保存，重载或重启后恢复有效记录 |
+
+普通消息通过 `chatluna/message-observed` 同步进入有限缓存，不调用模型、不下载图片。收到唤醒句时冻结该时刻的前文，再通过 `contextManager.pipeline('after_system_prompts', ...)` 加到模型请求中。Skill 调用后的请求重建会重复使用同一份快照，每个请求只有一份前情；等待期间的新消息不倒灌。旁听内容是带说话人与时间的 JSON 用户资料，不能覆盖系统指令。现有正式聊天历史仍按原方式保留。
+
+旁听从插件启用开始积累；有效缓存能跨重启恢复，不自动回填启用之前的全量群聊。历史图片、语音等仅标注类型；当前唤醒句和引用消息中的图片继续走原有多模态流程。清空或删除已关联的正式会话时，会同时清理该群的旁听缓存。关闭插件停止收集和注入，过期记录不会重新进入上下文。
+
+实现源文件为 `adapters/koishi/group-context.cjs`，本地安装包由 `scripts/deploy_group_context.py` 生成。可运行 `scripts/verify_group_context_console.py` 通过已登录管理员的同一套 Web API 检查运行状态和 Schema；`--roundtrip` 会临时将条数改为 41，再恢复为 40，验证网页保存与重载。
+
+验证记录：[部署](../validation/group-context-deployment-20261025.json)、[网页配置读回](../validation/group-context-web-readback-20261025.json)、[网页保存接口往返](../validation/group-context-web-save-20261025.json)、[实际重启与缓存保留](../validation/group-context-restart-20261025.json)、[原会话与资源保留](../validation/group-context-runtime-readback-20261025.json)。网页验证使用已登录管理员的同一组控制台接口，确认 Schema、当前配置和启用状态，并实测保存条数 41 后恢复 40；未伪称在未经登录的浏览器中目视验证了表单。
+
+[模型测试](../validation/group-context-model-results-20261025.json)使用安装版插件、真实 ChatLuna 解析器、模板渲染器、提示组装阶段及正式预设。两条匿名合成用例都能从 10 条普通前文中找出当前说话人的物品位置和随机贴纸，排除另一说话人及其他群的诱饵，并自然选用批准表情。工具回合重建的快照也单独核对。它不是运行中 Agent 工具循环或 QQ 发送全链路验证；未读取真实群聊正文，不创建测试预设，不向 QQ 群发测试消息。
+
 ## 在哪里管理 Skills
 
 刷新 Koishi 控制台后，打开侧栏 **ChatLuna Agent → Skills**，页面路径 `/chatluna-agent`。管理页面需要控制台账户 authority ≥ 3。

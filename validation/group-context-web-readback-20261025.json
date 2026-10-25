@@ -1,0 +1,37 @@
+{
+  "status": {
+    "enabled": true,
+    "allowedGroupCount": 5,
+    "maxMessages": 40,
+    "maxAgeMinutes": 30,
+    "maxMessageChars": 500,
+    "maxContextChars": 8000,
+    "maxContextTokens": 4000,
+    "persistAcrossRestarts": true,
+    "cachedGroups": 2,
+    "cachedMessages": 8,
+    "observedMessages": 0,
+    "promptBuilds": 0,
+    "lastContextMessages": 0,
+    "lastContextCharacters": 0,
+    "lastContextTokens": 0,
+    "lastInjectionAt": null
+  },
+  "webConfigPublished": true,
+  "webSchemaPublished": true,
+  "webFieldNames": [
+    "enabled",
+    "allowedGuilds",
+    "maxMessages",
+    "maxAgeMinutes",
+    "maxMessageChars",
+    "maxContextChars",
+    "maxContextTokens",
+    "persistAcrossRestarts"
+  ],
+  "webChineseDescriptions": true,
+  "webPluginActive": true,
+  "webConfigurationMatches": true,
+  "usageVisible": true,
+  "webSaveRoundtrip": null
+}

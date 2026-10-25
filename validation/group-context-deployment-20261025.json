@@ -1,0 +1,17 @@
+{
+  "installedAt": "2026-10-25T04:38:17.726758+00:00",
+  "name": "arturia-group-context",
+  "version": "0.1.0",
+  "groupCount": 5,
+  "sourceSha256": "50b0f5a8b1785afeab5c64463f8a0f8310054a92abd2d9e8ad1220b0547899d3",
+  "maxMessages": 40,
+  "maxAgeMinutes": 30,
+  "maxContextChars": 8000,
+  "maxContextTokens": 4000,
+  "persistAcrossRestarts": true,
+  "consoleHTTP": 200,
+  "koishiRestarted": true,
+  "presetAgentManifestUnchanged": true,
+  "qqMessagesSent": 0,
+  "onlyKoishiRestartRequested": true
+}

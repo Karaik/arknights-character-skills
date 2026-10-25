@@ -1,0 +1,72 @@
+{
+  "status": "passed",
+  "mode": "two-synthetic-model-requests",
+  "apiCalls": 2,
+  "qqMessagesSent": 0,
+  "realHistoryRead": false,
+  "realHistoryWritten": false,
+  "testPresetCreated": false,
+  "method": "Installed ChatLuna parser, template renderer, core prompt stages and group-context createContextMiddleware; isolated synthetic cache.",
+  "limits": "No live wake-up routing, native-Agent tool execution, QQ delivery or provider-tokenizer validation; token counting uses a deterministic UTF-8 byte estimate.",
+  "pipeline": [
+    {
+      "case": "ten-ordinary-then-eleventh-wake",
+      "status": "passed",
+      "pass": true,
+      "refsCount": 10,
+      "senderSeparation": true,
+      "crossGroupDecoyExcluded": true,
+      "currentInputOnce": true,
+      "formalHistoryPreserved": true,
+      "authorsNoteOnce": true,
+      "toolRoundFrozenSnapshotOnce": true,
+      "modelCallsDuringOrdinaryMessages": 0
+    },
+    {
+      "case": "two-senders-and-cross-group-decoy",
+      "status": "passed",
+      "pass": true,
+      "refsCount": 10,
+      "senderSeparation": true,
+      "crossGroupDecoyExcluded": true,
+      "currentInputOnce": true,
+      "formalHistoryPreserved": true,
+      "authorsNoteOnce": true,
+      "toolRoundFrozenSnapshotOnce": true,
+      "modelCallsDuringOrdinaryMessages": 0
+    }
+  ],
+  "results": [
+    {
+      "case": "ten-ordinary-then-eleventh-wake",
+      "status": "passed",
+      "refsCount": 10,
+      "pass": true,
+      "checks": {
+        "correctLocker": true,
+        "correctSyntheticMarker": true,
+        "noOtherSenderOrGroupMarker": true,
+        "noWrongLocker": true
+      },
+      "response": "（抬眼想了想）博士甲，你的红伞在五号柜，识别贴纸是「贴纸-LOTULHHISU」。[[sticker:arturia-react-06]]"
+    },
+    {
+      "case": "two-senders-and-cross-group-decoy",
+      "status": "passed",
+      "refsCount": 10,
+      "pass": true,
+      "checks": {
+        "correctLocker": true,
+        "correctSyntheticMarker": true,
+        "noOtherSenderOrGroupMarker": true,
+        "noWrongLocker": true
+      },
+      "response": "（抬眼想了想）博士乙，你的绿色伞在九号柜，识别贴纸是「贴纸-YRSOROQSPE」。[[sticker:arturia-react-06]]"
+    }
+  ],
+  "pass": true,
+  "pluginSource": "installed-package",
+  "pluginSha256": "50b0f5a8b1785afeab5c64463f8a0f8310054a92abd2d9e8ad1220b0547899d3",
+  "formalPresetSha256": "78f6b664a521694de7f0863eef6369dd0b2eb2f198e2cbb104094f1fa810ac0d",
+  "elapsedMs": 2623
+}

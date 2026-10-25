@@ -1,0 +1,11 @@
+{
+  "actualRestartCompleted": true,
+  "storedScopesBefore": 2,
+  "storedMessagesBefore": 8,
+  "storedScopesAfter": 2,
+  "storedMessagesAfter": 8,
+  "persistedRowsPreserved": true,
+  "consoleHTTP": 200,
+  "durationSeconds": 97.3,
+  "syntheticQqMessagesSent": 0
+}

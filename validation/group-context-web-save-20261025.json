@@ -1,0 +1,13 @@
+{
+  "webManagerSaveRoundtrip": {
+    "managerSaveApplied": true,
+    "temporaryMaxMessages": 41,
+    "restoredMaxMessages": 40,
+    "restoredEnabled": true,
+    "restoredCachedMessages": 8
+  },
+  "interface": "Koishi Web manager/reload",
+  "browserInteraction": false,
+  "authenticatedExistingAdminSession": true,
+  "qqMessagesSent": 0
+}
